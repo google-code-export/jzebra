@@ -1,4 +1,5 @@
 #summary This outlines getting started with jZebra as a Web Applet.
+#labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
 
@@ -33,7 +34,7 @@ _*Note:* These aren't intended for use with your printer, they're provided as an
 http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png
 
 == Sending raw commands to your printer ==
-Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're not ready to print some raw commands.  To do this, three parameters need to be added to the web applet.  *CONFIGTYPE*, *CONFIGPATH*, *LINEFEED*.
+Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To do this, three parameters need to be added to the web applet.  *CONFIGTYPE*, *CONFIGPATH*, *LINEFEED*.
   * *CONFIGTYPE*:  Set this to "*FILE*" with the following parameter: _(this can later be changed to a web url using "url")_
 {{{
       <param name="configtype" value="file">
