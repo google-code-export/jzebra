@@ -39,8 +39,8 @@ Assuming your printer is attached and set up as a "Generic/Text Only" printer _(
 {{{
       <param name="configpath" value="c:\test.txt">
 }}}
-   # Create the config file with notepad (or equivalent), and add some raw commands of your choice.  Follow your ZPL (or printer language) guide and keep it simple for now.
-   # *LINEFEED*:  In order for your printer to separate the raw commands, you must send a linefeed that corresponds with your printer language.
+  # Create the config file with notepad (or equivalent), and add some raw commands of your choice.  Follow your ZPL (or printer language) guide and keep it simple for now.
+  # *LINEFEED*:  In order for your printer to separate the raw commands, you must send a linefeed that corresponds with your printer language.
   _Note:  Newline is "\n", Carriage Return is "\r".  Your printer may need any combination of these or other characters.  If unsure, visit your printer programming manual. If other escape sequences are needed, search for the java equivalent online and replace._
 {{{
        <param name="linefeed" value="\n">
@@ -56,6 +56,7 @@ Assuming your printer is attached and set up as a "Generic/Text Only" printer _(
       <param name="FIRSTNAME" value="TRES">
 }}}
   _This will replace all occurrences of *$FIRSTNAME* with the applet value specified.
+
   http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
 TODO:  Please contribute to this tutorial to make it easier for others.
