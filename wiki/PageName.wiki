@@ -1,0 +1,32 @@
+#summary This outlines getting started with jZebra as a *web applet*.
+
+= Introduction =
+
+jZebra offers 3 modes of printing:  Command line, desktop application, and *web applet*.  The most common use (and most developed for) is *web applet* mode.  This is due to the popularity of using web pages for thermal, bar code and magnetic printing.
+
+
+= Details =
+
+To get started, download the latest jZebra from [http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
+   # Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
+   # Locate the html sample file.  Windows users can use *notepad*.  Linux users can use *gedit*.  This should be called "preview-application.html".  Look over the applet code quickly to get comfortable with the parameters.
+   # Close out "preview-application.html" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
+{{{
+<html><body>
+   <applet code="jzebra.JZebraApplet.class" archive="./jzebra.jar" width="200" height="25">
+      <param name="buttontext" value="Sample button">
+   </applet>
+</html></body>
+}}}
+
+  # Save the file in the same folder as jzebra.jar and open the file with the browser of your choice.  _Note: IE7 users may be required to " [http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]", so Firefox is recommended for initial testing._
+  #  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. _Note:  Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]"._
+  # If you already have a zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers.  _Note: If you do not have a printer named "zebra", then you will have a "*SEVERE: Printer not found*" in your log.  To fix this, create a dummy printer with "zebra" in the name as a place holder for the purpose of learning this applet.  "zebra fake" as a printer name works for now.  Windows and Linux both allow this._
+  # Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.  _Note: These aren't intended for use with your printer, they're provided as an example.  You will be changing these commands for your printer shortly._
+  http://img58.imageshack.us/img58/6624/jzebrajava2di2.png
+
+  # If you've come this far, you probably already have some raw commands file to print. 
+UNDER CONSTRUCTION
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
