@@ -19,14 +19,18 @@ To get started, download the latest jZebra from [http://code.google.com/p/jzebra
    </applet>
 </html></body>
 }}}
-
   # Save the file in the same folder as jzebra.jar and open the file with the browser of your choice.
-  _Note: IE7 users may be required to " [http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]", so Firefox is recommended for initial testing._
+
+_Note: IE7 users may be required to " [http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]", so Firefox is recommended for initial testing._
   #  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. _Note:  Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]"._
   # If you already have a zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers.  
-  _Note: If you do not have a printer named "zebra", then you will have a "*SEVERE: Printer not found*" in your log.  To fix this, create a dummy printer with "zebra" in the name as a place holder for the purpose of learning this applet.  "zebra fake" as a printer name works for now.  Windows and Linux both allow this._
-  # Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.  _Note: These aren't intended for use with your printer, they're provided as an example.  You will be changing these commands for your printer next._
-  http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png
+
+_Note: If you do not have a printer named "zebra", then you will have a "*SEVERE: Printer not found*" in your log.  To fix this, create a dummy printer with "zebra" in the name as a place holder for the purpose of learning this applet.  "zebra fake" as a printer name works for now.  Windows and Linux both allow this._
+  # Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.
+
+_Note: These aren't intended for use with your printer, they're provided as an example.  You will be changing these commands for your printer next._
+
+http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png
 
 == Sending raw commands to your printer ==
 Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're not ready to print some raw commands.  To do this, three parameters need to be added to the web applet.  *CONFIGTYPE*, *CONFIGPATH*, *LINEFEED*.
@@ -40,7 +44,8 @@ Assuming your printer is attached and set up as a "Generic/Text Only" printer _(
 }}}
   # Create the config file with notepad (or equivalent), and add some raw commands of your choice.  Follow your ZPL (or printer language) guide and keep it simple for now.
   # *LINEFEED*:  In order for your printer to separate the raw commands, you must send a linefeed that corresponds with your printer language.
-  _Note:  Newline is "\n", Carriage Return is "\r".  Your printer may need any combination of these or other characters.  If unsure, visit your printer programming manual. If other escape sequences are needed, search for the java equivalent online and replace._
+
+_Note:  Newline is "\n", Carriage Return is "\r".  Your printer may need any combination of these or other characters.  If unsure, visit your printer programming manual. If other escape sequences are needed, search for the java equivalent online and replace._
 {{{
        <param name="linefeed" value="\n">
 }}}
@@ -49,14 +54,16 @@ Assuming your printer is attached and set up as a "Generic/Text Only" printer _(
 
 == Command Substitution ==
   # To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.
-  http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
+
+http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
   # Name your variables as you wish so as long as they match your applet code as follows:
 {{{
       <param name="FIRSTNAME" value="TRES">
 }}}
-  _This will replace all occurrences of *$FIRSTNAME* with the applet value specified.
 
-  http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
+_This will replace all occurrences of *$FIRSTNAME* with the applet value specified.
+
+http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
 This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "preview-application.html", or add to this Wiki by emailing the author.
 
