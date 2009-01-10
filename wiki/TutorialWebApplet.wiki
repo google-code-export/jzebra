@@ -58,4 +58,6 @@ Assuming your printer is attached and set up as a "Generic/Text Only" printer _(
 
   http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
+This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "preview-application.html", or add to this Wiki by emailing the author.
+
 TODO:  Please contribute to this tutorial to make it easier for others.
