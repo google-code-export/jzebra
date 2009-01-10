@@ -1,4 +1,5 @@
-# Do not use this tutorial.  It is kept for wiki authoring purposes. Please follow the 
+#labels Deprecated
+# Do not use this tutorial.  It is kept for wiki authoring purposes. Please follow the latest wiki tutorial instead
 == Do not use this tutorial, see wiki for latest ==
 
 ===API Usage: (for Java developers)===
