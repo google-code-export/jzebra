@@ -56,5 +56,6 @@ Assuming your printer is attached and set up as a "Generic/Text Only" printer _(
       <param name="FIRSTNAME" value="TRES">
 }}}
   _This will replace all occurrences of *$FIRSTNAME* with the applet value specified.
+  http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
-Please contribute to this tutorial to make it easier for others.
+TODO:  Please contribute to this tutorial to make it easier for others.
