@@ -20,7 +20,7 @@ To get started, download the latest jZebra from [http://code.google.com/p/jzebra
    </applet>
 </html></body>
 }}}
-  * Save the file in the same folder as jzebra.jar and open the file with the browser of your choice.
+  * Save the file in the same folder as `jzebra.jar` and open the file with the browser of your choice.
 
 _*Note:* IE7 users may be required to " [http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]", so Firefox is recommended for initial testing._
   *  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. _*Note:*  Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]"._
