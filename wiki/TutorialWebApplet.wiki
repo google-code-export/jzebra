@@ -11,7 +11,7 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 
 To get started, download the latest jZebra from [http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
-   * Locate the html sample file.  Windows users can use *notepad*.  Linux users can use *gedit*.  This should be called "preview-application.html".  Look over the applet code quickly to get comfortable with the parameters.
+   * Locate the html sample file.  Windows users can use *notepad*.  Linux users can use *gedit* (Ubuntu calls this "*Text Editor*").  This should be called "preview-application.html".  Look over the applet code quickly to get comfortable with the parameters.
    * Close out "preview-application.html" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
 {{{
 <html><body>
