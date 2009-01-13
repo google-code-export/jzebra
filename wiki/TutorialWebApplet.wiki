@@ -11,8 +11,8 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 
 To get started, download the latest jZebra from [http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
-   * Locate the html sample file.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]preview-application.html".  Look over the applet code quickly to get comfortable with the parameters.
-   * Close out "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]preview-application.html" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
+   * Locate the html sample file.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`".  Look over the applet code quickly to get comfortable with the parameters.
+   * Close out "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
 {{{
 <html><body>
    <applet code="jzebra.JZebraApplet.class" archive="./jzebra.jar" width="200" height="25">
@@ -66,6 +66,6 @@ _This will replace all occurrences of *$FIRSTNAME* with the applet value specifi
 
 http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
-This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]preview-application.html", or add to this Wiki by emailing the author.
+This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`", or add to this Wiki by emailing the author.
 
 TODO:  Please contribute to this tutorial to make it easier for others.
