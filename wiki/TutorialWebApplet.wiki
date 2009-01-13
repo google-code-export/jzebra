@@ -35,16 +35,16 @@ http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png
 
 == Sending raw commands to your printer ==
 Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To do this, three parameters need to be added to the web applet.  *CONFIGTYPE*, *CONFIGPATH*, *LINEFEED*.
-  * *CONFIGTYPE*:  Set this to "*FILE*" with the following parameter: _(this can later be changed to a web url using "url")_
+  * *`CONFIGTYPE`*:  Set this to "*FILE*" with the following parameter: _(this can later be changed to a web url using "url")_
 {{{
       <param name="configtype" value="file">
 }}}
-  * *CONFIGPATH*:  Set this to a location on your hard drive.  Windows users should use a location that's simple for now, such as the root of C:\.  Linux users should place this in the user's home directory.
+  * *`CONFIGPATH`*:  Set this to a location on your hard drive.  Windows users should use a location that's simple for now, such as the root of C:\.  Linux users should place this in the user's home directory.
 {{{
       <param name="configpath" value="c:\test.txt">
 }}}
   * Create the config file with notepad (or equivalent), and add some raw commands of your choice.  Follow your ZPL (or printer language) guide and keep it simple for now.
-  * *LINEFEED*:  In order for your printer to separate the raw commands, you must send a linefeed that corresponds with your printer language.
+  * *`LINEFEED`*:  In order for your printer to separate the raw commands, you must send a linefeed that corresponds with your printer language.
 
 _*Note:*  Newline is "\n", Carriage Return is "\r".  Your printer may need any combination of these or other characters.  If unsure, visit your printer programming manual. If other escape sequences are needed, search for the java equivalent online and replace._
 {{{
