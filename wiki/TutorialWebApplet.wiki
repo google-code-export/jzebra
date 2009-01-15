@@ -9,7 +9,7 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 
 == Creating a basic web applet ==
 
-To get started, download and install the [www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform.  Windows users, download from the link above.  Linux users, download from repository (apt-get, yum, etc).  Mac users should get it through automatic updates.
+To get started, download and install the [http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform.  Windows users, download from the link above.  Linux users, download from repository (apt-get, yum, etc).  Mac users should get it through automatic updates.
 
 Second, download the latest jZebra from [http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
