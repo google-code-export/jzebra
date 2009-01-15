@@ -9,12 +9,12 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 
 == Creating a basic web applet ==
 
-To get started, download and install the [http://img502.imageshack.us/img502/163/faviconui7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
+To get started, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
   * *Windows* users, download from the *Java link above*.
   * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
   * *Mac* users should get it through *automatic updates*.
 
-Second, download the latest jZebra from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
+Second, download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]`jZebra_x.x.x.zip` from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
    * Locate the html sample file.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`".  Look over the applet code quickly to get comfortable with the parameters.
    * Close out "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
@@ -25,7 +25,7 @@ Second, download the latest jZebra from [http://img242.imageshack.us/img242/5678
    </applet>
 </html></body>
 }}}
-  * Save the file in the same folder as `jzebra.jar` and open the file with the browser of your choice.
+  * Save the file in the same folder as [http://img104.imageshack.us/img104/9696/packagept0.png]`jzebra.jar` and open the file with the browser of your choice.
 
 _*Note:* IE7 users may be required to " [http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]", so Firefox is recommended for initial testing._
   *  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. _*Note:*  Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]"._
