@@ -9,7 +9,7 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 
 == Creating a basic web applet ==
 
-To get started, download and install the [http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
+To get started, download and install the [http://img502.imageshack.us/img502/163/faviconui7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
   * *Windows* users, download from the *Java link above*.
   * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
   * *Mac* users should get it through *automatic updates*.
