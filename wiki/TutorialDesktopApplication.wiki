@@ -10,3 +10,5 @@ To get started, download and install the [http://img132.imageshack.us/img132/341
   * *Windows* users, download from the *Java link above*.
   * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
   * *Mac* users should get it through *automatic updates*.
+
+UNFINISHED
