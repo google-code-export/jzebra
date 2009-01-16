@@ -1,4 +1,4 @@
-#summary Getting started with jZebra as a Web Applet.
+#summary Getting started with jZebra as a Web Applet component.
 #labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
