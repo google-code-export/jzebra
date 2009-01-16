@@ -16,7 +16,7 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 ----
 = Installing Java =
 
-Java 5 Runtime or higher is required on the clients to use jZebra as a web applet.  Click TutorialJavaInstall for help installing java on your platform.
+Java 5 Runtime or higher is required on the clients to use jZebra as a web applet.  Click TutorialJavaInstall for help installing Java on your platform.
 
 ----
 = Creating a Basic Web Applet =
