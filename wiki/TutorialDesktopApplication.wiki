@@ -9,11 +9,9 @@ jZebra offers 3 modes of printing:
 
 This tutorial walks through using jZebra in *Desktop Application* mode. This is the easiest way to familiarize with jZebra's features by providing a user interface suitable to getting started with raw printing.  Desktop Application can generate the html code and command line code necessary for using jZebra as a productive tool.
 
+----
 = Installing Java =
 
-To get started, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
-  * *Windows* users, download from the *Java link above*.
-  * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
-  * *Mac* users should get it through *automatic updates*.
+Java 5 Runtime or higher is required on the clients to use jZebra as a web applet.  Click TutorialJavaInstall for help installing Java on your platform.
 
 UNFINISHED
