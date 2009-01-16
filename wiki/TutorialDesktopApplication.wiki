@@ -1,0 +1,12 @@
+#summary This outlines getting started with jZebra as a Desktop Application
+
+= Introduction =
+
+jZebra offers 3 modes of printing: Command line, *desktop application*, and web applet. The easiest way to get started is using the desktop application, as it provides a user interface suitable to getting started with raw printing.
+
+== Installing Java ==
+
+To get started, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
+  * *Windows* users, download from the *Java link above*.
+  * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
+  * *Mac* users should get it through *automatic updates*.
