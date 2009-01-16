@@ -7,14 +7,14 @@ jZebra offers 3 modes of printing:  Command line, desktop application, and *web 
 
 http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 
-== Installing Java ==
+= Installing Java =
 
 To get started, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
   * *Windows* users, download from the *Java link above*.
   * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
   * *Mac* users should get it through *automatic updates*.
 
-== Creating a Basic Web Applet ==
+= Creating a Basic Web Applet =
 
 Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]`jZebra_x.x.x.zip` from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
