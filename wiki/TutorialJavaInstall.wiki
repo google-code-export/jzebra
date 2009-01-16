@@ -10,7 +10,6 @@ jZebra requires *Java Runtime 5* or higher to run.  This may also be called the 
   {{{
   java -version
   }}}
-
   # If java does not appear to be installed, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
   * *Windows* users, download from the *Java link above*.
   * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
