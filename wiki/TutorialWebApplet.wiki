@@ -5,7 +5,7 @@
 
 jZebra offers 3 modes of printing:
   * Command Line
-  * Dsktop Application
+  * Desktop Application
   * *Web Applet*
 
 This tutorial walks through creating a *Web Applet.*  This is the most common use (and most developed for) due to the growing popularity for a web page that can perform thermal/bar-code or magnetic-stip printing.  
