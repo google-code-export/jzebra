@@ -8,7 +8,9 @@ jZebra offers 3 modes of printing:
   * Dsktop Application
   * *Web Applet*
 
-The most common use (and most developed for) is *Web Applet* mode.  This is due to the popularity of using web pages for thermal, bar code and magnetic printing.  This tutorial walk you through creating an html web applet that can later be used through php, perl, asp -- or any web language capable of loading an applet -- to perform raw printing.
+This tutorial walks through creating a *Web Applet.*  This is the most common use (and most developed for) due to the growing popularity for a web page that can perform thermal/bar-code or magnetic-stip printing.  
+
+This tutorial walks through creating an html web applet that can later be used through php, perl, asp or any web language capable of creating html applet/object tags.
 
 http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 ----
