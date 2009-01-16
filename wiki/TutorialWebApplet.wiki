@@ -16,21 +16,8 @@ http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 ----
 = Installing Java =
 
-jZebra requires *Java Runtime 5* or higher to run.  This may also be called the following:
-  * java version "1.5.x_x"
-  * J2SE 5.0
-  * JRE 5.0
-  * JDK 5.0
+Java 5 Runtime or higher is required on the clients to use jZebra as a web applet.  Click TutorialJavaInstall for help installing java on your platform.
 
-Check for Java by typing the following at a command console:
-{{{
-java -version
-}}}
-
-If java does not appear to be installed, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
-  * *Windows* users, download from the *Java link above*.
-  * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
-  * *Mac* users should get it through *automatic updates*.
 ----
 = Creating a Basic Web Applet =
 
