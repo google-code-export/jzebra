@@ -20,6 +20,7 @@ jZebra requires Java Runtime 5 or higher to run.  This may also be called the fo
   * java version "1.5.x_x"
   * J2SE 5.0
   * JRE 5.0
+  * JDK 5.0
 
 Check for Java by typing the following at a command console:
 {{{
