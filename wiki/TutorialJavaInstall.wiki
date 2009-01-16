@@ -1,10 +1,6 @@
 #summary Installing Java For jZebra
 = Installing Java =
-jZebra requires *Java Runtime 5* or higher to run.  This is also named:
-  * java version "1.5.x_x"
-  * J2SE 5.0
-  * JRE 5.0
-  * JDK 5.0
+jZebra requires *Java Runtime 5* or higher to run.  This is also named: "java version '1.5.x_x'", "J2SE 5.0", "JRE 5.0", or "JDK 5.0".
 ----
 
   # Check for Java by typing the following at a command console:
