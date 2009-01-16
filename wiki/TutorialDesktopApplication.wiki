@@ -2,7 +2,12 @@
 
 = Introduction =
 
-jZebra offers 3 modes of printing: Command line, *desktop application*, and web applet. The easiest way to get started is using the desktop application, as it provides a user interface suitable to getting started with raw printing.
+jZebra offers 3 modes of printing:
+  * Command Line
+  * *Desktop Application*
+  * Web Applet
+
+This tutorial walks through using jZebra in *Desktop Application* mode. This is the easiest way to familiarize with jZebra's features by providing a user interface suitable to getting started with raw printing.  Desktop Application can generate the html code and command line code necessary for using jZebra as a productive tool.
 
 = Installing Java =
 
