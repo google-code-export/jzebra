@@ -14,6 +14,6 @@ jZebra requires *Java Runtime 5* or higher to load.  This is also named: "*`java
   Java HotSpot(TM) Client VM (build xx.x-xxx, mixed mode, sharing)
   }}}
   # If "*`java version '1.5.0_0'`*" or higher does not appear to be installed, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
-  * *Windows* users, download from the *Java link above*.
-  * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
-  * *Mac* users should get it through *automatic updates*.
+    * *Windows* users, download from the *Java link above*.
+    * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
+    * *Mac* users should get it through *automatic updates*.
