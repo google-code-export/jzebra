@@ -7,8 +7,8 @@ jZebra offers 3 modes of printing: Command line, *desktop application*, and web 
 == Installing Java ==
 
 To get started, download and install the [http://img132.imageshack.us/img132/3416/cup1ad7.png][http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
-  * *Windows* users, download from the *Java link above*.
+  * *Windows™* users, download from the *Java link above*.
   * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).
-  * *Mac* users should get it through *automatic updates*.
+  * *Macintosh™* users should get it through Apple™ *Software Updates*.
 
 UNFINISHED
