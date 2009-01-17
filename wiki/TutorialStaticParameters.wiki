@@ -1,58 +1,28 @@
 #summary Static parameter usage
-#labels Featured,Phase-Deploy,Phase-Support
+#labels Phase-Deploy,Phase-Support
 
 = Introduction =
 
 jZebra takes a number of static parameters that vary slightly between usage.  For example, messages representing print status, such as success messages, error messages or suppressing messages are all set through parameters prior to loading jZebra.  Their default values will change between usage.  Parameters that don't apply to a specific print mode are marked as "`<n/a>`" and can be ignored.
 
 ----
+
 = Static Parameters =
-|| *Parameter* || *Description* ||
-|| `AUTOPRINT` || Automatically prints once jZebra is finished loading. ||
-|| `SUCCESSMESSAGE` || The message to display after a successful print.  Allows html text frmatting. ||
-|| `ERRORMESSAGE` || The message to display after a failed print.  Allows html text formatting. ||
-|| `MESSAGETITLE` || The title bar text at the top of message dialogs. ||
-|| `SHOWMESSAGES` || When set to false, suppresses both success and error messages from displaying on the screen. ||
-|| `CONFIGTYPE` || The raw file source type: FILE, URL, RESOURCE ||
-|| `CONFIGPATH` || The path (http://, C:\, /home/user/) to the raw file containing the print commands. ||
-|| `LINEFEED` || The linefeed character(s) to send after each new line in the config file. ||
-|| `BUTTONTEXT` || The text to be displayed on the print button. ||
-|| `SHOWICON` || When set to false, removes the print image from the print button. ||
+|| || || *Web Applet Default* || *Desktop App Default* || *Console App Default* ||
+|| <h3>Parameter</h3> || <h3>Description</h3>  || [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif] || [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] || [http://img413.imageshack.us/img413/6632/terminal1mq3.png] ||
+|| `AUTOPRINT` || Automatically prints once jZebra is finished loading. || `"true"` || `"false"` || `"true"` ||
+|| `SUCCESSMESSAGE` || The message to display after a successful print.  Allows html text formatting. <td colspan="3">`"jZebra has successfully <...>"`</td> ||
+|| `ERRORMESSAGE` || The message to display after a failed print.  Allows html text formatting. <td colspan="3">`"jZebra encountered and error <...>"`</td> ||
+|| `MESSAGETITLE` || The title bar text at the top of message dialogs. || `"jZebra"` || `"jZebra"` || `<n/a>` ||
+|| `SHOWMESSAGES` || When set to false, suppresses both success and error messages from displaying on the screen. || `"true"` || `"true"` || `<n/a>` ||
+|| `CONFIGTYPE` || The raw file source type: FILE, URL, RESOURCE || `"url"` || `"file"` || `"file"` ||
+|| `CONFIGPATH` || The path (http://, C:\, /home/user/) to the raw file containing the print commands. <td colspan="3">`"/jzebra/resources/commands.txt"`</td> ||
+|| `LINEFEED` || The linefeed character(s) to send after each new line in the config file. || `"\n"` || `"\n"` || `"\n"` ||
+|| `BUTTONTEXT` || The text to be displayed on the print button. || `"Print"` || `"Print"` || `<n/a>` ||
+|| `SHOWICON` || When set to false, removes the print image from the print button. || `"true"` || `"true"` || `<n/a>` || 
+
+
 ----
-= Default Parameters =
-  == [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif]Web Applet Default Values ==
-  * *`AUTOPRINT`* = `"true"`
-  * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
-  * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
-  * *`MESSAGETITLE`*: = `"jZebra"`
-  * *`SHOWMESSAGES`* = `"false"`
-  * *`CONFIGTYPE`* = `"resource"`
-  * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
-  * *`LINEFEED`* = `"\r"`
-  * *`BUTTONTEXT`* = `"Print"`
-  * *`SHOWICON`* = `"true"`
 
-  == [http://img413.imageshack.us/img413/9843/toggledesktopes0.png]Desktop Application Default Values ==
-  * *`AUTOPRINT`* = `"false"`
-  * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
-  * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
-  * *`MESSAGETITLE`*: = `"jZebra"`
-  * *`SHOWMESSAGES`* = `"true"`
-  * *`CONFIGTYPE`* = `"resource"`
-  * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
-  * *`LINEFEED`* = `"\r"`
-  * *`BUTTONTEXT`* = `"Print"`
-  * *`SHOWICON`* = `"true"`
-
-  == [http://img413.imageshack.us/img413/6632/terminal1mq3.png]Console Application Default Values ==
-  * *`AUTOPRINT`* = `"true"`
-  * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
-  * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
-  * *`MESSAGETITLE`*: = `"jZebra"`
-  * *`SHOWMESSAGES`* = `<n/a>`
-  * *`CONFIGTYPE`* = `"resource"`
-  * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
-  * *`LINEFEED`* = `"\r"`
-  * *`BUTTONTEXT`* = `<n/a>`
-  * *`SHOWICON`* = `<n/a>`
-  
+== Important ==
+**Note*: The *`"CONFIGTYPE"`* parameter will default to *`"RESOURCE"`* if *`"CONFIGPATH"`* is not defined.
