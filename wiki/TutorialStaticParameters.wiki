@@ -20,7 +20,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`SHOWICON`*:  When set to false, removes the print image from the print button.
 ----
 = Default Parameters =
-  == Web Applet Defaults ==
+  == Web Applet Default Values ==
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
@@ -32,7 +32,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`BUTTONTEXT`* = `"Print"`
   * *`SHOWICON`* = `"true"`
 
-  == Desktop Application Defaults ==
+  == Desktop Application Default Values ==
   * *`AUTOPRINT`* = `"false"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
@@ -44,7 +44,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`BUTTONTEXT`* = `"Print"`
   * *`SHOWICON`* = `"true"`
 
-  == Console Application Defaults ==
+  == Console Application Default Values ==
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
