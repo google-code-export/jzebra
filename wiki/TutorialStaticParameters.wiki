@@ -32,7 +32,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`BUTTONTEXT`* = `"Print"`
   * *`SHOWICON`* = `"true"`
 
-  == Desktop Application Default Values ==
+  == [http://img413.imageshack.us/img413/9843/toggledesktopes0.png]Desktop Application Default Values ==
   * *`AUTOPRINT`* = `"false"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
@@ -44,7 +44,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`BUTTONTEXT`* = `"Print"`
   * *`SHOWICON`* = `"true"`
 
-  == Console Application Default Values ==
+  == [http://img413.imageshack.us/img413/6632/terminal1mq3.png]Console Application Default Values ==
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
