@@ -8,7 +8,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
 ----
 = Static Parameters =
   || *Parameter* || *Description* ||
-  || `AUTOPRINT` || Automatically prints once jZebra is finished loading. ||
+  || AUTOPRINT || Automatically prints once jZebra is finished loading. ||
   || `SUCCESSMESSAGE` || The message to display after a successful print.  Allows html text frmatting. ||
   || `ERRORMESSAGE` || The message to display after a failed print.  Allows html text formatting. ||
   || `MESSAGETITLE` || The title bar text at the top of message dialogs. ||
