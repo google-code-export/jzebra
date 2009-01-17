@@ -1,15 +1,10 @@
-#summary One-sentence summary of this page.
-
-feed me
+#summary Getting started with jZebra as a Console Application
 
 = Introduction =
 
-Add your content here.
+jZebra offers 3 modes of printing:
+|| [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif] || [TutorialWebApplet Web Applet] ||
+|| [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] ||  [TutorialDesktopApplication Desktop Application] ||
+|| [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || [ *> Console Application* ||
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+This tutorial walks through creating a *Console Application.*  This mode is provided for batch/scripts most commonly used on servers or mainframes.
