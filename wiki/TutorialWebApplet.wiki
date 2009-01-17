@@ -4,9 +4,9 @@
 = Introduction =
 
 jZebra offers 3 modes of printing:
-|| [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif TutorialWebApplet] || [TutorialWebApplet *Web Applet*] ||
-|| [http://img413.imageshack.us/img413/9843/toggledesktopes0.png TutorialDesktopApplication] ||  [TutorialDesktopApplication Desktop Application] ||
-|| [http://img413.imageshack.us/img413/6632/terminal1mq3.png TutorialConsoleApplication] || [TutorialConsoleApplication Console Application] ||
+|| [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif] || [TutorialWebApplet *Web Applet*] ||
+|| [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] ||  [TutorialDesktopApplication Desktop Application] ||
+|| [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || [TutorialConsoleApplication Console Application] ||
 
 This tutorial walks through creating a *Web Applet.*  This is the most common use (and most developed for) due to the growing popularity for a web page that can perform thermal/bar-code or magnetic-stip printing.  
 
