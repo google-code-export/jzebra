@@ -20,7 +20,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`SHOWICON`*:  When set to false, removes the print image from the print button.
 ----
 = Default Parameters =
-  == Web Applet Default Values ==
+  == [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif]Web Applet Default Values ==
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
