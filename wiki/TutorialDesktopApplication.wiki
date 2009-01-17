@@ -15,4 +15,5 @@ This tutorial walks through using jZebra in *Desktop Application* mode. This sta
 
 Java 5 Runtime or higher is required on the clients to use jZebra as a web applet.  Click TutorialJavaInstall for help installing Java on your platform.
 
-UNFINISHED
+----
+== THIS TUTORIAL IS UNFINISHED. PLEASE HELP BY EMAILING THE AUTHOR FOR ACCESS AND PROVIDING CONTENT TO THIS AREA OF THE WIKI. ==
