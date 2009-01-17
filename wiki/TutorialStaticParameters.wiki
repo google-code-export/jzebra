@@ -19,13 +19,13 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
 ----
 = Default Parameters =
   == Applet Mode ==
-  * *`AUTOPRINT`*: "true"
-  * *`SUCCESSMESSAGE`*: "jZebra has successfully..."
-  * *`ERRORMESSAGE`*: "jZebra has encountered and error..."
-  * *`SHOWMESSAGES`*: "false"
-  * *`CONFIGTYPE`*: "resource"
-  * *`CONFIGPATH`*: "/jzebra/resources/commands.txt"
-  * *`LINEFEED`*: "\r"
-  * *`BUTTONTEXT`*: "Print"
-  * *`SHOWICON`*:  "true"
+  * *`AUTOPRINT`* = `"true"`
+  * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
+  * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
+  * *`SHOWMESSAGES`* = `"false"`
+  * *`CONFIGTYPE`* = `"resource"`
+  * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
+  * *`LINEFEED`* = `"\r"`
+  * *`BUTTONTEXT`* = `"Print"`
+  * *`SHOWICON`* = `"true"`
   
