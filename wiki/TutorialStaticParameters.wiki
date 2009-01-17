@@ -21,8 +21,8 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
 = Default Parameters =
   == Web Applet Defaults ==
   * *`AUTOPRINT`* = `"true"`
-  * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
-  * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
+  * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
+  * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
   * *`SHOWMESSAGES`* = `"false"`
   * *`CONFIGTYPE`* = `"resource"`
   * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
@@ -32,8 +32,8 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
 
   == Desktop Application Defaults ==
   * *`AUTOPRINT`* = `"false"`
-  * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
-  * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
+  * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
+  * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
   * *`SHOWMESSAGES`* = `"true"`
   * *`CONFIGTYPE`* = `"resource"`
   * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
@@ -43,12 +43,12 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
 
   == Console Application Defaults ==
   * *`AUTOPRINT`* = `"true"`
-  * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
-  * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
-  * *`SHOWMESSAGES`* = `"n/a"`
+  * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
+  * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
+  * *`SHOWMESSAGES`* = `<n/a>`
   * *`CONFIGTYPE`* = `"resource"`
   * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
   * *`LINEFEED`* = `"\r"`
-  * *`BUTTONTEXT`* = `"n/a"`
-  * *`SHOWICON`* = `"n/a"`
+  * *`BUTTONTEXT`* = `<n/a>`
+  * *`SHOWICON`* = `<n/a>`
   
