@@ -7,17 +7,17 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
 
 ----
 = Static Parameters =
-  || *Parameter* || *Description* ||
-  || AUTOPRINT || Automatically prints once jZebra is finished loading. ||
-  || `SUCCESSMESSAGE` || The message to display after a successful print.  Allows html text frmatting. ||
-  || `ERRORMESSAGE` || The message to display after a failed print.  Allows html text formatting. ||
-  || `MESSAGETITLE` || The title bar text at the top of message dialogs. ||
-  || `SHOWMESSAGES` || When set to false, suppresses both success and error messages from displaying on the screen. ||
-  || `CONFIGTYPE` || The raw file source type: FILE, URL, RESOURCE ||
-  || `CONFIGPATH` || The path (http://, C:\, /home/user/) to the raw file containing the print commands. ||
-  || `LINEFEED` || The linefeed character(s) to send after each new line in the config file. ||
-  || `BUTTONTEXT` || The text to be displayed on the print button. ||
-  || `SHOWICON` || When set to false, removes the print image from the print button. ||
+|| *Parameter* || *Description* ||
+|| `AUTOPRINT` || Automatically prints once jZebra is finished loading. ||
+|| `SUCCESSMESSAGE` || The message to display after a successful print.  Allows html text frmatting. ||
+|| `ERRORMESSAGE` || The message to display after a failed print.  Allows html text formatting. ||
+|| `MESSAGETITLE` || The title bar text at the top of message dialogs. ||
+|| `SHOWMESSAGES` || When set to false, suppresses both success and error messages from displaying on the screen. ||
+|| `CONFIGTYPE` || The raw file source type: FILE, URL, RESOURCE ||
+|| `CONFIGPATH` || The path (http://, C:\, /home/user/) to the raw file containing the print commands. ||
+|| `LINEFEED` || The linefeed character(s) to send after each new line in the config file. ||
+|| `BUTTONTEXT` || The text to be displayed on the print button. ||
+|| `SHOWICON` || When set to false, removes the print image from the print button. ||
 ----
 = Default Parameters =
   == [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif]Web Applet Default Values ==
