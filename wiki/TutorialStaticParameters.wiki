@@ -1,10 +1,10 @@
-#summary Static parameters accepted by the jZebra application.
+#summary Static parameter usage
 
 = Introduction =
 
 jZebra takes a number of static parameters that vary slightly between usage.  For example, messages representing print status, such as success messages, error messages or suppressing messages are all set through parameters prior to loading jZebra.  Their default values will change between usage.
 
-
+----
 = Static Parameters =
 
   * *`AUTOPRINT`*: Automatically prints once jZebra is finished loading.
@@ -16,3 +16,16 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`LINEFEED`*: The linefeed character(s) to send after each new line in the config file.
   * *`BUTTONTEXT`*:  The text to be displayed on the print button
   * *`SHOWICON`*:  When set to false, removes the print image from the print button.
+----
+= Default Parameters
+  == Applet Mode ==
+  *`AUTOPRINT`*: "true"
+  *`SUCCESSMESSAGE`*: "jZebra has successfully..."
+  *`ERRORMESSAGE`*: "jZebra has encountered and error..."
+  *`SHOWMESSAGES`*: "false"
+  *`CONFIGTYPE`*: "resource"
+  *`CONFIGPATH`*: "/jzebra/resources/commands.txt"
+  *`LINEFEED`*: "\r"
+  *`BUTTONTEXT`*: "Print"
+  *`SHOWICON`*:  "true"
+  
