@@ -1,4 +1,5 @@
 #summary Static parameter usage
+#labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
 
@@ -18,7 +19,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`SHOWICON`*:  When set to false, removes the print image from the print button.
 ----
 = Default Parameters =
-  == Applet Mode ==
+  == Web Applet Defaults ==
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
@@ -28,4 +29,26 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`LINEFEED`* = `"\r"`
   * *`BUTTONTEXT`* = `"Print"`
   * *`SHOWICON`* = `"true"`
+
+  == Desktop Application Defaults ==
+  * *`AUTOPRINT`* = `"false"`
+  * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
+  * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
+  * *`SHOWMESSAGES`* = `"true"`
+  * *`CONFIGTYPE`* = `"resource"`
+  * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
+  * *`LINEFEED`* = `"\r"`
+  * *`BUTTONTEXT`* = `"Print"`
+  * *`SHOWICON`* = `"true"`
+
+  == Console Application Defaults ==
+  * *`AUTOPRINT`* = `"true"`
+  * *`SUCCESSMESSAGE`* = `"jZebra has successfully..."`
+  * *`ERRORMESSAGE`* = `"jZebra has encountered and error..."`
+  * *`SHOWMESSAGES`* = `"n/a"`
+  * *`CONFIGTYPE`* = `"resource"`
+  * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
+  * *`LINEFEED`* = `"\r"`
+  * *`BUTTONTEXT`* = `"n/a"`
+  * *`SHOWICON`* = `"n/a"`
   
