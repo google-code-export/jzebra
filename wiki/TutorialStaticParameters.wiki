@@ -1,5 +1,5 @@
 #summary Static parameter usage
-#labels Phase-Deploy,Phase-Support
+#labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
 
