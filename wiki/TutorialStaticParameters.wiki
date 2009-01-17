@@ -11,6 +11,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`AUTOPRINT`*: Automatically prints once jZebra is finished loading.
   * *`SUCCESSMESSAGE`*: The message to display after a successful print.  Allows html text formatting.
   * *`ERRORMESSAGE`*: The message to display after a failed print.  Allows html text formatting.
+  * *`MESSAGETITLE`*: The title bar text at the top of message dialogs.
   * *`SHOWMESSAGES`*: When set to false, suppresses both success and error messages from displaying on the screen.
   * *`CONFIGTYPE`*: The raw file source type: FILE, URL, RESOURCE
   * *`CONFIGPATH`*: The path (http://, C:\, /home/user/) to the raw file containing the print commands.
@@ -23,6 +24,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
+  * *`MESSAGETITLE`*: = `"jZebra"`
   * *`SHOWMESSAGES`* = `"false"`
   * *`CONFIGTYPE`* = `"resource"`
   * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
@@ -34,6 +36,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`AUTOPRINT`* = `"false"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
+  * *`MESSAGETITLE`*: = `"jZebra"`
   * *`SHOWMESSAGES`* = `"true"`
   * *`CONFIGTYPE`* = `"resource"`
   * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
@@ -45,6 +48,7 @@ jZebra takes a number of static parameters that vary slightly between usage.  Fo
   * *`AUTOPRINT`* = `"true"`
   * *`SUCCESSMESSAGE`* = `"jZebra has successfully <...>"`
   * *`ERRORMESSAGE`* = `"jZebra has encountered and error <...>"`
+  * *`MESSAGETITLE`*: = `"jZebra"`
   * *`SHOWMESSAGES`* = `<n/a>`
   * *`CONFIGTYPE`* = `"resource"`
   * *`CONFIGPATH`* = `"/jzebra/resources/commands.txt"`
