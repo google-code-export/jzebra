@@ -5,6 +5,8 @@
 jZebra offers 3 modes of printing:
 || [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif] || [TutorialWebApplet Web Applet] ||
 || [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] ||  [TutorialDesktopApplication Desktop Application] ||
-|| [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || [ *> Console Application* ||
+|| [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || *> Console Application* ||
 
 This tutorial walks through creating a *Console Application.*  This mode is provided for batch/scripts most commonly used on servers or mainframes.
+
+UNDER CONSTRUCTION
