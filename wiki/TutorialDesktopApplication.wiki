@@ -8,7 +8,7 @@ jZebra offers 3 modes of printing:
 || [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || [TutorialConsoleApplication Console Application] ||
 
 
-This tutorial walks through using jZebra in *Desktop Application* mode. This is the easiest way to familiarize with jZebra's features by providing a user interface suitable to getting started with raw printing.  Desktop Application can generate the html code and command line code necessary for using jZebra as a productive tool on your web pages or servers.
+This tutorial walks through using jZebra in *Desktop Application* mode. This stand-along mode is the easiest way to familiarize with jZebra's features by providing a user interface suitable to getting started with raw printing.  Desktop Application can generate the html code and command line code necessary for using jZebra as a productive tool on your web pages or servers.
 
 ----
 = Installing Java =
