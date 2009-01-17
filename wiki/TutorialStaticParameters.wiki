@@ -3,7 +3,7 @@
 
 = Introduction =
 
-jZebra takes a number of static parameters that vary slightly between usage.  For example, messages representing print status, such as success messages, error messages or suppressing messages are all set through parameters prior to loading jZebra.  Their default values will change between usage.
+jZebra takes a number of static parameters that vary slightly between usage.  For example, messages representing print status, such as success messages, error messages or suppressing messages are all set through parameters prior to loading jZebra.  Their default values will change between usage.  Parameters that don't apply to a specific print mode are marked as "`<n/a>`" and can be ignored.
 
 ----
 = Static Parameters =
