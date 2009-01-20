@@ -40,7 +40,7 @@ Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]
 [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
   *  Next, Java security dialog prompt is shown.  This is Java's way of warning that the Web Applet has access to local resources.  jZebra needs local access to the workstation's printers, so click OK.
 [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
-  *  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".
+  *  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users, email the author if you've found a way to display a similar console.
   * If you already have a zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers. (This can later be changed using TutorialStaticParameters)
 [http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
   * Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.
