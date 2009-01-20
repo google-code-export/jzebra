@@ -42,10 +42,10 @@ Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]
 [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
   *  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".
   * If you already have a zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers.
+[http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
   * Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.
+[http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
 
-
-http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png
 ----
 = Sending raw commands to your printer =
 jZebra takes a number of [TutorialStaticParameters static parameters] in order to load the right settings for yoru printer.  Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To get something to print, three parameters need to be added to the web applet.  *`CONFIGTYPE`*, *`CONFIGPATH`*, *`LINEFEED`*.  For an exhaustive list, see TutorialStaticParameters.
