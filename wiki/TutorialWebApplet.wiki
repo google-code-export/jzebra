@@ -10,7 +10,7 @@ jZebra offers 3 modes of printing:
 
 This tutorial walks through creating a *Web Applet.*  This is the most common use (and most developed for) due to the growing popularity for a web page that can perform thermal/bar-code or magnetic-stip printing.  
 
-This tutorial walks through creating an html web applet that can later be used through php, perl, asp or any web language capable of creating html applet/object tags.  If you are familiar with java web applets and would like to skip this tutorial, simply download and extract the latest version and examine the applet code inside the provide sample html.
+This tutorial walks through creating an html web applet that can later be used through php, perl, asp or any web language capable of creating html applet/object tags.  If you are familiar with java web applets and would like to skip this tutorial, simply download and extract the latest version and examine the applet code inside the provide sample html.  If you find this product useful and can offer sample php, perl, asp, etc, please edit this Wiki, or email the author. :)
 
 http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 ----
