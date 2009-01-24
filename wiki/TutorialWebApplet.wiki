@@ -81,6 +81,4 @@ _This will replace all occurrences of *`$FIRSTNAME`* with the applet value speci
 
 http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
-This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`", or add to this Wiki by emailing the author.
-
-TODO:  Please contribute to this tutorial to make it easier for others.
+This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`", see a full list of available commands here: TutorialStaticParameters, or additionally you may email questions or suggestions to the author.
