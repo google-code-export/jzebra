@@ -2,11 +2,13 @@
 
 = Screenshots =
 
+----
+
 == Windows ==
 
 [http://img514.imageshack.us/img514/4133/jzebrass1largeog8.jpg http://img166.imageshack.us/img166/2082/jzebrass1wm8.jpg] [http://img510.imageshack.us/img510/8031/jzebrass2largejk5.jpg http://img166.imageshack.us/img166/8125/jzebrass2wh7.jpg]
 
----
+----
 
 == Ubuntu ==
 
