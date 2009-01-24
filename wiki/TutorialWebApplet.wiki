@@ -65,7 +65,8 @@ _*Note:*  Newline is "\n", Carriage Return is "\r".  Your printer may need any c
        <param name="linefeed" value="\n">
 }}}
 
-  * If done correctly, you should now have your web applet printing.  Next step is  substitution of print commands.
+  * If done correctly, you should now have your web applet printing.  If the raw print files are supplied by another program, you are finished.  If you'd like to generate some of the print commands dynamically (for example, with php) the next step is substitution of print commands using the wildcard "$" in your config.  Read below for more information.
+
 ----
 = Command Substitution =
   * To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.
