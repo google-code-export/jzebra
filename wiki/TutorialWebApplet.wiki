@@ -77,7 +77,7 @@ http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
       <param name="FIRSTNAME" value="TRES">
 }}}
 
-_This will replace all occurrences of *`$FIRSTNAME`* with the applet value specified *`TRES`*.
+_This will replace all occurrences of *`$FIRSTNAME`* with the applet value specified *`TRES`*.  Your output should now reflect the following.  Notice `$FIRSTNAME` has changed, but `$LASTNAME` is left verbatim.
 
 http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
