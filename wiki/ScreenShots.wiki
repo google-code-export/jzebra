@@ -1,4 +1,4 @@
-#summary Screenshots
+#summary Screenshots of jZebra in use
 
 = Screenshots =
 
