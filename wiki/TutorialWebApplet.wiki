@@ -45,12 +45,12 @@ Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]
   *  The Java Console is critical for calibrating the applet for your printer.
   *  If you already have a Zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers and will select the first match. Look for "INFO:  Printer found...". (This can later be changed using TutorialStaticParameters)
 [http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
-  *  Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.  These should look foreign to you.  That's normal, as they are EPL commands.  We'll change them in the steps following.
+  *  Look in the Java console log for something like the screenshot below.  You should see the default raw commands that jZebra ships with.  These will most likely look a bit foreign to you, that's normal.  The supplied commands are EPL commands.  We'll change them to something your printer can use in the steps following.
 [http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
 
 ----
 = Sending raw commands to your printer =
-jZebra takes a number of [TutorialStaticParameters static parameters] in order to load the right settings for yoru printer.  Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To get something to print, three parameters need to be added to the web applet.  *`CONFIGTYPE`*, *`CONFIGPATH`*, *`LINEFEED`*.  For an exhaustive list, see TutorialStaticParameters.
+jZebra takes a number of [TutorialStaticParameters static parameters] in order to load the right settings for your printer.  Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To get something to print, three parameters need to be added to the web applet.  *`CONFIGTYPE`*, *`CONFIGPATH`*, *`LINEFEED`*.  For an exhaustive list, see TutorialStaticParameters.
   * *`CONFIGTYPE`*:  Set this to "*FILE*" with the following parameter: _(this can later be changed to a web url using "url")_
 {{{
       <param name="configtype" value="file">
@@ -67,7 +67,7 @@ _*Note:*  Newline is "\n", Carriage Return is "\r".  Your printer may need any c
        <param name="linefeed" value="\n">
 }}}
 
-  * If done correctly, you should now have your web applet printing.  If the raw print files are supplied by another program, you are finished.  If you'd like to generate some of the print commands dynamically (for example, with php) the next step is substitution of print commands using the wildcard "$" in your config.  Read below for more information.
+  * If done correctly, you should now have your web applet printing.  If the raw print file(s) is always supplied verbatim by another program/service, you are basically finished.  However, if you are generating the raw commands through web code and need to perform variable substitution (like to generate some of the print commands dynamically on-the-fly) the next step is substitution of print commands using the wildcard "$" in your config.  This allows easy substitution for batch printing, where only a few attributes change upon each print.  Read below for more information.
 
 ----
 = Command Substitution =
