@@ -8,7 +8,7 @@ jZebra offers 3 modes of printing:
 || [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] ||  [TutorialDesktopApplication Desktop Application] ||
 || [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || [TutorialConsoleApplication Console Application] ||
 
-This tutorial walks through creating a *Web Applet.*  This is the most common use (and most developed for) due to the growing demand for a web page that can perform thermal/bar-code or magnetic-stip printing.  
+This is a step-by-step tutorial that walks a web developer through creating a *Web Applet* capable of sending RAW EPL/ZPL commands to a printer. This is the most common use (and most developed for) due to the growing demand for a web page that can perform thermal/bar-code or magnetic-stip printing.  
 
 This tutorial walks through creating an html web applet that can later be used through php, perl, asp or any web language capable of creating html applet/object tags.  If you are familiar with java web applets and would like to skip this tutorial, simply download and extract the latest version and examine the applet code inside the provide sample html.  If you find this product useful and can offer sample php, perl, asp, etc, please edit this Wiki, or email the author. :)
 
