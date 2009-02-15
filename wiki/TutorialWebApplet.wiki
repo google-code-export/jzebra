@@ -45,7 +45,7 @@ Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]
   *  The Java Console is critical for calibrating the applet for your printer.
   *  If you already have a Zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers and will select the first match. Look for "INFO:  Printer found...". (This can later be changed using TutorialStaticParameters)
 [http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
-  *  Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.
+  *  Look in the Java console log for something like follows.  You should see the default raw commands that jZebra ships with.  These should look foreign to you.  That's normal, as they are EPL commands.  We'll change them in the steps following.
 [http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
 
 ----
