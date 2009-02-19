@@ -73,7 +73,7 @@ _*Note:*  Newline is "\n", Carriage Return is "\r".  Your printer may need any c
 
 ----
 = Command Substitution =
-  * jZebra allows any word in a config file to be replaced through applet code.  For example, if only the name, address, and barcode change between prints, they may be specified through parameters rather than generating a new config file each time.  To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.  This example will replace the "*$FIRSTNAME*" variable in red with a value of "TRES".
+  * jZebra allows any word in a config file to be replaced through applet code.  For example, if only the name, address, and barcode change between prints, they may be specified through parameters rather than generating a new config file each time.  To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.  This example will replace the "*$FIRSTNAME*" variable in red.
 
 http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
   * Name your variables as you wish so as long as they match your html applet code as follows:
