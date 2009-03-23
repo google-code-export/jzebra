@@ -1,0 +1,49 @@
+/*===============================
+ jZebra Sample Raw Print Config
+=================================
+
+All text within the comments (slash asterisk, asterisk slash) will be
+ignored by the application.  It is highly recommended to leave appropriate
+comments in your raw commands for others to reference at a later time.
+.
+*/
+
+/*===============================
+     Start of raw commands
+===============================*/
+/* Reinitializes printer (Eltron P310 only) */
+/* R */
+
+/* Monochrome type ribbon */
++RIB 4
+
+/* Clear monochrome image buffer */
+F
+
+/* Adjust monochrome intensity */
++C 8
+
+/* Reset magnetic encoder */
+&R
+
+/* Set R/W encoder format (0 sets ISO default) */
+&CDEW 0 0
+&CDER 0 0
+
+/* Enable/disable magnetic encoding verifications */
+&SVM 0
+
+/* Write ASCII text H,V,R,F,W,H */
+T 80 600 0 1 0 45 1 DEMO MODE $FIRSTNAME $LASTNAME
+
+/* Write buffer single track (magnetic encoder) for track 1 */
+&B 1 123456^$LASTNAME/$FIRSTNAME X^789012
+
+/* Write buffers to card */
+&E*
+
+/* Print card (10 returns to print ready pos) */
+I 10
+
+/* Move card to the output hopper */
+MO

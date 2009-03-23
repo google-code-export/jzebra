@@ -1,0 +1,30 @@
+<html>
+   <body>
+   <h1>jZebra Applet</h1><br>
+   <applet code="jzebra.JZebraApplet.class" archive="./dist/jzebra.jar" width="138" height="25">
+      <param name="FIRSTNAME" value="JOHN">
+      <param name="MIDDLENAME" value="H">
+      <param name="LASTNAME" value="DOE">
+      <param name="ACCOUNTNO" value="90210">
+      <param name="COMPANYNO" value="8675309">
+
+      <param name="configtype" value="URL">
+      <param name="configpath" value="file:///C:/preview-raw-commands.txt">
+      <param name="autoprint" value="false">
+      <param name="printername" value="eltron">
+      <param name="showicon" value="true">
+      <param name="buttontext" value="Click here to print">
+      <param name="linefeed" value="\r">
+      
+      <param name="showmessages" value="true">
+      <param name="errormessage" value="<html><strong><font color=red>Critical error occured loading print applet.</font><br>Please call support:<font color=blue> (555) 555-1212</font></strong><BR>Details:<BR></html>">
+      <param name="successmessage" value="<html><strong><font color=green>Your card has been printed.</font><br>Please pick it up at the printer.</strong></html>">
+      <param name="messagetitle" value="Your print status">
+   </applet>
+   </body>
+   <br><br>To view the applet's html source code:<strong> Right Click This Page --> View Source</strong> and look for <strong>&lt;applet&gt &lt;/applet&gt;</strong> code.
+   <br><br>To get the latest version, or submit a bug visit: <a href="http://code.google.com/p/jzebra">http://code.google.com/p/jzebra</a><br>
+   <br><br><strong>Config Error:</strong> The applet will fail to load the config file until it is place in C:\ or the applet param "config" has an appropriate value.  Use absolute paths such as "file:///C:/preview-raw-commands.txt" if unsure.  UNIX users can specify "file:///home/user..." instead.  Web developers can use "http://site.com/..."
+   <br><br><strong>Message Dialogs:</strong> Error and success messages support <font color=red>&lt;html&gt;&lt;/html&gt;</font> formatting within param tags. Message title parameter (messagetitle) does not support html formatting within tag.  These message values are only displayed if applet param "showmessages" is set to "true".
+   <br><br><strong>Java Console:</strong> Please copy/paste details from the <a href="http://java.com/en/download/help/javaconsole.xml">java console</a> when submitting a bug report
+</html>
