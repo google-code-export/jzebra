@@ -52,7 +52,11 @@ Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]
 
 ----
 = Sending Raw Commands To The Printer =
-jZebra takes a number of [TutorialStaticParameters static parameters] in order to load the right settings for your printer.  Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To get something to print, three parameters need to be added to the web applet.  *`CONFIGTYPE`*, *`CONFIGPATH`*, *`LINEFEED`*.  For an exhaustive list, see TutorialStaticParameters.
+jZebra takes a number of [TutorialStaticParameters static parameters] in order to load the right settings for your printer.
+
+|| What does static mean?  Well, in this sense, it means parameters (or "switches") that NEED to be set.  If they aren't set, jZebra uses it's defaults instead.  It is important to visit the [TutorialStaticParameters wiki] to learn them and their default values. ||
+
+Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To get something to print, three parameters need to be added to the web applet.  *`CONFIGTYPE`*, *`CONFIGPATH`*, *`LINEFEED`*.  For an exhaustive list, see TutorialStaticParameters.
   * *`CONFIGTYPE`*:  Set this to "*FILE*" with the following parameter: _(this can later be changed to a web url using "url")_
 {{{
       <param name="configtype" value="file">
@@ -73,7 +77,11 @@ _*Note:*  Newline is "\n", Carriage Return is "\r".  Your printer may need any c
 
 ----
 = Command Substitution =
-  * jZebra allows any word in a config file to be replaced through applet code.  For example, if only the name, address, and barcode change between prints, they may be specified through parameters rather than generating a new config file each time.  To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.  This example will replace the "*$FIRSTNAME*" variable in red.
+  * jZebra allows any word in a config file to be replaced through applet code.  
+
+|| Substitute what? In order for jZebra to work right for YOUR purposes, you'll eventually want to leverage the Command Substitution steps below, which allow specific parts of the config to be substituted with your own values. ||
+
+  * For example, if only the name, address, and barcode change between prints, they may be specified through parameters rather than generating a new config file each time.  To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.  This example will replace the "*$FIRSTNAME*" variable in red.
 
 http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
   * Name your variables as you wish so as long as they match your html applet code as follows:
