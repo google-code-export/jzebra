@@ -89,7 +89,7 @@ http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
       <param name="FIRSTNAME" value="TRES">
 }}}
 
-_This will replace all occurrences of *`$FIRSTNAME`* with the applet value specified *`TRES`*.  Click the "Sample button" and the console output should now reflect the following.  Notice `$FIRSTNAME` has changed, but `$LASTNAME` is left verbatim.
+_This will replace all occurrences of *`$FIRSTNAME`* with the applet value specified *`TRES`*.  Notice the dollar sign is only used in the config file.  The dollar sign should not be used in your HTML code. Click the "Sample button" and the console output should now reflect the following.  Notice `$FIRSTNAME` has changed, but `$LASTNAME` is left unchanged.  If jZebra can't find the parameter in the config, it leaves it as is!
 
 http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
 
