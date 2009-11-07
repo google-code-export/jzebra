@@ -1,4 +1,5 @@
 #summary Installing a raw printer driver on OS X using CUPS
+#labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
 
