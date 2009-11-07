@@ -24,23 +24,18 @@ Here's a set of screenshots for setting up raw printing through OS X.  This was 
 ----
 
 
-# Load Safari or Firefox to [[http://localhost:631]] and click The "Administration" tab, then "Add Printer" [[Image:Picture+1.png|http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s400/Picture+1.png]]
-# Type the name of your printer and click "Continue" [[Image:Picture+2.png|http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]]
-# Be patient as the CUPS server responds to the new printer request [[Image:Picture+3.png|]]
-# For device, leave default "AppSocket/HP JetDirect" and click "Continue" [[Image:Picture+4.png|http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s400/Picture+4.png]]
-# For URI put the address of the network printer in format "socket://address:port".  Port can be left blank if default (9100).  Click "Continue" [[Image:Picture+5.png|http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSHxI3sa4I/AAAAAAAAAPw/dSVeNpyzyZQ/s400/Picture+5.png]]
-# For Make/Manufacturer, select "Raw" from the list of manufacturers and click "Continue" [[Image:Picture+6.png|http://4.bp.blogspot.com/_9hmP3Ho0t14/SvSHxCVBL9I/AAAAAAAAAP4/riLF3pI4yPE/s400/Picture+6.png]]
-# For "Model" click "Raw Queue (en)" which should be the only option in the drop-down menu.  Click "Add Printer".  Note:  If prompted for a password, enter a username and password with administrative access on the Mac.  You may be prompted twice. [[Image:Picture+7.png|http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSHxWL2PII/AAAAAAAAAQA/rnGp4pPml0I/s400/Picture+7.png]]
-# Your printer has been added.  You will see a message confirming this. Ignore Banners and Policies prompt.  In the next steps, you will add a Printer Class for your new printer to show in OS X's Print Manager. [[Image:Picture+8.png|http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSHxYvp13I/AAAAAAAAAQI/hqX2jl1fPGM/s400/Picture+8.png]]
-# Click the "Administration" tab and click the "Add Class" button. [[Image:Picture+9.png|http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSHxkGyRnI/AAAAAAAAAQQ/r8CWfwM5D7Q/s400/Picture+9.png]]
-# Fill out "Name".  This must not conflict with the printer name from Step 2.   Fill out the "Description" with what you would like the printer listed as in OS X. [[Image:Picture+10.png|http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSH4gF66tI/AAAAAAAAAQY/fpqCNeHwQcI/s400/Picture+10.png]]
-# Your printer class has been added.  You will see a message confirming this. [[Image:Picture+11.png|http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSH47_spyI/AAAAAAAAAQg/B-14b7kdQMw/s400/Picture+11.png]]
-# Navigate to "System Preferences" --> "Print and Fax", and your new raw printer should appear. [[Image:Picture+12.png|http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSH5DpbDlI/AAAAAAAAAQo/hd9-X_3gIv0/s400/Picture+12.png]]
-# Your applications should now be able to print to the Zebra printer as a raw printing device.
-# End of Steps
-  # Fill out "Name".  This must not conflict with the printer name from Step 2.   Fill out the "Description" with what you would like the printer listed as in OS X.
-  # Your printer class has been added.  You will see a message confirming this.
-  # Navigate to "System Preferences" --> "Print and Fax", and your new raw printer should appear.
+  # Load Safari or Firefox to [[http://localhost:631] and click The "Administration" tab, then "Add Printer" [http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s400/Picture+1.png]
+  # Type the name of your printer and click "Continue" [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]
+  # Be patient as the CUPS server responds to the new printer request [http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s400/Picture+3.png]
+  # For device, leave default "AppSocket/HP JetDirect" and click "Continue" [http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s400/Picture+4.png]
+  # For URI put the address of the network printer in format "socket://address:port".  Port can be left blank if default (9100).  Click "Continue" [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSHxI3sa4I/AAAAAAAAAPw/dSVeNpyzyZQ/s400/Picture+5.png]
+  # For Make/Manufacturer, select "Raw" from the list of manufacturers and click "Continue" [http://4.bp.blogspot.com/_9hmP3Ho0t14/SvSHxCVBL9I/AAAAAAAAAP4/riLF3pI4yPE/s400/Picture+6.png]
+  # For "Model" click "Raw Queue (en)" which should be the only option in the drop-down menu.  Click "Add Printer".  Note:  If prompted for a password, enter a username and password with administrative access on the Mac.  You may be prompted twice. [http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSHxWL2PII/AAAAAAAAAQA/rnGp4pPml0I/s400/Picture+7.png]
+  # Your printer has been added.  You will see a message confirming this. Ignore Banners and Policies prompt.  In the next steps, you will add a Printer Class for your new printer to show in OS X's Print Manager. [http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSHxYvp13I/AAAAAAAAAQI/hqX2jl1fPGM/s400/Picture+8.png]
+  # Click the "Administration" tab and click the "Add Class" button. [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSHxkGyRnI/AAAAAAAAAQQ/r8CWfwM5D7Q/s400/Picture+9.png]
+  # Fill out "Name".  This must not conflict with the printer name from Step 2.   Fill out the "Description" with what you would like the printer listed as in OS X. [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSH4gF66tI/AAAAAAAAAQY/fpqCNeHwQcI/s400/Picture+10.png]
+  # Your printer class has been added.  You will see a message confirming this. [http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSH47_spyI/AAAAAAAAAQg/B-14b7kdQMw/s400/Picture+11.png]
+  # Navigate to "System Preferences" --> "Print and Fax", and your new raw printer should appear. [http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSH5DpbDlI/AAAAAAAAAQo/hd9-X_3gIv0/s400/Picture+12.png]
   # Your applications should now be able to print to the Zebra printer as a raw printing device.
   # End of Steps
 
