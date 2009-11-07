@@ -1,0 +1,34 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Add your content here.
+
+
+= Steps =
+
+<ol><li>From the desktop, click <span style="font-weight: bold;">"System --> Administration --> Printing</span>"
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU05p2LY3I/AAAAAAAAARw/dOBH7_Bi44U/s1600-h/1.png"><img style="cursor: pointer; width: 400px; height: 375px;" src="http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU05p2LY3I/AAAAAAAAARw/dOBH7_Bi44U/s400/1.png" alt="" id="BLOGGER_PHOTO_ID_5401281493191058290" border="0" />
+
+</a></li><li>Click "<span style="font-weight: bold;">New</span>" (Printer)
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU05szIyqI/AAAAAAAAARo/E6JRqbDVhcY/s1600-h/2.png"><img style="cursor: pointer; width: 400px; height: 222px;" src="http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU05szIyqI/AAAAAAAAARo/E6JRqbDVhcY/s400/2.png" alt="" id="BLOGGER_PHOTO_ID_5401281493983611554" border="0" />
+
+</a></li><li>Be patient while Ubuntu searches for printers...
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU05QgtgyI/AAAAAAAAARg/oQkNRrSYPb0/s1600-h/3.png"><img style="cursor: pointer; width: 228px; height: 69px;" src="http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU05QgtgyI/AAAAAAAAARg/oQkNRrSYPb0/s400/3.png" alt="" id="BLOGGER_PHOTO_ID_5401281486390133538" border="0" />
+
+</a></li><li>Select <span style="font-weight: bold;">"Network Printer --> AppSocket/HP JetDirect"</span>. For host, put the IP address or hostname of your printer.  Port is usually default of 9100. Click <span style="font-weight: bold;">"Forward"
+</span><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0xh3mRaI/AAAAAAAAARY/IOkWdck2OCo/s1600-h/4.png"><img style="cursor: pointer; width: 400px; height: 333px;" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0xh3mRaI/AAAAAAAAARY/IOkWdck2OCo/s400/4.png" alt="" id="BLOGGER_PHOTO_ID_5401281353610577314" border="0" /></a>
+
+</li><li>Select printer make "<span style="font-weight: bold;">Generic</span>".  Click "<span style="font-weight: bold;">Forward</span>".
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU0xbQgGFI/AAAAAAAAARQ/TkK8DZTewg0/s1600-h/5.png"><img style="cursor: pointer; width: 400px; height: 333px;" src="http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU0xbQgGFI/AAAAAAAAARQ/TkK8DZTewg0/s400/5.png" alt="" id="BLOGGER_PHOTO_ID_5401281351835981906" border="0" />
+
+</a></li><li>Click model "<span style="font-weight: bold;">Raw</span>", Drivers "<span style="font-weight: bold;">Generic Raw Queue [en]</span>".  Click "<span style="font-weight: bold;">Forward</span>".
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU0xVFE02I/AAAAAAAAARI/LwQp4LaGsLk/s1600-h/6.png"><img style="cursor: pointer; width: 400px; height: 333px;" src="http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU0xVFE02I/AAAAAAAAARI/LwQp4LaGsLk/s400/6.png" alt="" id="BLOGGER_PHOTO_ID_5401281350177444706" border="0" />
+
+</a></li><li>Name the printer appropriately such as "<span style="font-weight: bold;">zebra</span>".  Click "<span style="font-weight: bold;">Apply</span>".
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU0xNaWrqI/AAAAAAAAARA/bFV_ln9vjrg/s1600-h/7.png"><img style="cursor: pointer; width: 400px; height: 333px;" src="http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU0xNaWrqI/AAAAAAAAARA/bFV_ln9vjrg/s400/7.png" alt="" id="BLOGGER_PHOTO_ID_5401281348119211682" border="0" />
+
+</a></li><li>Your new printer "<span style="font-weight: bold;">zebra</span>" should now list.  You can now use this as a raw print queue.
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0w2PZVrI/AAAAAAAAAQ4/5541dsaKfMI/s1600-h/8.png"><img style="cursor: pointer; width: 400px; height: 222px;" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0w2PZVrI/AAAAAAAAAQ4/5541dsaKfMI/s400/8.png" alt="" id="BLOGGER_PHOTO_ID_5401281341899232946" border="0" />
+
+</a></li><li>End of Steps</li></ol>-Tres
