@@ -17,4 +17,5 @@ Add your content here.
   # Name the printer appropriately such as "*zebra*".  Click "*Apply*". <br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU0xNaWrqI/AAAAAAAAARA/bFV_ln9vjrg/s400/7.png]<br><br>
   # Your new printer "zebra" should now list.  You can now use this as a raw print queue. <br>[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0w2PZVrI/AAAAAAAAAQ4/5541dsaKfMI/s400/8.png]<br><br>
   # End of Steps
+
 -Tres
