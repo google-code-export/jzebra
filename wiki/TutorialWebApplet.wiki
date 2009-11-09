@@ -34,7 +34,7 @@ If you are already familiar with creating java web applets as well as specifying
 
   || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
 
-  #3  The applet will begin to load in the web page.
+  #  The applet will begin to load in the web page.
    [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
   #  Next, Java security dialog prompt is shown.  This is Java's way of warning that the Web Applet has access to local resources.  jZebra needs local access to the workstation's printers, so click "Run".
    [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
