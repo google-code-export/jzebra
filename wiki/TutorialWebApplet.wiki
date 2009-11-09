@@ -7,7 +7,7 @@ This is a step-by-step tutorial that walks a web developer through creating a *b
 
 If you are already familiar with creating java web applets as well as specifying applet parameters and would like to skip this tutorial, simply download and extract the [http://code.google.com/p/jzebra/downloads/list latest version] and examine the applet code inside the provide sample html.  If you find this product useful or can offer sample php, perl, asp, etc, please email [mailto:tres.finocchiaro@gmail.com the author].
 
-|| *Sample* ||
+|| jZebra running in IE7 ||
 || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
 
 ----
