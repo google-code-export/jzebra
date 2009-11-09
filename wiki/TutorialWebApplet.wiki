@@ -32,8 +32,7 @@ If you are already familiar with creating java web applets as well as specifying
 
   || *Note:* If you do not have a printer named "zebra" attached to your station, then you will have a `SEVERE: Printer not found` in your log.  To fix this, create printer "zebra" in the name.  Instructions: [TutorialRawXP XP], [TutorialRawUbuntu Ubuntu], [TutorialRawOSX OS X] ||
 
-
-The raw commands provided in the sample are not intended for use with your printer, they're provided as an example.  You will be changing these commands for your printer in the steps following. ||
+  || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
 
   *  The applet will begin to load in the web page.
 [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
