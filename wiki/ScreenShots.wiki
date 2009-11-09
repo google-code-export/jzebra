@@ -1,7 +1,7 @@
 #summary Screenshots of jZebra in use
 #labels Featured,Phase-Implementation,Phase-Support
 
-= Web Applet Screenshots =
+= Web Applet =
 
 || *Firefox* `(Ubuntu 9.10)`  || *Firefox* `(Windows XP)` ||
 || [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s1600/ubuntu_firefox.png http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s200/ubuntu_firefox.png] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s1600/xp_firefox.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s200/xp_firefox.PNG] ||
