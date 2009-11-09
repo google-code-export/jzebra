@@ -9,7 +9,7 @@ If you are already familiar with creating java web applets as well as specifying
 
   || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
 
-  || *Note*: jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
+  || *Note:* jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
 
 ----
 = Steps =
@@ -29,7 +29,12 @@ Now download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]
 }}}
   * Save the file in the same folder as [http://img104.imageshack.us/img104/9696/packagept0.png]`jzebra.jar` and open the file with the browser of your choice.
 
-|| <h3>Important</h3>IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads.  Work-arounds exist, but for the purpose of this tutorial Firefox or IE6 is recommended.<br><br>If you do not have a printer named "zebra", then you will have a "*SEVERE: Printer not found*" in your log.  To fix this, create a dummy printer with "zebra" in the name as a place holder for the purpose of learning this applet.  "zebra fake" as a printer name works for now.  Windows and Linux both allow this.<br><br>The raw commands provided in the sample are not intended for use with your printer, they're provided as an example.  You will be changing these commands for your printer in the steps following. ||
+  || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
+
+  || *Note:* If you do not have a printer named "zebra" attached to your station, then you will have a `SEVERE: Printer not found` in your log.  To fix this, create printer "zebra" in the name.  Instructions: [TutorialRawXP XP], [TutorialRawUbuntu Ubuntu], [TutorialRawOSX OS X] ||
+
+
+The raw commands provided in the sample are not intended for use with your printer, they're provided as an example.  You will be changing these commands for your printer in the steps following. ||
 
   *  The applet will begin to load in the web page.
 [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
