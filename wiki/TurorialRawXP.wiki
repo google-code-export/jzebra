@@ -3,7 +3,8 @@
 = Introduction =
 Here are step-by-step instructions for setting up raw printing on Windows XP. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Windows XP in Firefox and Internet Explorer. _Last tested 11/07/2009, Windows XP SP2_ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-windows-xp-zebra.html mirror]) 
 
-= Steps = Windows XP
+= Steps =
+`Windows XP`
 
   # Open Control Panel. Click "*Printers and Faxes*"<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW2L2lQwJI/AAAAAAAAATw/THPg257TKgo/s1600-h/1.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW2L2lQwJI/AAAAAAAAATw/THPg257TKgo/s400/1.png]<br><br>
   # Click "*Add Printer*"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HPoatcI/AAAAAAAAATo/IqHiAh4bj6g/s1600-h/2.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HPoatcI/AAAAAAAAATo/IqHiAh4bj6g/s400/2.PNG]<br><br>
