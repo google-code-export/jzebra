@@ -6,6 +6,7 @@
 Here are step-by-step instructions for setting up raw printing on Ubuntu. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Ubuntu 9.10 in Firefox. _Last tested 11/06/2009, Ubuntu 9.10, CUPS 1.3.8._ [http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-ubuntu-910-zebra.html (mirror)]
 
 = Steps =
+`Ubuntu 9.10`
 
 
   # From the desktop, click "*System --> Administration --> Printing*" <br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU05p2LY3I/AAAAAAAAARw/dOBH7_Bi44U/s400/1.png]<br><br>
