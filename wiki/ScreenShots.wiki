@@ -4,7 +4,7 @@
 = Web Applet Screenshots =
 
 || *Firefox* `(Ubuntu 9.10)`  || *Firefox* `(Windows XP)` ||
-|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s1600/ubuntu_firefox.png http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s400/ubuntu_firefox.png] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s1600/xp_firefox.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s400/xp_firefox.PNG] ||
+|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s1600/ubuntu_firefox.png http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s200/ubuntu_firefox.png] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s1600/xp_firefox.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s400/xp_firefox.PNG] ||
 
 || *Chrome* `(Ubuntu 9.10)` || *Chrome* `(Windows XP)` ||
 || [http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s1600/ubuntu_chrome.png http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s400/ubuntu_chrome.png] || [http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCLzCjTtI/AAAAAAAAAVQ/HM-AZA6REEs/s1600/xp_chrome.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCLzCjTtI/AAAAAAAAAVQ/HM-AZA6REEs/s400/xp_chrome.PNG] ||
