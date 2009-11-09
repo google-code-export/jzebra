@@ -5,7 +5,7 @@
 = Introduction =
 This is a step-by-step tutorial that walks a web developer through creating a *basic html web applet* capable of sending raw commands directly to a printer. Once the applet has been configured, you will most likely use *php*, perl, asp or any web language to dynamically create the applet/object tags for you.  At this stage of development, only html samples are available.
 
-If you are already familiar with creating java web applets as well as specifying applet parameters and would like to skip this tutorial, simply download and extract the [Downloads latest version] and examine the applet code inside the provide sample html.  If you find this product useful or can offer sample php, perl, asp, etc, please email [mailto:tres.finocchiaro@gmail.com the author].
+If you are already familiar with creating java web applets as well as specifying applet parameters and would like to skip this tutorial, simply download and extract the [http://code.google.com/p/jzebra/downloads/list latest version] and examine the applet code inside the provide sample html.  If you find this product useful or can offer sample php, perl, asp, etc, please email [mailto:tres.finocchiaro@gmail.com the author].
 
 http://img443.imageshack.us/img443/1985/jzebrabrowser1br0.png
 ----
