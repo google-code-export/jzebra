@@ -1,9 +1,9 @@
 #summary Using jZebra as a Desktop Application
-|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> [TutorialWebApplet Web Applet] ||  <img align="middle" src="http://img413.imageshack.us/img413/9843/toggledesktopes0.png"> [TutorialDesktopApplication Desktop Application] || <img align="middle" src="http://img413.imageshack.us/img413/6632/terminal1mq3.png"> *[TutorialConsoleApplication Console Application]* || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> [TutorialStaticParameters Common Parameters] ||
+|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> [TutorialWebApplet Web Applet] ||  <img align="middle" src="http://img413.imageshack.us/img413/9843/toggledesktopes0.png"> *[TutorialDesktopApplication Desktop Application]* || <img align="middle" src="http://img413.imageshack.us/img413/6632/terminal1mq3.png"> [TutorialConsoleApplication Console Application] || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> [TutorialStaticParameters Common Parameters] ||
 
 = Introduction =
 
-This tutorial walks through using jZebra in *Console Application* mode. This stand-along mode is the easiest way to familiarize with jZebra's features by providing a user interface suitable to getting started with raw printing.  Desktop Application can generate the html code and command line code necessary for using jZebra as a productive tool on your web pages or servers.
+This tutorial walks through using jZebra in *Desktop Application* mode. This stand-along mode is the easiest way to familiarize with jZebra's features by providing a user interface suitable to getting started with raw printing.  Desktop Application can generate the html code and command line code necessary for using jZebra as a productive tool on your web pages or servers.
 
 ----
 = Installing Java =
