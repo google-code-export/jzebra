@@ -13,8 +13,5 @@
 
 = Desktop Application Screenshots =
 
-[http://img514.imageshack.us/img514/4133/jzebrass1largeog8.jpg http://img166.imageshack.us/img166/2082/jzebrass1wm8.jpg] [http://img510.imageshack.us/img510/8031/jzebrass2largejk5.jpg http://img166.imageshack.us/img166/8125/jzebrass2wh7.jpg]
-Windows
-
-[http://img405.imageshack.us/img405/413/screenshotjzebra20printuv4.png]
-Ubuntu
+|| *Windows XP* || *Ubuntu 8.10* || 
+|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svd-aSXjJpI/AAAAAAAAAVA/PRDyBki-CtE/s1600/xp_desktop.jpg http://2.bp.blogspot.com/_9hmP3Ho0t14/Svd-aSXjJpI/AAAAAAAAAVA/PRDyBki-CtE/s400/xp_desktop.jpg] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/Svd9b6Leo_I/AAAAAAAAAU4/cekU2JGtDJs/s1600/xp_desktop.png http://3.bp.blogspot.com/_9hmP3Ho0t14/Svd9b6Leo_I/AAAAAAAAAU4/cekU2JGtDJs/s400/xp_desktop.png] ||
