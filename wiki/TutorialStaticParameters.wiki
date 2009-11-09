@@ -1,9 +1,9 @@
 #summary Static parameter usage
 #labels Featured,Phase-Deploy,Phase-Support
-
+|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> [TutorialWebApplet Web Applet] ||  <img align="middle" src="http://img413.imageshack.us/img413/9843/toggledesktopes0.png"> [TutorialDesktopApplication Desktop Application] || <img align="middle" src="http://img413.imageshack.us/img413/6632/terminal1mq3.png"> [TutorialConsoleApplication Console Application] || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> *[TutorialStaticParameters Common Parameters]* ||
 = Introduction =
 
-jZebra takes a number of static parameters that vary slightly between usage.  For example, messages representing print status, such as success messages, error messages or suppressing messages are all set through parameters prior to loading jZebra.  Their default values will change between usage.  Parameters that don't apply to a specific print mode are marked as "`<n/a>`" and can be ignored.
+jZebra takes a number of *Static Parameters* that vary slightly between usage.  For example, messages representing print status, such as success messages, error messages or suppressing messages are all set through parameters prior to loading jZebra.  Their default values will change between usage.  Parameters that don't apply to a specific print mode are marked as "`<n/a>`" and can be ignored.
 
 ----
 
