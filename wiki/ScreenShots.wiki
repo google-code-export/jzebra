@@ -1,24 +1,13 @@
 #summary Screenshots of jZebra in use
 #labels Featured,Phase-Implementation,Phase-Support
 
-= Web Applet =
+= Linux =
 
-|| *Firefox* `(Ubuntu 9.10)`  || *Firefox* `(Windows XP)` ||
-|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s1600/ubuntu_firefox.png http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s200/ubuntu_firefox.png] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s1600/xp_firefox.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s200/xp_firefox.PNG] ||
+|| *Firefox* `(Ubuntu 9.10)` || *Opera* `(Ubuntu 9.10)` || *Chrome* `(Ubuntu 9.10)` || *Desktop* `(Ubuntu 8.10)` ||
+|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s1600/ubuntu_firefox.png http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s200/ubuntu_firefox.png] || [http://4.bp.blogspot.com/_9hmP3Ho0t14/Svcm5NZ22UI/AAAAAAAAAUo/mdsSakcpW_g/s1600/ubuntu_opera.png http://4.bp.blogspot.com/_9hmP3Ho0t14/Svcm5NZ22UI/AAAAAAAAAUo/mdsSakcpW_g/s200/ubuntu_opera.png] ||  [http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s1600/ubuntu_chrome.png http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s200/ubuntu_chrome.png] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/Svd9b6Leo_I/AAAAAAAAAU4/cekU2JGtDJs/s1600/xp_desktop.png http://3.bp.blogspot.com/_9hmP3Ho0t14/Svd9b6Leo_I/AAAAAAAAAU4/cekU2JGtDJs/s200/xp_desktop.png] ||
 
-|| *Chrome* `(Ubuntu 9.10)` || *Chrome* `(Windows XP)` ||
-|| [http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s1600/ubuntu_chrome.png http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s200/ubuntu_chrome.png] || [http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCLzCjTtI/AAAAAAAAAVQ/HM-AZA6REEs/s1600/xp_chrome.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCLzCjTtI/AAAAAAAAAVQ/HM-AZA6REEs/s200/xp_chrome.PNG] ||
-
-|| *Opera* `(Ubuntu 9.10)` || *Opera* `(Windows XP)` ||
-|| [http://4.bp.blogspot.com/_9hmP3Ho0t14/Svcm5NZ22UI/AAAAAAAAAUo/mdsSakcpW_g/s1600/ubuntu_opera.png http://4.bp.blogspot.com/_9hmP3Ho0t14/Svcm5NZ22UI/AAAAAAAAAUo/mdsSakcpW_g/s200/ubuntu_opera.png] || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveCLkN2PfI/AAAAAAAAAVI/rzR_EF74h8k/s1600/xp_opera.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveCLkN2PfI/AAAAAAAAAVI/rzR_EF74h8k/s200/xp_opera.PNG] ||
-
-|| *IE 6* `(Windows XP)` || *IE 7* `(Windows XP)` ||
-|| [http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCMVfJg8I/AAAAAAAAAVg/RtKco9WQg7U/s1600/xp_ie6.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCMVfJg8I/AAAAAAAAAVg/RtKco9WQg7U/s200/xp_ie6.PNG] || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
-
-
-----
-
-= Desktop Application Screenshots =
-
-|| *Windows XP* || *Ubuntu 8.10* || 
-|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svd-aSXjJpI/AAAAAAAAAVA/PRDyBki-CtE/s1600/xp_desktop.jpg http://2.bp.blogspot.com/_9hmP3Ho0t14/Svd-aSXjJpI/AAAAAAAAAVA/PRDyBki-CtE/s200/xp_desktop.jpg] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/Svd9b6Leo_I/AAAAAAAAAU4/cekU2JGtDJs/s1600/xp_desktop.png http://3.bp.blogspot.com/_9hmP3Ho0t14/Svd9b6Leo_I/AAAAAAAAAU4/cekU2JGtDJs/s200/xp_desktop.png] ||
+= Windows =
+|| *IE 7* `(Windows XP)` || *IE 6* `(Windows XP)` || *Firefox* `(Windows XP)` || *Opera* `(Windows XP)` ||
+|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] || [http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCMVfJg8I/AAAAAAAAAVg/RtKco9WQg7U/s1600/xp_ie6.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCMVfJg8I/AAAAAAAAAVg/RtKco9WQg7U/s200/xp_ie6.PNG] || [http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s1600/xp_firefox.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SveCMAvBogI/AAAAAAAAAVY/PbIB7sciKcI/s200/xp_firefox.PNG] || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveCLkN2PfI/AAAAAAAAAVI/rzR_EF74h8k/s1600/xp_opera.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveCLkN2PfI/AAAAAAAAAVI/rzR_EF74h8k/s200/xp_opera.PNG] ||
+|| *Chrome* `(Windows XP)` || *Desktop* `(Windows XP)` ||
+|| [http://2.bp.blogspot.com/_9hmP3Ho0t14/Svd-aSXjJpI/AAAAAAAAAVA/PRDyBki-CtE/s1600/xp_desktop.jpg http://2.bp.blogspot.com/_9hmP3Ho0t14/Svd-aSXjJpI/AAAAAAAAAVA/PRDyBki-CtE/s200/xp_desktop.jpg] || [http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCLzCjTtI/AAAAAAAAAVQ/HM-AZA6REEs/s1600/xp_chrome.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SveCLzCjTtI/AAAAAAAAAVQ/HM-AZA6REEs/s200/xp_chrome.PNG] ||
