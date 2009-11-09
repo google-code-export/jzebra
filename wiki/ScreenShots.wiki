@@ -1,16 +1,23 @@
 #summary Screenshots of jZebra in use
 #labels Featured,Phase-Implementation,Phase-Support
 
-= Screenshots =
+= Applet =
+
+[http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s400/ubuntu_firefox.png http://2.bp.blogspot.com/_9hmP3Ho0t14/Svcm45iBs0I/AAAAAAAAAUg/RK2QObIBlhs/s1600/ubuntu_firefox.png]
+Ubuntu - Firefox
+
+[http://4.bp.blogspot.com/_9hmP3Ho0t14/Svcm5NZ22UI/AAAAAAAAAUo/mdsSakcpW_g/s400/ubuntu_opera.png http://4.bp.blogspot.com/_9hmP3Ho0t14/Svcm5NZ22UI/AAAAAAAAAUo/mdsSakcpW_g/s1600/ubuntu_opera.png]
+Ubuntu - Opera
+
+[http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s400/ubuntu_chrome.png http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s1600/ubuntu_chrome.png]
+Ubuntu - Chrome
 
 ----
 
-== Windows ==
+= Desktop Application =
 
 [http://img514.imageshack.us/img514/4133/jzebrass1largeog8.jpg http://img166.imageshack.us/img166/2082/jzebrass1wm8.jpg] [http://img510.imageshack.us/img510/8031/jzebrass2largejk5.jpg http://img166.imageshack.us/img166/8125/jzebrass2wh7.jpg]
-
-----
-
-== Ubuntu ==
+Windows
 
 [http://img405.imageshack.us/img405/413/screenshotjzebra20printuv4.png]
+Ubuntu
