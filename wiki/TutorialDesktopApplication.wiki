@@ -1,4 +1,4 @@
-#summary Getting started with jZebra as a Desktop Application
+#summary Using jZebra as a Desktop Application
 
 = Introduction =
 
