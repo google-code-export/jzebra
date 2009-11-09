@@ -8,7 +8,7 @@ jZebra offers 3 modes of printing:
 || [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] ||  [TutorialDesktopApplication Desktop Application] ||
 || [http://img413.imageshack.us/img413/6632/terminal1mq3.png] || [TutorialConsoleApplication Console Application] ||
 
-|| [http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif] *Web Applet* || [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] [TutorialDesktopApplication Desktop Application] || [http://img413.imageshack.us/img413/6632/terminal1mq3.png] [TutorialConsoleApplication Console Application] ||
+<table valign="middle"><tr valign="middle"><td valign="middle">[http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif] *Web Applet* </td><td> [http://img413.imageshack.us/img413/9843/toggledesktopes0.png] [TutorialDesktopApplication Desktop Application] </td><td> [http://img413.imageshack.us/img413/6632/terminal1mq3.png] [TutorialConsoleApplication Console Application] </td></tr></table>
 
 This is a step-by-step tutorial that walks a web developer through creating a *basic html web applet* capable of sending raw commands directly to a printer. Once the applet has been configured, you will most likely use *php*, perl, asp or any web language to dynamically create the applet/object tags for you.  At this stage of development, only html samples are available.
 
