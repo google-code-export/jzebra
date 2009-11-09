@@ -1,6 +1,4 @@
-#summary Screenshots of jZebra in use
 #labels Featured,Phase-Implementation,Phase-Support
-
 = Linux =
 
 || *Firefox* `(Ubuntu 9.10)` || *Opera* `(Ubuntu 9.10)` || *Chrome* `(Ubuntu 9.10)` || *Desktop* `(Ubuntu 8.10)` ||
