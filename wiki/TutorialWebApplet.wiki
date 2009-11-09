@@ -42,9 +42,9 @@ If you are already familiar with creating java web applets as well as specifying
   #  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users, email [mailto:tres.finocchiaro@gmail.com the author] if you've found a way to display a similar console.
   #  The Java Console is critical for calibrating the applet for your printer.
   #  If you already have a Zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers and will select the first match. Look for "INFO:  Printer found...". (This can later be changed using TutorialStaticParameters)
-[http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
+   [http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
   #  Look in the Java console log for something like the screenshot below.  You should see the default raw commands that jZebra ships with.  These will most likely look a bit foreign to you, that's normal.  The supplied commands are EPL commands.  We'll change them to something your printer can use in the steps following.
-[http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
+   [http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
 
 ----
 = Sending Raw Commands To The Printer =
