@@ -6,7 +6,7 @@
 Here are step-by-step instructions for setting up raw printing through OS X.  These steps proved successful in getting the [http://code.google.com/p/jzebra/wiki/TutorialWebApplet jZebra Applet] to print to a raw printer queue from a web page loaded on OS X in Firefox.  _Last tested 11/06/2009, OS X 10.5, CUPS 1.3.8._ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-os-x-zebra-printer.html mirror])
 
 = Steps =
-`Mac OS X`
+`Mac OS X 10.5`
 
   # Load Safari or Firefox to *`http://localhost:631`* and click The "Administration" tab, then "Add Printer"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s400/Picture+1.png]<br><br>
   # Type the name of your printer and click "Continue"<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]<br><br>
