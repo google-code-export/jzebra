@@ -9,6 +9,7 @@ If you are already familiar with creating java web applets as well as specifying
 
 || *Sample* ||
 || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
+
 ----
 = Installing Java =
 
