@@ -9,7 +9,7 @@ If you are already familiar with creating java web applets as well as specifying
 
   || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
 
-`jZebra running in IE7`
+  `jZebra running in IE7`
 
   || *Note*: jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
 
