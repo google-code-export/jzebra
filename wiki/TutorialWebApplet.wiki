@@ -19,21 +19,17 @@ If you are already familiar with creating java web applets as well as specifying
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
    * Locate the html sample file and open it with a text editor.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`".  Look over the applet code quickly to get comfortable with the parameters.
    * Close out "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
-   {{{
-   <html><body>
-      <applet code="jzebra.JZebraApplet.class" archive="./jzebra.jar" width="200" height="25">
-         <param name="buttontext" value="Sample button">
-      </applet>
-   </html></body>
-   }}}
+    {{{
+    <html><body>
+       <applet code="jzebra.JZebraApplet.class" archive="./jzebra.jar" width="200" height="25">
+          <param name="buttontext" value="Sample button">
+       </applet>
+    </html></body>
+    }}}
    * Save the file in the same folder as [http://img104.imageshack.us/img104/9696/packagept0.png]`jzebra.jar` and open the file with the browser of your choice.
-
-  || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
-
-  || *Note:* If you do not have a printer named "zebra" attached to your station, then you will have a `SEVERE: Printer not found` in your log.  To fix this, create printer "zebra" in the name.  Instructions: [TutorialRawXP XP], [TutorialRawUbuntu Ubuntu], [TutorialRawOSX OS X] ||
-
-  || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
-
+   || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
+   || *Note:* If you do not have a printer named "zebra" attached to your station, then you will have a `SEVERE: Printer not found` in your log.  To fix this, create printer "zebra" in the name.  Instructions: [TutorialRawXP XP], [TutorialRawUbuntu Ubuntu], [TutorialRawOSX OS X] ||
+   || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
   #  The applet will begin to load in the web page.
    [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
   #  Next, Java security dialog prompt is shown.  This is Java's way of warning that the Web Applet has access to local resources.  jZebra needs local access to the workstation's printers, so click "Run".
