@@ -13,7 +13,7 @@ If you are already familiar with creating java web applets as well as specifying
 
 ----
 = Steps =
-
+== Load The Applet ==
   # Make sure your printer is set up on your workstation with the name "zebra".  For step-by-step instructions:  [TurorialRawXP Windows], [TutorialRawOSX OS X], [TurorialRawUbuntu Ubuntu]
   # Download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]`jZebra_x.x.x.zip` from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
@@ -42,57 +42,78 @@ If you are already familiar with creating java web applets as well as specifying
   #  Look in the Java console log for something like the screenshot below.  You should see the default raw commands that jZebra ships with.  These will most likely look a bit foreign to you, that's normal.  The supplied commands are EPL commands.  We'll change them to something your printer can use in the steps following.
    [http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
 
-----
-= Sending Raw Commands To The Printer =
-jZebra takes a number of [TutorialStaticParameters static parameters] in order to load the right settings for your printer.
-
-|| What does static mean?  Well, in this sense, it means parameters (or "switches") that NEED to be set.  If they aren't set, jZebra uses it's defaults instead.  It is important to visit the [TutorialStaticParameters wiki] to learn them and their default values. ||
-
-Assuming your printer is attached and set up as a "Generic/Text Only" printer _(don't use the vendor supplied driver, use plain text mode instead)_ we're now ready to print some raw commands.  To get something to print, three parameters need to be added to the web applet.  *`CONFIGTYPE`*, *`CONFIGPATH`*, *`LINEFEED`*.  For an exhaustive list, see TutorialStaticParameters.
-  * *`CONFIGTYPE`*:  Set this to "*FILE*" with the following parameter: _(this can later be changed to a web url using "url")_
-{{{
-      <param name="configtype" value="file">
-}}}
-  * *`CONFIGPATH`*:  Set this to a location on your hard drive.  Windows users should use a location that's simple for now, such as the root of C:\.  Linux users should place this in the user's home directory.
-{{{
-      <param name="configpath" value="c:\test.txt">
-}}}
-  * Create the config file with notepad (or equivalent), and add some raw commands of your choice.  Follow your EPL/ZPL/ZPLII (or printer language) guide and keep it simple for now.
-  * *`LINEFEED`*:  In order for your printer to separate the raw commands, you must send a linefeed that corresponds with your printer language.
-
-_*Note:*  Newline is "\n", Carriage Return is "\r".  Your printer may need any combination of these or other characters.  If unsure, visit your printer programming manual. If other escape sequences are needed, search for the java equivalent online and replace._
-{{{
+== Set Parameters ==
+  # Set the `LINEFEED` parameter based on your printer's programmer's guide.
+   * New Line Character
+   {{{
        <param name="linefeed" value="\n">
-}}}
+   }}}
+   * New Line + Carriage Return
+   {{{
+       <param name="linefeed" value="\r\n">
+   }}}
+  # Set the `CONFIGPATH` parameter to point to a file with raw commands in it.
+   * Local File
+   {{{
+       <param name="configpath" value="c:\test.txt">
+   }}}
+   * Web Hosted URL
+   {{{
+       <param name="configpath" value="http://mysite/file1.raw">
+   }}}
+  # Set the `CONFIGTYPE` parameter that matches what was used in Step 2.
+   * Local File
+   {{{
+       <param name="configtype" value="file">
+   }}}
+   * Web Hosted URL
+   {{{
+       <param name="configtype" value="url">
+   }}}
+  # Make sure printer is connected as a raw print queue.
+    [http://code.google.com/p/jzebra/wiki/TurorialRawXP#Steps http://3.bp.blogspot.com/_9hmP3Ho0t14/SvXbFLIbfXI/AAAAAAAAAUQ/EmPDrWLk7YI/s400/config_win.png][http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://4.bp.blogspot.com/_9hmP3Ho0t14/SvXbE4Sp39I/AAAAAAAAAUI/dvvUZ_sJNQA/s400/config_lin.png][http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbE_kTK_I/AAAAAAAAAUA/a-Ucl9UaIvI/s400/config_mac.png]http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbEnoMELI/AAAAAAAAAT4/eF4xkJ68ALY/s400/config_end.png
+  # Load the applet and try to print.
 
-  * If done correctly, you should now have your web applet printing.  If the raw print file(s) is always supplied verbatim by another program/service, you are basically finished.  However, if you are generating the raw commands through web code and need to perform variable substitution (like to generate some of the print commands dynamically on-the-fly) the next step is substitution of print commands using the wildcard "$" in your config.  This allows easy substitution for batch printing, where only a few attributes change upon each print.  Read below for more information.
-
-----
-= Command Substitution =
-  * jZebra allows any word in a config file to be replaced through applet code.  
-
-|| Substitute what? In order for jZebra to work right for YOUR purposes, you'll eventually want to leverage the Command Substitution steps below, which allow specific parts of the config to be substituted with your own values. ||
-
-  * For example, if only the name, address, and barcode change between prints, they may be specified through parameters rather than generating a new config file each time.  To perform substitution of print commands, simply place a "*$*" dollar sign infront of a variable in your config file.  These substitutions were illustrated in our sample above.  This example will replace the "*$FIRSTNAME*" variable in red.
-
-http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
-  * Name your variables as you wish so as long as they match your html applet code as follows:
-{{{
+=== Command Substitution ==
+  # jZebra allows any word in a raw print file to be replaced through applet code by using a dollar sign `$`.  This will treat the raw file as a template.
+   * Original
+   {{{
+   A37,503,0,1,2,3,N,"ABC WIDGET CO"
+   A37,545,0,1,2,3,N,"1234 LIMBO STREET"
+   A37,587,0,1,2,3,N,"**TEST LABEL - DO NOT SHIP**"
+   A37,629,0,1,2,3,N,"AKRON OH 44333"
+   A37,461,0,1,2,3,N,"JOE CUSTOMER"
+   A35,671,0,2,1,1,N,"(330) 555-1234"
+   }}}
+   * Substitution
+   {{{
+   A37,503,0,1,2,3,N,"$BUSINESS"
+   A37,545,0,1,2,3,N,"$ADDRESS"
+   A37,587,0,1,2,3,N,"$MESSAGE"
+   A37,629,0,1,2,3,N,"$CITYSTATEZIP"
+   A37,461,0,1,2,3,N,"$NAME"
+   A35,671,0,2,1,1,N,"$PHONE"
+   }}}
+   * Additional HTML
+   {{{
+   <param name="BUSINESS" value="ABC WIDGET CO">
+   <param name="ADDRESS" value="1234 LIMBO STREET">
+   <param name="MESSAGE" value="**TEST LABEL - DO NOT SHIP**">
+   <param name="CITYSTATEZIP" value="AKRON OH 44333">
+   <param name="NAME" value="JOE CUSTOMER">
+   <param name="PHONE" value="(330) 555-1234">
+   }}}
+  # Second example:  Using the supplied example:
+   http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
+   {{{
       <param name="FIRSTNAME" value="TRES">
-}}}
-
-_This will replace all occurrences of *`$FIRSTNAME`* with the applet value specified *`TRES`*.  Notice the dollar sign is only used in the config file.  The dollar sign should not be used in your HTML code. Click the "Sample button" and the console output should now reflect the following.  Notice `$FIRSTNAME` has changed, but `$LASTNAME` is left unchanged.  If jZebra can't find the parameter in your html, it leaves it as is!
-
-http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
-
-  * Continue this substitution process with any values that may change from print to print such as account numbers or bar code values, etc.
-----
-
-= Creating a php Web Applet =
-
-Thanks to James at Reason Transport for this php snippet:
-
-{{{
+   }}}
+   http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
+   || *Note:* Dollar sign variables will be left verbatim if not supplied as applet parameters. ||
+  
+== From php ==
+  # Courtesy of James at Reason Transport
+   {{{
    <applet code="jzebra.JZebraApplet.class" archive="<?php echo $imgdir; ?>/jzebra.jar" width="138" height="25">
       <param name="config" value="<?php echo $depurl; ?>/test">
       <param name="autoprint" value="true">
@@ -101,8 +122,7 @@ Thanks to James at Reason Transport for this php snippet:
       <param name="linefeed" value="\n">
       <param name="showmessages" value="false">
    </applet>
-}}}
+   }}}
 
-= Conclusion =
-
-This illustrates the basic functionality of jZebra in applet mode.  To explore advanced features, revisit the source code of "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`", see a full list of available commands here: TutorialStaticParameters, or additionally you may email questions or suggestions to [mailto:tres.finocchiaro@gmail.com the author].
+== Conclusion ==
+  Please email questions or suggestions to [mailto:tres.finocchiaro@gmail.com the author].
