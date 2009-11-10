@@ -14,7 +14,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 ----
 = Steps =
 == Load The Applet ==
-  # Make sure your printer is set up on your workstation with the name "zebra".  For step-by-step instructions:  [TurorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
+  # Make sure your printer is set up on your workstation with the name "zebra".  For step-by-step instructions:  [TutorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
   # Download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]`jZebra_x.x.x.zip` from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
    * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
    * Locate the html sample file and open it with a text editor.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`".  Look over the applet code quickly to get comfortable with the parameters.
