@@ -1,0 +1,28 @@
+#summary Installing a raw printer driver on XP using Add New Printer Wizard
+#labels Featured,Phase-Deploy,Phase-Support
+= Introduction =
+Here are step-by-step instructions for setting up raw printing on Windows XP. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Windows XP in Firefox and Internet Explorer. _Last tested 11/07/2009, Windows XP SP2_ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-windows-xp-zebra.html mirror]) 
+
+= Steps =
+`Windows XP`
+
+  # Open Control Panel. Click "*Printers and Faxes*"<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW2L2lQwJI/AAAAAAAAATw/THPg257TKgo/s1600-h/1.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW2L2lQwJI/AAAAAAAAATw/THPg257TKgo/s400/1.png]<br><br>
+  # Click "*Add Printer*"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HPoatcI/AAAAAAAAATo/IqHiAh4bj6g/s1600-h/2.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HPoatcI/AAAAAAAAATo/IqHiAh4bj6g/s400/2.PNG]<br><br>
+  # Click "*Next*" at the welcome screen.<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HL22vxI/AAAAAAAAATg/gc9Oc-1MOiE/s1600-h/3.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HL22vxI/AAAAAAAAATg/gc9Oc-1MOiE/s400/3.PNG]<br><br>
+  # Click "*Local printer attached to this computer*" and deselect "~~*Automatically detect and install...*~~". Click "*Next*".<br>[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW2G2hBa0I/AAAAAAAAATY/VPSh7MXHW0s/s1600-h/4.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW2G2hBa0I/AAAAAAAAATY/VPSh7MXHW0s/s400/4.PNG]<br><br>
+  # Click "*Create New Port*" and from the drop-down select "*Standard TCP/IP*" port.<br>[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW2Gnum5xI/AAAAAAAAATQ/wdCkE1JUmW0/s1600-h/5.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW2Gnum5xI/AAAAAAAAATQ/wdCkE1JUmW0/s400/5.PNG]<br><br>
+  # At the Port Wizard Welcome screen click "*Next*"<br>[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW2GoWylHI/AAAAAAAAATI/h2imLtUSAZk/s1600-h/6.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW2GoWylHI/AAAAAAAAATI/h2imLtUSAZk/s400/6.PNG]<br><br>
+  # For Printer Name or IP Address, put the hostname or IP of your printer and click "*Next*"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW10LcSyUI/AAAAAAAAATA/kd0tcqX_FLk/s1600-h/7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW10LcSyUI/AAAAAAAAATA/kd0tcqX_FLk/s400/7.PNG]<br><br>
+  # If prompted for a Device Type, select "*Generic Network Card*". Click "*Next*".<br>[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW1z9kZCPI/AAAAAAAAAS4/UkRxy6kW3P4/s1600-h/8.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW1z9kZCPI/AAAAAAAAAS4/UkRxy6kW3P4/s400/8.PNG]<br><br>
+  # A summary page will display with your port information. Click "*Finish*".<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1zjA4nBI/AAAAAAAAASw/UTbFFGFmTMM/s1600-h/9.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1zjA4nBI/AAAAAAAAASw/UTbFFGFmTMM/s400/9.PNG]<br><br>
+  # The Printer Wizard will continue. When prompted for Manufacturer, click "*Generic*". For printer, select "*Generic/Text Only*". Click "*Next*".<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW1zc6-UnI/AAAAAAAAASo/cosdqEsoc2k/s1600-h/10.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW1zc6-UnI/AAAAAAAAASo/cosdqEsoc2k/s400/10.PNG]<br><br>
+  # If prompted to keep the driver, click "*Keep the existing driver*". Click "*Next*".<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1zQlZvqI/AAAAAAAAASg/EbADuqx8uz0/s1600-h/11.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1zQlZvqI/AAAAAAAAASg/EbADuqx8uz0/s400/11.PNG]<br><br>
+  # Type the printer name you'd like to use. For example, "*zebra*". It will ask to use this printer as the default printer. Click "*No*". Click "*Next*".<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1onvAmWI/AAAAAAAAASY/JChPSKKJPT0/s1600-h/12.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1onvAmWI/AAAAAAAAASY/JChPSKKJPT0/s400/12.PNG]<br><br>
+  # When prompted to share the printer, click "*Do not share this printer*". This setting can be changed later if needed.<br>[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW1ocbvBQI/AAAAAAAAASQ/bSneNnnfGyU/s1600-h/13.PNG http://4.bp.blogspot.com/_9hmP3Ho0t14/SvW1ocbvBQI/AAAAAAAAASQ/bSneNnnfGyU/s400/13.PNG]<br><br>
+  # You will be prompted to print a test page. Click "*No*" and click "*Next*".<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1oIOGa1I/AAAAAAAAASI/G_PK0LFY984/s1600-h/14.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1oIOGa1I/AAAAAAAAASI/G_PK0LFY984/s400/14.PNG]<br><br>
+  # The wizard summary page will appear. Click "*Finish*"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1n-efNzI/AAAAAAAAASA/8zB0EO0Eeto/s1600-h/15.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW1n-efNzI/AAAAAAAAASA/8zB0EO0Eeto/s400/15.PNG]<br><br>
+  # Your printer will now list under "*Printers and Faxes*"<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW1n0SgOhI/AAAAAAAAAR4/GRj8UtzVSmA/s1600-h/16.PNG http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW1n0SgOhI/AAAAAAAAAR4/GRj8UtzVSmA/s400/16.PNG]<br><br>
+  # Troubleshooting: (If problems exist) Make sure the new port (under the new printer *properties --> ports --> find your new port --> configure port*) is set to "*RAW*" under protocol. If printing to a non-standard port (other than 9100) adjust the port settings correctly.<br><br>
+  # End of Steps
+
+-Tres
