@@ -2,7 +2,7 @@
 #labels Featured,Phase-Requirements,Phase-Design
 
 = Steps =
-  # Make sure JZebra.jar is in your java class path.
+  # Make sure `JZebra.jar` is in your java class path.
   # Adapt the following code to work in your Java project.
   {{{
   import javax.print.PrintService;
