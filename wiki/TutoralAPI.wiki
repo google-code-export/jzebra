@@ -1,4 +1,4 @@
-#summary Using jZebra in your Java application
+#summary Using jZebra as an API in your Java application
 #labels Featured,Phase-Requirements,Phase-Design
 
 = Steps =
