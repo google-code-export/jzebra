@@ -2,7 +2,7 @@
 #labels Featured,Phase-Requirements,Phase-Design
 
 = Steps =
-  # Make sure [http://code.google.com/p/jzebra/downloads/list `JZebra.jar`] is in your java class path.
+  # Make sure [http://code.google.com/p/jzebra/downloads/list JZebra.jar] is in your java class path.
   # Make sure your printer is set up on your workstation with the name "`zebra`".  For step-by-step instructions:  [TutorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
   # Adapt the following code to work in your Java project.
   {{{
