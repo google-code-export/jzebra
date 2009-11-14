@@ -1,5 +1,8 @@
 #summary Using jZebra as an API in your Java application
 #labels Featured,Phase-Requirements,Phase-Design
+Introduction
+
+This is Java code [http://en.wikipedia.org/wiki/Snippet_(programming) snippet] that will allow you to use jZebra directly in your Java Application.
 
 = Steps =
   # Make sure [http://code.google.com/p/jzebra/downloads/list JZebra.jar] is in your java class path.
