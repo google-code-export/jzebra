@@ -14,7 +14,8 @@
   
   try {
      String rawCmds = "A37,503,0,1,2,3,N,\"ABC WIDGET CO\"";
-     PrintService ps = PrintServiceMatcher.findPrinter("zebra");
+     String printer = "zebra";
+     PrintService ps = PrintServiceMatcher.findPrinter(printer);
      if (ps != null) {
         PrintRaw p = new PrintRaw(ps, rawCmds);
         return p.print();
