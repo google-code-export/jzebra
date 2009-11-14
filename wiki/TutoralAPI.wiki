@@ -1,0 +1,30 @@
+#summary Using jZebra in your Java application
+#labels Featured,Phase-Requirements,Phase-Design
+
+= Steps =
+
+{{{
+import javax.print.PrintService;
+import java.lang.Exception;
+import jzebra.PrintRaw;
+import jzebra.PrintServiceMatcher;
+
+...
+
+try {
+   String rawCmds = "A37,503,0,1,2,3,N,\"ABC WIDGET CO\"";
+   PrintService ps = PrintServiceMatcher.findPrinter("zebra");
+   if (ps != null) {
+      PrintRaw p = new PrintRaw(ps, rawCmds);
+      return p.print();
+   }
+   else {
+      System.err.println("Could not find printer!");
+   }
+   
+}
+catch (Exception e) {
+   e.printStackTrace();
+}
+
+}}}
