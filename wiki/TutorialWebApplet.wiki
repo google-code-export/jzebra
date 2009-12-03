@@ -1,12 +1,12 @@
 #summary Using jZebra as a Web Applet component
 #labels Featured,Phase-Deploy,Phase-Support
-|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> *[TutorialWebApplet_Legacy Web Applet]* || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> [TutorialStaticParameters_Legacy Common Parameters] ||
 
 = Introduction =
-This is a step-by-step tutorial that walks a web developer through creating a *basic html web applet* capable of sending raw commands directly to a printer.
+This is a step-by-step tutorial that walks a web developer through creating a *html web applet* capable of sending raw commands directly to a printer through JavaScript commands.
 
 For a quickstart,  download and extract the [http://code.google.com/p/jzebra/downloads/list latest version] and examine the applet code inside the provide sample html.
 
+*TODO:  Update Screenshot*
   || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
 
   || *Note:* jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
@@ -15,27 +15,26 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 = Steps =
 == Load The Applet ==
   # Make sure your printer is set up on your workstation with the name "zebra".  For step-by-step instructions:  [TutorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
-  # Download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]`jZebra_x.x.x.zip` from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
-   * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
-   * Locate the html sample file and open it with a text editor.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`".  Look over the applet code quickly to get comfortable with the parameters.
-   * Close out "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
+  # Download the [http://code.google.com/p/jzebra/downloads/list latest version] and extract the contents to your desktop.  
+   * Create a plain text file "print.html".  Insert the applet code to create the applet.
     {{{
     <html><body>
-       <applet code="jzebra.JZebraApplet.class" archive="./jzebra.jar" width="200" height="25">
-          <param name="buttontext" value="Sample button">
-       </applet>
+       <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100">
+   </applet><br><br>
     </html></body>
     }}}
-   * Save the file in the same folder as [http://img104.imageshack.us/img104/9696/packagept0.png]`jzebra.jar` and open the file with the browser of your choice.
+   * Save the file in the same folder as `jzebra.jar`.
+   * Open `print.html` with a web browser (Firefox).
    || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
-   || *Note:* If you do not have a printer named "zebra" attached to your station, then you will have a `SEVERE: Printer not found` in your log.  To fix this, create printer "zebra" in the name.  Instructions: [TutorialRawXP XP], [TutorialRawUbuntu Ubuntu], [TutorialRawOSX OS X] ||
    || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
   #  The applet will begin to load in the web page.
+   *TODO:  Update Screenshot*
    [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
-  #  Next, Java security dialog prompt is shown.  This is Java's way of warning that the Web Applet has access to local resources.  jZebra needs local access to the workstation's printers, so click "Run".
+  #  Next, Java security dialog prompt is shown.  Click "Run".
    [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
-  #  Your "Sample button" should have loaded.  If the browser stops responding or the applet never loads, check to make sure files were extracted correctly and that the archive is set properly in the html.
-  #  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users, email [mailto:tres.finocchiaro@gmail.com the author] if you've found a way to display a similar console.
+  #  The applet should be loaded.
+   *TODO:  Update Screenshot*
+  #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users, email [mailto:tres.finocchiaro@gmail.com the author] if you've found a way to display a similar console.
   #  The Java Console is critical for calibrating the applet for your printer.
   #  If you already have a Zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers and will select the first match. Look for "INFO:  Printer found...". (This can later be changed using TutorialStaticParameters)
    [http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
