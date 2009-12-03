@@ -28,12 +28,12 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
    || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
   #  The applet will begin to load in the web page.
-   *TODO:  Update Screenshot*
+  #  *TODO:  Update Screenshot*
    [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
   #  Next, Java security dialog prompt is shown.  Click "Run".
    [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
   #  The applet should be loaded.
-   *TODO:  Update Screenshot*
+  #  *TODO:  Update Screenshot*
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users, email [mailto:tres.finocchiaro@gmail.com the author] if you've found a way to display a similar console.
   #  The Java Console is critical for calibrating the applet for your printer.
   #  If you already have a Zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers and will select the first match. Look for "INFO:  Printer found...". (This can later be changed using TutorialStaticParameters)
