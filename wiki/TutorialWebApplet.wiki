@@ -45,25 +45,25 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
 == Set Parameters ==
   # jZebra's parameters are set through JavaScript commands.  Set the printer name to "zebra"
-   * JavaScript Code (example):
+   *  JavaScript Code (example):
    {{{
-       <script>
-       function findPrinter() {
+      <script>
+      function findPrinter() {
          document.jZebra.findPrinter("zebra");
       }
       </script>
    }}}
-   * Add a *Find Printer* button (after `</applet><br><br>` code):
+   *  Add a *Find Printer* button (after `</applet><br><br>` code):
    {{{
-       <input type=button onClick="findPrinter()" value="Detect Printer"><br><br>
+      <input type=button onClick="findPrinter()" value="Detect Printer"><br><br>
    }}}
-   * Load page in web browser and click "Find Printer" button.
-   * View Java console for output.  Look for `"INFO: Printer found..."`
-   * TODO:  Find Printer Button Screenshot*
+   *  Load page in web browser and click "Find Printer" button.
+   *  View Java console for output.  Look for `"INFO: Printer found..."`
+   *  TODO:  Find Printer Button Screenshot*
   # Send commands to printer (Don't forget NewLine)
    * JavaScript Code: (Example)
    {{{
-       function print() {
+      function print() {
          // Hint:  Carriage Return = "\r", New Line = "\n" 
          document.jZebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
 
