@@ -40,8 +40,6 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users [http://www.java.com/en/download/help/5000021200.xml click here].
   || *Note:* The Java Console is critical for calibrating the applet for your printer. ||
   #  You should see `======== JAVASCRIPT THREAD STARTED ========` in the log
-  # *TODO: Relocate Screenshot*
-   [http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
 
 == Set Parameters ==
   # jZebra's parameters are set through JavaScript commands.  Set the printer name to "zebra"
