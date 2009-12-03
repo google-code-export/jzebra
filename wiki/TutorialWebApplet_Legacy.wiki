@@ -1,0 +1,128 @@
+#summary Using jZebra as a Web Applet component
+#labels Featured,Phase-Support
+|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> *[TutorialWebApplet Web Applet]* ||  <img align="middle" src="http://img413.imageshack.us/img413/9843/toggledesktopes0.png"> [TutorialDesktopApplication Desktop Application] || <img align="middle" src="http://img413.imageshack.us/img413/6632/terminal1mq3.png"> [TutorialConsoleApplication Console Application] || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> [TutorialStaticParameters Common Parameters] ||
+
+= Introduction =
+This is a step-by-step tutorial that walks a web developer through creating a *basic html web applet* capable of sending raw commands directly to a printer.
+
+For a quickstart,  download and extract the [http://code.google.com/p/jzebra/downloads/list latest version] and examine the applet code inside the provide sample html.
+
+  || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
+
+  || *Note:* jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
+
+----
+= Steps =
+== Load The Applet ==
+  # Make sure your printer is set up on your workstation with the name "zebra".  For step-by-step instructions:  [TutorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
+  # Download the latest [http://img104.imageshack.us/img104/9696/packagept0.png]`jZebra_x.x.x.zip` from [http://img242.imageshack.us/img242/5678/diskmultiplebx6.png][http://code.google.com/p/jzebra/downloads/list downloads] and extract the contents to your desktop.  
+   * Make sure to extract the entire contents at once so that the folder and file structure stays in tact.
+   * Locate the html sample file and open it with a text editor.  Windows users can use *[http://img174.imageshack.us/img174/2286/notepadle4.gif]notepad*.  Linux users can use *[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]gedit* (Ubuntu calls this "*[http://img174.imageshack.us/img174/6650/accessoriestexteditor16ol7.png]Text Editor*").  This should be called "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`".  Look over the applet code quickly to get comfortable with the parameters.
+   * Close out "[http://img74.imageshack.us/img74/2484/post997051213609968km7.png]`preview-application.html`" and use the same text editor to make a new file.  Start by inserting the code to create the applet.
+    {{{
+    <html><body>
+       <applet code="jzebra.JZebraApplet.class" archive="./jzebra.jar" width="200" height="25">
+          <param name="buttontext" value="Sample button">
+       </applet>
+    </html></body>
+    }}}
+   * Save the file in the same folder as [http://img104.imageshack.us/img104/9696/packagept0.png]`jzebra.jar` and open the file with the browser of your choice.
+   || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
+   || *Note:* If you do not have a printer named "zebra" attached to your station, then you will have a `SEVERE: Printer not found` in your log.  To fix this, create printer "zebra" in the name.  Instructions: [TutorialRawXP XP], [TutorialRawUbuntu Ubuntu], [TutorialRawOSX OS X] ||
+   || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
+  #  The applet will begin to load in the web page.
+   [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
+  #  Next, Java security dialog prompt is shown.  This is Java's way of warning that the Web Applet has access to local resources.  jZebra needs local access to the workstation's printers, so click "Run".
+   [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
+  #  Your "Sample button" should have loaded.  If the browser stops responding or the applet never loads, check to make sure files were extracted correctly and that the archive is set properly in the html.
+  #  Click the "Sample button".  It will most likely do nothing, this is normal.  What is important is that the output is checked in the Java console. Windows users can enable this by right clicking the Java system tray icon and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users, email [mailto:tres.finocchiaro@gmail.com the author] if you've found a way to display a similar console.
+  #  The Java Console is critical for calibrating the applet for your printer.
+  #  If you already have a Zebra printer attached to your station, the applet will try to automatically use it by searching for the name "zebra" in all of your attached printers and will select the first match. Look for "INFO:  Printer found...". (This can later be changed using TutorialStaticParameters)
+   [http://img518.imageshack.us/img518/4696/jzebraprinterfoundfb0.png]
+  #  Look in the Java console log for something like the screenshot below.  You should see the default raw commands that jZebra ships with.  These will most likely look a bit foreign to you, that's normal.  The supplied commands are EPL commands.  We'll change them to something your printer can use in the steps following.
+   [http://img443.imageshack.us/img443/2775/jzebrajava2gh7.png]
+
+== Set Parameters ==
+  # Set the `LINEFEED` parameter based on your printer's programmer's guide.
+   * New Line Character
+   {{{
+       <param name="linefeed" value="\n">
+   }}}
+   * New Line + Carriage Return
+   {{{
+       <param name="linefeed" value="\r\n">
+   }}}
+  # Set the `CONFIGPATH` parameter to point to a file with raw commands in it.
+   * Local File
+   {{{
+       <param name="configpath" value="c:\test.txt">
+   }}}
+   * Web Hosted URL
+   {{{
+       <param name="configpath" value="http://mysite/file1.raw">
+   }}}
+  # Set the `CONFIGTYPE` parameter that matches what was used in Step 2.
+   * Local File
+   {{{
+       <param name="configtype" value="file">
+   }}}
+   * Web Hosted URL
+   {{{
+       <param name="configtype" value="url">
+   }}}
+  # Make sure printer is connected as a raw print queue.
+    [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Steps http://3.bp.blogspot.com/_9hmP3Ho0t14/SvXbFLIbfXI/AAAAAAAAAUQ/EmPDrWLk7YI/s400/config_win.png][http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://4.bp.blogspot.com/_9hmP3Ho0t14/SvXbE4Sp39I/AAAAAAAAAUI/dvvUZ_sJNQA/s400/config_lin.png][http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbE_kTK_I/AAAAAAAAAUA/a-Ucl9UaIvI/s400/config_mac.png]http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbEnoMELI/AAAAAAAAAT4/eF4xkJ68ALY/s400/config_end.png
+  # Load the applet and try to print.
+
+=== Command Substitution ==
+  # jZebra allows any word in a raw print file to be replaced through applet code by using a dollar sign `$`.  This will treat the raw file as a template.
+   * Original
+   {{{
+   A37,503,0,1,2,3,N,"ABC WIDGET CO"
+   A37,545,0,1,2,3,N,"1234 LIMBO STREET"
+   A37,587,0,1,2,3,N,"**TEST LABEL - DO NOT SHIP**"
+   A37,629,0,1,2,3,N,"AKRON OH 44333"
+   A37,461,0,1,2,3,N,"JOE CUSTOMER"
+   A35,671,0,2,1,1,N,"(330) 555-1234"
+   }}}
+   * Substitution
+   {{{
+   A37,503,0,1,2,3,N,"$BUSINESS"
+   A37,545,0,1,2,3,N,"$ADDRESS"
+   A37,587,0,1,2,3,N,"$MESSAGE"
+   A37,629,0,1,2,3,N,"$CITYSTATEZIP"
+   A37,461,0,1,2,3,N,"$NAME"
+   A35,671,0,2,1,1,N,"$PHONE"
+   }}}
+   * Additional HTML
+   {{{
+   <param name="BUSINESS" value="ABC WIDGET CO">
+   <param name="ADDRESS" value="1234 LIMBO STREET">
+   <param name="MESSAGE" value="**TEST LABEL - DO NOT SHIP**">
+   <param name="CITYSTATEZIP" value="AKRON OH 44333">
+   <param name="NAME" value="JOE CUSTOMER">
+   <param name="PHONE" value="(330) 555-1234">
+   }}}
+  # Second example:  Using the supplied example:
+   http://img443.imageshack.us/img443/3849/jzebracommandreplaceji3.png
+   {{{
+      <param name="FIRSTNAME" value="TRES">
+   }}}
+   http://img443.imageshack.us/img443/6216/jzebracommandreplace2jz6.png
+   || *Note:* Dollar sign variables will be left verbatim if not supplied as applet parameters. ||
+  
+== From php ==
+  # Courtesy of James at Reason Transport
+   {{{
+   <applet code="jzebra.JZebraApplet.class" archive="<?php echo $imgdir; ?>/jzebra.jar" width="138" height="25">
+      <param name="config" value="<?php echo $depurl; ?>/test">
+      <param name="autoprint" value="true">
+      <param name="printer" value="zebra">
+      <param name="showicon" value="false">
+      <param name="linefeed" value="\n">
+      <param name="showmessages" value="false">
+   </applet>
+   }}}
+
+== Conclusion ==
+  Please email questions or suggestions to [mailto:tres.finocchiaro@gmail.com the author].
