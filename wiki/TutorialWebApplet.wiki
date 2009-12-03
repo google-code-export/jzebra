@@ -36,11 +36,11 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
      [http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgoGt3lmKI/AAAAAAAAAXA/jsqVvrlRl4k/s400/applet_loading.PNG]
   #  Next, Java security dialog prompt is shown.  Click "Run".
    [http://1.bp.blogspot.com/_9hmP3Ho0t14/Sxg0XxeTomI/AAAAAAAAAXI/rStKpFiZuU8/s400/digital_signature.PNG]
-  #  The applet should be loaded.
-  #  *TODO:  Update Screenshot*
+  #  The applet should be loaded.  At this point it will look like a blank page.
+     [http://3.bp.blogspot.com/_9hmP3Ho0t14/Sxg33AE8swI/AAAAAAAAAXQ/yiooaR3yCsY/s400/applet_plain_preview.PNG]
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
-  || *Note:* The Java Console is critical for calibrating the applet for your printer. ||
-  #  You should see the version of jZebra followed by `===== JAVASCRIPT LISTENER THREAD STARTED =====` in the log.  Sample:
+  || *Note:* The Java Console is critical for calibrating jZebra for your printer. ||
+  #  You should see the version of jZebra followed by `===== JAVASCRIPT LISTENER THREAD STARTED =====` in the log.  Sample:*
     {{{
        Java Plug-in 1.6.0_17
        Using JRE version 1.6.0_17-b04 Java HotSpot(TM) Client VM
@@ -68,7 +68,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
        Dec 3, 2009 5:03:33 PM jzebra.LogIt log
        INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
     }}}
-
+*
 == Set Parameters ==
   # jZebra's parameters are set through JavaScript commands.  Set the printer name to "zebra"
    *  JavaScript Code (example):
