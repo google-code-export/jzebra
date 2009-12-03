@@ -75,13 +75,13 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    {{{
        <input type=button onClick="print()" value="Print"><br><br>
    }}}
-   * Load page in web browser to test print button
-   * *TODO:  Print Button Screenshot*
-   * View Java console for output
-  # Load the applet and try to print.
+   *  Load page in web browser to test print button
+   *  *TODO:  Print Button Screenshot*
+   *  View Java console for output
+  #  Load the applet and try to print.
 
 === php Printing ===
-  # Replace `print()` function with this code:
+  #  Replace `print()` function with this code:
    {{{
       function print() {
          document.jZebra.append(<?php echo $commands; ?>);
@@ -92,7 +92,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    }}}
 
 === Base64 Printing ===
-  # Replace `print()` function with this code:
+  #  Replace `print()` function with this code:
    {{{
       function print() {
          applet.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
