@@ -59,7 +59,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    }}}
    *  Load page in web browser and click "Find Printer" button.
    *  View Java console for output.  Look for `"INFO: Printer found..."`
-   *  TODO:  Find Printer Button Screenshot*
+   *  *TODO:  Find Printer Button Screenshot*
   # Send commands to printer (Don't forget NewLine)
    * JavaScript Code: (Example)
    {{{
