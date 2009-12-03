@@ -5,7 +5,7 @@
 = Introduction =
 This is a step-by-step tutorial that walks a web developer through creating a *basic html web applet* capable of sending raw commands directly to a printer.
 
-*This is a legacy tutorial.  For the latest version, please see [TutorialWebApplet]*
+*This tutorial is for an old version.  For the latest version, please see [TutorialWebApplet]*
 
 For a quickstart,  download and extract the [http://code.google.com/p/jzebra/downloads/list version 1.0.3_pre4] and examine the applet code inside the provide sample html.
 
