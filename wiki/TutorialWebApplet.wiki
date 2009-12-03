@@ -30,6 +30,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   #  The applet will begin to load in the web page.
   #  *TODO:  Update Screenshot*
    [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
+  #  *TODO:  Update Screenshot*
   #  Next, Java security dialog prompt is shown.  Click "Run".
    [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
   #  The applet should be loaded.
