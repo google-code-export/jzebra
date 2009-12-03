@@ -1,5 +1,5 @@
 #summary Using jZebra as a Desktop Application
-|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> [TutorialWebApplet_Legacy Web Applet] ||  <img align="middle" src="http://img413.imageshack.us/img413/9843/toggledesktopes0.png"> *[TutorialDesktopApplication_Legacy Desktop Application]* || <img align="middle" src="http://img413.imageshack.us/img413/6632/terminal1mq3.png"> [TutorialConsoleApplication Console_Legacy Application] || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> [TutorialStaticParameters_Legacy Common Parameters] ||
+|| <img align="middle" src="http://img413.imageshack.us/img413/4710/firefox2ie7nn0.gif"> [TutorialWebApplet_Legacy Web Applet] ||  <img align="middle" src="http://img413.imageshack.us/img413/9843/toggledesktopes0.png"> *[TutorialDesktopApplication_Legacy Desktop Application]* || <img align="middle" src="http://img413.imageshack.us/img413/6632/terminal1mq3.png"> [TutorialConsoleApplication_Legacy Console Application] || <img align="middle" src="http://4.bp.blogspot.com/_9hmP3Ho0t14/Sveb2dQ1H6I/AAAAAAAAAV4/-f-r_lZzLWQ/s400/Properties-48x48.png"> [TutorialStaticParameters_Legacy Common Parameters] ||
 
 = Introduction =
 
