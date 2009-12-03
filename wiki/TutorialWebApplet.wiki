@@ -24,23 +24,50 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
     {{{
     <html><body>
        <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100">
+          <param name="sleep" value="200">
        </applet><br><br>
     </html></body>
     }}}
    * Save the file in the same folder as `jzebra.jar`.
    * Open `print.html` with a web browser (Firefox).
-   || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
+   || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
+   || *Note:* IE7 may be prompt to Click to Activate This Control each time the applet loads.  Click [http://www.mix-fx.com/flash-prompt.htm here] for details. ||
   #  The applet will begin to load in the web page.
-  #  *TODO:  Update Loading Screenshot*
-   [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
-  #  *TODO:  Update Security Dialog Screenshot*
+     [http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgoGt3lmKI/AAAAAAAAAXA/jsqVvrlRl4k/s400/applet_loading.PNG]
   #  Next, Java security dialog prompt is shown.  Click "Run".
-   [http://img132.imageshack.us/img132/6508/jzebrasecuritydialogip3.png]
+   [http://1.bp.blogspot.com/_9hmP3Ho0t14/Sxg0XxeTomI/AAAAAAAAAXI/rStKpFiZuU8/s400/digital_signature.PNG]
   #  The applet should be loaded.
   #  *TODO:  Update Screenshot*
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
   || *Note:* The Java Console is critical for calibrating the applet for your printer. ||
-  #  You should see `======== JAVASCRIPT THREAD STARTED ========` in the log
+  #  You should see the version of jZebra followed by `===== JAVASCRIPT LISTENER THREAD STARTED =====` in the log.  Sample:
+    {{{
+       Java Plug-in 1.6.0_17
+       Using JRE version 1.6.0_17-b04 Java HotSpot(TM) Client VM
+       User home directory = C:\Documents and Settings\tfino
+       
+       ----------------------------------------------------
+       c:   clear console window
+       f:   finalize objects on finalization queue
+       g:   garbage collect
+       h:   display this help message
+       l:   dump classloader list
+       m:   print memory usage
+       o:   trigger logging
+       q:   hide console
+       r:   reload policy configuration
+       s:   dump system and deployment properties
+       t:   dump thread list
+       v:   dump thread stack
+       x:   clear classloader cache
+       0-5: set trace level to <n>
+       ----------------------------------------------------
+       
+       Dec 3, 2009 5:03:33 PM jzebra.LogIt log
+       INFO: jZebra 1.0.4
+       Dec 3, 2009 5:03:33 PM jzebra.LogIt log
+       INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
+    }}}
 
 == Set Parameters ==
   # jZebra's parameters are set through JavaScript commands.  Set the printer name to "zebra"
