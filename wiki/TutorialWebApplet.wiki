@@ -30,7 +30,6 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    * Save the file in the same folder as `jzebra.jar`.
    * Open `print.html` with a web browser (Firefox).
    || *Note:* IE7 may be prompt to "[http://www.mix-fx.com/flash-prompt.htm Click to Activate This Control]" each time the applet loads. ||
-   || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
   #  The applet will begin to load in the web page.
   #  *TODO:  Update Loading Screenshot*
    [http://img132.imageshack.us/img132/3484/javaloadingca2.png]
@@ -71,12 +70,14 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
          document.jZebra.print();
       }
    }}}
+   || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
    * Add a *Print* button (after `"Detect Printer"><br><br>` code):
    {{{
        <input type=button onClick="print()" value="Print"><br><br>
    }}}
    *  Load page in web browser to test print button
    *  *TODO:  Print Button Screenshot*
+   *  *TODO:  Console Output Screenshot*
    *  View Java console for output
   #  Load the applet and try to print.
 
