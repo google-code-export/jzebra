@@ -70,7 +70,8 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
     }}}
 *
 == Set Parameters ==
-  # jZebra's parameters are set through JavaScript commands.  Set the printer name to "zebra"
+  # jZebra's parameters are set through JavaScript commands.
+  # First, insert this JavaScript code to search for a printer named "zebra":
    *  JavaScript Code (example):
    {{{
       <script>
@@ -78,15 +79,15 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
          document.jZebra.findPrinter("zebra");
       }
       </script>
-   }}}
-   *  Add a *Find Printer* button (after `</applet><br><br>` code):
+  # Second, add html code for a *Find Printer* button (after `</applet><br><br>` code):
    {{{
       <input type=button onClick="findPrinter()" value="Detect Printer"><br><br>
    }}}
+  # Third, test "print.html"
    *  Load page in web browser and click "Find Printer" button.
    *  View Java console for output.  Look for `"INFO: Printer found..."`
    *  *TODO:  Find Printer Button Screenshot*
-  # Send commands to printer (Don't forget NewLine)
+  # Fourth, insert this JavaScript code to send commands to printer (Don't forget NewLine)
    * JavaScript Code: (Example)
    {{{
       function print() {
@@ -98,15 +99,17 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
       }
    }}}
    || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
-   * Add a *Print* button (after `"Detect Printer"><br><br>` code):
+  #  Next, add html code for a *Print* button (after `"Detect Printer"><br><br>` code):
    {{{
        <input type=button onClick="print()" value="Print"><br><br>
    }}}
-   *  Load page in web browser to test print button
+  #  Last, test "print.html"
+   *  Load page in web browser and click "Find Printer" button
+   *  Click "Print" button
    *  *TODO:  Print Button Screenshot*
    *  *TODO:  Console Output Screenshot*
    *  View Java console for output
-  #  Load the applet and try to print.
+  #  If problems exist, try the included *sample.html* or email the [mailto:tres.finocchiaro@gmail.com author].
 
 === php Printing ===
   #  Replace `print()` function with this code:
