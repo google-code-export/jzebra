@@ -2,7 +2,7 @@
 #labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
-This is a step-by-step tutorial that walks a web developer through creating a *html web applet* capable of sending raw commands directly to a printer through JavaScript commands.
+This is a step-by-step tutorial that walks a web developer through creating a *html web applet* capable of sending raw commands directly to a printer through a Java Applet + JavaScript commands.
 
 *This is a new tutorial for version 1.0.4 and higher.  For version 1.0.3, see the legacy tutorial [TutorialWebApplet_Legacy]*
 
