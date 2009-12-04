@@ -69,16 +69,16 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
        INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
     }}}
 *
-== Set Parameters ==
+== Printing ==
   # jZebra's parameters are set through JavaScript commands.
   # First, insert this JavaScript code to search for a printer named "zebra":
-   *  JavaScript Code (example):
    {{{
       <script>
       function findPrinter() {
          document.jZebra.findPrinter("zebra");
       }
       </script>
+  }}}
   # Second, add html code for a *Find Printer* button (after `</applet><br><br>` code):
    {{{
       <input type=button onClick="findPrinter()" value="Detect Printer"><br><br>
@@ -134,7 +134,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
       }
    }}}
 
-=== Special Characters ===
+=== Printing Special Characters ===
    {{{
       function print() {
          // CHR(27) + CHR(29)
