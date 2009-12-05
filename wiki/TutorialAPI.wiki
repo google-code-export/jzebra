@@ -1,0 +1,36 @@
+#summary Using jZebra as an API in your Java application
+#labels Featured,Phase-Requirements,Phase-Design,Phase-Deploy,Phase-Support
+Introduction
+
+This is Java code [http://en.wikipedia.org/wiki/Snippet_(programming) snippet] that will allow you to use jZebra directly in your Java Application.
+
+= Steps =
+  # Make sure [http://code.google.com/p/jzebra/downloads/list JZebra.jar] is in your java class path.
+  # Make sure your printer is set up on your workstation with the name "`zebra`".  For step-by-step instructions:  [TutorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
+  # Adapt the following code to work in your Java project.
+  {{{
+  import javax.print.PrintService;
+  import java.lang.Exception;
+  import jzebra.PrintRaw;
+  import jzebra.PrintServiceMatcher;
+  
+  ...
+  
+  try {
+     String rawCmds = "A37,503,0,1,2,3,N,\"ABC WIDGET CO\"";
+     String printer = "zebra";  // This should match your printer name from Step 2.
+     PrintService ps = PrintServiceMatcher.findPrinter(printer);
+     if (ps != null) {
+        PrintRaw p = new PrintRaw(ps, rawCmds);
+        return p.print();
+     }
+     else {
+       System.err.println("Could not find printer!");
+     }
+    
+  }
+  catch (Exception e) {
+     e.printStackTrace();
+  }
+  }}}
+  # End of Steps
