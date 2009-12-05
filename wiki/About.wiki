@@ -2,7 +2,15 @@
 #labels Featured,Phase-Implementation
 
 = Introduction =
-If you are looking to send raw printer commands to your printer with php, jsp, ASP or JavaScript you likely have found -- until now -- the only option is a proprietary Microsoft-only ActiveX control for Internet Explorer.  jZebra is an open-source and open-API alternative.  Version 1.0.3 and higher features an in-browser applet written in Java that can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome. If the printer is NOT a Zebra printer, jZebra may still work for your application.
+If you are looking to send raw printer commands to your printer with php, jsp, ASP or JavaScript you likely have found -- until now -- the only option is a proprietary Microsoft-only ActiveX control for Internet Explorer.  jZebra is an open-source and open-API alternative.
+
+Version 1.0.3 features an in-browser applet written in Java that can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
+
+Version 1.0.4 and higher is lighter-weight and geared specifically for JavaScript usage with enhancements for special characters.  
+
+Future versions will be tailored according to industry needs and focus new developments on COM port and BlueTooth support.
+
+If the printer is NOT a Zebra printer, jZebra *may still work* for your printer and application!
 
 
 = Details =
