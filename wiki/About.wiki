@@ -6,7 +6,7 @@ If you are looking to send raw printer commands to your printer with php, jsp, A
 
 Version 1.0.3 features an in-browser applet written in Java that can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
 
-Version 1.0.4 and higher is lighter-weight and geared specifically for JavaScript usage with enhancements for special characters.  
+Version 1.0.4 and higher is lighter-weight and geared specifically for JavaScript usage with enhancements for special characters/special print commands.  
 
 Future versions will be tailored according to industry needs and focus new developments on COM port and BlueTooth support.
 
