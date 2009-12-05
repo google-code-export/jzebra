@@ -6,19 +6,24 @@ If you are looking to send raw printer commands to your printer with php, jsp, A
 
 
 = Details =
-jZebra sends raw information to your printer by bypassing the standard PCL (printer control language) and sending raw data directly to your printer.  In the production industry, this raw printing functionality is often required for making badges (RFID, magnetic strip) and labels (bar-codes, asset tags) from Zebra printers.  jZebra may work with non-zebra printers too.
+jZebra sends raw information to your printer by bypassing the standard PCL (printer control language) and sending raw data directly to your printer.  In the production industry, this raw printing functionality is often required for making badges, tags (RFID, magnetic strip), receipts (thermal paper) and labels (bar-codes, asset tags) from Zebra printers.  jZebra has been tested with non-zebra printers too!
 
 
 = API/License =
-jZebra is an open-source Java application using open Java APIs.  jZebra is licensed GPL 3+ which allows it to be used without modification in open source, closed source and even be sold with a product.  If you modify the source code of jZebra, you need to publish your changes in accordance with the GPL 3+ license.
+jZebra is a completely free, open-source Java application using open Java APIs.  jZebra is licensed GPL 3+ which allows it to be used without modification for virtually all purposes.  This means jZebra can be used with open source, closed source and even be sold with a product.  However, if you re-use or modify the source code of jZebra, you are legally obligated to publish your changes in accordance with the GPL 3+ license.
 
-jZebra can be included in your Java projects directly, or loaded as a web applet.  Batch-mode printing is under development.
+jZebra can be included in your Java projects directly through it's [TutorialAPI API], or loaded as a [TutorialWebApplet web applet].
 
 For use in your *web page*, see the [http://code.google.com/p/jzebra/wiki/TutorialWebApplet Web Applet Wiki]
 
-Please help contribute to the wiki if you find this product useful.
+Please help contribute to the wiki if you find this product useful, or email the [mailto:tres.finocchiaro@gmail.com author] with comments, feedback, code examples, suggestions, etc.  All forms of feedback are welcome.
 
 = History =
 jZebra was initially created for [http://en.wikipedia.org/wiki/Magnetic_stripe_card magnetic stripe encoding], such as hotel room keys or player tracking cards on Zebra™ style printers.  Zebra™ printing is the most common use of jZebra due to the growing demand for a web page that can perform thermal/bar-code or magnetic-stripe printing.  
 
-Since its creation, jZebra has shown more interest in its capabilities in printing bar-codes for shipping purposes.  Not to be confused with the [http://barbecue.sourceforge.net Barbecue]  project... The jZebra project is working with the [http://code.google.com/p/ups-php/ ups-php] project, a web developer from [http://www.reasontransport.com/ ReasonTransport] and also a web developer from [http://www.justtesting.biz/html/jzebra/jzdemo.html FedEx] to focus its usage web use for packaging and shipping automation by printing thermal-printer labels and bar-codes.  If you have questions on whether or not jZebra will work for you, please contact [mailto:tres.finocchiaro@gmail.com the author].  
+Since its creation, jZebra has shown more interest in its capabilities in printing bar-codes for shipping purposes.  Not to be confused with the [http://barbecue.sourceforge.net Barbecue]  project... The jZebra project is working with the [http://code.google.com/p/ups-php/ ups-php] project, a web developer from [http://www.reasontransport.com/ ReasonTransport] and also a web developer from [http://www.justtesting.biz/html/jzebra/jzdemo.html FedEx] to focus its usage web use for packaging and shipping automation by printing thermal-printer labels and bar-codes.  If you have questions on whether or not jZebra will work for you, please contact [mailto:tres.finocchiaro@gmail.com the author].
+
+= Support =
+jZebra is offered as is without any warranty.  Email support is provided as a courtesy with no guarantees.  In the event support is needed, contact the [mailto:tres.finocchiaro@gmail.com author] for arrangements.
+
+-Tres
