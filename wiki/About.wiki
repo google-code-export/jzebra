@@ -4,13 +4,14 @@
 = Introduction =
 If you are looking to send raw printer commands to your printer with php, jsp, ASP or JavaScript you likely have found -- until now -- the only option is a proprietary Microsoft-only ActiveX control for Internet Explorer.  jZebra is an open-source and open-API alternative.
 
-Version 1.0.3 features an in-browser applet written in Java that can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
-
-Version 1.0.4 and higher is lighter-weight and geared specifically for JavaScript usage with enhancements for special characters/special print commands.  
-
-Future versions will be tailored according to industry needs and focus new developments on COM port and BlueTooth support.
-
 If the printer is NOT a Zebra printer, jZebra *may still work* for your printer and application!
+
+= Versions =
+jZebra 1.0.3 features an in-browser applet written in Java that can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
+
+jZebra 1.0.4 and higher is lighter-weight and geared specifically fo JavaScript usage with enhancements for special characters/special print commands.  
+
+Future jZebra versions will be tailored according to industry needs and focus new developments on COM port and BlueTooth support.
 
 
 = Details =
@@ -24,7 +25,7 @@ jZebra can be included in your Java projects directly through it's [TutorialAPI 
 
 For use in your *web page*, see the [http://code.google.com/p/jzebra/wiki/TutorialWebApplet Web Applet Wiki]
 
-Please help contribute to the wiki if you find this product useful, or email the [mailto:tres.finocchiaro@gmail.com author] with comments, feedback, code examples, suggestions, etc.  All forms of feedback are welcome.
+Please help contribute to the jZebra wiki if you find this product useful by becoming a project contributor, or email the [mailto:tres.finocchiaro@gmail.com author] with comments, feedback, code examples, suggestions, etc.  All forms of feedback are welcome.
 
 = History =
 jZebra was initially created for [http://en.wikipedia.org/wiki/Magnetic_stripe_card magnetic stripe encoding], such as hotel room keys or player tracking cards on Zebra™ style printers.  Zebra™ printing is the most common use of jZebra due to the growing demand for a web page that can perform thermal/bar-code or magnetic-stripe printing.  
