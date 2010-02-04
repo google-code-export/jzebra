@@ -15,6 +15,6 @@ Features:
     * Geschrieben in Java
     * Belastungen in Ihrem Web-Browser als Applet (ähnlich wie ein Flash-Objekt) 
 
-Lesen Sie mehr über jZebra [http://translate.google.com/translate?js=y&prev=_t&hl=en&ie=UTF-8&layout=1&eotf=1&u=http%3A%2F%2Fcode.google.com%2Fp%2Fjzebra&sl=en&tl=de hier [en]]. Anreise für Web-Entwickler gestartet, siehe Web-Applet Tutorial.
+Lesen Sie mehr über jZebra [http://translate.google.com/translate?hl=en&sl=en&tl=de&u=http%3A%2F%2Fcode.google.com%2Fp%2Fjzebra%2Fwiki%2FAbout hier [en]]. Anreise für Web-Entwickler gestartet, siehe Web-Applet Tutorial.
 
 Für eine Kurzanleitung, laden Sie die neueste Version und zeigen Sie dem beigefügten 'sample.html' Demo. 
