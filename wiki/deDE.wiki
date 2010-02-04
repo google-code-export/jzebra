@@ -1,3 +1,4 @@
+#summary Translation Page - German
 =jZebra Raw Printing API=
 
 ==Drucken Sie barcodes, Quittungen und mehr von einer Web-Seite==
