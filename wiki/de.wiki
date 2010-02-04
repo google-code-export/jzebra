@@ -1,0 +1,1 @@
+Zebra ist ein Java-Applet, das es ermöglicht, Barcodes, Quittungen und anderes von einer Webseite aus zu drucken. Es sendet rohe Druckerkommandos an den Drucker. Es wurde mit Firefox, Safari, Internet Explorer und Opera getestet. Es unterstützt Parallelport-, USB- und Netzwerkdrucker.
