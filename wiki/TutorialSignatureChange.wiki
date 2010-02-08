@@ -9,15 +9,15 @@ This explains how to change the digital signature inside jZebra for re-branding 
 
 If you are NOT using a [http://en.wikipedia.org/wiki/Root_certificate root certificate] to sign it (Verisign, Thawte, etc), here are the steps to simply change the publisher name when prompted by the Security Dialog:
 
-  # Download the [http://netbeans.org/downloads/ latest version of Netbeans] (The *Java SE* version is sufficient)
+  # Download the [http://netbeans.org/downloads/ latest version of Netbeans] (The *Java SE* version is sufficient).
   # Install Netbeans taking defaults.  Registration is optional and can be skipped.
   # Download the [http://code.google.com/p/jzebra/downloads latest source code]
-  # Extract source to a folder
+  # Extract source to a folder.
   # In Netbeans, click:  *Project --> Open Project --> <browse to the extracted source code>*  The icon should look like a red coffee cup.
   # On the left "Projects" pane, *Right Click* the red coffee cup "jZebra" and click *Properties*
-  # Click *Application* from the list on the left
-  # Change vendor from "Tres Finocchiaro" to <Name of Company>
-  # Click the [http://2.bp.blogspot.com/_9hmP3Ho0t14/S3CbTCYXxqI/AAAAAAAAAY4/AOvjXs3cgec/s400/Picture+10.png] Hammer + Broom icon to do a clean build
+  # Click *Application* from the list on the left.
+  # Change vendor from "Tres Finocchiaro" to <Name of Company> and click OK to close the dialog.
+  # Click the [http://2.bp.blogspot.com/_9hmP3Ho0t14/S3CbTCYXxqI/AAAAAAAAAY4/AOvjXs3cgec/s400/Picture+10.png] Hammer + Broom icon to do a clean build.
   # Find your newly created and signed JAR file in your source folder in a folder called "dist".
 
 = Recommended =
