@@ -7,9 +7,9 @@ If you are looking to send raw printer commands to your printer with php, jsp, A
 If the printer is NOT a Zebra printer, jZebra *may still work* for your printer and application!
 
 = Versions =
-jZebra 1.0.3 (202KB) features an in-browser applet written in Java that can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
+jZebra 1.0.5 (44KB) is lighter-weight and geared specifically for JavaScript usage with enhancements for special characters/special print commands.  It is recommended you start with this version or higher.   jZebra ican work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
 
-jZebra 1.0.4 (44KB) and higher is lighter-weight and geared specifically fo JavaScript usage with enhancements for special characters/special print commands.  
+jZebra 1.0.3 (202KB) Is listed in the download under "obsolete", but features an in-browser applet, a desktop application, and command line batch support.  These features were removed in newer versions to reduce the download size.
 
 Future jZebra versions will be tailored according to industry needs and focus new developments on COM port and BlueTooth support.
 
