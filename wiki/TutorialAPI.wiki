@@ -18,7 +18,7 @@ This is Java code [http://en.wikipedia.org/wiki/Snippet_(programming) snippet] t
   
   try {
      String rawCmds = "A37,503,0,1,2,3,N,\"ABC WIDGET CO\"";
-     String printer = "zebra";  // This should match your printer name from Step 2.
+     String printer = "zebra";  // This should match your printer name from Step 2
      PrintService ps = PrintServiceMatcher.findPrinter(printer);
      if (ps != null) {
         PrintRaw p = new PrintRaw(ps, rawCmds);
