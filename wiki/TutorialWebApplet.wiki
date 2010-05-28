@@ -112,7 +112,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   #  If problems exist, try the included *sample.html* or email the [mailto:tres.finocchiaro@gmail.com author].
 
 === php Printing ===
-  #  Replace `print()` function with this code:
+  #  If you would rather use php, replace `print()` function with this code:
    {{{
       function print() {
          document.jZebra.append(<?php echo $commands; ?>);
@@ -123,7 +123,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    }}}
 
 === Base64 Printing ===
-  #  Replace `print()` function with this code:
+  #  If print data is base64 encoded, replace `print()` function with this code:
    {{{
       function print() {
          applet.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
@@ -135,6 +135,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    }}}
 
 === Printing Special Characters ===
+  #  If special escape characters need to be printed, use the char code:
    {{{
       function print() {
          // CHR(27) + CHR(29)
