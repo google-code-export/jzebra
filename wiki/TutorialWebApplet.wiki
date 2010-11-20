@@ -126,8 +126,8 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   #  If print data is base64 encoded, replace `print()` function with this code:
    {{{
       function print() {
-         applet.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
-         applet.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
+         document.jZebra.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
+         document.jZebra.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
 
          // Send Commands to Printer
          document.jZebra.print();
@@ -139,15 +139,33 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    {{{
       function print() {
          // CHR(27) + CHR(29)
-         applet.append(String.fromCharCode(27) + String.fromCharCode(29));
+         document.jZebra.append(String.fromCharCode(27) + String.fromCharCode(29));
 
          // HEX
-         applet.append("\x00\x01\x02\xFF");
+         documnet.jZebra.append("\x00\x01\x02\xFF");
 
          // Send Commands to Printer
          document.jZebra.print();
       }
    }}}
+
+=== Advanced Print Spooling ===
+  #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  For example:  If 90 labels are printed and the printer runs out of paper, the printer will automatically print all 90 labels again.  This feature allows to print in batches of 5, 10, etc.
+   {{{
+      function print() {
+
+         // The end of a label, in this case  P1 plus a newline character
+         document.jZebra.setEndOfDocument("P1\n");
+           
+         // The amount of labels to spool to the printer at a time
+         document.jZebra.setDocumentsPerSpool("10");      
+
+         // Send Commands to Printer
+         document.jZebra.print();
+      }
+   }}}
+
+See also `sample.html`, section "printPages()".
 
 
 === End of Tutorial ===
