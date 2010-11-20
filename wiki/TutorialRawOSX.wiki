@@ -5,6 +5,8 @@
 
 Here are step-by-step instructions for setting up raw printing through OS X.  These steps proved successful in getting the [http://code.google.com/p/jzebra/wiki/TutorialWebApplet jZebra Applet] to print to a raw printer queue from a web page loaded on OS X in Firefox.  _Last tested 11/06/2009, OS X 10.5, CUPS 1.3.8._ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-os-x-zebra-printer.html mirror])
 
+This may resolve issues on OS X described as "Print Error: pstopdffilter/pstocupsraster failed with err number -31000" (thanks to Jean Huliciar).
+
 = Steps =
 `Mac OS X 10.5`
 
