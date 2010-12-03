@@ -142,7 +142,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
          document.jZebra.append(String.fromCharCode(27) + String.fromCharCode(29));
 
          // HEX
-         documnet.jZebra.append("\x00\x01\x02\xFF");
+         docunent.jZebra.append("\x00\x01\x02\xFF");
 
          // Send Commands to Printer
          document.jZebra.print();
