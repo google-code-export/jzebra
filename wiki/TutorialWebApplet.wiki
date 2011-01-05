@@ -167,6 +167,19 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
 See also `sample.html`, section "printPages()".
 
+=== XML Printing ===
+
+  #  Since version 1.0.8, jZebra has the ability to read the contents of an XML file containing Base64 encoded commands and send these commands to the printer. The function requires two parameters, the URL of the XML file and the tagname (i.e. <tagname></tagname> ) containing the Base64 encoded text.
+   {{{
+      function printXML() {
+         // applet.appendXML("http://yoursite.com/zpl.xml", "tagornode");
+         document.jZebra.appendXML("C:\\zpl.xml", "v7:Image");
+         document.jZebra.print();
+      }
+
+   }}}
+
+See also `sample.html`, section "printXML()".
 
 === End of Tutorial ===
 
