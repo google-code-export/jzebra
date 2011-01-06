@@ -40,7 +40,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
   || *Note:* The Java Console is critical for calibrating jZebra for your printer. ||
   #  You should see the version of jZebra followed by `===== JAVASCRIPT LISTENER THREAD STARTED =====` in the log.  Sample:*
-    {{{
+   {{{
        Java Plug-in 1.6.0_17
        Using JRE version 1.6.0_17-b04 Java HotSpot(TM) Client VM
        User home directory = C:\Documents and Settings\tfino
@@ -66,7 +66,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
        INFO: jZebra 1.0.4
        Dec 3, 2009 5:03:33 PM jzebra.LogIt log
        INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
-    }}}
+   }}}
   #  Your applet has now been loaded into the web browser.  See [Printing] for printer discovery and for sending print commands directly to your printer. 
 
 == Printing ==
