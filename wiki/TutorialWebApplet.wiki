@@ -28,7 +28,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
        </applet><br><br>
     </html></body>
     }}}
-   * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you move the JAR so long as you change `archive="./jzebra.jar"` to `archive="./new location/jzebra.jar"`, etc.
+   * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you can move the JAR to a different location so long as you change `archive="./jzebra.jar"` to match your new location.
    || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
    || *Note:* IE7 may be prompt to Click to Activate This Control each time the applet loads.  Click [http://www.mix-fx.com/flash-prompt.htm here] for details. ||
   #  The applet will begin to load in the web page.
