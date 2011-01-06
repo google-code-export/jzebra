@@ -67,7 +67,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
        Dec 3, 2009 5:03:33 PM jzebra.LogIt log
        INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
     }}}
-#  Your applet has now been loaded into the web browser.  See [Printing] for printer discovery and for sending print commands directly to your printer. 
+  #  Your applet has now been loaded into the web browser.  See [Printing] for printer discovery and for sending print commands directly to your printer. 
 
 == Printing ==
   # jZebra's parameters are set through JavaScript commands.
