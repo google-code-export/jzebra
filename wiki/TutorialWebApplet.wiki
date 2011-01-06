@@ -19,8 +19,8 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   # Make sure your printer is set up on your workstation with the name "zebra" (this can be changed later).
   # Make sure printer is connected as a raw print queue for your operating sytem (Click the Windows, Ubuntu, or Mac logo for details)
     [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Steps http://3.bp.blogspot.com/_9hmP3Ho0t14/SvXbFLIbfXI/AAAAAAAAAUQ/EmPDrWLk7YI/s400/config_win.png][http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://4.bp.blogspot.com/_9hmP3Ho0t14/SvXbE4Sp39I/AAAAAAAAAUI/dvvUZ_sJNQA/s400/config_lin.png][http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbE_kTK_I/AAAAAAAAAUA/a-Ucl9UaIvI/s400/config_mac.png]http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbEnoMELI/AAAAAAAAAT4/eF4xkJ68ALY/s400/config_end.png
-  # Download the [http://code.google.com/p/jzebra/downloads/list latest version] and extract the contents to your desktop.  
-   * Create a plain text file "print.html".  Insert the applet code to create the applet.
+  # Download the [http://code.google.com/p/jzebra/downloads/list latest version] and extract the contents to your desktop.  Open "sample.html" with a web browser.
+   * The following applet code creates the applet.
     {{{
     <html><body>
        <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100">
@@ -28,8 +28,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
        </applet><br><br>
     </html></body>
     }}}
-   * Save the file in the same folder as `jzebra.jar`.
-   * Open `print.html` with a web browser (Firefox).
+   * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you move the JAR so long as you change `archive="./jzebra.jar"` to `archive="./new location/jzebra.jar"`, etc.
    || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
    || *Note:* IE7 may be prompt to Click to Activate This Control each time the applet loads.  Click [http://www.mix-fx.com/flash-prompt.htm here] for details. ||
   #  The applet will begin to load in the web page.
