@@ -72,35 +72,39 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
 == Printing ==
   # jZebra's parameters are set through JavaScript commands.
-  # First, insert this JavaScript code to search for a printer named "zebra":
+  # First, insert (or modify) the JavaScript code to search for a printer named "zebra".  The printer name can be anything you wish, i.e: `"Epson"`, `"Citizen"`, `"Generic"`, etc.
    {{{
       <script>
       function findPrinter() {
+         // Searches for locally installed printer with "zebra" in the name
          document.jZebra.findPrinter("zebra");
       }
       </script>
   }}}
-  # Second, add html code for a *Find Printer* button (after `</applet><br><br>` code):
+   || See also `sample.html`, section "findPrinter()". ||
+  # Second, use html code for a *Find Printer* button using standard HTML input button.  This button has already been provided in `sample.html`.
    {{{
       <input type=button onClick="findPrinter()" value="Detect Printer"><br><br>
    }}}
-  # Third, test "print.html"
+  # Third, test the *Find Printer* button.
    *  Load page in web browser and click "Find Printer" button.
    *  View Java console for output.  Look for `"INFO: Printer found..."`
    *  *TODO:  Find Printer Button Screenshot*
-  # Fourth, insert this JavaScript code to send commands to printer (Don't forget NewLine)
+  # Fourth, insert (or modify) this JavaScript code to send commands to printer. This button has already been provided in `sample.html`.
    * JavaScript Code: (Example)
    {{{
       function print() {
+         // Send characters/raw commands to applet using "append"
          // Hint:  Carriage Return = "\r", New Line = "\n" 
          document.jZebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
 
-         // Send Commands to Printer
+         // Send characters/raw commands to printer
          document.jZebra.print();
       }
    }}}
+      || See also `sample.html`, section "print()". ||
    || *Note:* The raw commands provided in the sample are not intended for use with your printer, they're provided as an example. ||
-  #  Next, add html code for a *Print* button (after `"Detect Printer"><br><br>` code):
+  #  Next, add html code for a *Print* button. This button has already been provided in `sample.html`.
    {{{
        <input type=button onClick="print()" value="Print"><br><br>
    }}}
@@ -116,9 +120,11 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   #  If you would rather use php, replace `print()` function with this code:
    {{{
       function print() {
+         // Uses the php `"echo"` function in conjunction with jZebra `"append"` function
+         // This assumes you have already assigned a value to `"$commands"` with php
          document.jZebra.append(<?php echo $commands; ?>);
 
-         // Send Commands to Printer
+         // Send characters/raw commands to printer
          document.jZebra.print();
       }
    }}}
@@ -126,62 +132,77 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 === Base64 Printing ===
   #  If print data is base64 encoded, replace `print()` function with this code:
    {{{
+      // Use jZebra's `"append64"` function. This will automatically convert provided
+      // base64 encoded text into ascii/bytes, etc.
       function print() {
          document.jZebra.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
          document.jZebra.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
 
-         // Send Commands to Printer
+         // Send characters/raw commands to printer
          document.jZebra.print();
       }
    }}}
+   || See also `sample.html`, section "print()". ||
 
 === Printing Special Characters ===
-  #  If special escape characters need to be printed, use the char code:
+  #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation
    {{{
       function print() {
-         // CHR(27) + CHR(29)
+         // Appends CHR(27) + CHR(29) using `"fromCharCode"` function
          document.jZebra.append(String.fromCharCode(27) + String.fromCharCode(29));
 
-         // HEX
+         // Appends hexadecimal data using "\x" notation
          document.jZebra.append("\x00\x01\x02\xFF");
 
-         // Send Commands to Printer
+         // Send characters/raw commands to printer
          document.jZebra.print();
       }
    }}}
+   || See also `sample.html`, section "print()". ||
 
 === Advanced Print Spooling ===
   #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  For example:  If 90 labels are printed and the printer runs out of paper, the printer will automatically print all 90 labels again.  This feature allows to print in batches of 5, 10, etc.
    {{{
       function print() {
 
-         // The end of a label, in this case  P1 plus a newline character
+         // Mark the end of a label, in this case  P1 plus a newline character
+         // jZebra knows to look for this and treat this as the end of a "page"
+         // for better control of larger spooled jobs (i.e. 50+ labels)
          document.jZebra.setEndOfDocument("P1\n");
            
-         // The amount of labels to spool to the printer at a time
+         // The amount of labels to spool to the printer at a time. When
+         // jZebra counts this many `EndOfDocument`'s, a new print job will 
+         // automatically be spooled to the printer and counting will start
+         // over.
          document.jZebra.setDocumentsPerSpool("10");      
 
-         // Send Commands to Printer
+         // Send characters/raw commands to printer
          document.jZebra.print();
       }
    }}}
 
-See also `sample.html`, section "printPages()".
+   || See also `sample.html`, section "printPages()". ||
 
 === XML Printing ===
 
   #  Since version 1.0.8, jZebra has the ability to read the contents of an XML file containing Base64 encoded commands and send these commands to the printer. The function requires two parameters, the URL of the XML file and the tagname containing the Base64 encoded text.
    {{{
       function printXML() {
-         // applet.appendXML("http://yoursite.com/zpl.xml", "tagornode");
-         // "v7:image" would appear in the XML as <v7:Image></v7:Image>
+         // Appends the contents of an XML file from a SOAP response, etc.
+         // a valid relative URL or a valid complete URL is required for the XML
+         // file.  The second parameter must be a valid XML tag/node containing
+         // base64 encoded data, i.e. <node_1>aGVsbG8gd29ybGQ=</node_1>
+         // Example:
+         //     applet.appendXML("http://yoursite.com/zpl.xml", "node_1");
          document.jZebra.appendXML("C:\\zpl.xml", "v7:Image");
+
+         // Send characters/raw commands to printer
          document.jZebra.print();
       }
 
    }}}
 
-See also `sample.html`, section "printXML()".
+   || See also `sample.html`, section "printXML()". ||
 
 === End of Tutorial ===
 
