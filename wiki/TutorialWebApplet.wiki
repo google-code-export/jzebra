@@ -23,8 +23,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    * The following applet code creates the applet.
     {{{
     <html><body>
-       <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100">
-       </applet><br><br>
+       <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100"></applet><br><br>
     </html></body>
     }}}
    * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you can move the JAR to a different location so long as you change `archive="./jzebra.jar"` to match your new location.
