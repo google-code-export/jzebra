@@ -93,7 +93,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    {{{
       function print() {
          // Send characters/raw commands to applet using "append"
-         // Hint:  Carriage Return = "\r", New Line = "\n" 
+         // Hint:  Carriage Return = \r, New Line = \n, Escape Double Quotes= \"
          document.jZebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
 
          // Send characters/raw commands to printer
