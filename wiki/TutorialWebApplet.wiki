@@ -24,7 +24,6 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
     {{{
     <html><body>
        <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100">
-          <param name="sleep" value="200">
        </applet><br><br>
     </html></body>
     }}}
