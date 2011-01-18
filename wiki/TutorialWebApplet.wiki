@@ -157,6 +157,14 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
       }
    }}}
    || See also `sample.html`, section "print()". ||
+   {{{
+       // For those trying to print special DOS characters in UNIX/Linux
+       $ export JAVA_TOOL_OPTIONS=-Dfile.encoding=Cp1252;google-chrome
+       // OR
+       $ export JAVA_TOOLS_OPTIONS=-Dfile.encoding=Cp1252;firefox
+       // You should then see
+       $ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=Cp1252
+   }}}
 
 === Advanced Print Spooling ===
   #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  For example:  If 90 labels are printed and the printer runs out of paper, the printer will automatically print all 90 labels again.  This feature allows to print in batches of 5, 10, etc.
