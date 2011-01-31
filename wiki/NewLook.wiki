@@ -1,11 +1,8 @@
-= jZebra Raw Printing API =
-
 [http://lh3.ggpht.com/_9hmP3Ho0t14/TUYf2eqTORI/AAAAAAAAAfQ/HDRByxbz5BY/top.png]
 [http://code.google.com/p/jzebra/wiki/ScreenShots http://lh4.ggpht.com/_9hmP3Ho0t14/TUYf2osL_0I/AAAAAAAAAfU/wAMhDzK00kw/bottom.png]
 
-== Print barcodes, receipts and more from a web page ==
-
-Features:
+= Features =
+  *  Print barcodes, receipts and more from a web page
   *  100% Free and open source software (FOSS, [http://www.gnu.org/licenses/gpl.html GPL]).
   *  Free to use in commercial applications (check GPL license for details)
   *  Sends *raw print commands*, *CHR/ASCII codes*, *ESC/P codes* to your printer.  (e.g. standard ESC commands, EPL commands, ZPL commands, PCL commands, etc.)
