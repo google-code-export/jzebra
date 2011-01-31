@@ -43,6 +43,7 @@
 ----
 
 = Update History =
+  * `02/07/2011:` Site redesign
   * `01/12/2011:` Version 1.1.1 available (not featured, see downloads).  Adds a new `appendFile()` feature similar to original 1.0.3 and older functionality `CONFIGPATH="http://site/epl.txt"`.
   * `01/08/2011:` Version 1.1.0 available.  Fixes XML parsing error discovered in Internet Explorer.  Please note, the JavaScript in sample.html has timing improvements added in lieu.
   * `01/07/2011:` Version 1.0.9 available.  Adds experimental [http://en.wikipedia.org/wiki/Windows-1252 Cp1252] support, [http://code.google.com/p/jzebra/wiki/TutorialWebApplet#XML_Printing XML message parsing] support.
