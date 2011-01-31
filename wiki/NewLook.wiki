@@ -27,7 +27,11 @@
 
 [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://lh5.ggpht.com/_9hmP3Ho0t14/TUY20LN-yDI/AAAAAAAAAfg/BXR9r0sJQfw/tutorial.png]
 
-[http://code.google.com/p/jzebra/wiki/TutorialRawXP#Steps http://3.bp.blogspot.com/_9hmP3Ho0t14/SvXbFLIbfXI/AAAAAAAAAUQ/EmPDrWLk7YI/s400/config_win.png][http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://4.bp.blogspot.com/_9hmP3Ho0t14/SvXbE4Sp39I/AAAAAAAAAUI/dvvUZ_sJNQA/s400/config_lin.png][http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbE_kTK_I/AAAAAAAAAUA/a-Ucl9UaIvI/s400/config_mac.png]http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbEnoMELI/AAAAAAAAAT4/eF4xkJ68ALY/s400/config_end.png
+[http://code.google.com/p/jzebra/wiki/TutorialRawXP#Steps http://lh4.ggpht.com/_9hmP3Ho0t14/TUY71-4iWjI/AAAAAAAAAfw/5ZUSa8oJucA/windows.png]
+
+[http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71nqJWtI/AAAAAAAAAfs/VR957D7QStc/ubuntu.png]
+
+[http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71SLGnnI/AAAAAAAAAfo/Rd9rFtxmKZ8/mac.png]
 
 = Spotlight =
   * [http://code.google.com/p/ups-php/ ups-php] uses jZebra
