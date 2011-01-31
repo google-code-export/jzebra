@@ -2,36 +2,39 @@
 [http://code.google.com/p/jzebra/wiki/ScreenShots http://lh4.ggpht.com/_9hmP3Ho0t14/TUYf2osL_0I/AAAAAAAAAfU/wAMhDzK00kw/bottom.png]
 
 = Features =
-  *  Print barcodes, receipts and more from a web page
-  *  100% Free and open source software (FOSS, [http://www.gnu.org/licenses/gpl.html GPL]).
-  *  Free to use in commercial applications (check GPL license for details)
-  *  Sends *raw print commands*, *CHR/ASCII codes*, *ESC/P codes* to your printer.  (e.g. standard ESC commands, EPL commands, ZPL commands, PCL commands, etc.)
-  *  Compatible with Windows, Mac OS X, Ubuntu, Solaris and more!
-  *  Tested with *Firefox*, Safari, Internet Explorer, Opera
-  *  Supports COM ports, Parallel ports, USB ports, Firewire ports, Network Printing, etc.
-  *  Written in Java
-  *  Loads in your web browser as an applet (similar to a flash object)
-  *  AJAX compatible by using JavaScript to control print jobs
-  *  Popular for thermal and magnetic printing
+  * Prints barcodes, receipts and more from a web page.
+  * Supports thermal printers, label printers, magnetic cards.
+  * 100% free and [http://www.gnu.org/licenses/gpl.html open source]
+  * Free to use in commercial applications (check [http://www.gnu.org/licenses/gpl.html license] for details)
+  * Seamlessly sends commands to your EPL2, ZPLII, CHR, ASCII, RAW, ESC/P printer (and more).
+  * Compatible with Windows, Mac OS X, Ubuntu, Solaris (and more).
+  * Tested with Firefox, Safari, Internet Explorer, Opera.
+  * Supports COM, parallel, serial, USB, socket, lpr, LPT communication.
+  * AJAX compatible by using JavaScript to control print jobs
 
-Read more about jZebra [About here]. *Getting started* for web developers, see [TutorialWebApplet web applet tutorial].  
+= How It Works =
+  # jZebra loads in your web browser as a Java applet (similar to a Flash or SilverLight object)
+  # jZebra interfaces with browser via JavaScript
+  # jZebra gains permission to use locally installed printers via digital signature prompt
+  # jZebra spools directly to locally installed printers, allowing hundreds of print jobs to transfer seamlessly from web code to printer.
 
-For a *quickstart* guide, download the [http://code.google.com/p/jzebra/downloads/list latest version] and view the attached *sample.html* demo.
+= Getting Started =
+  * Read more about the history of jZebra [About here].
+  * Start using jZebra now by [http://code.google.com/p/jzebra/downloads/list downloading the latest version].
+  * Or, read about how to integrate jZebra into a web project using the [TutorialWebApplet developers guide].
 
 [http://code.google.com/p/jzebra/downloads/list http://3.bp.blogspot.com/_9hmP3Ho0t14/Sv7Wsq6MQtI/AAAAAAAAAWQ/jUYQ9cVn8Vk/s1600/download.png]
   [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://1.bp.blogspot.com/_9hmP3Ho0t14/SveTWLL_NcI/AAAAAAAAAVw/X0D8u5dT7ng/s400/applet_wiki.png]
     [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Steps http://3.bp.blogspot.com/_9hmP3Ho0t14/SvXbFLIbfXI/AAAAAAAAAUQ/EmPDrWLk7YI/s400/config_win.png][http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://4.bp.blogspot.com/_9hmP3Ho0t14/SvXbE4Sp39I/AAAAAAAAAUI/dvvUZ_sJNQA/s400/config_lin.png][http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbE_kTK_I/AAAAAAAAAUA/a-Ucl9UaIvI/s400/config_mac.png]http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbEnoMELI/AAAAAAAAAT4/eF4xkJ68ALY/s400/config_end.png
 
-|| *Chrome* `(Ubuntu 9.10)` [ScreenShots#Linux more...]|| *IE 7* `(Windows XP)` [ScreenShots#Windows more...]||
-|| [http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s1600/ubuntu_chrome.png http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s200/ubuntu_chrome.png] || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
-
-Products or companies that use jZebra:
-  * [http://code.google.com/p/ups-php/ ups-php]
-  * [http://rocketship.it/ RocketShip.it]
-  * [http://www.reasontransport.com/ Reason Transport]
-  * [http://www.turningstone.com/members/ Turning Stone Resort and Casino]
-  * [http://fcst-stage.lokion.com/ws_demo/html/jzebra/jzdemo.html FedEx Developer Site]
-  * [http://www.zenkraft.com Zenkraft.com]
+= Spotlight =
+  * [http://code.google.com/p/ups-php/ ups-php] uses jZebra
+  * [http://rocketship.it/ RocketShip.it] uses jZebra
+  * [http://www.reasontransport.com/ Reason Transport] uses jZebra
+  * [http://www.turningstone.com/members/ Turning Stone Resort and Casino] uses jZebra
+  * [http://justtesting.biz/html/jzebra/jzdemo.html FedEx Developer Site] uses jZebra
+  * [http://www.zenkraft.com Zenkraft.com] uses jZebra
+  * [http://store4schools.com Store4Schools] uses jZebra
 
 ----
 
