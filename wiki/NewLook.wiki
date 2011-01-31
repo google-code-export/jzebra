@@ -29,7 +29,9 @@
 
 
 = Configure Your Printer =
-[http://code.google.com/p/jzebra/wiki/TutorialRawXP#Introduction http://lh4.ggpht.com/_9hmP3Ho0t14/TUY71-4iWjI/AAAAAAAAAfw/5ZUSa8oJucA/windows.png]   [http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71nqJWtI/AAAAAAAAAfs/VR957D7QStc/ubuntu.png]   [http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71SLGnnI/AAAAAAAAAfo/Rd9rFtxmKZ8/mac.png]
+  * Windows:  [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Introduction http://lh4.ggpht.com/_9hmP3Ho0t14/TUY71-4iWjI/AAAAAAAAAfw/5ZUSa8oJucA/windows.png]
+  * Ubuntu:  [http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71nqJWtI/AAAAAAAAAfs/VR957D7QStc/ubuntu.png]
+  * Mac:  [http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71SLGnnI/AAAAAAAAAfo/Rd9rFtxmKZ8/mac.png]
 
 = Spotlight =
   * [http://code.google.com/p/ups-php/ ups-php] uses jZebra
