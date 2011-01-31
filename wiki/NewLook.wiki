@@ -1,3 +1,4 @@
+#labels Deprecated
 [http://lh3.ggpht.com/_9hmP3Ho0t14/TUYf2eqTORI/AAAAAAAAAfQ/HDRByxbz5BY/top.png]
 [http://code.google.com/p/jzebra/wiki/ScreenShots http://lh4.ggpht.com/_9hmP3Ho0t14/TUYf2osL_0I/AAAAAAAAAfU/wAMhDzK00kw/bottom.png]
 
