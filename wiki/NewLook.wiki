@@ -12,11 +12,17 @@
   * Supports COM, parallel, serial, USB, socket, lpr, LPT communication.
   * AJAX compatible by using JavaScript to control print jobs
 
+
+
+
 = How It Works =
   # First, jZebra loads in your web browser as a Java applet (similar to a Flash or SilverLight object).
   # Second, jZebra interfaces with browser interactively via JavaScript.
   # Third, jZebra gains permission to use locally installed printers via digital signature prompt.
   # Finally, jZebra spools directly to locally installed printers, allowing hundreds of print jobs to transfer seamlessly from web code to printer.
+
+
+
 
 = Getting Started =
   * Start using jZebra now by [http://code.google.com/p/jzebra/downloads/list downloading the latest version].
@@ -28,6 +34,9 @@
   [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://lh5.ggpht.com/_9hmP3Ho0t14/TUY20LN-yDI/AAAAAAAAAfg/BXR9r0sJQfw/tutorial.png]
 
 
+
+
+
 = Configure Your Printer =
   * [TutorialRawXP Windows]:
   [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Introduction http://lh4.ggpht.com/_9hmP3Ho0t14/TUY71-4iWjI/AAAAAAAAAfw/5ZUSa8oJucA/windows.png]
@@ -35,6 +44,9 @@
   [http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71nqJWtI/AAAAAAAAAfs/VR957D7QStc/ubuntu.png]
   * [TutorialRawOSX Mac]:
   [http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71SLGnnI/AAAAAAAAAfo/Rd9rFtxmKZ8/mac.png]
+
+
+
 
 = Spotlight =
   * [http://code.google.com/p/ups-php/ ups-php] uses jZebra
@@ -44,6 +56,9 @@
   * [http://justtesting.biz/html/jzebra/jzdemo.html FedEx Developer Site] uses jZebra
   * [http://www.zenkraft.com Zenkraft.com] uses jZebra
   * [http://store4schools.com Store4Schools] uses jZebra
+
+
+
 
 ----
 
