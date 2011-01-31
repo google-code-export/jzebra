@@ -23,17 +23,17 @@
   * Learn jZebra's features step-by-step and how to integrate jZebra into your web project using the [TutorialWebApplet developers guide].
   * Last, read more about purpose and the history of jZebra [About here].
 
-[http://code.google.com/p/jzebra/downloads/list http://lh6.ggpht.com/_9hmP3Ho0t14/TUY20GlXmMI/AAAAAAAAAfc/7UCka5D18D0/download.png]
+  [http://code.google.com/p/jzebra/downloads/list http://lh6.ggpht.com/_9hmP3Ho0t14/TUY20GlXmMI/AAAAAAAAAfc/7UCka5D18D0/download.png]
 
-[http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://lh5.ggpht.com/_9hmP3Ho0t14/TUY20LN-yDI/AAAAAAAAAfg/BXR9r0sJQfw/tutorial.png]
+  [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://lh5.ggpht.com/_9hmP3Ho0t14/TUY20LN-yDI/AAAAAAAAAfg/BXR9r0sJQfw/tutorial.png]
 
 
 = Configure Your Printer =
-  * Windows:
+  * [TutorialRawXP Windows]:
   [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Introduction http://lh4.ggpht.com/_9hmP3Ho0t14/TUY71-4iWjI/AAAAAAAAAfw/5ZUSa8oJucA/windows.png]
-  * Ubuntu:
+  * [TutorialRawUbuntu Ubuntu]:
   [http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71nqJWtI/AAAAAAAAAfs/VR957D7QStc/ubuntu.png]
-  * Mac
+  * [TutorialRawOSX Mac]:
   [http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71SLGnnI/AAAAAAAAAfo/Rd9rFtxmKZ8/mac.png]
 
 = Spotlight =
