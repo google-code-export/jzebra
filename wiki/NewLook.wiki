@@ -1,0 +1,78 @@
+= jZebra Raw Printing API =
+
+[http://lh3.ggpht.com/_9hmP3Ho0t14/TUYf2eqTORI/AAAAAAAAAfQ/HDRByxbz5BY/top.png]
+[ScreenShots http://lh4.ggpht.com/_9hmP3Ho0t14/TUYf2osL_0I/AAAAAAAAAfU/wAMhDzK00kw/bottom.png]
+
+== Print barcodes, receipts and more from a web page ==
+
+Features:
+  *  100% Free and open source software (FOSS, [http://www.gnu.org/licenses/gpl.html GPL]).
+  *  Free to use in commercial applications (check GPL license for details)
+  *  Sends *raw print commands*, *CHR/ASCII codes*, *ESC/P codes* to your printer.  (e.g. standard ESC commands, EPL commands, ZPL commands, PCL commands, etc.)
+  *  Compatible with Windows, Mac OS X, Ubuntu, Solaris and more!
+  *  Tested with *Firefox*, Safari, Internet Explorer, Opera
+  *  Supports COM ports, Parallel ports, USB ports, Firewire ports, Network Printing, etc.
+  *  Written in Java
+  *  Loads in your web browser as an applet (similar to a flash object)
+  *  AJAX compatible by using JavaScript to control print jobs
+  *  Popular for thermal and magnetic printing
+
+Read more about jZebra [About here]. *Getting started* for web developers, see [TutorialWebApplet web applet tutorial].  
+
+For a *quickstart* guide, download the [http://code.google.com/p/jzebra/downloads/list latest version] and view the attached *sample.html* demo.
+
+[http://code.google.com/p/jzebra/downloads/list http://3.bp.blogspot.com/_9hmP3Ho0t14/Sv7Wsq6MQtI/AAAAAAAAAWQ/jUYQ9cVn8Vk/s1600/download.png]
+  [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://1.bp.blogspot.com/_9hmP3Ho0t14/SveTWLL_NcI/AAAAAAAAAVw/X0D8u5dT7ng/s400/applet_wiki.png]
+    [http://code.google.com/p/jzebra/wiki/TutorialRawXP#Steps http://3.bp.blogspot.com/_9hmP3Ho0t14/SvXbFLIbfXI/AAAAAAAAAUQ/EmPDrWLk7YI/s400/config_win.png][http://code.google.com/p/jzebra/wiki/TutorialRawUbuntu#Steps http://4.bp.blogspot.com/_9hmP3Ho0t14/SvXbE4Sp39I/AAAAAAAAAUI/dvvUZ_sJNQA/s400/config_lin.png][http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Steps http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbE_kTK_I/AAAAAAAAAUA/a-Ucl9UaIvI/s400/config_mac.png]http://2.bp.blogspot.com/_9hmP3Ho0t14/SvXbEnoMELI/AAAAAAAAAT4/eF4xkJ68ALY/s400/config_end.png
+
+|| *Chrome* `(Ubuntu 9.10)` [ScreenShots#Linux more...]|| *IE 7* `(Windows XP)` [ScreenShots#Windows more...]||
+|| [http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s1600/ubuntu_chrome.png http://1.bp.blogspot.com/_9hmP3Ho0t14/Svcm4vAtzXI/AAAAAAAAAUY/iQlE2FSo7QE/s200/ubuntu_chrome.png] || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
+
+Products or companies that use jZebra:
+  * [http://code.google.com/p/ups-php/ ups-php]
+  * [http://rocketship.it/ RocketShip.it]
+  * [http://www.reasontransport.com/ Reason Transport]
+  * [http://www.turningstone.com/members/ Turning Stone Resort and Casino]
+  * [http://fcst-stage.lokion.com/ws_demo/html/jzebra/jzdemo.html FedEx Developer Site]
+  * [http://www.zenkraft.com Zenkraft.com]
+
+----
+
+= Update History =
+  * `01/12/2011:` Version 1.1.1 available (not featured, see downloads).  Adds a new `appendFile()` feature similar to original 1.0.3 and older functionality `CONFIGPATH="http://site/epl.txt"`.
+  * `01/08/2011:` Version 1.1.0 available.  Fixes XML parsing error discovered in Internet Explorer.  Please note, the JavaScript in sample.html has timing improvements added in lieu.
+  * `01/07/2011:` Version 1.0.9 available.  Adds experimental [http://en.wikipedia.org/wiki/Windows-1252 Cp1252] support, [http://code.google.com/p/jzebra/wiki/TutorialWebApplet#XML_Printing XML message parsing] support.
+  * `12/08/2010:` Version 1.0.7 available for improved digital signature support.  Versions 1.0.7 and higher will use the same trusted java signature: see source:/jzebra.ks.
+  * `11/20/2010:` Version 1.0.6 available for download.  Added feature that allows larger print jobs to be spooled as separate jobs to the printer. (Example, every 5 labels spools a new print job) 
+  * `01/06/2010:` An excellent article [http://paparadit.blogspot.com/2010/06/raw-printing-from-web-based-application.html "RAW Printing from Web Based Application"]
+  * `04/13/2010:` Version 1.0.5 available for download.  Fixed "Magic Cookie" issue thank to James at ZenKraft.
+  * `12/03/2009:` Updated applet tutorial for version 1.0.4.
+  * `11/19/2009:` Version 1.0.4 available for download.  Note:  Code changes will need to be made to incorporate new version!!
+  * `11/07/2009:` Uploaded more [ScreenShots screenshots] for Ubuntu 9.10 and Windows XP.
+  * `11/06/2009:` [TutorialRawOSX Raw Printing from Mac OSX] created in [http://code.google.com/p/jzebra/w/list wiki] section
+  * `10/24/2009:` [http://reasontransport.com ReasonTransport] to test Bluetooth printing capabilities
+  * `01/09/2009:` [TutorialWebApplet] added to [http://code.google.com/p/jzebra/w/list wiki] for 1.0.3 usage
+  * `12/30/2008:` jZebra 1.0.3 pre-release avaiable:  Check the [http://code.google.com/p/jzebra/downloads/list downloads].
+  * `11/07/2008:` jZebra 1.0.3 under development:  Check [http://code.google.com/p/jzebra/source/checkout SVN] if curious.
+  * `11/06/2008:` Added 1.0.2 Bugs/Issues: [http://code.google.com/p/jzebra/issues/list click to review issues]
+
+----
+
+=== Printers Reported Working ===
+  * Samsung Bixolon SRP350plus
+  * Telly Dascom 1125 (USB)
+  * Epson Thermal Printer (COM)
+  * Eltron P310i
+  * Zebra P310i
+  * Zebra LP 2844
+  * Zebra TLP2844
+  * Citizen CT-S2000 (USB)
+  * DOS/LPT1 Printing - Character encoding on some platforms breaks and is being worked on.
+
+Related projects:
+http://code.google.com/p/ups-php/
+http://code.google.com/p/zxing/
+http://www.google.com/chrome/intl/en/p/cloudprint.html
+
+Keywords:
+zpl, pcl, prn, txt, ps, eps, direct, ESC k, ESC p, ESC/P, Epson Standard Code for Printers, &H1B, HEX, (1BH), CHR(27), ESC, ASCII, CHR$, BASIC, Cloud Printing, PHP, ASP.NET, print dos characters from web browser
