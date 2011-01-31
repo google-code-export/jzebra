@@ -13,15 +13,15 @@
   * AJAX compatible by using JavaScript to control print jobs
 
 = How It Works =
-  # jZebra loads in your web browser as a Java applet (similar to a Flash or SilverLight object)
-  # jZebra interfaces with browser via JavaScript
-  # jZebra gains permission to use locally installed printers via digital signature prompt
-  # jZebra spools directly to locally installed printers, allowing hundreds of print jobs to transfer seamlessly from web code to printer.
+  # First, jZebra loads in your web browser as a Java applet (similar to a Flash or SilverLight object).
+  # Second, jZebra interfaces with browser interactively via JavaScript.
+  # Third, jZebra gains permission to use locally installed printers via digital signature prompt.
+  # Finally, jZebra spools directly to locally installed printers, allowing hundreds of print jobs to transfer seamlessly from web code to printer.
 
 = Getting Started =
-  * Read more about the history of jZebra [About here].
   * Start using jZebra now by [http://code.google.com/p/jzebra/downloads/list downloading the latest version].
-  * Or, read about how to integrate jZebra into a web project using the [TutorialWebApplet developers guide].
+  * Learn jZebra's features step-by-step and how to integrate jZebra into your web project using the [TutorialWebApplet developers guide].
+  * Last, read more about purpose and the history of jZebra [About here].
 
 [http://code.google.com/p/jzebra/downloads/list http://3.bp.blogspot.com/_9hmP3Ho0t14/Sv7Wsq6MQtI/AAAAAAAAAWQ/jUYQ9cVn8Vk/s1600/download.png]
   [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://1.bp.blogspot.com/_9hmP3Ho0t14/SveTWLL_NcI/AAAAAAAAAVw/X0D8u5dT7ng/s400/applet_wiki.png]
