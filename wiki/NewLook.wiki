@@ -12,7 +12,7 @@
   * Supports COM, parallel, serial, USB, socket, lpr, LPT communication.
   * AJAX compatible by using JavaScript to control print jobs
 
-
+----
 
 
 = How It Works =
@@ -21,7 +21,7 @@
   # Third, jZebra gains permission to use locally installed printers via digital signature prompt.
   # Finally, jZebra spools directly to locally installed printers, allowing hundreds of print jobs to transfer seamlessly from web code to printer.
 
-
+----
 
 
 = Getting Started =
@@ -34,7 +34,7 @@
   [http://code.google.com/p/jzebra/wiki/TutorialWebApplet http://lh5.ggpht.com/_9hmP3Ho0t14/TUY20LN-yDI/AAAAAAAAAfg/BXR9r0sJQfw/tutorial.png]
 
 
-
+----
 
 
 = Configure Your Printer =
@@ -45,7 +45,7 @@
   * [TutorialRawOSX Mac]:
   [http://code.google.com/p/jzebra/wiki/TutorialRawOSX#Introduction http://lh6.ggpht.com/_9hmP3Ho0t14/TUY71SLGnnI/AAAAAAAAAfo/Rd9rFtxmKZ8/mac.png]
 
-
+----
 
 
 = Spotlight =
@@ -82,6 +82,8 @@
   * `11/06/2008:` Added 1.0.2 Bugs/Issues: [http://code.google.com/p/jzebra/issues/list click to review issues]
 
 ----
+
+
 
 === Printers Reported Working ===
   * Samsung Bixolon SRP350plus
