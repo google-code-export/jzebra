@@ -7,7 +7,7 @@ If you find jZebra useful and beneficial for your company, you may consider dona
 
 [http://img15.imageshack.us/img15/3061/33599674.png] 
 
-Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 week turn-around), I'll happily quote a price for said feature.  I usually can respond the same day with a quote, and also will work on a per-hour basis.  Lastly, I will honor contracts so as long as they don't violate the open nature of jZebra nor violate the GPL licensing. :)
+Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker]Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 week turn-around), I'll happily quote a price for said feature.  I usually can respond the same day with a quote, and also will work on a per-hour basis.  Lastly, I will honor contracts so as long as they don't violate the open nature of jZebra nor violate the GPL licensing. :)
 
 That said, all code changes/features added jZebra will comply with GPL license and be made publicly available in source (and binary) usually in days following development and testing.  Documentation of said code changes/features usually lag in release days (or weeks) behind.
 
