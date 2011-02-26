@@ -1,0 +1,39 @@
+Overrides a windows printer driver and sends a printer raw commands.  This
+helps print cards from a workstation on Zebra or Elton printers.
+
+Printing is provided in two fashions:  General and Legacy.  Legacy Mode should
+only be used if you are using an Eltron P310 or compatible printer with all
+static parameters (firstname, lastname, etc).
+
+General Usage:
+  java -jar JZebra.jar [printer=printername] [print] [config=path] [1=val1] 
+    [2=val2] [3=val3]
+  
+  printer     Specify the printer to print cards to
+  print       Print directly (no gui)
+  nogui       Same as "print"
+  config      Specify the print commands config file to use
+  1,2,3,etc   Specify the override config line overrid command to use
+  
+Legacy Usage (for Eltron P310 or compatible):
+  java -jar JZebra.jar [printer=printername] [print] <params>
+
+  Description: For proprietary direct card printing.  If using, please specify 
+    values for all parameters.  All values will be converted to UPPER CASE.
+  
+  Usage:  
+    param=Value
+      or 
+    "param=Val ue"
+  
+  firstname   First name on card and mag-strip
+  lastname    Last name on card
+  middlename  Middle name or middle initial on card
+  companyno   The company number for mag-strip encoding
+  accountno   Patron's account number
+  
+  Example: 
+    java -jar JZebra.jar firstname=Joe lastname=Hill accountno=001 companyno=123
+ 
+NOTE:  Additional switches may be preset with the "java --help" command.  See 
+java command line options for details.
