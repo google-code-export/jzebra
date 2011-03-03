@@ -2,8 +2,7 @@
 <html>
    <head><title>jZebra Demo</title></head><body onLoad="displayLogo();">
    <style type="text/css">
-      body {color:#335500; background-color:#ffffff; font-family:Arial, sans-serif;font-size: 12px;}
-      /*a {padding:1px; border:1px solid #335500; font-family:Tahoma,sans-serif; color:#335500; background-color: #99FF00; text-decoration:none;}*/	
+      body {color:#335500; background-color:#ffffff; font-family:Arial, sans-serif;font-size: 12px;}	
       a {font-family:"Courier New",Courier,monospace;text-decoration:none;font-weight:bold;}
       h1 {background-color:#CCFF99; margin:0; font-size:18px;}
       table {border:none;}
@@ -12,16 +11,8 @@
       th {font-size:24px; background-color:#CCFF99;border:none;}
       td {vertical-align:top; border:none;}
          .code {display:none; font-family:"Courier New",Courier,monospace;background-color:#E5FFCC;font-weight:bold;}
-      desc th {width: 50px;}
-      /*li {font-family:"Courier New",Courier,monospace;background-color:#E5FFCC;}*/
-      
-      
+      desc th {width: 50px;} 
       em {margin-left: 20px; font-size: 80%;}
-      
-      /* Custom Alert Box -- Disabled */
-      alertBg {background-color:transparent; position:absolute; width:100%; height:100%; top:0px; left:0px; z-index:10000;}
-      alertBox {opacity:.95; position:relative; width:250px; min-height:100px; margin-top:50px; border:2px solid #335500; background-color:white; background-position:20px 30px; text-align:center;}
-      alertBox closeBtn {display:block; position:relative; margin:5px auto; padding:3px; border:1px solid #000; width:70px; font:0.7em verdana,arial; text-transform:uppercase;	text-align:center; color:#FFF; background-color:#78919B; text-decoration:none;}
    </style>
    <!--- jZebra's main JavaScript functions.  Use these! --> 
    <script type="text/javascript">
@@ -427,55 +418,6 @@
 	      }
 	      monitorLoading();
       }
-      
-// Custom Alert Message
-/*if(document.getElementById) {
-  window.alert = function(txt) {
-    createCustomAlert(txt);
-  }
-}
-
-function createCustomAlert(txt) {
-   d = document;
-   if(d.getElementById("alertBg")) return;
-   mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
-   mObj.id = "alertBg";
-   mObj.style.height = document.documentElement.scrollHeight + "px";
-   alertObj = mObj.appendChild(d.createElement("div"));
-   alertObj.id = "alertBox";
-   // MSIE doesnt treat position:fixed correctly, so this compensates for positioning the alert
-   if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
-   // center the alert box
-   alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
-   h1 = alertObj.appendChild(d.createElement("h1"));
-   h1.appendChild(d.createTextNode("Status"));
-   // create a paragraph element to contain the txt argument
-   msg = alertObj.appendChild(d.createElement("p"));
-   msg.innerHTML = txt;
-   // create an anchor element to use as the confirmation button.
-   //btn = alertObj.appendChild(d.createElement("input"));
-   btn = alertObj.appendChild(d.createElement("a"));
-   //btn.class = "input";
-   //btn.setAttribute("type", "button");
-   //btn.type = "button";
-   //btn.value = "     Ok     ";
-   //btn.setAttribute("value", "     Ok     ");
-   //btn.setAttribute ("name","     Ok     ");
-   //btn.setAttribute ("text","     Ok     ");
-   //btn.setAttribute("style", "align:center");
-   btn.appendChild(d.createTextNode("\u00A0\u00A0\u00A0\u00A0\u00A0Ok\u00A0\u00A0\u00A0\u00A0\u00A0"));
-   //btn.setAttribute ("width","200px");
-   btn.href = "#";
-   // set up the onclick event to remove the alert when the anchor is clicked
-   btn.onclick = function() { removeCustomAlert();return false; }
-}
-
-// removes the custom alert from the DOM
-function removeCustomAlert() {
-  document.getElementsByTagName("body")[0].removeChild(document.getElementById("alertBg"));
-}*/
-
-
    </script>
    <div align=center>
       <img id="logo" src="" alt=""> 
@@ -549,7 +491,7 @@ function removeCustomAlert() {
 	<tr>
 	<td>Print Image</td>
 	<td><input type="button" onClick="printImage()" value="Click Here"></td>
-	<td><input id="imageField" type="text" size=25 value="logo.jpg"></td>
+	<td><input id="imageField" type="text" size=25 value="logo.png"></td>
 	</tr>
 	
 	<tr>
