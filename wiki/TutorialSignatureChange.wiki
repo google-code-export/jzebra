@@ -3,15 +3,15 @@
 
 = Introduction =
 
-This explains how to change the digital signature inside jZebra to suppress the security prompt (requires a purchased Verisign/Thawte/etc applet certificate).
+This explains how to change the digital signature inside jZebra to suppress the security prompt (requires a purchased Verisign, Thawte, etc applet certificate).
 
 If you cannot afford a trusted certificate, lower you will find the steps for changing the publisher name which is useful for re-branding purposes.
 
 = Suppress Security Prompt =
   || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
-  # First obtain instructions from your certificate provide on digitally signing Java Applets.  Verisign/Thawte/etc should provide you with the necessary instructions to generate a Java Keystore (ks) file. 
-  # Second, download and install the latest bundled version of Java Development Kit & NetBeans.  Example:  [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html "JDK 6 Update 24 with NetBeans 6.9.1"]
-  # Third (optional), download the legacy JDK (version 1.5) and register it with the NetBeans IDE.  This provides backwards compatibility for PPC Macintosh computers and usually isn't needed on Windows or Linux computers.
+  # First obtain instructions from your certificate provide on digitally signing Java Applets.  Verisign, Thawte, etc should provide you with the necessary instructions to generate a Java Keystore (ks) file. 
+  # Second, download and install the latest bundled version of Java Development Kit & NetBeans.  Example:  [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html "JDK 6 Update 24 with NetBeans 6.9.1"].  Registration is optional and can be skipped.
+  # Third (also optional), download the legacy JDK (version 1.5) and register it with the NetBeans IDE.  This provides backwards compatibility for PPC Macintosh computers and usually isn't needed on Windows or Linux computers.
    # Download and install the [http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html Java 1.5 JDK] taking defaults.
    # Register the JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
   # Open the project in NetBeans
@@ -33,7 +33,7 @@ If you cannot afford a trusted certificate, lower you will find the steps for ch
    # Email tres.finocchiaro@gmail.com with questions/comments in this process.
 = Change Applet Branding =
 
-If you are NOT using a [http://en.wikipedia.org/wiki/Root_certificate root certificate] to sign it (Verisign, Thawte, etc), here are the steps to simply change the publisher name when prompted by the Security Dialog:
+If you are NOT using a [http://en.wikipedia.org/wiki/Root_certificate root certificate] to sign jZebra it (Verisign, Thawte, etc), here are the steps to simply change the publisher name when prompted by the Security Dialog:
 
   # Download the [http://netbeans.org/downloads/ latest version of Netbeans] (The *Java SE* version is sufficient).
   # Install Netbeans taking defaults.  Registration is optional and can be skipped.
@@ -46,8 +46,9 @@ If you are NOT using a [http://en.wikipedia.org/wiki/Root_certificate root certi
   # Click the [http://2.bp.blogspot.com/_9hmP3Ho0t14/S3CbTCYXxqI/AAAAAAAAAY4/AOvjXs3cgec/s400/Picture+10.png] Hammer + Broom icon to do a clean build.
   # Find your newly created and signed JAR file in your source folder in a folder called "dist".
 
-= Recommended =
 
-*Note:* If you choose to use a real certificate, you would be performing some additional steps which include (I believe) modifying the *jnlp-impl.xml* file to reference a dedicated keystore file (It's an ugly road of java signing if you do it this way, but works better with a corporate signing structure).
 
 -Tres
+
+
+|| Please choose your certificate provider wisely.  jZebra is not affiliated with Verisign or Thawte. ||
