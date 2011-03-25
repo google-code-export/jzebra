@@ -3,9 +3,29 @@
 
 = Introduction =
 
-This explains how to change the digital signature inside jZebra for re-branding purposes.
+This explains how to change the digital signature inside jZebra to suppress the security prompt (requires a purchased Verisign/Thawte/etc applet certificate).
 
-= Details =
+If you cannot afford a trusted certificate, lower you will find the steps for changing the publisher name which is useful for re-branding purposes.
+
+= Suppress Security Prompt =
+  || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
+  # First obtain instructions from your certificate provide on digitally signing Java Applets.  Verisign/Thawte/etc should provide you with the necessary instructions to generate a Java Keystore (ks) file. 
+  # Second, download and install the latest bundled version of Java Development Kit & NetBeans.  Example:  [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html "JDK 6 Update 24 with NetBeans 6.9.1"]
+  # Third (optional), download the legacy JDK (version 1.5) and register it with the NetBeans IDE.  This provides backwards compatibility for PPC Macintosh computers and usually isn't needed on Windows or Linux computers.
+   # Download and install the [http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html Java 1.5 JDK] taking defaults.
+   # Register the JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
+  # Open the project in NetBeans
+   # Download the latest [http://code.google.com/p/jzebra/downloads/list?q=label:NetBeans jZebra source]
+   # Extract the contents to the NetBeans project folder (Usually "My Documents/NetBeansProjects", or "home/NetBeansProjects") in a folder called "jZebra"
+   # With NetBeans open, import the project using File, Open and browse for the newly created "jZebra" folder.
+   # In the top left "Projects" pane, you should see a red coffee cup with the word "jzebra" next to it.
+    || *Note:  If "Projects" does not appear in NetBeans, hit CTRL + 1 to make it visible. ||
+   # If jzebra appears to be in error (exclamation mark), you may need to change the target platform to the correctly installed JDK:
+    # Right-click "jzebra", Properties, Libraries.  Click "JDK 1.5" (if installed) or "JDK 1.6 Default".
+    # Click OK
+   # By default jZebra uses "jzebra.ks" for it's KeyStore.  To use an alternate KeyStore, drag it in to the "Files" panel.  
+    || *Note:  If "Files" does not appear in NetBeans, hit CTRL + 2 to make it visible. Alternately, you can copy it to "NetBeansProjects/jZebra" ||
+= Change Applet Branding =
 
 If you are NOT using a [http://en.wikipedia.org/wiki/Root_certificate root certificate] to sign it (Verisign, Thawte, etc), here are the steps to simply change the publisher name when prompted by the Security Dialog:
 
