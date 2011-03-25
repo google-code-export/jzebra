@@ -19,12 +19,18 @@ If you cannot afford a trusted certificate, lower you will find the steps for ch
    # Extract the contents to the NetBeans project folder (Usually "My Documents/NetBeansProjects", or "home/NetBeansProjects") in a folder called "jZebra"
    # With NetBeans open, import the project using File, Open and browse for the newly created "jZebra" folder.
    # In the top left "Projects" pane, you should see a red coffee cup with the word "jzebra" next to it.
-    || *Note:  If "Projects" does not appear in NetBeans, hit CTRL + 1 to make it visible. ||
+    || *Note:*  If "Projects" does not appear in NetBeans, hit CTRL + 1 to make it visible. ||
    # If jzebra appears to be in error (exclamation mark), you may need to change the target platform to the correctly installed JDK:
     # Right-click "jzebra", Properties, Libraries.  Click "JDK 1.5" (if installed) or "JDK 1.6 Default".
     # Click OK
    # By default jZebra uses "jzebra.ks" for it's KeyStore.  To use an alternate KeyStore, drag it in to the "Files" panel.  
-    || *Note:  If "Files" does not appear in NetBeans, hit CTRL + 2 to make it visible. Alternately, you can copy it to "NetBeansProjects/jZebra" ||
+    || *Note:*  If "Files" does not appear in NetBeans, hit CTRL + 2 to make it visible. Alternately, you can copy it to "NetBeansProjects/jZebra" ||
+   # The KeyStore requires four fields: A file name, a store password, a key password and an alias name to be entered.  The compiler will do this automatically so as long as the values are defined in "NetBeansProjects\jZebra\nbprojects\jnlp-impl.xml" as `jnlp.signjar.keystore`, `jnlp.signjar.storepass`, `jnlp.signjar.keypass`, `jnlp.signjar.alias` respectively.
+    || *Note:* Be careful as not to break the formatting of the html file. ||
+   # Click the [http://2.bp.blogspot.com/_9hmP3Ho0t14/S3CbTCYXxqI/AAAAAAAAAY4/AOvjXs3cgec/s400/Picture+10.png] Hammer + Broom icon to do a clean build.
+   # Find your newly created and signed JAR file in your source folder in a folder called "dist" ("NetBeansProjects\jZebra\dist\jZebra.jar")
+   # Deploy the new jar to a test web location.
+   # Email tres.finocchiaro@gmail.com with questions/comments in this process.
 = Change Applet Branding =
 
 If you are NOT using a [http://en.wikipedia.org/wiki/Root_certificate root certificate] to sign it (Verisign, Thawte, etc), here are the steps to simply change the publisher name when prompted by the Security Dialog:
