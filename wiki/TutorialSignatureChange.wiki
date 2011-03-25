@@ -1,4 +1,4 @@
-#summary Change the digital signature of jZebra so the security warning does not say "Tres Finocchiaro".
+#summary Supress security prompt or change the digital signature publisher name
 #labels Phase-Support,Phase-Deploy
 
 = Introduction =
