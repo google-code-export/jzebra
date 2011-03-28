@@ -1,11 +1,11 @@
 #summary Supress security prompt or change the digital signature publisher name
-#labels Phase-Support,Phase-Deploy
+#labels Phase-Requirements,Phase-Deploy
 
 = Introduction =
 
 This explains how to change the digital signature inside jZebra to suppress the security prompt (requires a purchased Verisign, Thawte, etc applet certificate).
 
-If you cannot afford a trusted certificate, lower you will find the steps for changing the publisher name which is useful for re-branding purposes.
+If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
 
 = Suppress Security Prompt =
   || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
