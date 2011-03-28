@@ -1,7 +1,7 @@
 #labels Featured
 = Donations are Welcome =
 
-jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  A paradigm shift in computing is causing more and more a need for browser-based printing.  This shift seems to be happening fastest in the shipping and retail worlds as a need for thermal printing via web page is more demanded.
+jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  A paradigm shift in computing is causing more and more a need for browser-based printing.  This shift seems to be happening fastest in the shipping and retail worlds as a need for thermal printing via web page is demanded more each day.
 
 Donating to jZebra does not need to be monetary, and is not mandatory at all.  If you find jZebra useful, beneficial or profitable for your company, you may consider donating.  There is no obligation to donate, and jZebra was not created to make money.  Development costs for jZebra are minimal thanks to NetBeans (development platform) and Google Code (web hosting) which are both free services as well.  This free culture is what keeps the product alive.
 
