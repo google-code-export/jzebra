@@ -1,5 +1,5 @@
 #summary Supress security prompt or change the digital signature publisher name
-#labels Phase-Requirements,Phase-Deploy
+#labels Featured,Phase-Deploy
 
 = Introduction =
 
