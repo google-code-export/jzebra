@@ -38,6 +38,6 @@ jZebra is offered as is without any warranty.  Email support is provided as a co
 -Tres
 
 
-[http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
-*jZebra users*
-[http://groups.google.com/group/jzebra-users Visit this group]
+ [http://groups.google.com/group/jzebra-users http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
+ *jZebra users*
+ [http://groups.google.com/group/jzebra-users Visit this group]
