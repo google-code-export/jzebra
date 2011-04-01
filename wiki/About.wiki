@@ -38,15 +38,6 @@ jZebra is offered as is without any warranty.  Email support is provided as a co
 -Tres
 
 
-<table style="background-color: #fff; padding: 5px;" cellspacing=0>
-  <tr><td>
-  <img src="http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif"
-         height=30 width=140 alt="Google Groups">
-  </td></tr>
-  <tr><td style="padding-left: 5px;font-size: 125%">
-  <b>jZebra users</b>
-  </td></tr>
-  <tr><td style="padding-left: 5px">
-  <a href="http://groups.google.com/group/jzebra-users">Visit this group</a>
-  </td></tr>
-</table>
+[http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
+*jZebra users*
+[http://groups.google.com/group/jzebra-users Visit this group]
