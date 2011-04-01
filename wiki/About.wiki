@@ -36,7 +36,3 @@ Since its creation, jZebra has shown more interest in its capabilities in printi
 jZebra is offered as is without any warranty.  Email support is provided as a courtesy with no guarantees.  In the event contracted/paid support is needed, contact the [mailto:tres.finocchiaro@gmail.com author] for arrangements.
 
 -Tres
-
-
-[http://groups.google.com/group/jzebra-users http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]<br/>
-[http://groups.google.com/group/jzebra-users Visit jzebra-users group]
