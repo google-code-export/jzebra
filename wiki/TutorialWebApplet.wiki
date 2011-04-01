@@ -214,3 +214,12 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
 == Conclusion ==
   This tutorial needs work.  Please help by submitting changes.  Email questions or suggestions to [mailto:tres.finocchiaro@gmail.com the author].
+
+Alternatively, For questions, feedback and updates, subscribe to the *jZebra Mailing List* on Google Groups:
+  [http://groups.google.com/group/jzebra-users http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
+
+
+
+
+
+
