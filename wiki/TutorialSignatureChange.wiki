@@ -8,7 +8,7 @@ This explains how to change the digital signature inside jZebra to suppress the 
 If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
 
 *Edit 4/5/2011:*  These instructions seemed to work for a recent emailer.  Will adopt them into a better format shortly. -Tres
-|| Open command prompt (Assumes Windows 7)
+  || Open command prompt (Assumes Windows 7)
 Type:
 &gt; cd %PROGRAMFILES%\Java\jdk1*\bin
 Type:
