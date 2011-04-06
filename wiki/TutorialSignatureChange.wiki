@@ -7,7 +7,7 @@ This explains how to change the digital signature inside jZebra to suppress the 
 
 If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
 
-*Edit 4/5/2011:*  These instructions seemed to work for a recent emailer.  Will adopt them into a better format shortly. -Tres
+*Edit 4/5/2011:*  [http://fatbuttlarry.blogspot.com/2011/04/change-security-certificate-jzebra.html These instructions] seemed to work better for a recent emailer.  Will adopt them into a better format shortly. -Tres
 
 = Suppress Security Prompt =
   || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
