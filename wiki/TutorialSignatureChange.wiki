@@ -8,17 +8,7 @@ This explains how to change the digital signature inside jZebra to suppress the 
 If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
 
 *Edit 4/5/2011:*  These instructions seemed to work for a recent emailer.  Will adopt them into a better format shortly. -Tres
-  || Open command prompt (Assumes Windows 7) <br/>
-Type:
-&gt; cd %PROGRAMFILES%\Java\jdk1*\bin
-Type:
-&gt; keytool -import -alias skepr -file %USERPROFILE%\Documents\intca.cer -keystore %USERPROFILE%\Documents\skepr.ks
-Since the keystore doesn't yet exist, it will be created, and you will be prompted for a keystore password; type whatever password you want.  This will later be entered into NetBeans.  For the purposes of this tutorial we will use password of "randomaccess123".
-Copy skepr.ks to the root of your jZebra project folder (probably %US
-ERPROFILE%\Documents\NetBeansProjects\jZebra)
-If not already, open NetBeans (Version 6.8+).  Make sure Java Web Start is enabled in project properties.
-Navigate to Files in upper left (if hidden, CTRL + 2)
-Expand nbproject folder.  Double click jnlp-impl.xml.
+  || Open command prompt (Assumes Windows 7) <br/> Type: <br/> &gt; cd %PROGRAMFILES%\Java\jdk1*\bin<br/>Type:<br/>&gt; keytool -import -alias skepr -file %USERPROFILE%\Documents\intca.cer -keystore<br/>%USERPROFILE%\Documents\skepr.ks<br/>Since the keystore doesn't yet exist, it will be created, and you will be prompted for a keystore password; type whatever password you want.  This will later be entered into NetBeans.  For the purposes of this tutorial we will use password of "randomaccess123".<br/>Copy skepr.ks to the root of your jZebra project folder (probably %USERPROFILE%\Documents\NetBeansProjects\jZebra)<br/>If not already, open NetBeans (Version 6.8+).  Make sure Java Web Start is enabled in project properties.<br/>Navigate to Files in upper left (if hidden, CTRL + 2)<br/>Expand nbproject folder.  Double click jnlp-impl.xml.<br/>
 Scroll to the section that says "&lt;!-- Custom - Modified by Tres Finocchiaro 12/8/2010 --&gt;" (Alternately, you can CTRL+F to search for "tres")
 Change &lt;property name="jnlp.signjar.keystore" value="${basedir}/jzebra.ks"/&gt;  to
 &lt;property name="jnlp.signjar.keystore" value="${basedir}/skepr.ks"/&gt;
