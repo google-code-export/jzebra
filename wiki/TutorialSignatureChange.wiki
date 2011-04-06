@@ -7,6 +7,34 @@ This explains how to change the digital signature inside jZebra to suppress the 
 
 If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
 
+*Edit 4/5/2011:*  These instructions seemed to work for a recent emailer.  Will adopt them into a better format shortly. -Tres
+|| Open command prompt (Assumes Windows 7)
+Type:
+> cd %PROGRAMFILES%\Java\jdk1*\bin
+Type:
+> keytool -import -alias skepr -file %USERPROFILE%\Documents\intca.cer -keystore %USERPROFILE%\Documents\skepr.ks
+Since the keystore doesn't yet exist, it will be created, and you will be prompted for a keystore password; type whatever password you want.  This will later be entered into NetBeans.  For the purposes of this tutorial we will use password of "randomaccess123".
+Copy skepr.ks to the root of your jZebra project folder (probably %US
+ERPROFILE%\Documents\NetBeansProjects\jZebra)
+If not already, open NetBeans (Version 6.8+).  Make sure Java Web Start is enabled in project properties.
+Navigate to Files in upper left (if hidden, CTRL + 2)
+Expand nbproject folder.  Double click jnlp-impl.xml.
+Scroll to the section that says "<!-- Custom - Modified by Tres Finocchiaro 12/8/2010 -->" (Alternately, you can CTRL+F to search for "tres")
+Change <property name="jnlp.signjar.keystore" value="${basedir}/jzebra.ks"/>  to
+<property name="jnlp.signjar.keystore" value="${basedir}/skepr.ks"/>
+Change <property name="jnlp.signjar.storepass" value="**********"/>  to
+<property name="jnlp.signjar.storepass" value="randomaccess123"/>
+Change <property name="jnlp.signjar.keypass" value="**********"/>  to
+<property name="jnlp.signjar.storepass" value="randomaccess123"/>
+Change <property name="jnlp.signjar.alias" value="jzebra"/>  to
+<property name="jnlp.signjar.alias" value="skepr"/>
+Note #1:  If prompted for two passwords, I'm not sure exactly which is which, since the tutorial only addresses one of them.  This will need clarification.
+Note #2:  Jarsigner.exe should not be called directly, as a version of it is included in javawebstart.anttasks.SignJarsTask (NetBeans uses it for Java Web Start, we are exploiting it's Jar Signing capabilities)  
+Note #3:  Verification for clients:   The keytool command will print out the certificate information and ask you to verify it, for example, by comparing the displayed certificate fingerprints with those obtained from another (trusted) source of information. For example, customers might call up Skepr and ask what the fingerprints should be. You can get the fingerprints of the intca.cer file by executing the command:
+> cd %PROGRAMFILES%\Java\jdk1*\bin
+> keytool -printcert -file %USERPROFILE%\Documents\intca.cer
+Note #4:  At some point Oracle made a change to the keytool command.  It seems JDK 1.6.x uses "keytool -importcert" instead of JDK 1.5.x  "keytool -import".  The tutorial version should be backwards compatible.  This will need clarification. ||
+
 = Suppress Security Prompt =
   || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
   # First obtain instructions from your certificate provide on digitally signing Java Applets.  Verisign, Thawte, etc should provide you with the necessary instructions to generate a Java Keystore (ks) file. 
