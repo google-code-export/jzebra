@@ -116,7 +116,7 @@ made subject to such option by the copyright holder.
         <copy file="${basedir}/sample.html" tofile="${basedir}/dist/sample.html" overwrite="true" encoding="UTF-8" />
         <copy file="${basedir}/zpl.txt" tofile="${basedir}/dist/zpl.txt" overwrite="true" encoding="UTF-8" />
         <copy file="${basedir}/zpl.xml" tofile="${basedir}/dist/zpl.xml" overwrite="true" encoding="UTF-8" />
-        <copy file="${basedir}/logo.png" tofile="${basedir}/dist/logo.png" overwrite="true" encoding="UTF-8" />
+        <copy file="${basedir}/jzebra_bw.png" tofile="${basedir}/dist/jzebra_bw.png" overwrite="true" encoding="UTF-8" />
         
         <!-- End Custom -->
     </target>
