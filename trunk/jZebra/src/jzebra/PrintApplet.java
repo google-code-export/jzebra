@@ -23,16 +23,17 @@ import org.w3c.dom.NodeList;
  */
 public class PrintApplet extends Applet implements Runnable {
 
-    public static final String VERSION = "1.1.5";
+    public static final String VERSION = "1.1.6";
     private static final long serialVersionUID = 2787955484074291340L;
     private static final int APPEND_XML = 1;
     private static final int APPEND_RAW = 2;
     private static final int APPEND_IMAGE = 3;
+    private static final int APPEND_IMAGE_ZPLII = 4;
     private int appendType = 0;
     private long sleep;
     private PrintService ps;
     private PrintRaw pr;
-    private Print2D p2d;
+    private PrintPostScript p2d;
     private Exception e;
     private boolean startFinding;
     private boolean doneFinding;
@@ -82,6 +83,10 @@ public class PrintApplet extends Applet implements Runnable {
                             break;
                         case APPEND_IMAGE:
                             readImage();
+                            break;
+                        case APPEND_IMAGE_ZPLII:
+                            //readImage();
+                            append(ImageWrapper.getImage(file));
                             break;
                         default: // Do nothing
                     }
@@ -262,6 +267,20 @@ public class PrintApplet extends Applet implements Runnable {
         //this.appendType = APPEND_IMAGE;
         //this.file = imageFile;
     }
+    
+    /**
+     *
+     * @param imageFile
+     * @param appendType Use "ZPLII"
+     */
+    public void appendImage(String imageFile, String appendType) {
+        if (appendType.toUpperCase().contains("ZPLII") || appendType.toUpperCase().contains("ZPL2")) {
+            appendFile(imageFile, APPEND_IMAGE_ZPLII);
+        }
+        else {
+            LogIt.log(new UnsupportedOperationException("Image conversion to format \"" + appendType + "\" not supported."));
+        }
+    }
 
     /**
      * Appends a file of the specified type
@@ -316,9 +335,9 @@ public class PrintApplet extends Applet implements Runnable {
 
     // Use this instead of calling p2d directly.  This will allow 2d graphics
     // to only be used when absolutely needed
-    private Print2D getPrint2D() {
+    private PrintPostScript getPrint2D() {
         if (this.p2d == null) {
-            this.p2d = new Print2D();
+            this.p2d = new PrintPostScript();
             this.p2d.setPrintParameters(this);
         }
         return p2d;
@@ -575,7 +594,7 @@ public class PrintApplet extends Applet implements Runnable {
         }
     }
 
-    private void logAndPrint(Print2D p2d) throws PrinterException {
+    private void logAndPrint(PrintPostScript p2d) throws PrinterException {
         logCommands("    <" + file + ">");
         p2d.print();
         psPrint = false;

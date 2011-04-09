@@ -19,7 +19,7 @@ import javax.print.PrintService;
  *
  * @author tfino
  */
-public class Print2D implements Printable {
+public class PrintPostScript implements Printable {
 
     private final AtomicReference<BufferedImage> bufferedImage = new AtomicReference<BufferedImage>(null);
     //private final AtomicReference<PageFormat> pageFormat = new AtomicReference<PageFormat>();
@@ -29,7 +29,7 @@ public class Print2D implements Printable {
 
     private final AtomicInteger orientation = new AtomicInteger(PageFormat.PORTRAIT);
 
-    public Print2D() {
+    public PrintPostScript() {
         
     }
     /**
@@ -93,6 +93,10 @@ public class Print2D implements Printable {
 
     public void setImage(BufferedImage bufferedImage) {
         this.bufferedImage.set(bufferedImage);
+    }
+    
+    public BufferedImage getImage() {
+        return this.bufferedImage.get();
     }
 
     public void setOrientation(String orientation) {

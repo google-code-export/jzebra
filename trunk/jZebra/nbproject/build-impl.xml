@@ -700,7 +700,7 @@ is divided into following sections:
     </target>
     <target depends="init" if="do.archive" name="-do-jar-with-libraries-create-manifest" unless="manifest.available">
         <tempfile deleteonexit="true" destdir="${build.dir}" property="tmp.manifest.file"/>
-        <touch file="${tmp.manifest.file}"/>
+        <touch file="${tmp.manifest.file}" verbose="false"/>
     </target>
     <target depends="init" if="do.archive+manifest.available" name="-do-jar-with-libraries-copy-manifest">
         <tempfile deleteonexit="true" destdir="${build.dir}" property="tmp.manifest.file"/>
