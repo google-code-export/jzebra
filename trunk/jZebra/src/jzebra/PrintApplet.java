@@ -28,7 +28,8 @@ public class PrintApplet extends Applet implements Runnable {
     private static final int APPEND_XML = 1;
     private static final int APPEND_RAW = 2;
     private static final int APPEND_IMAGE = 3;
-    private static final int APPEND_IMAGE_ZPLII = 4;
+    private static final int APPEND_IMAGE_PS = 4;
+    private LanguageType lang;
     private int appendType = 0;
     private long sleep;
     private PrintService ps;
@@ -81,12 +82,12 @@ public class PrintApplet extends Applet implements Runnable {
                         case APPEND_RAW:
                             append(readRawFile());
                             break;
-                        case APPEND_IMAGE:
+                        case APPEND_IMAGE_PS:
                             readImage();
                             break;
-                        case APPEND_IMAGE_ZPLII:
+                        case APPEND_IMAGE:
                             //readImage();
-                            append(ImageWrapper.getImage(file));
+                            append(ImageWrapper.getImage(file, lang));
                             break;
                         default: // Do nothing
                     }
@@ -260,25 +261,28 @@ public class PrintApplet extends Applet implements Runnable {
      * @param imageFile
      */
     public void appendImage(String imageFile) {
-        appendFile(imageFile, APPEND_IMAGE);
-        
+        appendFile(imageFile, APPEND_IMAGE_PS);
+
         //this.startAppending = true;
         //this.doneAppending = false;
         //this.appendType = APPEND_IMAGE;
         //this.file = imageFile;
     }
-    
+
     /**
      *
      * @param imageFile
      * @param appendType Use "ZPLII"
      */
     public void appendImage(String imageFile, String appendType) {
-        if (appendType.toUpperCase().contains("ZPLII") || appendType.toUpperCase().contains("ZPL2")) {
-            appendFile(imageFile, APPEND_IMAGE_ZPLII);
-        }
-        else {
-            LogIt.log(new UnsupportedOperationException("Image conversion to format \"" + appendType + "\" not supported."));
+        lang = LanguageType.getType(appendType);
+        switch (lang) {
+            case ZPLII:
+                appendFile(imageFile, APPEND_IMAGE);
+                break;
+            default:
+                LogIt.log(new UnsupportedOperationException("Image conversion to "
+                        + "format \"" + appendType + "\" not yet supported."));
         }
     }
 
@@ -382,15 +386,15 @@ public class PrintApplet extends Applet implements Runnable {
             pr.append(s);
         }
     }
-    
+
     public void replace(String tag, String value) {
         replaceAll(tag, value);
     }
-    
+
     public void replaceAll(String tag, String value) {
         pr.set(pr.get().replaceAll(tag, value));
     }
-    
+
     public void replaceFirst(String tag, String value) {
         pr.set(pr.get().replaceFirst(tag, value));
     }

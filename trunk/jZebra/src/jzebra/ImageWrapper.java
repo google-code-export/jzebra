@@ -1,6 +1,5 @@
 package jzebra;
 
-import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
@@ -12,43 +11,64 @@ import javax.swing.ImageIcon;
 public class ImageWrapper {
 
     private static final String HEXES = "0123456789ABCDEF";
-
-    public static String getImage(String url) {
+    
+    public static String getImage(String url, LanguageType lang) {
         try {
             ImageIcon i = new ImageIcon(new URL(url));
+            int w = i.getIconWidth();
+            int h = i.getIconHeight();
             LogIt.log("Image specified: " + url);
-            LogIt.log("Dimensions: " + i.getIconWidth() + "x" + i.getIconHeight());
-            Dimension d = new Dimension(i.getIconWidth(), i.getIconHeight());
-            BufferedImage buffer = new BufferedImage(d.width, d.height, BufferedImage.TYPE_INT_RGB);
+            LogIt.log("Dimensions: " + w + "x" + h);
+            BufferedImage buffer = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
             Graphics2D g = buffer.createGraphics();
             g.drawImage(i.getImage(), 0, 0, null);
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             ImageIO.write(buffer, "bmp", out);
             boolean black[] = getBlackPixels(out);
             int hex[] = getHexValues(black);
-            LogIt.log("Bytes: " + (out.toByteArray().length - 54)
-                    + ", Pixels: " + black.length);
-            LogIt.log("Per Row: " + black.length / i.getIconHeight());
-            LogIt.log("Binary Data: " + getHex(hex));
             
-            // TODO: test ZPLII code
-            // TODO: Use zebra compression for images
-            // ~DGd:o.x,t,w,data
-            //return "~DGR:JZEBRA.GRF," + (out.toByteArray().length - 54) + "," + 
-            //        black.length / i.getIconHeight() + "," + getHex(hex);
+            String data = getHex(hex);
+            int bytes = data.length()/2;
+            int perRow = bytes/h;
+            int pixels = black.length;
             
-            return "^GFA," + (out.toByteArray().length - 54) + "," + 
-                    (out.toByteArray().length - 54) + "," + 
-                    (black.length / i.getIconHeight()) + "," + 
-                    getHex(hex);
+            LogIt.log("Bytes: " + bytes
+                    + ", Pixels: " + pixels);
+            LogIt.log("Pixels/Row: " + pixels/h);
+            LogIt.log("Bytes/Row: " + perRow);
+            LogIt.log("Binary Data: " + data);
             
-            //return "";
+           // TODO: Use zebra compression for images
+            
+            switch (lang) {
+                case ZPLII:
+                    return "^GFA," + bytes + "," + bytes + "," + perRow + "," + flipRows(data, h);
+                default:
+                    return " ERROR CONVERTING JZEBRA IMAGE TO COMMANDS ";
+            }
+            
         } catch (IOException e) {
             LogIt.log(e);
             return null;
         }
     }
-
+    
+    /**
+     * For ZPLII images, flips just row content to fix mirroring that occurs
+     * @param hex
+     * @param height
+     * @return 
+     */
+    private static String flipRows(String hex, int height) {
+        String flipped = "";
+        int width = hex.length() / height;
+        
+        for (int i = 0; i < height; i ++) {
+            flipped += new StringBuilder(hex.substring(i * width, (i + 1) * width)).reverse().toString();
+        }
+        return flipped;
+    }
+    
     /**
      * Returns an array of ones or zeros.  boolean is used  instead of int
      * for memory considerations.
@@ -68,13 +88,19 @@ public class ImageWrapper {
         // Each pixel contains color data for red, green, blue
         boolean[] pixels = new boolean[(int) (length / 3)];
 
+        
         for (int i = 0; i < pixels.length; i++) {
             int r = Integer.parseInt(Byte.toString(data[3 * i + skip]));
             int g = Integer.parseInt(Byte.toString(data[3 * i + skip + 1]));
             int b = Integer.parseInt(Byte.toString(data[3 * i + skip + 2]));
 
             // Assign "0" for all-white pixels, "1" for all others.
+            
+             
             pixels[i] = r * g * b == -1 ? false : true;
+            // Uncomment to flip image 180 degrees  
+            //pixels[pixels.length - 1 - i] = r * g * b == -1 ? false : true;
+            
         }
 
         return pixels;
