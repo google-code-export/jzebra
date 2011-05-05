@@ -7,7 +7,7 @@ jZebra has been in development since 2008 and exists solely because of the rich 
 
 Donating to jZebra does not need to be monetary, and donations are not mandatory at all.  If you find jZebra useful, beneficial or profitable for your company, you may consider donating.  There is no obligation to donate, and jZebra was not created to make money.  Development costs for jZebra are minimal thanks to NetBeans (development platform) and Google Code (web hosting) which are both free services as well.  This free culture is what keeps the product alive.
 
-That said, some will offer money to the jZebra project, and it will be gracefully accepted.  So as long as the project hosting is free, the money will be used to take my beautiful wife to dinner. :)
+That said, *some will offer money to the jZebra project, and it will be gracefully accepted*.  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family to dinner.
 
 [http://img15.imageshack.us/img15/3061/33599674.png] 
 
