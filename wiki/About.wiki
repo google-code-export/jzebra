@@ -1,6 +1,8 @@
 #summary About jZebra
 #labels Featured,Phase-Implementation
 
+[http://code.google.com/p/jzebra/wiki/Donations https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donate_LG.gif]
+
 = Introduction =
 If you are looking to send raw printer commands to your printer with php, jsp, ASP or JavaScript you likely have found -- until now -- the only option is a proprietary Microsoft-only ActiveX control for Internet Explorer.  jZebra is an open-source and open-API alternative.
 
