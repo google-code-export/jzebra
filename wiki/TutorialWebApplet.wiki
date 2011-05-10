@@ -189,6 +189,21 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
    || See also `sample.html`, section "printPages()". ||
 
+=== File Printing ===
+  #  This feature allows a raw file to be spooled directly to the printer
+   {{{
+    function printFile() {
+      	    if (document.jZebra != null) {
+	       // Using jZebra's "appendFile()" function, a file containg your raw EPL/ZPL
+	       // can be sent directly to the printer
+	       // Example: 
+	       //     document.jZebra.appendFile("http://yoursite/zpllabel.txt"); // ...etc
+	       document.jZebra.appendFile(window.location.href + "/../zpl.txt");
+	       document.jZebra.print();
+	    }
+      }
+   }}} 
+
 === XML Printing ===
 
   #  Since version 1.0.8, jZebra has the ability to read the contents of an XML file containing Base64 encoded commands and send these commands to the printer. The function requires two parameters, the URL of the XML file and the tagname containing the Base64 encoded text.
@@ -217,8 +232,6 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
 Alternatively, For questions, feedback and updates, subscribe to the *jZebra Mailing List* on Google Groups:
   [http://groups.google.com/group/jzebra-users http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
-
-
 
 
 
