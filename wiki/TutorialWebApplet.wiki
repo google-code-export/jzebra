@@ -157,7 +157,6 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
         }
    }}}
   # Cut paper
-
    {{{
         function cutPaper() {
               document.jzebra.append(chr(27) + chr(105)); // cut paper
