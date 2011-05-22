@@ -155,9 +155,8 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
               document.jzebra.append(chr(27) + "\x70" + "\x30" + chr(25) + chr(25) + "\r");
               document.jzebra.print();
         }
-
-  # Cut paper
    }}}
+  # Cut paper
 
    {{{
         function cutPaper() {
