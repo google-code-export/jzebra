@@ -163,7 +163,6 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
               document.jzebra.append(chr(27) + chr(105)); // cut paper
         }
    }}}
-
   # Basic font styling
    {{{
         function boldAndCenter() {
