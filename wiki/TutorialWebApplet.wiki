@@ -159,13 +159,13 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
   # Cut paper
    {{{
         function cutPaper() {
-              document.jzebra.append(chr(27) + chr(105)); // cut paper
+              document.jzebra.append(chr(27) + chr(105));       // cut paper
         }
    }}}
   # Basic font styling
    {{{
         function boldAndCenter() {
-             document.jzebra.append(chr(27) + chr(69) + "\r"); // bold on
+             document.jzebra.append(chr(27) + chr(69) + "\r");  // bold on
              document.jzebra.append(chr(27) + "\x61" + "\x31"); // center justify
         }
    }}}
