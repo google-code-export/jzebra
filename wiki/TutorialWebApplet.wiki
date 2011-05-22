@@ -142,6 +142,27 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
    }}}
    || See also `sample.html`, section "print()". ||
 
+=== Epson/Citizen ESC/P Printing ===
+  # These will not work with Zebra printers.  This was supplied by Joe Holdcraft via the jzebra-users mailing list.
+   {{{
+        function openCashDrawer() {
+              document.jzebra.append(chr(27) + "\x70" + "\x30" + chr(25) + chr(25) + "\r");
+              document.jzebra.print();
+        }
+   }}}
+
+   {{{
+        function cutPaper() {
+              document.jzebra.append(chr(27) + chr(105)); // cut paper
+        }
+   }}}
+
+   {{{
+        function boldAndCenter() {
+             document.jzebra.append(chr(27) + chr(69) + "\r"); // bold on
+             document.jzebra.append(chr(27) + "\x61" + "\x31"); // center justify
+   }}}
+
 === Printing Special Characters ===
   #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation
    {{{
@@ -232,7 +253,5 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
 
 Alternatively, For questions, feedback and updates, subscribe to the *jZebra Mailing List* on Google Groups:
   [http://groups.google.com/group/jzebra-users http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
-
-
 
 
