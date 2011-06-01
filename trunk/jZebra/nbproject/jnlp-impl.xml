@@ -192,10 +192,11 @@ made subject to such option by the copyright holder.
 
     <!-- Custom - Modified by Tres Finocchiaro 12/8/2010 -->
     <target name="-jnlp-init-keystore-props">
-        <property name="jnlp.signjar.keystore" value="${basedir}/jzebra.ks"/>
+        <property name="jnlp.signjar.keystore" value="${basedir}/jzebra.keystore"/>
         <property name="jnlp.signjar.storepass" value="jzebraonfire"/>
         <property name="jnlp.signjar.keypass" value="jzebraonfire"/>
         <property name="jnlp.signjar.alias" value="jzebra"/>
+        <property name="jnlp.signjar.validity" value="1826"/>
     </target>
     <!-- End Custom -->
 
