@@ -8,6 +8,12 @@ If you are looking to send raw printer commands to your printer with php, jsp, A
 
 If the printer is NOT a Zebra printer, jZebra *may still work* for your printer and application!
 
+
+= Supported Printers =
+  * Any printer capable of accepting raw print commands should work with jZebra.  This includes USB, Parallel, Serial (COM Port), Virtual COM Port (Virtual COM Servers), Network Printers.
+  * For a quick reference, contact your printer manufacturer to find out if the printer is capable of EPL (1 or 2), ZPL (I & II), ESC/P.  These are the most common and will get the quickest help via jzebra-users@googlegroups.com mailing list.
+  * Note, other raw print languages are supported as well, but success will depend on experience with Hex, Unicode, JavaScript and Character Encoding.  Project help is greatly needed on these fronts.
+
 = Versions =
 jZebra 1.0.5 (44KB) is lighter-weight and geared specifically for JavaScript usage with enhancements for special characters/special print commands.  It is recommended you start with this version or higher.   jZebra can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
 
