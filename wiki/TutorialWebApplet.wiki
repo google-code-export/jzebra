@@ -27,7 +27,7 @@ For a quickstart,  download and extract the [http://code.google.com/p/jzebra/dow
     </html></body>
     }}}
    * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you can move the JAR to a different location so long as you change `archive="./jzebra.jar"` to match your new location.
-   || *Note:* Chrome users may receive a message "The Java plug-in requires your permission to run". Click "Always Allow"<br><br> https://lh4.googleusercontent.com/-PTJny68a_Jw/Te7Eqfd8wKI/AAAAAAAAAio/0K9E_yfq6Qo/Untitled.jpg||
+   || *Note:* Chrome users may receive a message "The Java plug-in requires your permission to run". Click "Always run on this site"<br><br> https://lh4.googleusercontent.com/-PTJny68a_Jw/Te7Eqfd8wKI/AAAAAAAAAio/0K9E_yfq6Qo/Untitled.jpg||
    || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
    || *Note:* IE7 may be prompt to Click to Activate This Control each time the applet loads.  Click [http://www.mix-fx.com/flash-prompt.htm here] for details. ||
   #  The applet will begin to load in the web page.
