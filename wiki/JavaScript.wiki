@@ -1,4 +1,4 @@
-#jZebra interfaces with browser interactively via JavaScript.
+jZebra interfaces with browser interactively via JavaScript.
 
 = Introduction =
 
