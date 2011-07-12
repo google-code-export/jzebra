@@ -30,7 +30,7 @@ Produk atau perusahaan yang telah menggunakan jZebra:
     * [http://www.turningstone.com/members/ Turning Stone Resort and Casino]
     * [http://www.justtesting.biz/ FedEx WebDemo Site]
     * [http://www.zenkraft.com/ Zenkraft.com]
-    * http://www.wahyudiharto.com/blog_images/i_pegadaian.gif [http://sdm.pegadaian.co.id/sdm/ http://www.wahyudiharto.com/blog_images/i_sissdm.gif] uses jZebra
+    * http://www.wahyudiharto.com/blog_images/i_pegadaian.gif [http://sdm.pegadaian.co.id/sdm/ http://www.wahyudiharto.com/blog_images/i_sissdm.gif]
 
 
 Daftar printer yang dilaporkan telah bekerja dengan baik:
