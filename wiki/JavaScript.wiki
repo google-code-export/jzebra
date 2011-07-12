@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+jZebra interfaces with browser interactively via JavaScript.
+
+= Details =
+
+How JavaScript can do with jZebra? Well...
+  * First, it allow to print out the text *dynamically* from HTML input type [http://paparadit.blogspot.com/2010/06/raw-printing-from-web-based-application.html (See source #1)].
+  * Then, with a bit code of modified source, all local printer name will listed on HTML dropdown box & ready to print from selected printer [http://paparadit.blogspot.com/2011/07/make-dhtml-more-dynamic-with-java.html (See source #2)].
+  * Last, waiting for your _creativity_ :)
