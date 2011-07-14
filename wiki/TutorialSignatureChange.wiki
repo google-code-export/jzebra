@@ -13,8 +13,9 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 = Prerequisites =
 
-  # Need console access to the web server running OpenSSL
   # This tutorial assumes web server is running Linux or BSD. It can be adapted for others but mileage may vary.
+  # Need console access to the web server running OpenSSL
+  # Putty (or equivalent) installed, WinSCP (or equivalent) installed
   # Must have an OpenSSL private key used to obtain purchased signing certificate, example "MyCompany.cer"
   # Must have a purchased signing certificate (i.e. Verisign, Thawte, Geotrust), example "CodeSigningCA.cer"
   # Must have a root certificate from said company, example "PrimaryRootCA.cer"
@@ -39,11 +40,18 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 
 = Steps =
+  || *Note:* Please adjust "MyCompany" and "!mypassword!" appropriately ||
+  # Using Putty, connect to the web server console
   # Create a directory on the web server, i.e. "/home/myuser/signing"
    {{{ mkdir ~/signing }}}
-  # Copy three signature files to the new directory on the web server (i.e: CodeSigningCA.cer, PrimaryRootCA.cer, MyCompany.cer)
-   || *Note:* WinSCP is recommended for copying files to a Linux server ||
-  # 
+  # Using WinSCP, copy three signature files to the new directory on the web server (i.e: CodeSigningCA.cer, PrimaryRootCA.cer, MyCompany.cer)
+  # Using OpenSSL through Putty, convert the private key and the code sign cert to PCKS12 format:
+   {{{ $ openssl pkcs12 -export -in MyCompany.cer -inkey mycompany.key -out mycompany.p12 -name "mycompany" }}}
+  # Using Java keytool, convert the PCKS12 keystore into a JKS keystore:
+   {{{ $ keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword!
+-destkeystore keystore.jks -srckeystore skepr.net.p12 -srcstoretype PKCS12
+-srcstorepass %PW% -alias Skepr }}}
+
   # By default jZebra uses "jzebra.ks" for it's KeyStore.  To use an alternate KeyStore, drag it in to the "Files" panel.  
     || *Note:*  If "Files" does not appear in NetBeans, hit CTRL + 2 to make it visible. Alternately, you can copy it to "NetBeansProjects/jZebra" ||
    # The KeyStore requires four fields: A file name, a store password, a key password and an alias name to be entered.  The compiler will do this automatically so as long as the values are defined in "NetBeansProjects\jZebra\nbprojects\jnlp-impl.xml" as `jnlp.signjar.keystore`, `jnlp.signjar.storepass`, `jnlp.signjar.keypass`, `jnlp.signjar.alias` respectively.
