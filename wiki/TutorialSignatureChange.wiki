@@ -11,14 +11,11 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 = Prerequisites =
 
-  # Requires a purchased trusted root certificate (i.e. Verisign, Thawte, Geotrust)
-  # Requires bundled version of NetBeans 
+  # OpenSSL private key used to obtain purchased signing certificate
+  # Purchased signing certificate (i.e. Verisign, Thawte, Geotrust)
+  # Installed Java JDK + NetBeans bundle (i.e. [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html NetBeans 7.0, JDK 1.6.x])
 
-If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
-
-*Edit 4/5/2011:*  [http://fatbuttlarry.blogspot.com/2011/04/change-security-certificate-jzebra.html These instructions] seemed to work better for a recent emailer.  Will adopt them into a better format shortly. -Tres
-
-= Suppress Security Prompt =
+= Steps =
   || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
   # First obtain instructions from your certificate provide on digitally signing Java Applets.  Verisign, Thawte, etc should provide you with the necessary instructions to generate a Java Keystore (ks) file. 
   # Second, download and install the latest bundled version of Java Development Kit & NetBeans.  Example:  [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html "JDK 6 Update 24 with NetBeans 6.9.1"].  Registration is optional and can be skipped.
