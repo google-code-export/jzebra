@@ -1,9 +1,18 @@
 #summary Supress security prompt or change the digital signature publisher name
 #labels Featured,Phase-Deploy
 
-= Introduction =
+= Objective =
 
-This explains how to change the digital signature inside jZebra to suppress the security prompt (requires a purchased Verisign, Thawte, etc applet certificate).
+Fix "digital signature cannot be verified" message that appears when running jZebra signed applet.
+
+https://lh6.googleusercontent.com/-U2UKApbxaak/Th5OMbeqEQI/AAAAAAAAAlQ/dBt897w5SDs/sign.png
+
+https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7LovyWM/sign2.png
+
+= Prerequisites =
+
+  # Requires a purchased trusted root certificate (i.e. Verisign, Thawte, Geotrust)
+  # Requires bundled version of NetBeans 
 
 If you cannot afford a trusted certificate, you will find the steps for changing the publisher name -- useful for re-branding purposes -- at the bottom of this page.
 
