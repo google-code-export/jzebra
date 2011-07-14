@@ -5,7 +5,7 @@
 
 Fix "digital signature cannot be verified" message that appears when running jZebra signed applet.  This is done by recompiling jZebra with NetBeans, and replacing the digital certificate with your company's certificate.
 
-  || Estimated time to complete: 4 hours ||
+  || Estimated time to complete: 2 hours ||
 
 https://lh6.googleusercontent.com/-U2UKApbxaak/Th5OMbeqEQI/AAAAAAAAAlQ/dBt897w5SDs/sign.png
 
