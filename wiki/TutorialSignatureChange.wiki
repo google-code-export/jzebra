@@ -5,7 +5,7 @@
 
 Fix "digital signature cannot be verified" message that appears when running jZebra signed applet.  This is done by recompiling jZebra with NetBeans, and replacing the digital certificate with your company's certificate.
 
-  || Estimated time to complete: 2 hours ||
+  || *Note:* Estimated time to complete: 2 hours ||
 
 https://lh6.googleusercontent.com/-U2UKApbxaak/Th5OMbeqEQI/AAAAAAAAAlQ/dBt897w5SDs/sign.png
 
@@ -20,17 +20,24 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 = Steps =
   # If not already, install the latest bundled version of Java Development Kit & NetBeans taking defaults. Registration is optional and can be skipped.
-   # Register the older 1.5 JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
+  # Register the older 1.5 JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
   # Open the project in NetBeans using the following steps:
-   # Download the latest [http://code.google.com/p/jzebra/downloads/list?q=label:NetBeans jZebra source]
-   # Extract the contents to the NetBeans project folder (Usually "My Documents/NetBeansProjects", or "home/NetBeansProjects") in a folder called "jZebra"
-   # With NetBeans open, import the project using File, Open and browse for the newly created "jZebra" folder.
-   # In the top left "Projects" pane, you should see a red coffee cup with the word "jzebra" next to it.
+   * Download the latest [http://code.google.com/p/jzebra/downloads/list?q=label:NetBeans jZebra source]
+   * Extract the contents to the NetBeans project folder (Usually "My Documents/NetBeansProjects", or "home/NetBeansProjects") in a folder called "jZebra"
+   * With NetBeans open, import the project using File, Open and browse for the newly created "jZebra" folder.
+   * In the top left "Projects" pane, you should see a red coffee cup with the word "jzebra" next to it.
     || *Note:*  If "Projects" does not appear in NetBeans, hit CTRL + 1 to make it visible. ||
-   # If jzebra appears to be in error (exclamation mark), you may need to change the target platform to the correctly installed JDK:
-    # Right-click "jzebra", Properties, Libraries.  Click "JDK 1.5" (if installed) or "JDK 1.6 Default".
-    # Click OK
-   # By default jZebra uses "jzebra.ks" for it's KeyStore.  To use an alternate KeyStore, drag it in to the "Files" panel.  
+   * If jzebra appears to be in error (exclamation mark), you may need to change the target platform to the correctly installed JDK: Right-click "jzebra", Properties, Libraries.  Click "JDK 1.5" (if installed) or "JDK 1.6 Default". Click OK.
+
+
+
+
+
+
+
+= Keep Unfinished =
+
+  # By default jZebra uses "jzebra.ks" for it's KeyStore.  To use an alternate KeyStore, drag it in to the "Files" panel.  
     || *Note:*  If "Files" does not appear in NetBeans, hit CTRL + 2 to make it visible. Alternately, you can copy it to "NetBeansProjects/jZebra" ||
    # The KeyStore requires four fields: A file name, a store password, a key password and an alias name to be entered.  The compiler will do this automatically so as long as the values are defined in "NetBeansProjects\jZebra\nbprojects\jnlp-impl.xml" as `jnlp.signjar.keystore`, `jnlp.signjar.storepass`, `jnlp.signjar.keypass`, `jnlp.signjar.alias` respectively.
     || *Note:* Be careful as not to break the formatting of the html file. ||
