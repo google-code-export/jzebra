@@ -13,12 +13,13 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 = Prerequisites =
 
-  # First, must have a OpenSSL private key used to obtain purchased signing certificate
-  # Second, must have a purchased signing certificate (i.e. Verisign, Thawte, Geotrust)
+  # Need console access to the web server running OpenSSL
+  # Must have an OpenSSL private key used to obtain purchased signing certificate
+  # Must have a purchased signing certificate (i.e. Verisign, Thawte, Geotrust)
   # Installed and working Java JDK + NetBeans bundle (i.e. [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html NetBeans 7.0, JDK 1.6.x])
   # Installed and working [http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html JDK 1.5.x]
 
-= Steps =
+= Setup NetBeans =
   # If not already, install the latest bundled version of Java Development Kit & NetBeans taking defaults. Registration is optional and can be skipped.
   # Register the older 1.5 JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
   # Open the project in NetBeans using the following steps:
@@ -35,7 +36,7 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 
 
-= Keep Unfinished =
+= Steps =
 
   # By default jZebra uses "jzebra.ks" for it's KeyStore.  To use an alternate KeyStore, drag it in to the "Files" panel.  
     || *Note:*  If "Files" does not appear in NetBeans, hit CTRL + 2 to make it visible. Alternately, you can copy it to "NetBeansProjects/jZebra" ||
