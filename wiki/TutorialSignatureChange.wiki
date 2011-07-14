@@ -13,18 +13,15 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
 
 = Prerequisites =
 
-  # OpenSSL private key used to obtain purchased signing certificate
-  # Purchased signing certificate (i.e. Verisign, Thawte, Geotrust)
-  # Installed Java JDK + NetBeans bundle (i.e. [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html NetBeans 7.0, JDK 1.6.x])
+  # First, must have a OpenSSL private key used to obtain purchased signing certificate
+  # Second, must have a purchased signing certificate (i.e. Verisign, Thawte, Geotrust)
+  # Installed and working Java JDK + NetBeans bundle (i.e. [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html NetBeans 7.0, JDK 1.6.x])
+  # Installed and working [http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html JDK 1.5.x]
 
 = Steps =
-  || *Note:* This tutorial requires jZebra source to be recompiled so that the Java Archive (jar) is digitally signed with a trusted certificate. ||
-  # First obtain instructions from your certificate provide on digitally signing Java Applets.  Verisign, Thawte, etc should provide you with the necessary instructions to generate a Java Keystore (ks) file. 
-  # Second, download and install the latest bundled version of Java Development Kit & NetBeans.  Example:  [http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html "JDK 6 Update 24 with NetBeans 6.9.1"].  Registration is optional and can be skipped.
-  # Third (also optional), download the legacy JDK (version 1.5) and register it with the NetBeans IDE.  This provides backwards compatibility for PPC Macintosh computers and usually isn't needed on Windows or Linux computers.
-   # Download and install the [http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html Java 1.5 JDK] taking defaults.
-   # Register the JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
-  # Open the project in NetBeans
+  # If not already, install the latest bundled version of Java Development Kit & NetBeans taking defaults. Registration is optional and can be skipped.
+   # Register the older 1.5 JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_22 (or latest).
+  # Open the project in NetBeans using the following steps:
    # Download the latest [http://code.google.com/p/jzebra/downloads/list?q=label:NetBeans jZebra source]
    # Extract the contents to the NetBeans project folder (Usually "My Documents/NetBeansProjects", or "home/NetBeansProjects") in a folder called "jZebra"
    # With NetBeans open, import the project using File, Open and browse for the newly created "jZebra" folder.
