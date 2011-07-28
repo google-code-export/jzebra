@@ -44,17 +44,23 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
   || *Note:* Please adjust "mycompany" and "!mypassword!" appropriately to suit your needs.  Do not use spaces. ||
   # Using Putty, connect to the web server console
   # Create a directory on the web server, i.e. "/home/myuser/signing"
-   {{{ $ mkdir ~/signing }}}
+   {{{
+   $ mkdir ~/signing
+   }}}
   # Using WinSCP, copy three signature files to the new directory on the web server (i.e: CodeSigningCA.cer, PrimaryRootCA.cer, MyCompany.cer)
   # Using OpenSSL through Putty, convert the private key and the code sign cert to PCKS12 format:
-   {{{ $ openssl pkcs12 -export -in MyCompany.cer -inkey mycompany.key -out mycompany.p12 -name "mycompany" }}}
+   {{{
+   $ openssl pkcs12 -export -in MyCompany.cer -inkey mycompany.key -out mycompany.p12 -name "mycompany"
+   }}}
   # Using Java keytool, convert the PCKS12 keystore into a JKS keystore:
-   {{{ $ keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore mycompany.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany }}}
+   {{{
+   $ keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore mycompany.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany
+   }}}
   # Subsequently, import the two intermediate certificates in the JKS
 keystore:
    {{{
-    $ keytool -import -trustcacerts -alias intca -file CodeSigningCA-G2.cer -keystore keystore.jks
-    $ keytool -import -trustcacerts -alias crossca -file PrimaryRootCA.cer -keystore keystore.jks
+   $ keytool -import -trustcacerts -alias intca -file CodeSigningCA-G2.cer -keystore keystore.jks
+   $ keytool -import -trustcacerts -alias crossca -file PrimaryRootCA.cer -keystore keystore.jks
    }}}
 
 || *Note:* At this moment, the keystore can be used to code sign, however the signing certificate is not correctly chained (most likely due to a final missing self-signed certificate from CA) and therefore the certificate issuer can not be successfully verified. ||
@@ -64,18 +70,24 @@ keystore:
 so that you end up with a PCKS12 formatted keystore with the fully chained certificate. Call it keystore.p12 and protected it with the "!mypassword!" passphrase.
 
   # Overwrite the code sign certificate in the JKS keystore with the fully chained version in the PKCS12 keystore:
-   {{{ keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore keystore.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany }}}
+   {{{
+   keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore keystore.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany
+   }}}
   # Answer "yes" to overwrite prompt: 
-   {{{ Existing entry alias mycompany exists, overwrite? [no]:  yes }}}
+   {{{
+   Existing entry alias mycompany exists, overwrite? [no]:  yes 
+   }}}
 
   # Copy the keystore.jks keystore into the jZebra NetBeans
 project and the jnlp-impl.xml file with the ant recipes can be modified to sign using the correct keystore and alias:
-   {{{ <target name="-jnlp-init-keystore1" if="generated.key.signing">
-   <property name="jnlp.signjar.keystore" value="${basedir}/keystore.jks" />
-   <property name="jnlp.signjar.storepass" value="!mypassword!"/>
-   <property name="jnlp.signjar.keypass" value="!mypassword!"/>
-   <property name="jnlp.signjar.alias" value="mycompany"/>
-</target> }}}
+   {{{
+   <target name="-jnlp-init-keystore1" if="generated.key.signing">
+      <property name="jnlp.signjar.keystore" value="${basedir}/keystore.jks" />
+      <property name="jnlp.signjar.storepass" value="!mypassword!"/>
+      <property name="jnlp.signjar.keypass" value="!mypassword!"/>
+      <property name="jnlp.signjar.alias" value="mycompany"/>
+   </target>
+   }}}
 
 
 = Keep =
