@@ -56,8 +56,7 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
    {{{
    $ keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore mycompany.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany
    }}}
-  # Subsequently, import the two intermediate certificates in the JKS
-keystore:
+  # Subsequently, import the two intermediate certificates in the JKS keystore:
    {{{
    $ keytool -import -trustcacerts -alias intca -file CodeSigningCA-G2.cer -keystore keystore.jks
    $ keytool -import -trustcacerts -alias crossca -file PrimaryRootCA.cer -keystore keystore.jks
