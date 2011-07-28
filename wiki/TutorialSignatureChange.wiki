@@ -44,7 +44,7 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
   || *Note:* Please adjust "mycompany" and "!mypassword!" appropriately to suit your needs.  Do not use spaces. ||
   # Using Putty, connect to the web server console
   # Create a directory on the web server, i.e. "/home/myuser/signing"
-   {{{ mkdir ~/signing }}}
+   {{{ $ mkdir ~/signing }}}
   # Using WinSCP, copy three signature files to the new directory on the web server (i.e: CodeSigningCA.cer, PrimaryRootCA.cer, MyCompany.cer)
   # Using OpenSSL through Putty, convert the private key and the code sign cert to PCKS12 format:
    {{{ $ openssl pkcs12 -export -in MyCompany.cer -inkey mycompany.key -out mycompany.p12 -name "mycompany" }}}
