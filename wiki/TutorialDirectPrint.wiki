@@ -2,6 +2,14 @@
 
 = Simple Usage of directPrint =
 
+It must be used with [http://www.jquery.com/ jQuery] library.
+
+Attach jQuery and directPrint in your html file (assuming that directPrint.js is in the same folder as the html file :
+{{{
+<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+<script src="directPrint.js" type="text/javascript"></script>
+}}}
+
 For example, to print a box of 10 character spaces with a center-aligned string "test" : 
 {{{
 <div class="dPrint topLeft drawLine[repeat[10]] topRight newLine">
