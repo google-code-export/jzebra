@@ -2,11 +2,15 @@
 #labels Featured,Phase-Deploy,Phase-Support
 
 = Introduction =
-This is a step-by-step tutorial that walks a web developer through creating a *html web applet* capable of sending raw commands directly to a printer through a Java Applet + JavaScript commands.
+This is a tutorial for web developers to add a web applet to your page capable of sending raw commands to your printer.  This is common for Barcodes, Thermal Printing, Point-Of-Sales (POS), and other commercial/industry purposes.
 
-*This is a new tutorial for version 1.0.4 and higher.  For version 1.0.3, see the legacy tutorial [TutorialWebApplet_Legacy]*
+This is possible by using JavaScript to talk to Java through the "Applet" interface that is provided by all major web browsers.
 
-For a quickstart,  download and extract the [http://code.google.com/p/jzebra/downloads/list latest version] and examine the applet code inside the provide sample html.
+Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 featured version].  There's a bunch of files, but we'll primarily be using *"sample.html"*.
+
+http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/jzebra_files.png
+
+
 
 *TODO:  Update Preview Screenshot*
   || [http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s1600/xp_ie7.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SveEeR-bCPI/AAAAAAAAAVo/6YIGLK_GGZo/s200/xp_ie7.PNG] ||
