@@ -11,11 +11,15 @@ Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 fea
 http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/jzebra_files.png
 
 
-The sample has a separate button for each type of printing, so study them closely.  Underlying each button is a small snippet of JavaScript code for interacting with the jZebra applet.
+The sample runs client-side.  No uploading to a web server is needed for this tutorial. 
+
+There are separate buttons for each type of printing, so study them closely.  Underlying each button is a small snippet of JavaScript code for interacting with the jZebra applet.
 
 http://4.bp.blogspot.com/-I28oYL9JCBI/TutwTwdTrBI/AAAAAAAAAn0/jutIHvObGHU/s1600/jzebra_preview1.png
 
   || *Note:* jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
+
+The steps below walk through adding an applet to your web page, and explain how to interact with it through JavaScript.
 
 ----
 = Steps =
