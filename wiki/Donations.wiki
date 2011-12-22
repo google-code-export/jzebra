@@ -9,7 +9,7 @@ Donating to jZebra does not need to be monetary, and donations are not mandatory
 
 That said, *some will offer money to the jZebra project, and it will be gracefully accepted*.  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family to dinner.
 
-[http://img15.imageshack.us/img15/3061/33599674.png] 
+[http://jzebra.googlecode.com/files/me.PNG] 
 
 Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker].  Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 week turn-around), I'll happily quote a price for said feature.  I usually can respond the same day with a quote, and can work on a per-job or per-hour basis.  Lastly, I will honor contracts so as long as they don't violate the open nature of jZebra nor violate the GPL licensing. :)
 
