@@ -195,12 +195,14 @@ The steps below walk through adding an applet to your web page, and explain how 
    }}}
    || See also `sample.html`, section "print()". ||
    {{{
-       // For those trying to print special DOS characters in UNIX/Linux
-       $ export JAVA_TOOL_OPTIONS=-Dfile.encoding=Cp1252;google-chrome
-       // OR
-       $ export JAVA_TOOLS_OPTIONS=-Dfile.encoding=Cp1252;firefox
-       // You should then see
-       $ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=Cp1252
+       // Force special DOS/Win characters on UNIX/Linux
+       document.jZebra.setEncoding("cp866");       // or
+       document.jZebra.setEncoding("cp1252");
+
+       // Force UTF8 characters on Windows
+       document.jZebra.setEncoding("UTF-8");
+
+       || See also [http://code.google.com/p/jzebra/issues/detail?id=28 Issue 28] ||
    }}}
 
 === Advanced Print Spooling ===
