@@ -53,11 +53,11 @@ From PHP to Javascript, sending the hex commands with json_encode() was ruining 
 
 {{{
 $stringBuilder = 'var $PRINTERFUNCTION = function(applet) { '."\n";
-    foreach ($this->Output as $line) {
-        $stringBuilder .= "\t".'applet.append("' . str_replace(array('"',"\n","\r"),array('\"','\n','\r'),$line) . '");'."\r\n";
-    }
-    $stringBuilder .= '}'."\n";
-    return $stringBuilder; 
+foreach ($this->Output as $line) {
+    $stringBuilder .= "\t".'applet.append("' . str_replace(array('"',"\n","\r"),array('\"','\n','\r'),$line) . '");'."\r\n";
+}
+$stringBuilder .= '}'."\n";
+return $stringBuilder; 
 }}}
 
 where we stored every line as plain javascript text (no encoding or anything) as array in $this->Ouput. We only filtered plain text variables but not ESC/P Commands ofc. E.g:
