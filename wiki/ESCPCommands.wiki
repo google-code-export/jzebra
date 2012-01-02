@@ -53,16 +53,14 @@ From PHP to Javascript, sending the hex commands with json_encode() was ruining 
 
 {{{
 $stringBuilder = 'var $PRINTERFUNCTION = function(applet) { '."\n";
-foreach ($this->Output as $line) {
-$stringBuilder .= "\t".'applet.append("' . str_replace(array('"',"\n","\r"),array('\"','\n','\r'),$line) . '");'."\r\n";
-}
-$stringBuilder .= '}'."\n";
-return $stringBuilder; 
-
+    foreach ($this->Output as $line) {
+        $stringBuilder .= "\t".'applet.append("' . str_replace(array('"',"\n","\r"),array('\"','\n','\r'),$line) . '");'."\r\n";
+    }
+    $stringBuilder .= '}'."\n";
+    return $stringBuilder; 
 }}}
 
 where we stored every line as plain javascript text (no encoding or anything) as array in $this->Ouput. We only filtered plain text variables but not ESC/P Commands ofc. E.g:
-
 
 {{{
 $this->Output[] = '\x1B\x08';
@@ -83,8 +81,8 @@ $GLOBALS['normalizeChars'] = array(
 'Ş'=>'S', 'ü'=>'u', 'Ü'=>'U', 'ğ'=>'g', 'Ğ'=>'G', "\r"=>'', "\n"=>''
 );
 function cleanString (&$string) {
-$string = strtr($string, $GLOBALS['normalizeChars']);
-$string = mb_convert_encoding($string,'ASCII');
+    $string = strtr($string, $GLOBALS['normalizeChars']);
+    $string = mb_convert_encoding($string,'ASCII');
 } 
 }}}
 
@@ -93,38 +91,36 @@ I also want to share our static EPSON styling php class to see how ESC ! command
 
 {{{
 class EpsonStatic {
-static function Init() {
-return '\x1B\x40';
-}
-static function
-ResetStyles() {
-return '\x1B\x21\x00';
-}
-static function
-MakeStyle($font, $bold = false, $underline = false, $double_width = false, $double_height = false) {
-$hex = 0;
-if ($font) {
-$hex += $font;
-}
-if ($bold) {
-$hex += 8;
-}
-if ($underline) {
-$hex += 80;
-}
-if ($double_width) {
-$hex += 20;
-}
-if ($double_height) {
-$hex += 10;
-}
-if ($hex < 10) {
-$hex = '0'.$hex; }
-return '\x1B\x21\x'.$hex;
-}
-static function Cut() {
-return '\x1D\x56\x41';
-}
+    static function Init() {
+        return '\x1B\x40';
+    }
+    static function ResetStyles() {
+        return '\x1B\x21\x00';
+    }
+    static function MakeStyle($font, $bold = false, $underline = false, $double_width = false, $double_height = false) {
+        $hex = 0;
+        if ($font) {
+            $hex += $font;
+        }
+        if ($bold) {
+            $hex += 8;
+        }
+        if ($underline) {
+            $hex += 80;
+        }
+        if ($double_width) {
+            $hex += 20;
+        }
+        if ($double_height) {
+            $hex += 10;
+        }
+        if ($hex < 10) {
+            $hex = '0'.$hex; }
+            return '\x1B\x21\x'.$hex;
+        }
+    static function Cut() {
+        return '\x1D\x56\x41';
+    }
 } 
 }}}
 
