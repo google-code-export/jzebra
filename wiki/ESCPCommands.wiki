@@ -128,7 +128,7 @@ return '\x1D\x56\x41';
 } 
 }}}
 
-The [directPrint.js http://code.google.com/p/jzebra/downloads/list?can=2&q=directPrint] in jZebra website is also very useful to see some more styling action for raw text printing, but somehow it was too much for us. 
+The [http://code.google.com/p/jzebra/downloads/list?can=2&q=directPrint directPrint.js] in jZebra website is also very useful to see some more styling action for raw text printing, but somehow it was too much for us. 
 
 I hope these will help people like us, as there is really not many documentation and howTo's to learn these stuff.
 
