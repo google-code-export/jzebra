@@ -15,6 +15,6 @@ Most feature requests should go through the [http://code.google.com/p/jzebra/iss
 
 That said, all code changes/features added jZebra will comply with GPL license and be made publicly available in source (and binary) usually in days following development and testing.  Documentation of said code changes/features usually lag in release days (or weeks) behind.
 
-All donations, requests or even just a "hello" or "thanks", please email me:  tres.finocchiaro@gmail.com
+All donations, requests or even just a "hello" or "thanks", please email me:  tres.finocchiaro@gmail.com.  I'm happy to hear that jZebra helped you, and I enjoy having a strong network of developers to turn to.
 
 -Tres
