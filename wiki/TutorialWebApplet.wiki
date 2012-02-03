@@ -1,6 +1,8 @@
 #summary Using jZebra as a Web Applet component
 #labels Featured,Phase-Deploy,Phase-Support
 
+*Tip:* Hit <CTRL + F> and search this page for keywords!!
+
 = Introduction =
 This is a tutorial for web developers to add a web applet to your page capable of sending raw commands to your printer.  This is common for Barcodes, Thermal Printing, Point-Of-Sales (POS), and other commercial/industry purposes.
 
@@ -252,7 +254,7 @@ The steps below walk through adding an applet to your web page, and explain how 
          // file.  The second parameter must be a valid XML tag/node containing
          // base64 encoded data, i.e. <node_1>aGVsbG8gd29ybGQ=</node_1>
          // Example:
-         //     applet.appendXML("http://yoursite.com/zpl.xml", "node_1");
+         //     document.jzebra.appendXML("http://yoursite.com/zpl.xml", "node_1");
          document.jZebra.appendXML("C:\\zpl.xml", "v7:Image");
 
          // Send characters/raw commands to printer
@@ -262,6 +264,20 @@ The steps below walk through adding an applet to your web page, and explain how 
    }}}
 
    || See also `sample.html`, section "printXML()". ||
+
+=== Print to File ===
+  # Since version 1.1.9, jZebra allows printing to a physical file.  This is useful for bypassing printer drivers completely and sending raw data to a remote Windows Print Server queue, i.e. \\server\printer. (Thanks André T)
+   {{{
+      function printToFile() {
+         // Append some data
+         document.jZebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
+
+         // Note, the doubly escaped forward slashes!
+         document.jZebra.printToFile("\\\\server\\printer")
+      }
+
+   }}}
+
 
 === End of Tutorial ===
 
