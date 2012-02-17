@@ -15,7 +15,7 @@ http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/
 
 The sample runs client-side.  No uploading to a web server is needed for this tutorial. 
 
-There are separate buttons for each type of printing, so study them closely.  Underlying each button is a small snippet of JavaScript code for interacting with the jZebra applet.
+There are separate buttons for each type of printing, so study them closely.  Behind each button is a small snippet of JavaScript code for interacting with the jZebra applet.
 
 http://4.bp.blogspot.com/-I28oYL9JCBI/TutwTwdTrBI/AAAAAAAAAn0/jutIHvObGHU/s1600/jzebra_preview1.png
 
