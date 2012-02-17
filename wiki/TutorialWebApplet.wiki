@@ -86,7 +86,7 @@ The steps below walk through adding an applet to your web page, and explain how 
       <script>
       function findPrinter() {
          // Searches for locally installed printer with "zebra" in the name
-         document.jZebra.findPrinter("zebra");
+         document.jzebra.findPrinter("zebra");
       }
       </script>
   }}}
@@ -105,10 +105,10 @@ The steps below walk through adding an applet to your web page, and explain how 
       function print() {
          // Send characters/raw commands to applet using "append"
          // Hint:  Carriage Return = \r, New Line = \n, Escape Double Quotes= \"
-         document.jZebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
+         document.jzebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
 
          // Send characters/raw commands to printer
-         document.jZebra.print();
+         document.jzebra.print();
       }
    }}}
       || See also `sample.html`, section "print()". ||
@@ -131,10 +131,10 @@ The steps below walk through adding an applet to your web page, and explain how 
       function print() {
          // Uses the php `"echo"` function in conjunction with jZebra `"append"` function
          // This assumes you have already assigned a value to `"$commands"` with php
-         document.jZebra.append(<?php echo $commands; ?>);
+         document.jzebra.append(<?php echo $commands; ?>);
 
          // Send characters/raw commands to printer
-         document.jZebra.print();
+         document.jzebra.print();
       }
    }}}
 
@@ -144,11 +144,11 @@ The steps below walk through adding an applet to your web page, and explain how 
       // Use jZebra's `"append64"` function. This will automatically convert provided
       // base64 encoded text into ascii/bytes, etc.
       function print() {
-         document.jZebra.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
-         document.jZebra.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
+         document.jzebra.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
+         document.jzebra.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
 
          // Send characters/raw commands to printer
-         document.jZebra.print();
+         document.jzebra.print();
       }
    }}}
    || See also `sample.html`, section "print()". ||
@@ -186,23 +186,23 @@ The steps below walk through adding an applet to your web page, and explain how 
    {{{
       function print() {
          // Appends CHR(27) + CHR(29) using `"fromCharCode"` function
-         document.jZebra.append(String.fromCharCode(27) + String.fromCharCode(29));
+         document.jzebra.append(String.fromCharCode(27) + String.fromCharCode(29));
 
          // Appends hexadecimal data using "\x" notation
-         document.jZebra.append("\x00\x01\x02\xFF");
+         document.jzebra.append("\x00\x01\x02\xFF");
 
          // Send characters/raw commands to printer
-         document.jZebra.print();
+         document.jzebra.print();
       }
    }}}
    || See also `sample.html`, section "print()". ||
    {{{
        // Force special DOS/Win characters on UNIX/Linux
-       document.jZebra.setEncoding("cp866");       // or
-       document.jZebra.setEncoding("cp1252");
+       document.jzebra.setEncoding("cp866");       // or
+       document.jzebra.setEncoding("cp1252");
 
        // Force UTF8 characters on Windows
-       document.jZebra.setEncoding("UTF-8");
+       document.jzebra.setEncoding("UTF-8");
    }}}
    || See also [http://code.google.com/p/jzebra/issues/detail?id=28 Issue 28] ||
 
@@ -220,10 +220,10 @@ The steps below walk through adding an applet to your web page, and explain how 
          // jZebra counts this many `EndOfDocument`'s, a new print job will 
          // automatically be spooled to the printer and counting will start
          // over.
-         document.jZebra.setDocumentsPerSpool("10");      
+         document.jzebra.setDocumentsPerSpool("10");      
 
          // Send characters/raw commands to printer
-         document.jZebra.print();
+         document.jzebra.print();
       }
    }}}
 
@@ -237,9 +237,9 @@ The steps below walk through adding an applet to your web page, and explain how 
 	       // Using jZebra's "appendFile()" function, a file containg your raw EPL/ZPL
 	       // can be sent directly to the printer
 	       // Example: 
-	       //     document.jZebra.appendFile("http://yoursite/zpllabel.txt"); // ...etc
-	       document.jZebra.appendFile(window.location.href + "/../zpl.txt");
-	       document.jZebra.print();
+	       //     document.jzebra.appendFile("http://yoursite/zpllabel.txt"); // ...etc
+	       document.jzebra.appendFile(window.location.href + "/../zpl.txt");
+	       document.jzebra.print();
 	    }
       }
    }}} 
@@ -255,10 +255,10 @@ The steps below walk through adding an applet to your web page, and explain how 
          // base64 encoded data, i.e. <node_1>aGVsbG8gd29ybGQ=</node_1>
          // Example:
          //     document.jzebra.appendXML("http://yoursite.com/zpl.xml", "node_1");
-         document.jZebra.appendXML("C:\\zpl.xml", "v7:Image");
+         document.jzebra.appendXML("C:\\zpl.xml", "v7:Image");
 
          // Send characters/raw commands to printer
-         document.jZebra.print();
+         document.jzebra.print();
       }
 
    }}}
@@ -270,10 +270,10 @@ The steps below walk through adding an applet to your web page, and explain how 
    {{{
       function printToFile() {
          // Append some data
-         document.jZebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
+         document.jzebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
 
          // Note, the doubly escaped forward slashes!
-         document.jZebra.printToFile("\\\\server\\printer")
+         document.jzebra.printToFile("\\\\server\\printer")
       }
 
    }}}
@@ -284,10 +284,10 @@ The steps below walk through adding an applet to your web page, and explain how 
       function printPDF() {
          // Make sure pdf-renderer.jar is in the "./lib" folder
          // Append the PDF
-         document.jZebra.appendPDF(window.location.href + "/../sample.pdf");
+         document.jzebra.appendPDF(window.location.href + "/../sample.pdf");
 
          // Very important for PDFs, use "printPS()" instead of "print()"
-         document.jZebra.printPS();
+         document.jzebra.printPS();
       }
    }}}
 
@@ -296,16 +296,16 @@ The steps below walk through adding an applet to your web page, and explain how 
    # Since version 1.2.2, jZebra allows black and white image printing to ZPLII capable printers.  Future versions plan to provide EPL and ESCP support.
    {{{
       function printZPLImage() {
-            document.jZebra.append("A590,1600,2,3,1,1,N,\"jZebra " + applet.getVersion() + " sample.html\"\n");
-            document.jZebra.append("A590,1570,2,3,1,1,N,\"Testing the print() function\"\n");
+            document.jzebra.append("A590,1600,2,3,1,1,N,\"jZebra " + applet.getVersion() + " sample.html\"\n");
+            document.jzebra.append("A590,1570,2,3,1,1,N,\"Testing the print() function\"\n");
             // - Make sure image width and image height are divisible by 8.
             // - The applet will append the special raw markup:
             //    i.e. ^GFA, char(27), etc.
-            // document.jZebra.appendImage("logo.png", "ESCP");
-            document.jZebra.appendImage(window.location.href + "/../jzebra_bw.png", "ZPLII");
-            document.jZebra.append("P1\n");
+            // document.jzebra.appendImage("logo.png", "ESCP");
+            document.jzebra.appendImage(window.location.href + "/../jzebra_bw.png", "ZPLII");
+            document.jzebra.append("P1\n");
             // Send characters/raw commands to printer
-            document.jZebra.print();
+            document.jzebra.print();
       }
    }}}
 
