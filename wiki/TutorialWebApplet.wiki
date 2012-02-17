@@ -8,7 +8,7 @@ This is a tutorial for web developers to add a web applet to your page capable o
 
 This is possible by using JavaScript to talk to Java through the "Applet" interface that is provided by all major web browsers.
 
-Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 featured version].  There's a bunch of files, but we'll primarily be using *"sample.html"*.
+Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 featured version].  There's a bunch of files, but we'll primarily be using *"sample.html"* and *"jzebra.jar"* should reside in the same folder.
 
 http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/jzebra_files.png
 
