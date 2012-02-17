@@ -154,7 +154,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    || See also `sample.html`, section "print()". ||
 
 === Epson/Citizen ESC/P Printing ===
-  || *Note:* [ESCPCommands] for many more examples ||
+  || *Note:* See [ESCPCommands] for many more examples ||
   # Optional CHR() function for easier reading
    {{{
         function chr(i) {
