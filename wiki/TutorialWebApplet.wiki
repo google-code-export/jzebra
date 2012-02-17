@@ -278,6 +278,37 @@ The steps below walk through adding an applet to your web page, and explain how 
 
    }}}
 
+=== PDF Printing ===
+  # Since version 1.1.9, jZebra allows printing PDF files directly to a printer.  This functionality is experimental and used a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!*
+   {{{
+      function printPDF() {
+         // Make sure pdf-renderer.jar is in the "./lib" folder
+         // Append the PDF
+         document.jZebra.appendPDF(window.location.href + "/../sample.pdf");
+
+         // Very important for PDFs, use "printPS()" instead of "print()"
+         document.jZebra.printPS();
+      }
+   }}}
+
+
+=== Printing Images ===
+   # Since version 1.2.2, jZebra allows black and white image printing to ZPLII capable printers.  Future versions plan to provide EPL and ESCP support.
+   {{{
+      function printZPLImage() {
+            document.jZebra.append("A590,1600,2,3,1,1,N,\"jZebra " + applet.getVersion() + " sample.html\"\n");
+            document.jZebra.append("A590,1570,2,3,1,1,N,\"Testing the print() function\"\n");
+            // - Make sure image width and image height are divisible by 8.
+            // - The applet will append the special raw markup:
+            //    i.e. ^GFA, char(27), etc.
+            // document.jZebra.appendImage("logo.png", "ESCP");
+            document.jZebra.appendImage(window.location.href + "/../jzebra_bw.png", "ZPLII");
+            document.jZebra.append("P1\n");
+            // Send characters/raw commands to printer
+            document.jZebra.print();
+      }
+   }}}
+
 
 === End of Tutorial ===
 
