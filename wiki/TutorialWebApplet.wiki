@@ -105,7 +105,7 @@ The steps below walk through adding an applet to your web page, and explain how 
       function print() {
          // Send characters/raw commands to applet using "append"
          // Hint:  Carriage Return = \r, New Line = \n, Escape Double Quotes= \"
-         document.jzebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
+         document.jzebra.append("A37,503,0,1,2,3,N,JZEBRA TEST PRINT\n");
 
          // Send characters/raw commands to printer
          document.jzebra.print();
