@@ -280,7 +280,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    }}}
 
 === PDF Printing ===
-  # Since version 1.1.9, jZebra allows printing PDF files directly to a printer.  This functionality is experimental and used a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!*
+  # Since version 1.1.9, jZebra allows printing PDF files directly to a printer.  This functionality is experimental and uses a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!*
    {{{
       function printPDF() {
          // Make sure pdf-renderer.jar is in the "./lib" folder
