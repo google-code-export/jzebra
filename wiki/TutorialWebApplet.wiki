@@ -181,6 +181,12 @@ The steps below walk through adding an applet to your web page, and explain how 
              document.jzebra.append(chr(27) + "\x61" + "\x31"); // center justify
         }
    }}}
+  # Print Image (Still experimental, needs testing)
+   {{{
+        function printESCPImage() {
+             document.jzebra.appendImage("logo.png", "ESCP");
+        }
+   }}}
 
 === Printing Special Characters ===
   #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation
