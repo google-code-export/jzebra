@@ -11,6 +11,7 @@ Here are step-by-step instructions for setting up raw printing on Windows XP. Th
    }}}
 
    * Replace "lpt1:" with your port, such as "COM5:", etc.  USB ports generally need drivers installed first for port to show up.
+   * If you need to script a network port, please look here:  http://users.telenet.be/mydotcom/howto/scripts/sysadmin/printers_tcpip.htm
 
 = Steps =
 `Windows XP`
