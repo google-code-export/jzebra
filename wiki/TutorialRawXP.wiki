@@ -3,6 +3,15 @@
 = Introduction =
 Here are step-by-step instructions for setting up raw printing on Windows XP. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Windows XP in Firefox and Internet Explorer. _Last tested 11/07/2009, Windows XP SP2_ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-windows-xp-zebra.html mirror]) 
 
+= Scripting =
+* Rather script this?  From a command prompt window try this:
+
+   {{{ 
+      rundll32 printui.dll,PrintUIEntry /if /b "Zebra" /f "%WINDIR%\inf\ntprint.inf" /r "lpt1:" /m "Generic / Text Only"
+   }}}
+
+* Replace "lpt1:" with your port, such as "COM5:", etc.  USB ports generally need drivers installed first for port to show up.
+
 = Steps =
 `Windows XP`
 
