@@ -302,6 +302,7 @@ The steps below walk through adding an applet to your web page, and explain how 
       // *Note 1:  Applet will append special raw markup, i.e. ^GFA, char(27), etc
       // *Note 2:  Image width and image height must be divisible by 8
       // *Note 3:  Newline/Carriage Return must be appended manually
+      // *Note 4:  Images should be strictly black and white
 
       // Zebra (ZPLII):
       document.jzebra.appendImage("image.png", "ZPLII");
