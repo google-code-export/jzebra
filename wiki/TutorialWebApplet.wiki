@@ -182,11 +182,7 @@ The steps below walk through adding an applet to your web page, and explain how 
         }
    }}}
   # Print Image (Still experimental, needs testing)
-   {{{
-        function printESCPImage() {
-             document.jzebra.appendImage("logo.png", "ESCP");
-        }
-   }}}
+   See [TutorialWebApplet#Printing_Images]
 
 === Printing Special Characters ===
   #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation
@@ -300,20 +296,28 @@ The steps below walk through adding an applet to your web page, and explain how 
 
 
 === Printing Images ===
-   # Since version 1.2.2, jZebra allows black and white image printing to ZPLII capable printers.  Future versions plan to provide EPL and ESCP support.
+   # Experimental support for appending printer-specific images by url or Base64.
    {{{
-      function printZPLImage() {
-            document.jzebra.append("A590,1600,2,3,1,1,N,\"jZebra " + applet.getVersion() + " sample.html\"\n");
-            document.jzebra.append("A590,1570,2,3,1,1,N,\"Testing the print() function\"\n");
-            // - Make sure image width and image height are divisible by 8.
-            // - The applet will append the special raw markup:
-            //    i.e. ^GFA, char(27), etc.
-            // document.jzebra.appendImage("logo.png", "ESCP");
-            document.jzebra.appendImage(window.location.href + "/../jzebra_bw.png", "ZPLII");
-            document.jzebra.append("P1\n");
-            // Send characters/raw commands to printer
-            document.jzebra.print();
-      }
+      // *Note 1:  Applet will append special raw markup, i.e. ^GFA, char(27), etc
+      // *Note 2:  Image width and image height must be divisible by 8
+      // *Note 3:  Newline/Carriage Return must be appended manually
+
+      // Zebra (ZPLII):
+      document.jzebra.appendImage("image.png", "ZPLII");
+      document.jzebra.append("\r\n");  
+
+      // Zebra (CPCL):
+      document.jzebra.appendImage("image.png", "CPCL");
+      document.jzebra.append("\r\n");    
+
+      // Epson (ESCP):
+      document.jzebra.appendImage("image.png", "ESCP");
+      document.jzebra.append("\r\n");
+
+      // Base64
+      document.jzebra.appendImage("data:image/png;base64,AAAAAAAAA...", "ZPLII");
+      document.jzebra.append("\n");
+
    }}}
 
 
