@@ -296,7 +296,7 @@ The steps below walk through adding an applet to your web page, and explain how 
 
 
 === Printing Images ===
-   # Experimental support for appending printer-specific images by url or Base64.
+   # Experimental support for appending printer-specific images by url and/or Base64.
    {{{
       // *Note 1:  Applet will append special raw markup, i.e. ^GFA, char(27), etc
       // *Note 2:  Image width and image height must be divisible by 8
@@ -317,6 +317,10 @@ The steps below walk through adding an applet to your web page, and explain how 
       // Base64
       document.jzebra.appendImage("data:image/png;base64,AAAAAAAAA...", "ZPLII");
       document.jzebra.append("\n");
+
+      // DeskJet/LaserJet, etc (don't mix with raw devices)
+      document.jzebra.appendImage("image.png");
+      document.jzebra.print();
 
    }}}
 
