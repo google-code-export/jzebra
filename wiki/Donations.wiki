@@ -5,9 +5,9 @@
 
 jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  As more and more businesses have a need for browser-based printing -- especially in the shipping and retail industry -- a need for thermal printing via web page is demanded more each day.  jZebra offers this for free!
 
-Donations are not mandatory, and you can donate without spending money by offering code or help through the wiki or mailing list.
+Donations are not mandatory, and you or your company can donate without spending money by offering code or help through the wiki or mailing list.
 
-If you find jZebra beneficial (or profitable) please consider contributing back to the project.  jZebra was not created to make money. Contributions are most helpful towards the mailing list and wiki.  Development costs for jZebra are minimal thanks to other "free" services such as NetBeans and Google Code.
+If you or your company finds jZebra beneficial (or profitable) please consider contributing back to the project.  jZebra was not created to make money. Most helpful are contributions on the mailing list and wiki.  Development costs for jZebra are minimal thanks to services such as NetBeans and Google Code.
 
 Money is also gracefully accepted!  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family out to dinner.
 
