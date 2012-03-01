@@ -9,7 +9,7 @@ Donations are not mandatory, and you can donate without spending money by offeri
 
 If you find jZebra beneficial (or profitable) please consider contributing back to the project.  jZebra was not created to make money.  Development costs for jZebra are minimal thanks to other "free" services such as NetBeans and Google Code.
 
-Money is also gracefully accepted!  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family out to dinner.
+Contributions are most helpful towards the mailing list and wiki. Money is also gracefully accepted!  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family out to dinner.
 
 [http://jzebra.googlecode.com/files/me.PNG] 
 
