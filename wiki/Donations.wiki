@@ -3,7 +3,7 @@
 
 [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XGF8HTFYG3ZC8 https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donate_LG.gif]
 
-jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  As more and more businesses have a need for browser-based printing -- especially in the shipping and retail industry -- a need for thermal printing via web page is demanded more each day.
+jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  As more and more businesses have a need for browser-based printing -- especially in the shipping and retail industry -- a need for thermal printing via web page is demanded more each day.  jZebra offers this for free!
 
 Donations are not mandatory, and you can donate without spending money by offering code or help through the wiki or mailing list.
 
