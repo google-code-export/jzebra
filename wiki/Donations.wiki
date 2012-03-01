@@ -3,17 +3,19 @@
 
 [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XGF8HTFYG3ZC8 https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donate_LG.gif]
 
-jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  A paradigm shift in computing is causing more and more a need for browser-based printing.  This shift seems to be happening fastest in the shipping and retail worlds as a need for thermal printing via web page is demanded more each day.
+jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  As more and more businesses have a need for browser-based printing -- especially in the shipping and retail industry -- a need for thermal printing via web page is demanded more each day.
 
-Donating to jZebra does not need to be monetary, and donations are not mandatory at all.  If you find jZebra useful, beneficial or profitable for your company, you may consider donating.  There is no obligation to donate, and jZebra was not created to make money.  Development costs for jZebra are minimal thanks to NetBeans (development platform) and Google Code (web hosting) which are both free services as well.  This free culture is what keeps the product alive.
+Donations are not mandatory, and you can donate without spending money by offering code or help through the wiki or mailing list.
 
-That said, *some will offer money to the jZebra project, and it will be gracefully accepted*.  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family to dinner.
+If you find jZebra beneficial (or profitable) please consider contributing to the mailing list and wiki.  jZebra was not created to make money.  Development costs for jZebra are minimal thanks to other "free" services such as NetBeans and Google Code.
+
+Money is also gracefully accepted!  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family out to dinner.
 
 [http://jzebra.googlecode.com/files/me.PNG] 
 
-Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker].  Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 week turn-around), I'll happily quote a price for said feature.  I usually can respond the same day with a quote, and can work on a per-job or per-hour basis.  Lastly, I will honor contracts so as long as they don't violate the open nature of jZebra nor violate the GPL licensing. :)
+Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker].  Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 month turn-around), I'll happily quote a price and usually respond the same day.  I can have an estimate prepared with a few days.  I am willing to work on a per-job or per-hour basis.  I will honor contracts as well (so as long as they don't violate the project's goals or the GPL3 license).
 
-That said, all code changes/features added jZebra will comply with GPL license and be made publicly available in source (and binary) usually in days following development and testing.  Documentation of said code changes/features usually lag in release days (or weeks) behind.
+All code changes/features added jZebra will comply with GPL3 license and be made publicly available in source (and binary) to the general public.  Documentation on the wiki will generally lag behind 1 month.
 
 All donations, requests or even just a "hello" or "thanks", please email me:  tres.finocchiaro@gmail.com.  I'm happy to hear that jZebra helped you, and I enjoy having a strong network of developers to turn to.
 
