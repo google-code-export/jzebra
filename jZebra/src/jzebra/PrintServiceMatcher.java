@@ -97,7 +97,7 @@ public class PrintServiceMatcher {
         }
 
         // Couldn't find printer
-        LogIt.log(Level.SEVERE, "Printer not found: " + printerName);
+        LogIt.log(Level.WARNING, "Printer not found: " + printerName);
         return null;
     }
 

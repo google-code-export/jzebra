@@ -6,7 +6,7 @@ package jzebra;
  */
 public enum LanguageType {
 
-    ZPLII, ZPL, EPL2, EPL, CPCL, ESCP, UNKNOWN;
+    ZPLII, ZPL, EPL2, EPL, CPCL, ESCP, ESCP2, UNKNOWN;
 
     LanguageType() {
     }
@@ -23,6 +23,14 @@ public enum LanguageType {
             return ZPLII;
         } else if (s.equalsIgnoreCase("EPLII")) {
             return EPL2;
+        } else if (s.equalsIgnoreCase("ESC")) {
+            return ESCP;
+        } else if (s.equalsIgnoreCase("ESC/P")) {
+            return ESCP;
+        } else if (s.equalsIgnoreCase("ESC\\P")) {
+            return ESCP;
+        } else if (s.equalsIgnoreCase("ESC/P2")) {
+            return ESCP2;
         } else if (s.equalsIgnoreCase("EPSON")) {
             return ESCP;
         }

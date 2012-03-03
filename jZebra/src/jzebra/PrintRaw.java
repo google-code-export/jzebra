@@ -3,6 +3,11 @@
  */
 package jzebra;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Locale;
@@ -29,6 +34,7 @@ import jzebra.exception.NullPrintServiceException;
  * @author A. Tres Finocchiaro
  */
 public class PrintRaw {
+
     private final static String ERR = "jzebra.PrintRaw.print() failed.";
     private final AtomicReference<DocFlavor> docFlavor = new AtomicReference<DocFlavor>(DocFlavor.BYTE_ARRAY.AUTOSENSE);
     private final AtomicReference<DocAttributeSet> docAttr = new AtomicReference<DocAttributeSet>(null);
@@ -38,6 +44,7 @@ public class PrintRaw {
     private final AtomicBoolean isFinished = new AtomicBoolean(false);
     private final AtomicReference<Charset> charset = new AtomicReference<Charset>(Charset.defaultCharset());
     private final AtomicReference<String> jobName = new AtomicReference<String>("jZebra Raw Printing");
+    private final AtomicReference<String> outputPath = new AtomicReference<String>(null);
 
     public PrintRaw() {
     }
@@ -57,9 +64,38 @@ public class PrintRaw {
         this.charset.set(charset);
     }
 
+    public void setOutputPath(String outputPath) {
+        this.outputPath.set(outputPath);
+    }
+
     public boolean print(String rawCmds) throws PrintException, InterruptedException, UnsupportedEncodingException {
         this.set(rawCmds);
         return print();
+    }
+
+    public boolean printToFile() throws PrintException {
+        LogIt.log("Printing to file (placeholder)");
+
+        //File f = new File(outputPath.get());
+        /*if (!f.exists()) {
+            throw new PrintException(ERR + ": File does not exist " + outputPath.get());
+        }
+        else
+        if (!f.canWrite()) {
+            throw new PrintException(ERR + ": Error writing to " + outputPath.get());
+        }*/
+        
+        try { 
+            OutputStream out = new FileOutputStream(outputPath.get());
+            out.write(rawCmds.get().getBytes(charset.get().name()));
+            out.close();
+
+        } catch (Exception e) {
+            throw new PrintException(ERR + ": " + e.getLocalizedMessage());
+        }
+        
+        //isFinished.set(true);
+        return true;
     }
 
     /**
@@ -75,6 +111,8 @@ public class PrintRaw {
             throw new NullPrintServiceException(ERR);
         } else if (rawCmds.get() == null) {
             throw new NullCommandException(ERR);
+        } else if (outputPath.get() != null) {
+            return printToFile();
         }
         SimpleDoc doc = new SimpleDoc(rawCmds.get().getBytes(charset.get().name()), docFlavor.get(), docAttr.get());
 
@@ -131,12 +169,9 @@ public class PrintRaw {
         return true;
     }
 
-
-   // public void reprint() throws PrintException, InterruptedException {
-   //     print(reprint.get() == null ? rawCmds.get() : reprint.get());
-   // }
-
-
+    // public void reprint() throws PrintException, InterruptedException {
+    //     print(reprint.get() == null ? rawCmds.get() : reprint.get());
+    // }
     /**
      * Convenience method for RawPrint constructor and print method
      *
@@ -242,6 +277,7 @@ public class PrintRaw {
      */
     public void setCharset(Charset charset) {
         this.charset.set(charset);
+        LogIt.log("Current printer charset encoding: " + charset.name());
     }
 
     /**
@@ -273,5 +309,4 @@ public class PrintRaw {
     public String getJobName() {
         return this.jobName.get();
     }
-
 }
