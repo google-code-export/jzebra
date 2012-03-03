@@ -2,12 +2,19 @@ package jzebra;
 
 import java.applet.Applet;
 import java.awt.print.PrinterException;
+import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLConnection;
+import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.charset.IllegalCharsetNameException;
+import java.security.AccessController;
+import java.security.PrivilegedActionException;
+import java.security.PrivilegedExceptionAction;
 import java.util.logging.Level;
 import javax.imageio.ImageIO;
 import javax.print.PrintException;
@@ -23,19 +30,22 @@ import org.w3c.dom.NodeList;
  */
 public class PrintApplet extends Applet implements Runnable {
 
-    public static final String VERSION = "1.1.6";
+    public static final String VERSION = "1.3.0";
     private static final long serialVersionUID = 2787955484074291340L;
-    private static final int APPEND_XML = 1;
-    private static final int APPEND_RAW = 2;
-    private static final int APPEND_IMAGE = 3;
-    private static final int APPEND_IMAGE_PS = 4;
+    public static final int APPEND_XML = 1;
+    public static final int APPEND_RAW = 2;
+    public static final int APPEND_IMAGE = 3;
+    public static final int APPEND_IMAGE_PS = 4;
+    public static final int APPEND_PDF = 8;
+    public static final int APPEND_HTML = 16;
     private LanguageType lang;
-    private int appendType = 0;
+    private int appendType;
     private long sleep;
     private PrintService ps;
     private PrintRaw pr;
-    private PrintPostScript p2d;
-    private Exception e;
+    private PrintPostScript printPS;
+    private PrintHTML printHTML;
+    private Throwable t;
     private boolean startFinding;
     private boolean doneFinding;
     private boolean startPrinting;
@@ -45,6 +55,8 @@ public class PrintApplet extends Applet implements Runnable {
     private boolean running;
     private boolean reprint;
     private boolean psPrint;
+    private boolean htmlPrint;
+    //private double[] psMargin;
     private String file;
     private String xmlTag;
     private Thread thisThread;
@@ -53,20 +65,62 @@ public class PrintApplet extends Applet implements Runnable {
     //private String pageBreak; // For spooling pages one at a time
     private int documentsPerSpool = 0;
     private String endOfDocument;
-    private String manualBreak = "%/SPOOL/%";
+//    private String manualBreak = "%/SPOOL/%";
 
     /**
-     * Starts the applet and runs the JavaScript listener thread
+     * Create a privileged thread that will listen for JavaScript events
+     * @since 1.1.7
+     */
+    //@Override
+    public void run() {
+        logStart();
+        try {
+            AccessController.doPrivileged(new PrivilegedExceptionAction<Object>() {
+                //@Override
+
+                public Object run() throws Exception {
+
+                    startJavaScriptListener();
+                    return null;
+                }
+            });
+        } catch (PrivilegedActionException e) {
+            LogIt.log("Error starting main JavaScript thread.  All else will fail.", e);
+            set(e);
+        } finally {
+            logStop();
+        }
+    }
+
+    /**
+     * TODO - Implement ThreadPoolExecutor.  Sample provided:
+     */
+    /*
+     * 
+    public void listen() {
+    BlockingQueue queue = new SynchronousQueue();
+    ThreadPoolExecutor executor = new ThreadPoolExecutor(
+    1, Session.getMaxSessionCount(), 100, TimeUnit.SECONDS, queue);
+    while (true) {
+    try {
+    queue.submit(new Session(database, serverSocket.accept()));
+    } catch (IOException ex) { 
+    ex.printStackTrace();
+    }
+    }
+    }
+     */
+    /**
+     * Starts the Applet and runs the JavaScript listener thread
      */
     //@Override //JDK 1.6
-    public void run() {
+    private void startJavaScriptListener() {
         processParameters();
-
         pr = new PrintRaw();
         pr.setCharset(charset);
         pr.clear();     // Initialize our print commands
 
-        logStart();
+        //logStart();
         while (running) {
             try {
                 Thread.sleep(sleep);  // Wait 100 milli before running again
@@ -75,21 +129,34 @@ public class PrintApplet extends Applet implements Runnable {
                 xmlFile = null; xmlTag = null;
                 }*/
                 if (startAppending) {
-                    switch (appendType) {
-                        case APPEND_XML:
-                            append64(readXMLFile());
-                            break;
-                        case APPEND_RAW:
-                            append(readRawFile());
-                            break;
-                        case APPEND_IMAGE_PS:
-                            readImage();
-                            break;
-                        case APPEND_IMAGE:
-                            //readImage();
-                            append(ImageWrapper.getImage(file, lang));
-                            break;
-                        default: // Do nothing
+                    try {
+                        switch (appendType) {
+                            case APPEND_HTML:
+                                appendHTML(readRawFile());
+                            case APPEND_XML:
+                                append64(readXMLFile());
+                                break;
+                            case APPEND_RAW:
+                                append(readRawFile());
+                                break;
+                            case APPEND_IMAGE_PS:
+                                readImage();
+                                break;
+                            case APPEND_IMAGE:
+                                if (isBase64Image(file)) {
+                                    append(ImageWrapper.getImage(Base64.decode(file.split(",")[1]), lang, charset));
+                                } else {
+                                    append(ImageWrapper.getImage(file, lang, charset));
+                                }
+                                break;
+                            case APPEND_PDF:
+                                readBinaryFile();
+                                break;
+                            default: // Do nothing
+                        }
+                    } catch (Throwable t) {
+                        LogIt.log("Error appending " + appendType + " data", t);
+                        set(t);
                     }
                     startAppending = false;
                     doneAppending = true;
@@ -106,10 +173,11 @@ public class PrintApplet extends Applet implements Runnable {
                         startPrinting = false;
                         pr.setPrintService(ps);
 
-                        // PostScript style printign feature -- Added 1/22/2011
-                        if (psPrint) {
-                            logAndPrint(getPrint2D());
-                            //getPrint2D().print(this.getGraphics(),new PageFormat(), 0);
+                        // PostScript style printing feature for images or PDF files
+                        if (htmlPrint) {
+                            logAndPrint(getPrintHTML());
+                        } else if (psPrint) {
+                            logAndPrint(getPrintPS());
                         } // Page Spooling Feature #1 -- Added 11/19/2010
                         else if (documentsPerSpool > 0 && endOfDocument != null && !pr.isClear() && pr.get().contains(endOfDocument)) {
                             String[] split = pr.get().split(endOfDocument);
@@ -129,13 +197,13 @@ public class PrintApplet extends Applet implements Runnable {
                                 logAndPrint(pr);
                             }
 
-                        } // Page Spooling Feature #2 -- Added 11/19/2010
-                        else if (manualBreak != null && !pr.isClear() && pr.get().contains(manualBreak)) {
+                        } // Page Spooling Feature #2 -- Added 11/19/2010 -- Removed 2/28/2012 due to no use
+/*                        else if (manualBreak != null && !pr.isClear() && pr.get().contains(manualBreak)) {
                             String[] split = pr.get().split(manualBreak);
                             for (String s : split) {
                                 logAndPrint(s);
                             }
-                        } else {
+                        }*/ else {
                             logAndPrint(pr);
                         }
                     } catch (PrintException e) {
@@ -153,7 +221,7 @@ public class PrintApplet extends Applet implements Runnable {
                 set(e);
             }
         }
-        logStop();
+        //logStop();
     }
 
     private void processParameters() {
@@ -166,6 +234,7 @@ public class PrintApplet extends Applet implements Runnable {
         doneAppending = true;
         sleep = getParameter("sleep", 100);
         psPrint = false;
+        appendType = 0;
         String printer = getParameter("printer", null);
         if (printer != null) {
             findPrinter(printer);
@@ -179,9 +248,13 @@ public class PrintApplet extends Applet implements Runnable {
      */
     private String getParameter(String name, String defaultVal) {
         if (name != null) {
-            String retVal = super.getParameter(name);
-            retVal = isBlank(retVal) ? super.getParameter(name.toUpperCase()) : retVal;
-            return isBlank(retVal) ? defaultVal : retVal;
+            try {
+                String retVal = super.getParameter(name);
+                retVal = isBlank(retVal) ? super.getParameter(name.toUpperCase()) : retVal;
+                return isBlank(retVal) ? defaultVal : retVal;
+            } catch (NullPointerException e) {
+                return defaultVal;
+            }
         }
         return defaultVal;
     }
@@ -226,6 +299,24 @@ public class PrintApplet extends Applet implements Runnable {
             set(e);
         }
     }
+    
+    public void appendHTMLFile(String htmlFile) {
+        this.appendType = APPEND_HTML;
+        this.appendFromThread(htmlFile, appendType);
+        //throw new UnsupportedOperationException("Sorry, not yet supported.");
+    }
+    
+    public void appendHtmlFile(String htmlFile) {
+        this.appendHTMLFile(htmlFile);
+    }
+    
+    public void appendHtml(String html) {
+        this.appendHTML(html);
+    }
+    
+    public void appendHTML(String html) {
+        getPrintHTML().append(html);
+    }
 
     /**
      * Gets the first xml node identified by <code>tagName</code>, reads its
@@ -236,7 +327,7 @@ public class PrintApplet extends Applet implements Runnable {
      * @param tagName
      */
     public void appendXML(String xmlFile, String xmlTag) {
-        appendFile(xmlFile, APPEND_XML);
+        appendFromThread(xmlFile, APPEND_XML);
         //this.startAppending = true;
         //this.doneAppending = false;
         //this.appendType = APPEND_XML;
@@ -249,11 +340,7 @@ public class PrintApplet extends Applet implements Runnable {
      * @param rawDataFile
      */
     public void appendFile(String rawDataFile) {
-        appendFile(rawDataFile, APPEND_RAW);
-        //this.startAppending = true;
-        //this.doneAppending = false;
-        //this.appendType = APPEND_RAW;
-        //this.file = rawDataFile;
+        appendFromThread(rawDataFile, APPEND_RAW);
     }
 
     /**
@@ -261,12 +348,11 @@ public class PrintApplet extends Applet implements Runnable {
      * @param imageFile
      */
     public void appendImage(String imageFile) {
-        appendFile(imageFile, APPEND_IMAGE_PS);
+        appendFromThread(imageFile, APPEND_IMAGE_PS);
+    }
 
-        //this.startAppending = true;
-        //this.doneAppending = false;
-        //this.appendType = APPEND_IMAGE;
-        //this.file = imageFile;
+    public void appendPDF(String pdfFile) {
+        appendFromThread(pdfFile, APPEND_PDF);
     }
 
     /**
@@ -277,8 +363,11 @@ public class PrintApplet extends Applet implements Runnable {
     public void appendImage(String imageFile, String appendType) {
         lang = LanguageType.getType(appendType);
         switch (lang) {
+            case CPCL:
+            case ESCP:
+            case ESCP2:
             case ZPLII:
-                appendFile(imageFile, APPEND_IMAGE);
+                appendFromThread(imageFile, APPEND_IMAGE);
                 break;
             default:
                 LogIt.log(new UnsupportedOperationException("Image conversion to "
@@ -291,7 +380,7 @@ public class PrintApplet extends Applet implements Runnable {
      * @param url
      * @param appendType
      */
-    private void appendFile(String file, int appendType) {
+    private void appendFromThread(String file, int appendType) {
         this.startAppending = true;
         this.doneAppending = false;
         this.appendType = appendType;
@@ -299,11 +388,12 @@ public class PrintApplet extends Applet implements Runnable {
     }
 
     /**
-     * Can't seem to get this to work, remvoed from sample.html
+     * Can't seem to get this to work, removed from sample.html
      * @param orientation
      */
+    @Deprecated
     public void setImageOrientation(String orientation) {
-        getPrint2D().setOrientation(orientation);
+        getPrintPS().setOrientation(orientation);
     }
 
     // Due to applet security, can only be invoked by run() thread
@@ -328,23 +418,119 @@ public class PrintApplet extends Applet implements Runnable {
         return "";
     }
 
+    public void printToFile() {
+        printToFile(null);
+    }
+
+    public void printToFile(String outputPath) {
+        if (outputPath != null && !outputPath.equals("")) {
+            this.pr.setOutputPath(outputPath);
+        }
+        this.print();
+    }
+
     // Due to applet security, can only be invoked by run() thread
     private void readImage() {
         try {
-            getPrint2D().setImage(ImageIO.read(new URL(file)));
+            // Use the in-line base64 content as our image
+            if (isBase64Image(file)) {
+                getPrintPS().setImage(Base64.decode(file.split(",")[1]));
+            } else {
+                getPrintPS().setImage(ImageIO.read(new URL(file)));
+            }
         } catch (IOException ex) {
             LogIt.log(Level.WARNING, "Error reading specified image", ex);
         }
     }
 
+    private boolean isBase64Image(String path) {
+        return path.startsWith("data:image/") && path.contains(";base64,");
+    }
+
     // Use this instead of calling p2d directly.  This will allow 2d graphics
     // to only be used when absolutely needed
-    private PrintPostScript getPrint2D() {
-        if (this.p2d == null) {
-            this.p2d = new PrintPostScript();
-            this.p2d.setPrintParameters(this);
+    private PrintPostScript getPrintPS() {
+        if (this.printPS == null) {
+            this.printPS = new PrintPostScript();
+            this.printPS.setPrintParameters(this);
         }
-        return p2d;
+        return printPS;
+    }
+    
+    private PrintHTML getPrintHTML() {
+        if (this.printHTML == null) {
+            this.printHTML = new PrintHTML();
+            this.printHTML.setPrintParameters(this);
+        }
+        return printHTML;
+    }
+
+    /*
+    public double[] getPSMargin() {
+    return psMargin;
+    }
+    
+    public void setPSMargin(int psMargin) {
+    this.psMargin = new double[]{psMargin};
+    }
+    
+    public void setPSMargin(double psMargin) {
+    this.psMargin = new double[]{psMargin};
+    }
+    
+    public void setPSMargin(int top, int left, int bottom, int right) {
+    this.psMargin = new double[]{top, left, bottom, right};
+    }
+    
+    public void setPSMargin(double top, double left, double bottom, double right) {
+    this.psMargin = new double[]{top, left, bottom, right};
+    }*/
+    /**
+     * Reads a binary file (i.e. PDF) from URL to a ByteBuffer.  This is later appended
+     * to the applet, but needs a renderer capable of printing it to PostScript
+     * @return
+     * @throws IOException 
+     */
+    public void readBinaryFile() {
+        ByteBuffer data = null;
+        try {
+            URLConnection con = new URL(file).openConnection();
+            InputStream in = con.getInputStream();
+            int size = con.getContentLength();
+
+            ByteArrayOutputStream out;
+            if (size != -1) {
+                out = new ByteArrayOutputStream(size);
+            } else {
+                out = new ByteArrayOutputStream(20480); // Pick some appropriate size
+            }
+
+            byte[] buffer = new byte[512];
+            while (true) {
+                int len = in.read(buffer);
+                if (len == -1) {
+                    break;
+                }
+                out.write(buffer, 0, len);
+            }
+            in.close();
+            out.close();
+
+            byte[] array = out.toByteArray();
+
+            //Lines below used to test if file is corrupt
+            //FileOutputStream fos = new FileOutputStream("C:\\abc.pdf");
+            //fos.write(array);
+            //fos.close();
+
+            data = ByteBuffer.wrap(array);
+
+        } catch (Exception e) {
+            LogIt.log(Level.WARNING, "Error reading/parsing specified PDF file", e);
+        }
+
+        getPrintPS().setPDF(data);
+
     }
 
     // Due to applet security, can only be invoked by run() thread
@@ -382,11 +568,28 @@ public class PrintApplet extends Applet implements Runnable {
             pr.append(s.getBytes(charset.name()));
         } catch (UnsupportedEncodingException ex) {
             LogIt.log(Level.WARNING, "Could not append using specified charset encoding: "
-                    + charset + ". Using default.", e);
+                    + charset + ". Using default.", t);
             pr.append(s);
         }
     }
 
+    /**
+     * For very special scenarios where the print listener isn't running yet.  This
+     * is usually caused by calling from unorthodox means, such as a third party
+     * applet or API
+     *
+    private void checkListener() {
+    if (thisThread == null) {
+    LogIt.log(Level.WARNING, "It appears the applet was not loaded "
+    + "in a web browser.  Starting \"init();\" automatically.");
+    this.init();
+    }
+    /*if (pr == null) {
+    LogIt.log(Level.WARNING, "It appears the applet was not started "
+    + "through a web browser.  Starting \"run();\" automatically.");
+    this.run();
+    }*
+    }*/
     public void replace(String tag, String value) {
         replaceAll(tag, value);
     }
@@ -413,6 +616,13 @@ public class PrintApplet extends Applet implements Runnable {
      * printPersistent() to save the buffer to be used/appended to later.
      */
     public void print() {
+        startPrinting = true;
+        donePrinting = false;
+        reprint = false;
+    }
+    
+    public void printHTML() {
+        htmlPrint = true;
         startPrinting = true;
         donePrinting = false;
         reprint = false;
@@ -467,8 +677,14 @@ public class PrintApplet extends Applet implements Runnable {
         return doneAppending;
     }
 
+    /**
+     * Returns the PrintService's name (the printer name) associated with this
+     * applet, if any.  Returns null if none is set.
+     * @return
+     */
     public String getPrinter() {
-        return ps.getName();
+        return ps == null ? null : ps.getName();
+        //return ps.getName();
     }
 
     /**
@@ -494,20 +710,27 @@ public class PrintApplet extends Applet implements Runnable {
      * applet, if any.  Returns null if none is set.
      * @return
      */
+    @Deprecated
     public String getPrinterName() {
-        return ps == null ? null : ps.getName();
+        LogIt.log(Level.WARNING, "Function \"getPrinterName()\" has been deprecated since v. 1.2.3."
+                + "  Please use \"getPrinter()\" instead.");
+        return getPrinter();
     }
 
-    public Exception getException() {
-        return e;
+    public Throwable getError() {
+        return getException();
+    }
+
+    public Throwable getException() {
+        return t;
     }
 
     public void clearException() {
-        this.e = null;
+        this.t = null;
     }
 
     public String getExceptionMessage() {
-        return e.getLocalizedMessage();
+        return t.getLocalizedMessage();
     }
 
     public long getSleepTime() {
@@ -533,14 +756,19 @@ public class PrintApplet extends Applet implements Runnable {
     public void setEndOfDocument(String endOfPage) {
         this.endOfDocument = endOfPage;
     }
+    
+    public void setPrinter(int index) {
+        this.ps = PrintServiceMatcher.getPrinterList()[index];
+        LogIt.log("Printer set to index: " + index + ",  Name: " + ps.getName());
+    }
 
-    public String getManualBreak() {
+/*    public String getManualBreak() {
         return manualBreak;
-    }
+    }*/
 
-    public void setManualBreak(String manualBreak) {
+/*    public void setManualBreak(String manualBreak) {
         this.manualBreak = manualBreak;
-    }
+    }*/
 
     public int getDocumentsPerSpool() {
         return documentsPerSpool;
@@ -558,9 +786,9 @@ public class PrintApplet extends Applet implements Runnable {
         return pr.getJobName();
     }
 
-    private void set(Exception e) {
-        this.e = e;
-        LogIt.log(e);
+    private void set(Throwable t) {
+        this.t = t;
+        LogIt.log(t);
     }
 
     private void logStart() {
@@ -578,6 +806,10 @@ public class PrintApplet extends Applet implements Runnable {
 
     private void logFindPrinter() {
         LogIt.log("===== SEARCHING FOR PRINTER =====");
+    }
+    
+    private void logCommands(PrintHTML ph) {
+        logCommands(ph.get());
     }
 
     private void logCommands(PrintRaw pr) {
@@ -598,12 +830,23 @@ public class PrintApplet extends Applet implements Runnable {
         }
     }
 
-    private void logAndPrint(PrintPostScript p2d) throws PrinterException {
-        logCommands("    <" + file + ">");
-        p2d.print();
+    private void logAndPrint(PrintPostScript printPS) throws PrinterException {
+        logCommands("    <<" + file + ">>");
+        printPS.print();
         psPrint = false;
     }
 
+    private void logAndPrint(PrintHTML printHTML) throws PrinterException {
+        if (file != null) {
+            logCommands("    <<" + file + ">>");
+        }
+        logCommands(printHTML);
+
+        printHTML.print();
+        htmlPrint = false;
+    }
+
+    
     private void logAndPrint(String commands) throws PrintException, InterruptedException, UnsupportedEncodingException {
         logCommands(commands);
         pr.print(commands);
@@ -615,7 +858,8 @@ public class PrintApplet extends Applet implements Runnable {
         System.out.println("Default charset encoding: " + Charset.defaultCharset().name());
         try {
             this.charset = Charset.forName(charset);
-            LogIt.log("Current charset encoding: " + this.charset.name());
+            this.pr.setCharset(Charset.forName(charset));
+            LogIt.log("Current applet charset encoding: " + this.charset.name());
         } catch (IllegalCharsetNameException e) {
             LogIt.log(Level.WARNING, "Could not find specified charset encoding: "
                     + charset + ". Using default.", e);

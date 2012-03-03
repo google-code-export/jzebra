@@ -8,20 +8,20 @@ import javax.print.event.PrintJobEvent;
  * @author A. Tres Finocchiaro
  */
 public class LogIt {
-    public static void log(String className, Level lvl, String msg, Exception e) {
-        Logger.getLogger(className).log(lvl, msg, e);
+    public static void log(String className, Level lvl, String msg, Throwable t) {
+        Logger.getLogger(className).log(lvl, msg, t);
     }
 
-    public static void log(Level lvl, String msg, Exception e) {
-        log(LogIt.class.getName(), lvl, msg, e);
+    public static void log(Level lvl, String msg, Throwable t) {
+        log(LogIt.class.getName(), lvl, msg, t);
     }
 
-    public static void log(String msg, Exception e) {
-        log(Level.SEVERE, msg, e);
+    public static void log(String msg, Throwable t) {
+        log(Level.SEVERE, msg, t);
     }
-
-    public static void log(Exception e) {
-        log("Error", e);
+    
+    public static void log(Throwable t) {
+        log("Error", t);
     }
 
     public static void log(String className, Level lvl, String msg) {
