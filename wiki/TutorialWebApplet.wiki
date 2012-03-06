@@ -41,6 +41,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
    || *Note:* IE7 may be prompt to Click to Activate This Control each time the applet loads.  Click [http://www.mix-fx.com/flash-prompt.htm here] for details. ||
   #  The applet will begin to load in the web page.
+   || *Note:* Chrome users on Linux with outdated plugins, launch chrome with "`google-chrome --always-authorize-plugins --allow-outdated-plugins`".  This will allow Java to load in Chrome without warnings of outdated plugins! ||
      [http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgoGt3lmKI/AAAAAAAAAXA/jsqVvrlRl4k/s400/applet_loading.PNG]
   #  Next, Java security dialog prompt is shown.  Click "Run".
    [http://1.bp.blogspot.com/_9hmP3Ho0t14/Sxg0XxeTomI/AAAAAAAAAXI/rStKpFiZuU8/s400/digital_signature.PNG]
