@@ -332,7 +332,7 @@ The steps below walk through adding an applet to your web page, and explain how 
 
    {{{
       // Basic HTML Printing
-      document.jzebra.appendHTML("<html><h1><font color=Red>Hello world!</h1></font>jZebra HTML Printing Demo</html>");
+      document.jzebra.appendHTML("<html><h1><font color=Red>Hello world!</font></h1>jZebra HTML Printing Demo</html>");
       document.jzebra.printHTML();
 
 
