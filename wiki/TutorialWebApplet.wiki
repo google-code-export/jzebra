@@ -284,7 +284,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    }}}
 
 === PDF Printing ===
-  # Since version 1.1.9, jZebra allows printing PDF files directly to a printer.  This functionality is experimental and uses a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!*
+  # Since version 1.1.9, jZebra allows printing PDF files directly to a printer.  This functionality is experimental and uses a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!*  Please note, there is a bug preventing margins from working properly on Linux: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691
    {{{
       function printPDF() {
          // Make sure pdf-renderer.jar is in the "./lib" folder
@@ -328,7 +328,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    }}}
 
 === HTML Printing ===
-   # Since version 1.3.2, jZebra has the ability to print basic HTML components to a PostScript style printer directly from the browser.  (PostScript printers include all major LaserJet, DeskJet, PSC, Home Printers, etc).  Mileage may vary across different operating systems.  Please file a bug report using ISSUES link above if you encounter issues.
+   # Since version 1.3.2, jZebra has the ability to print basic HTML components to a PostScript style printer directly from the browser.  (PostScript printers include all major LaserJet, DeskJet, PSC, Home Printers, etc).  Mileage may vary across different operating systems.  Please file a bug report using ISSUES link above if you encounter issues.  Please note, there is a bug preventing margins from working properly on Linux: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691
 
    {{{
       // Basic HTML Printing
