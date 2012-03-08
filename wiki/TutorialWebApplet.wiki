@@ -339,7 +339,7 @@ The steps below walk through adding an applet to your web page, and explain how 
 
 
       // Printing using extra spaces, fixed font, dashes
-      var text = "X-X-X       Hello from ’jZebra’       X-X-X";
+      var text = "*no-line-break*       Hello from ’jZebra’       *no-line-break*";
 
       // Fix whitespace and special character behavior
       text = text.replace(/ /g, "&nbsp;").replace(/’/g, "'").replace(/-/g,"&#8209;");      
