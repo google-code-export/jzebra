@@ -295,7 +295,7 @@ The steps below walk through adding an applet to your web page, and explain how 
          document.jzebra.printPS();
       }
    }}}
-   || *Note:* If printing PDF from php, make sure to add header `Content-Type: application/pdf` as well as `Content-Disposition:inline;filename=example.pdf` or else PDF-RENDERER plugin will throw an error: "Exception occurred: This may not be a PDF File" ||
+   || *Note:* If printing dynamically generated PDF from php, make sure to add header `'Content-Type: application/pdf'` as well as `'Content-Disposition:inline;filename=example.pdf'` or else PDF-RENDERER plugin will throw an error: "Exception occurred: This may not be a PDF File" ||
 
 
 === Printing Images ===
