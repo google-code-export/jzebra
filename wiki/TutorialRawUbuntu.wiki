@@ -13,8 +13,8 @@ Here are step-by-step instructions for setting up raw printing on Ubuntu. These 
   # Click "*New*" (Printer) <br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU05szIyqI/AAAAAAAAARo/E6JRqbDVhcY/s400/2.png]<br><br>
   # Be patient while Ubuntu searches for printers... <br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU05QgtgyI/AAAAAAAAARg/oQkNRrSYPb0/s400/3.png]<br><br>
   # Select "*Network Printer --> AppSocket/HP JetDirect*". For host, put the IP address or hostname of your printer.  Port is usually default of 9100. Click "*Forward*" <br>
-  || *Note:* If the printer is locally attached to the client system, we should not be selecting a network printer, instead the correct port. ||
-[http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0xh3mRaI/AAAAAAAAARY/IOkWdck2OCo/s400/4.png]<br><br>
+   || *Note:* If the printer is locally attached to the client system, we should not be selecting a network printer, instead the correct port. ||
+   [http://4.bp.blogspot.com/_9hmP3Ho0t14/SvU0xh3mRaI/AAAAAAAAARY/IOkWdck2OCo/s400/4.png]<br><br>
   # Select printer make "*Generic*".  Click "*Forward*". <br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU0xbQgGFI/AAAAAAAAARQ/TkK8DZTewg0/s400/5.png]<br><br>
   # Click model "*Raw*", Drivers "*Generic Raw Queue [en]*".  Click "*Forward*". <br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvU0xVFE02I/AAAAAAAAARI/LwQp4LaGsLk/s400/6.png]<br><br>
   # Name the printer appropriately such as "*zebra*".  Click "*Apply*". <br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvU0xNaWrqI/AAAAAAAAARA/bFV_ln9vjrg/s400/7.png]<br><br>
