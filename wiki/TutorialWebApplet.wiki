@@ -88,6 +88,10 @@ The steps below walk through adding an applet to your web page, and explain how 
       function findPrinter() {
          // Searches for locally installed printer with "zebra" in the name
          document.jzebra.findPrinter("zebra");
+
+         // *Note, to get the default printer, call:
+         // document.jzebra.findPrinter(); // or
+         // document.jzebra.findPrinter(null);
       }
       </script>
   }}}
