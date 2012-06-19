@@ -213,7 +213,7 @@ The steps below walk through adding an applet to your web page, and explain how 
        // Force UTF8 characters on Windows
        document.jzebra.setEncoding("UTF-8");
    }}}
-   || See also [http://code.google.com/p/jzebra/issues/detail?id=28 Issue 28] ||
+   || See also Issue 28 ||
    {{{ 
        // Submitted via Simon on mailing list jzebra-users@googlegroups.com
        // Print GBP '£' sign using ESC/P
