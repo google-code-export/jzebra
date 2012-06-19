@@ -222,7 +222,7 @@ The steps below walk through adding an applet to your web page, and explain how 
        // Then just use '#' where you want your E
        document.jzebra.append("#5.00");
    }}}
-   || See also Issue 61 ||
+   || See also Issue 61, which also prevents append("\x00") from working. The only known workaround for "\x00" (null) is to use Base64 encoded print commands ||
 
 === Advanced Print Spooling ===
   #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  For example:  If 90 labels are printed and the printer runs out of paper, the printer will automatically print all 90 labels again.  This feature allows to print in batches of 5, 10, etc.
