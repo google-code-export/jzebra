@@ -145,7 +145,7 @@ The steps below walk through adding an applet to your web page, and explain how 
 
 === Base64 Printing ===
   #  Note:  For Base64 image printing, see [TutorialWebApplet#Printing_Images]
-  #  If print data is base64 encoded, replace `print()` function with this code:
+  #  If print data is base64 encoded, replace `print()` function with this code: (Note:  Versions 1.4.1 & 1.4.2 have a bug, see Issue 73.)
    {{{
       // Use jZebra's `"append64"` function. This will automatically convert provided
       // base64 encoded text into ascii/bytes, etc.
