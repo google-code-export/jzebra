@@ -7,10 +7,6 @@ Fix "digital signature cannot be verified" message that appears when running jZe
 
   || *Note:* Estimated time to complete: 2 hours ||
 
-https://lh6.googleusercontent.com/-U2UKApbxaak/Th5OMbeqEQI/AAAAAAAAAlQ/dBt897w5SDs/sign.png
-
-https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7LovyWM/sign2.png
-
 = Prerequisites =
 
   # This tutorial assumes web server is running Linux or BSD. It can be adapted for others but mileage may vary.
@@ -27,7 +23,7 @@ https://lh6.googleusercontent.com/-pWKHwSwpWIc/Th5OMSz-0CI/AAAAAAAAAlM/Yn4u7Lovy
   # If not already, install the latest bundled version of Java Development Kit & NetBeans taking defaults. Registration is optional and can be skipped.
   # Register the older 1.5 JDK using Tools, Java Platforms, Add, and navigate to C:\Program Files\Java\jdk1.5.0_xx.
   # Open the project in NetBeans using the following steps:
-   * Download the latest [http://code.google.com/p/jzebra/downloads/list?q=label:NetBeans jZebra source]
+   * Download the latest [http://code.google.com/p/jzebra/downloads/ jZebra source]
    * Extract the contents to the NetBeans project folder (Usually "My Documents/NetBeansProjects", or "home/NetBeansProjects") in a folder called "jZebra"
    * With NetBeans open, import the project using File, Open and browse for the newly created "jZebra" folder.
    * In the top left "Projects" pane, you should see a red coffee cup with the word "jzebra" next to it.
