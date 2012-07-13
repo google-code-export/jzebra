@@ -1,7 +1,7 @@
 #summary Installing a raw printer driver on OS X using CUPS
 #labels Featured,Phase-Deploy,Phase-Support
 
-See also: http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf
+See also:  [http://code.google.com/p/jzebra/downloads/list?q=zebra_cups Zebra CUPS Documentation] [[http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf mirror]]
 
 
 = Introduction =
