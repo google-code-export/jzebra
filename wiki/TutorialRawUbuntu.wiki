@@ -1,7 +1,7 @@
 #summary Installing a raw printer driver on Ubuntu using gnome system-config-printer
 #labels Featured,Phase-Deploy,Phase-Support
 
-See also:  http://code.google.com/p/jzebra/downloads/list?q=zebra_cups [http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf mirror]
+See also:  http://code.google.com/p/jzebra/downloads/list?q=zebra_cups [[http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf mirror]]
 
 = Introduction =
 
