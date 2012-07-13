@@ -1,6 +1,8 @@
 #summary Installing a raw printer driver on Ubuntu using gnome system-config-printer
 #labels Featured,Phase-Deploy,Phase-Support
 
+See also:  http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf
+
 = Introduction =
 
 Here are step-by-step instructions for setting up raw printing on Ubuntu. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Ubuntu 9.10 in Firefox. _Last tested 11/06/2009, Ubuntu 9.10, CUPS 1.3.8._ [http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-ubuntu-910-zebra.html (mirror)]
