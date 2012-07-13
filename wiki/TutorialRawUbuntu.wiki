@@ -3,6 +3,8 @@
 
 See also:  [http://code.google.com/p/jzebra/downloads/list?q=zebra_cups Zebra CUPS Documentation] [[http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf mirror]]
 
+See also:  [http://code.google.com/p/jzebra/downloads/detail?name=epson_stylus_ubuntu.pdf Epson Ubuntu Blog Article] [[http://www.cianer.com/linux/8-networked-printer-epson-stylus-c64-on-ubuntu mirror]]
+
 = Introduction =
 
 || *Note:*  Ubuntu has significantly changed the interface for the Unity desktop making this tutorial out-dated.  Please help improve this wiki by becoming a contributor.  Email tres.finocchiaro@gmail.com for contributor access. ||
