@@ -11,7 +11,7 @@ If you or your company finds jZebra beneficial (or profitable) please consider c
 
 Money is also gracefully accepted!  Proceeds go to maintaining modern Windows, Linux, OS X workstations to test on and to occasionally take my family out to dinner.
 
-[http://jzebra.googlecode.com/files/family.png http://jzebra.googlecode.com/files/family_small.png] 
+[http://code.google.com/p/jzebra/wiki/FamilyLarge http://jzebra.googlecode.com/files/family_small.png] 
 
 Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker].  Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 month turn-around), I'll happily quote a price and usually respond the same day.  I can have an estimate prepared with a few days.  I am willing to work on a per-job or per-hour basis.  I will honor contracts as well (so as long as they don't violate the project's goals or the GPL3 license).
 
