@@ -6,7 +6,7 @@
 
 jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  As more and more businesses have a need for browser-based printing -- especially in the shipping and POS/retail industry -- a need for thermal printing, direct image printing, card printing via web page is demanded more each day.  jZebra offers this for free!
 
-Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker].  Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 1 month turn-around), I'll happily quote a price and usually respond the same day.  I can have an estimate prepared with a few days.  I am willing to work on a per-job or per-hour basis.  I will honor contracts as well (so as long as they don't violate the project's goals or the GPL3 license).
+Most feature requests should go through the [http://code.google.com/p/jzebra/issues/list bug tracker].  Additionally, if you have a specific feature request for jZebra that needs to be expedited (e.g. 2-week or 1-month turn-around), I'll happily quote a price and usually respond the same day.  I can have an estimate prepared with a few days.  I am willing to work on a per-job or per-hour basis.  I will honor contracts as well (so as long as they don't violate the project's goals or the GPL3 license).
 
 Donations are not mandatory, and you or your company can donate without spending money by offering code or help through the wiki or mailing list.
 
