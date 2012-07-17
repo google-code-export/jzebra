@@ -6,7 +6,7 @@
 
 jZebra has been in development since 2008 and exists solely because of the rich community of developers that show support for the project.  
 
-Since the project's birth, there's been over 3,000 emails and over 300 public conversation threads from the mailing list and project page alone.  That does not include questions on stackoverflow, javaranch (100s of others).  The project lives on google code, but binary releases are mirrored on softpedia, freecode and hundreds of other sites.
+Since the project's birth, there's been over 3,000 emails and over 300 public conversation threads from the mailing list and project page alone.  That does not include questions on stackoverflow, javaranch (100s of others).  The project lives on google code, but binary releases are mirrored on softpedia, freecode and dozens of other sites.
 
 As more and more businesses have a need for browser-based printing -- especially in the shipping and POS/retail industry -- a need for thermal printing, direct image printing, card printing via web page is demanded more each day.  jZebra offers this for free!
 
