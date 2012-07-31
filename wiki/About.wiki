@@ -33,9 +33,7 @@ jZebra is a completely free, open-source Java application using open Java APIs. 
 
 jZebra can be included in your Java projects directly through it's [TutorialAPI API], or loaded as a [TutorialWebApplet web applet].
 
-|| *Note:* I am aware that there is a statement at the bottom of the GPL stating that GPL cannot mix with proprietary. It is very vague by using the word "incorporated".
-
-You have my written permission to use any GPL3 version of jZebra in your closed source application.  You have permission to bundle it, sell it, and rebrand it so as long as any code changes stick strictly to the GPL3.  jZebra is not a stand-alone application, so the portions of the GPL3 that protect stand-alone applications from being exploited by being torn apart, bundled and re-licensed do not apply. ||
+|| *Note:* I am aware that there is a statement at the bottom of the GPL stating that GPL cannot mix with proprietary. It is very vague by using the word "incorporated".<br><br>You have my written permission to use any GPL3 version of jZebra in your closed source application.  You have permission to bundle it, sell it, and rebrand it so as long as any code changes stick strictly to the GPL3.  jZebra is not a stand-alone application, so the portions of the GPL3 that protect stand-alone applications from being exploited by being torn apart, bundled and re-licensed do not apply. ||
 
 For use in your *web page*, see the [http://code.google.com/p/jzebra/wiki/TutorialWebApplet Web Applet Wiki]
 
