@@ -10,4 +10,4 @@ PDF writers such as PrimoPDF and CUPS PDF Writer accept PostScript.  Microsoft's
 For more information on PostScript, please see the Wikipedia article here:
 http://en.wikipedia.org/wiki/PostScript
 
-If your printer is a thermal printer, barcode printer, card printer, utilized by a Point Of Sales system, you will want to exhaust WhatIsRawPrinting first.
+If your printer is a thermal printer, barcode printer, card printer, utilized by a Point Of Sales system, you will want to exhaust teh capabilities of your printer by reading WhatIsRawPrinting first.
