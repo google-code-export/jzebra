@@ -5,6 +5,9 @@
 "Raw Printing", "DOS Printing", "Line Mode Printing" are all examples of sending a series of characters directly to the printer.  This is jZebra's specialty because jZebra bypasses the default print behavior of your web browser and allows you to "program" your own print commands.
 
 == What do Raw Printing Characters Look Like? == 
+
+http://jzebra.googlecode.com/files/zpl.png http://jzebra.googlecode.com/files/epcl.png http://jzebra.googlecode.com/files/escp.png
+
 These characters may be readable, such as `"^XA^CF,0,0,0^PR12^MD30^PW800^PON^CI13"` or may be unreadable such as `"CHR(00)"`, `"&H1B"`, `"CHR(27)"`.  In both cases they are a series of commands known as a "Printer Language" that your printer manufacturer specifies.
 
 == What are some common Raw Printing Languages? ==
