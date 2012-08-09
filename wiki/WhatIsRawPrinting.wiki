@@ -18,4 +18,6 @@ Raw Printing is commonly used for receipt printers, barcode printers, encoding/e
 
 If your organization does any of the above printing, chances are, it's already using Raw Printing and to use these commands in jZebra, you simply need to convert the characters to JavaScript.
 
+If your printer does not support Raw Printing, you will need to use [WhatIsPostScriptPrinting PostScript] printing instead.
+
 -Tres
