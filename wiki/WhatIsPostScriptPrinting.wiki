@@ -1,0 +1,13 @@
+#summary PostScript Printing in a nut shell
+#labels Featured,Phase-Support
+
+== What is PostScript Printing? ==
+
+Invented in the 80s for LaserJet "PostScript" is a universal print format invented for Desktop Publishing and is still widely used by most LaserJet, InkJet, DeskJet styler printers.
+
+PDF writers such as PrimoPDF and CUPS PDF Writer accept PostScript.  Microsoft's XPS Document Writer accepts PostScript as well.
+
+For more information on PostScript, please see the Wikipedia article here:
+http://en.wikipedia.org/wiki/PostScript
+
+If your printer is a thermal printer, barcode printer, card printer, utilized by a Point Of Sales system, you will want to exhaust WhatIsRawPrinting first.
