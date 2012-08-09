@@ -8,7 +8,7 @@
 These characters may be readable, such as `"^XA^CF,0,0,0^PR12^MD30^PW800^PON^CI13"` or may be unreadable such as `"CHR(00)"`, `"&H1B"`, `"CHR(27)"`.  In both cases they are a series of commands known as a "Printer Language" that your printer manufacturer specifies.
 
 == What are some common Raw Printing Languages? ==
-Some common printer languages are: ESC/P (Epson, Star, Citizen), ZPL (Zebra), EPL/EPCL (Epson), Line Mode.  Most programmer's guides will offer examples in a programming language such as BASIC.  Translating these commands to JavaScript is necessary in order to use jZebra in your webpage.
+Some common printer languages are: ESC/P (Epson, Star, Citizen), ZPL (Zebra), EPL/EPCL/CPCL (Eltron/Zebra), Line Mode.  Most programmer's guides will offer examples in a programming language such as BASIC.  Translating these commands to JavaScript is necessary in order to use jZebra in your webpage.
 
 == What is Raw Printing Used For? ==
 Raw Printing is commonly used for receipt printers, barcode printers, encoding/embossing printers, and for ejecting cash registers.  Many thermal printers accept raw commands as well.
