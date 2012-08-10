@@ -336,9 +336,13 @@ The steps below walk through adding an applet to your web page, and explain how 
       document.jzebra.append("\n");
 
       // DeskJet/LaserJet, etc (don't mix with raw devices)
-      document.jzebra.appendImage("image.png");
+      // Paper size/orientation since version 1.4.5
+      document.jzebra.setPaperSize("210mm", "297mm");  // A4
+      // document.jzebra.setPaperSize("8.5in", "11.0in");  // US Letter
+      document.jzebra.setAutoSize(true);               // Preserve proportions
+      document.jzebra.setOrientation("landscape");     // Default is "portrait"
+      document.jzebra.appendImage("image.png");        // Wait for this to finish, or implement "jzebraDoneAppending()"
       document.jzebra.print();
-
    }}}
 
 === HTML Printing ===
