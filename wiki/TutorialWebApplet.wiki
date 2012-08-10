@@ -309,7 +309,7 @@ The steps below walk through adding an applet to your web page, and explain how 
       }
    }}}
    || *Note:* If printing dynamically generated PDF from php, make sure to add header `'Content-Type: application/pdf'` as well as `'Content-Disposition:inline;filename=example.pdf'` or else PDF-RENDERER plugin will throw an error: "Exception occurred: This may not be a PDF File".  See Issue 48 for more details ||
-   || *Linux PDF Printing:*  Please note, there is a bug preventing margins from working properly on Linux: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691 ||
+   || *CUPS/Linux PDF Printing:*  Please note, there is a bug preventing margins from working properly on some versions of CUPS: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691 ||
 
 === Printing Images ===
    # Experimental support for appending printer-specific images by url and/or Base64.
