@@ -209,10 +209,12 @@ The steps below walk through adding an applet to your web page, and explain how 
        // Force special DOS/Win characters on UNIX/Linux
        document.jzebra.setEncoding("cp866");       // or
        document.jzebra.setEncoding("cp1252");
-       document.jzebra.setEncoding("850");  // i.e. "Maçã"
 
        // Force UTF8 characters on Windows
        document.jzebra.setEncoding("UTF-8");
+
+       // Force MS/DOS Western Europe  (i.e. "Maçã")
+       document.jzebra.setEncoding("850");
    }}}
    || See also Issue 28 ||
    {{{ 
