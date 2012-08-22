@@ -6,7 +6,7 @@
 
 == What do Raw Printing Characters Look Like? == 
 
-[http://jzebra.googlecode.com/files/zpl.png http://jzebra.googlecode.com/files/zpl_small.png] [http://jzebra.googlecode.com/files/epcl.png http://jzebra.googlecode.com/files/epcl_small.png] [http://jzebra.googlecode.com/files/escp.png http://jzebra.googlecode.com/files/escp_small.png] 
+[WhatIsRawPrinting#ZPL http://jzebra.googlecode.com/files/zpl_small.png] [WhatIsRawPrinting#EPCL http://jzebra.googlecode.com/files/epcl_small.png] [WhatIsRawPrinting#ESCP http://jzebra.googlecode.com/files/escp_small.png] 
 
 These characters may be readable, such as `"^XA^CF,0,0,0^PR12^MD30^PW800^PON^CI13"` or may be unreadable such as `"CHR(00)"`, `"&H1B"`, `"CHR(27)"`.  In both cases they are a series of commands known as a "Printer Language" that your printer manufacturer specifies.
 
