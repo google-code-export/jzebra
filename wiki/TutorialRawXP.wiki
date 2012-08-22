@@ -3,6 +3,8 @@
 = Introduction =
 Here are step-by-step instructions for setting up [WhatIsRawPrinting raw printing] on Windows XP. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Windows XP in Firefox and Internet Explorer. _Last tested 11/07/2009, Windows XP SP2_ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-windows-xp-zebra.html mirror]) 
 
+If you are attempting to print to a [WhatIsPostScriptPrinting LaserJet/DeskJet (PostScript)] style printer, these steps are not needed.
+
 = Scripting =
    * Advanced use only!  Read Steps below before attempting to script this process!
    * Rather script this?  From a command prompt window try this:
