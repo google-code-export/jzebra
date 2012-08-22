@@ -20,17 +20,17 @@ If your organization does any of the above printing, chances are, it's already u
 
 If your printer does not support Raw Printing, you will need to use [WhatIsPostScriptPrinting PostScript] printing instead.
 
-
+<br><br><br><br>
 ==ZPL==
 || http://jzebra.googlecode.com/files/zpl.png ||
 
 
-
+<br><br><br><br>
 ==EPCL==
 || http://jzebra.googlecode.com/files/epcl.png ||
 
 
-
+<br><br><br><br>
 ==ESCP==
 || http://jzebra.googlecode.com/files/escp.png ||
 
