@@ -11,9 +11,7 @@ Second problem: How can I print images?
 
 Third problem: The easiest way to upload an image to the printer is via Zebra’s Software.
 
-|| A brief explanation: Reading the manual, you’ll see that before you upload any image, you need to convert the normal image (.png .jpg….) to hexadecimal, and handle with a lot of bytes, than you upload this bytes.
-
-Also you have 3 options to store your image, the first one is to upload your image to a volatile memory, which is erased when the printer shutdown. The second is store it in a flash drive (this is what I did, and works fine to me), and just call it from your code. The last one is write a “script” which is executed in every printer's boot, this script should be stored in a flash drive too. ||
+|| A brief explanation: Reading the manual, you’ll see that before you upload any image, you need to convert the normal image (.png .jpg….) to hexadecimal, and handle with a lot of bytes, than you upload this bytes.<br>Also you have 3 options to store your image, the first one is to upload your image to a volatile memory, which is erased when the printer shutdown. The second is store it in a flash drive (this is what I did, and works fine to me), and just call it from your code. The last one is write a “script” which is executed in every printer's boot, this script should be stored in a flash drive too. ||
 
 || *Solution:* I used the second solution because I didn’t want to handle with a lots of bytes. The steps is very easy and anyone can do it: ||
 
