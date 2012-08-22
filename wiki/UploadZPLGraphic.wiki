@@ -1,4 +1,6 @@
+#summary Instructions for reusing a ZPL graphic on a Zebra S4M printer
 #labels Phase-Implementation
+
 Printer Model: Zebra S4M
 
 First problem: I would like to send raw commands to the printer via browser
