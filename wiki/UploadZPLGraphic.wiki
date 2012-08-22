@@ -28,4 +28,4 @@ Third problem: The easiest way to upload an image to the printer is via Zebra’
 
   * <font color="blue">The text in blue is your image name. (.GRF is the extension, my image was a MYIMAGE.png, but Zebras’ Software will automatically do the conversion for you, so forget the hexadecimal and the bytes!)</font>
 
--Bruno Casarotti
+-Bruno
