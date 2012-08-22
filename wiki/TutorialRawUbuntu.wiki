@@ -9,7 +9,10 @@ See also:  [http://code.google.com/p/jzebra/downloads/detail?name=epson_stylus_u
 
 || *Note:*  Ubuntu has significantly changed the interface for the Unity desktop making this tutorial out-dated.  Please help improve this wiki by becoming a contributor.  Email tres.finocchiaro@gmail.com for contributor access. ||
 
-Here are step-by-step instructions for setting up raw printing on Ubuntu. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Ubuntu 9.10 in Firefox. _Last tested 11/06/2009, Ubuntu 9.10, CUPS 1.3.8._ [http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-ubuntu-910-zebra.html (mirror)]
+Here are step-by-step instructions for setting up [WhatIsRawPrinting raw printing] on Ubuntu. These steps proved successful in getting the jZebra Applet to print to a raw printer queue from a web page loaded on Ubuntu 9.10 in Firefox. _Last tested 11/06/2009, Ubuntu 9.10, CUPS 1.3.8._ [http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-ubuntu-910-zebra.html (mirror)]
+
+|| *Note:*  If you are attempting to print to a [WhatIsPostScriptPrinting LaserJet/DeskJet (PostScript)] style printer, these steps are not needed. ||
+
 
 = Steps =
 `Ubuntu 9.10`
