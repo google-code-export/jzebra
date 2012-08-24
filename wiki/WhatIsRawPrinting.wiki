@@ -22,17 +22,17 @@ If your printer does not support Raw Printing, you will need to use [WhatIsPostS
 
 <br><br><br><br>
 ==ZPL==
-|| http://jzebra.googlecode.com/files/zpl.png ||
+|| [http://code.google.com/p/jzebra/wiki/WhatIsRawPrinting#What_do_Raw_Printing_Characters_Look_Like? http://jzebra.googlecode.com/files/zpl.png] ||
 
 
 <br><br><br><br>
 ==EPCL==
-|| http://jzebra.googlecode.com/files/epcl.png ||
+|| [http://code.google.com/p/jzebra/wiki/WhatIsRawPrinting#What_do_Raw_Printing_Characters_Look_Like? http://jzebra.googlecode.com/files/epcl.png] ||
 
 
 <br><br><br><br>
 ==ESCP==
-|| http://jzebra.googlecode.com/files/escp.png ||
+|| [http://code.google.com/p/jzebra/wiki/WhatIsRawPrinting#What_do_Raw_Printing_Characters_Look_Like? http://jzebra.googlecode.com/files/escp.png] ||
 
 
 
