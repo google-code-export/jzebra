@@ -2,7 +2,7 @@
 #labels Featured,Phase-Support
 
 == What is Raw Printing? ==
-"Raw Printing", "DOS Printing", "Line Mode Printing" are all examples of sending a series of characters directly to the printer.  This is jZebra's specialty because jZebra bypasses the default print behavior of your web browser and allows you to "program" your own print commands.
+"Raw Printing", "DOS Printing", "Line Mode Printing" are all examples of sending a series of characters directly to the printer in the printer's native language.  This is the recommended approach when using jZebra because jZebra is able to bypasses the default print behavior of your web browser and allows you to "program" your own print commands.
 
 == What do Raw Printing Characters Look Like? == 
 
