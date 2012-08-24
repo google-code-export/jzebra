@@ -8,7 +8,7 @@
 
 [http://code.google.com/p/jzebra/wiki/WhatIsRawPrinting#ZPL http://jzebra.googlecode.com/files/zpl_small.png] [http://code.google.com/p/jzebra/wiki/WhatIsRawPrinting#EPCL http://jzebra.googlecode.com/files/epcl_small.png] [http://code.google.com/p/jzebra/wiki/WhatIsRawPrinting#ESCP http://jzebra.googlecode.com/files/escp_small.png] 
 
-These characters may be readable, such as `"^XA^CF,0,0,0^PR12^MD30^PW800^PON^CI13"` or may be unreadable such as `"CHR(00)"`, `"&H1B"`, `"CHR(27)"`.  In both cases they are a series of commands known as a "Printer Language" that your printer manufacturer specifies.
+These characters may be human-readable, such as `"^XA^CF,0,0,0^PR12^MD30^PW800^PON^CI13"` or may be unreadable such as special characters `"CHR(00)"`, `"&H1B"`, `"CHR(27)"`.  In both cases they are a series of commands known as a "Printer Language" that your printer manufacturer specifies.
 
 == What are some common Raw Printing Languages? ==
 Some common printer languages are: ESC/P (Epson, Star, Citizen), ZPL (Zebra), EPL/EPCL/CPCL (Eltron/Zebra), Line Mode ("Impact/Dotmatrix", Okidata, IBM).  Most programmer's guides will offer examples in a programming language such as BASIC.  Translating these commands to JavaScript is necessary in order to use jZebra in your webpage.
