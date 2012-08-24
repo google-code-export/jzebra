@@ -7,9 +7,19 @@ Invented in the 80s for LaserJet "PostScript" is a universal print format invent
 
 http://jzebra.googlecode.com/files/postscript.gif
 
-PDF writers such as PrimoPDF and CUPS PDF Writer accept PostScript.  Microsoft's XPS Document Writer accepts PostScript as well.
+Nearly every modern printer on the market accepts PostScript.  PDF writers such as PrimoPDF and CUPS PDF Writer accept PostScript.  Microsoft's XPS Document Writer accepts PostScript as well.
+
+Although PostScript is a very universal standard, there are limitations to PostScript for industry printing:
+  # PostScript does not support cutting receipts
+  # PostScript cannot magnetically encode a card 
+  # PostScript cannot eject a cash drawer (although "eject after print" is an option in some specialized PostScript driver)
+  # PostScript can have setbacks when printing hundreds of labels (such as alignment on thermal tape).
+
+Most industry printing uses raw printing instead.  WhatIsRawPrinting
 
 For more information on PostScript, please see the Wikipedia article here:
 http://en.wikipedia.org/wiki/PostScript
 
-If your printer is a thermal printer, barcode printer, card printer, utilized by a Point Of Sales system, you will want to exhaust teh capabilities of your printer by reading WhatIsRawPrinting first.
+Basically, if your printer is a thermal printer, barcode printer, card printer, utilized by a Point Of Sales system, you will want to exhaust the capabilities of your printer by reading WhatIsRawPrinting first.
+
+-Tres
