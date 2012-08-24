@@ -5,6 +5,8 @@
 
 Invented in the 80s for LaserJet "PostScript" is a universal print format invented for Desktop Publishing and is still widely used by most LaserJet, InkJet, DeskJet styler printers.
 
+http://jzebra.googlecode.com/files/postscript.gif
+
 PDF writers such as PrimoPDF and CUPS PDF Writer accept PostScript.  Microsoft's XPS Document Writer accepts PostScript as well.
 
 For more information on PostScript, please see the Wikipedia article here:
