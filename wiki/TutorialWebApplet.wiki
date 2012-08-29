@@ -349,7 +349,18 @@ The steps below walk through adding an applet to your web page, and explain how 
    }}}
 
 === HTML Printing ===
-   # Since version 1.3.2, jZebra has the ability to print basic HTML components to a PostScript style printer directly from the browser.  (PostScript printers include all major LaserJet, DeskJet, PSC, Home Printers, etc).  Mileage may vary across different operating systems.  Please file a bug report using ISSUES link above if you encounter issues.
+  # Since version 1.4.5, jZebra can print advanced HTML components by rendering an HTML component to an image using the html2canvas jQuery plugin (bundled in the /dist/js folder).
+   {{{
+       $("#content").html2canvas({ 
+                canvas: hidden_screenshot,   // the div id to print
+                onrendered: function() {
+                   document.jzebra.append64($("canvas")[0].toDataURL('image/png'));
+                   document.jzebra.printPS();
+                }
+           });
+   }}}
+
+  # Since version 1.3.2, jZebra has the ability to print basic HTML components to a PostScript style printer directly from the browser.  (PostScript printers include all major LaserJet, DeskJet, PSC, Home Printers, etc).  Mileage may vary across different operating systems.  Please file a bug report using ISSUES link above if you encounter issues.
    {{{
       // Basic HTML Printing
       document.jzebra.appendHTML("<html><h1><font color=Red>Hello world!</font></h1>jZebra HTML Printing Demo</html>");
