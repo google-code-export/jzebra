@@ -15,8 +15,10 @@ If the printer is NOT a Zebra printer, jZebra *may still work* for your printer 
   * Any printer capable of accepting raw print commands should work with jZebra.  This includes USB, Parallel, Serial (COM Port), Virtual COM Port (Virtual COM Servers), Network Printers.
   * For a quick reference, contact your printer manufacturer to find out if the printer is capable of EPL (1 or 2), ZPL (I & II), ESC/P.  These are the most common and will get the quickest help via jzebra-users@googlegroups.com mailing list.
   * Note, other raw print languages are supported as well, but success will depend on experience with Hex, Unicode, JavaScript and Character Encoding.  Project help is greatly needed on these fronts.
+  * PostScript support is limited but working which allows jZebra to print to LaserJet, InkJet style printers.  Search "printPS()" on the wiki for usage.
 
 = Versions =
+jZebra 1.4.x slated for December 2012 is planned to add scale support through serial connectivity.  jZebra 2.0.0 will be a rewrite to the entire 1.4.x codebase to reduce size, increase stability and eliminate threading and race conditions.
 jZebra 1.0.5 (44KB) and higher is lighter-weight rewrite of version 1.0.3. Newer versions are based on 1.0.5 and geared specifically for JavaScript usage with enhancements for special characters/special print commands.  It is recommended you start with the [http://code.google.com/p/jzebra/downloads/list?q=label:Featured latest featured version] from downloads section.   jZebra can work with multiple web browsers including Internet Explorer, Opera, Safari, Firefox, Chrome.
 
 jZebra 1.0.3 (202KB) Is listed in the download under "obsolete", but features an in-browser applet, a desktop application, and command line batch support.  These features were removed in newer versions to reduce the download size.
