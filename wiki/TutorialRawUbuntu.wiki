@@ -1,7 +1,7 @@
 #summary Installing a raw printer driver on Ubuntu using gnome system-config-printer
 #labels Featured,Phase-Deploy,Phase-Support
 
-See also:  [http://code.google.com/p/jzebra/downloads/list?q=zebra_cups Zebra CUPS Documentation] (mirror)
+See also:  [http://jzebra.googlecode.com/files/zebra_cups.pdf Zebra CUPS Documentation] (mirror)
 
 See also:  [http://code.google.com/p/jzebra/downloads/detail?name=epson_stylus_ubuntu.pdf Epson Ubuntu Blog Article]  (mirror)
 
