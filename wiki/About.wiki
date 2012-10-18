@@ -3,6 +3,9 @@
 
 [http://code.google.com/p/jzebra/wiki/Donations https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donate_LG.gif]
 
+= Support =
+jZebra is offered as is without any warranty.  Email support is provided as a courtesy with no guarantees.  In the event contracted/paid support is needed, contact the [mailto:tres.finocchiaro@gmail.com author] for arrangements.
+
 = Introduction =
 If you are looking to send raw (industry/production) printer commands to your printer with php, jsp, ASP or JavaScript you likely have found -- until now -- the only option is a proprietary Microsoft-only ActiveX control for Internet Explorer.  jZebra is an open-source and open-API alternative.
 
@@ -45,8 +48,5 @@ Please help contribute to the jZebra wiki if you find this product useful by bec
 jZebra was initially created for [http://en.wikipedia.org/wiki/Magnetic_stripe_card magnetic stripe encoding], such as hotel room keys or player tracking cards on Zebra™ style printers.  Zebra™ printing is the most common use of jZebra due to the growing demand for a web page that can perform thermal/bar-code or magnetic-stripe printing.  
 
 Since its creation, jZebra has shown more interest in its capabilities in printing bar-codes for shipping purposes.  Not to be confused with the [http://barbecue.sourceforge.net Barbecue]  project... The jZebra project is working with the [http://code.google.com/p/ups-php/ ups-php] project, a web developer from [http://www.reasontransport.com/ ReasonTransport] and also a web developer from [http://www.justtesting.biz/html/jzebra/jzdemo.html FedEx] to focus its usage web use for packaging and shipping automation by printing thermal-printer labels and bar-codes.  If you have questions on whether or not jZebra will work for you, please contact [mailto:tres.finocchiaro@gmail.com the author].
-
-= Support =
-jZebra is offered as is without any warranty.  Email support is provided as a courtesy with no guarantees.  In the event contracted/paid support is needed, contact the [mailto:tres.finocchiaro@gmail.com author] for arrangements.
 
 -Tres
