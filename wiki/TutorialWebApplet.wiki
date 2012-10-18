@@ -96,6 +96,7 @@ The steps below walk through adding an applet to your web page, and explain how 
       </script>
   }}}
    || See also `sample.html`, section "findPrinter()". ||
+   || *Note:* To select another printer, you can also choose it by index using `applet.setPrinter(index);` ||
   # Second, use html code for a *Find Printer* button using standard HTML input button.  This button has already been provided in `sample.html`.
    {{{
       <input type=button onClick="findPrinter()" value="Detect Printer"><br><br>
