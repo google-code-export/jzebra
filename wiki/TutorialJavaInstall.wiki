@@ -15,5 +15,6 @@ jZebra requires *Java Runtime 5* or higher to load.  This is also named: "*`java
   }}}
   # If "*`java version '1.5.0_0'`*" or higher does not appear to be installed, download and install the [http://www.java.com/getjava/ Java Runtime Environment] for your platform.  This varies with your platform:
     * *Windows* users, download from the *Java link above*.
-    * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).  Browser plugin may be called "icedtea" and is often a separate install.  KDE users may also need to install "xul-runner".
+    * *Ubuntu* users, see here:  https://help.ubuntu.com/community/Java
+    * *Linux* users, download from repository (*apt-get*, *yum*, etc.  Look for "*sun-jre*" or "*OpenJDK*" and appropriate browser plugins).  Browser plugin may be called "icedtea" and is often a separate install.  KDE users may also need to install "xul-runner". 
     * *Mac* users previously obtained java through *automatic updates*.  Newer versions of Java (1.7 and later) need to be downloaded and installed separately here: http://www.oracle.com/technetwork/java/javase/downloads
