@@ -93,7 +93,7 @@ project and the jnlp-impl.xml (this location may have changed in newer versions,
    # Click the [http://2.bp.blogspot.com/_9hmP3Ho0t14/S3CbTCYXxqI/AAAAAAAAAY4/AOvjXs3cgec/s400/Picture+10.png] Hammer + Broom icon to do a clean build.
    # Find your newly created and signed JAR file in your source folder in a folder called "dist" ("NetBeansProjects\jZebra\dist\jZebra.jar")
    # Deploy the new jar to a test web location.
-   # Email tres.finocchiaro@gmail.com with questions/comments in this process.
+   # Email jzebra-users@googlegroups.com with questions/comments in this process.
 
 
 
