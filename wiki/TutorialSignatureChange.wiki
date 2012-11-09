@@ -74,7 +74,7 @@ so that you end up with a PCKS12 formatted keystore with the fully chained certi
    }}}
 
   # Copy the keystore.jks keystore into the jZebra NetBeans
-project and the jnlp-impl.xml file with the ant recipes can be modified to sign using the correct keystore and alias:
+project and the jnlp-impl.xml (this location may have changed in newer versions, looks through the project xml files for "storepass") file with the ant recipes can be modified to sign using the correct keystore and alias:
    {{{
    <target name="-jnlp-init-keystore1" if="generated.key.signing">
       <property name="jnlp.signjar.keystore" value="${basedir}/keystore.jks" />
