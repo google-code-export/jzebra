@@ -9,7 +9,7 @@ Fix "digital signature cannot be verified" message that appears when running jZe
 
 = Prerequisites =
 
-  # This tutorial assumes web server is running Linux or BSD. It can be adapted for others but mileage may vary.
+  # This tutorial assumes web server is running Linux or BSD. It can be adapted for others but mileage may vary.  If the certificate is already formatted for Java, then some of these steps can be skipped.
   # Web server should have Java installed.  If not, "keytool" steps will need to be performed on workstation instead.
   # Need console access to the web server running OpenSSL
   # Putty (or equivalent) installed, WinSCP (or equivalent) installed
