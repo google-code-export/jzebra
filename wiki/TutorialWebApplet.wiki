@@ -37,6 +37,7 @@ The steps below walk through adding an applet to your web page, and explain how 
     </html></body>
     }}}
    * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you can move the JAR to a different location so long as you change `archive="./jzebra.jar"` to match your new location.
+   || *Note:* Java 7 + Apache users:  Change apache config to use "SSLStrictSNIVHostCheck on" and restart apache.  read more here https://bitbucket.org/StrangeWill/redmine-inline-attach-screenshot/issue/17/java-17-unrecognized_name-due-sni-support ||
    || *Note:* Chrome users may receive a message "The Java plug-in requires your permission to run". Click "Always run on this site"<br><br> http://jzebra.googlecode.com/files/permission.jpg||
    || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
    || *Note:* IE7 may be prompt to Click to Activate This Control each time the applet loads.  Click [http://www.mix-fx.com/flash-prompt.htm here] for details. ||
@@ -49,7 +50,6 @@ The steps below walk through adding an applet to your web page, and explain how 
      [http://lh3.ggpht.com/_9hmP3Ho0t14/TSPsD0Os6UI/AAAAAAAAAe0/mjfCFn4asEI/s400/1.0.8%20screenshot.png]
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
    || *Note:* The Java Console is critical for calibrating jZebra for your printer. ||
-   || *Note:* Java 7 + Apache users:  Change apache config to use "SSLStrictSNIVHostCheck on" and restart apache.  read more here https://bitbucket.org/StrangeWill/redmine-inline-attach-screenshot/issue/17/java-17-unrecognized_name-due-sni-support ||
   #  You should see the version of jZebra `"INFO: jZebra 1.x.x"` followed by `"===== JAVASCRIPT LISTENER THREAD STARTED ====="` in the log.  Sample:*
    {{{
        Java Plug-in 1.6.0_17
