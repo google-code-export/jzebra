@@ -20,6 +20,8 @@ Here are step-by-step instructions for setting up [WhatIsRawPrinting raw printin
 = Steps =
 `Windows XP`
 
+(Note, on Windows 8 use "Advanced Printer Setup")
+
   # Open Control Panel. Click "*Printers and Faxes*"<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW2L2lQwJI/AAAAAAAAATw/THPg257TKgo/s1600-h/1.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvW2L2lQwJI/AAAAAAAAATw/THPg257TKgo/s400/1.png]<br><br>
   # Click "*Add Printer*"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HPoatcI/AAAAAAAAATo/IqHiAh4bj6g/s1600-h/2.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HPoatcI/AAAAAAAAATo/IqHiAh4bj6g/s400/2.PNG]<br><br>
   # Click "*Next*" at the welcome screen.<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HL22vxI/AAAAAAAAATg/gc9Oc-1MOiE/s1600-h/3.PNG http://2.bp.blogspot.com/_9hmP3Ho0t14/SvW2HL22vxI/AAAAAAAAATg/gc9Oc-1MOiE/s400/3.PNG]<br><br>
