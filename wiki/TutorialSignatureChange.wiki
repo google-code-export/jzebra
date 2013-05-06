@@ -1,5 +1,5 @@
-#summary Change security prompt to verified or change the digital signature publisher name
 #labels Featured,Phase-Deploy
+f#summary Change security prompt to verified or change the digital signature publisher name
 
 = Objective =
 
@@ -62,11 +62,11 @@ Fix "digital signature cannot be verified" message that appears when running jZe
 
   # Now follow exactly the process described at
 [https://support.comodo.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=1221 comodo.com] ,
-so that you end up with a PCKS12 formatted keystore with the fully chained certificate. Call it keystore.p12 and protected it with the "!mypassword!" passphrase.
+so that you end up with a PCKS12 formatted keystore with the fully chained certificate. Call it mycompany.p12 and protected it with the "!mypassword!" passphrase.
 
   # Overwrite the code sign certificate in the JKS keystore with the fully chained version in the PKCS12 keystore:
    {{{
-   keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore keystore.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany
+   keytool -importkeystore -deststorepass !mypassword! -destkeypass !mypassword! -destkeystore keystore.jks -srckeystore mycompany.p12 -srcstoretype PKCS12 -srcstorepass !mypassword! -alias mycompany
    }}}
   # Answer "yes" to overwrite prompt: 
    {{{
