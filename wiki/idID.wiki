@@ -8,8 +8,8 @@ http://1.bp.blogspot.com/_9hmP3Ho0t14/SvUrB_56GfI/AAAAAAAAAQw/mTAAcupeSCo/s1600/
 jZebra adalah applet Java yang berfungsi untuk membantu pencetakan dari printer barcode, untuk kebutuhan struk atau pencetakan lain dari halaman web Anda. jZebra mengirimkan perintah raw langsung ke printer. jZebra telah diuji menggunakan Firefox, Safari, Internet Explorer dan Opera. jZebra juga mendukung penggunaan port paralel, USB dan printer jaringan.
 
 Fitur:
-    * 100% Gratis dan termasuk kategori software open-source (FOSS, GPL).
-    * Bebas digunakan pada aplikasi komersil (cek lisensi GPL untuk lebih lanjut)
+    * 100% Gratis dan termasuk kategori software open-source (FOSS, LGPL).
+    * Bebas digunakan pada aplikasi komersil (cek lisensi LGPL 2.1 untuk lebih lanjut)
     * Mengirimkan perintah pencetakan raw langsung ke printer Anda. (contoh: perintah standar ESC, perintah EPL, perintah ZPL, perintah PCL, dll.)
     * Kompatibel dengan Windows, Mac OS X, Ubuntu, Solaris dan lainnya!
     * Telah diuji dengan Firefox, Safari, Internet Explorer, Opera
