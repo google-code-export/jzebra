@@ -83,7 +83,7 @@ The steps below walk through adding an applet to your web page, and explain how 
 
 == Printing ==
   # jZebra's parameters are set through JavaScript commands.
-  # First, insert (or modify) the JavaScript code to search for a printer named "zebra".  The printer name can be anything you wish, i.e: `"Epson"`, `"Citizen"`, `"Generic"`, etc.
+  # First, insert (or modify) the JavaScript code to search for a printer named "zebra".  The printer name can be anything you wish, i.e: `"Epson"`, `"Citizen"`, `"Generic"`, `"BOCA"`, etc.
    {{{
       <script>
       function findPrinter() {
@@ -400,6 +400,13 @@ The steps below walk through adding an applet to your web page, and explain how 
       document.jzebra.printHTML();
    }}}
    || || *Linux HTML Printing:*  Please note, there is a bug preventing margins from working properly on Linux: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691 ||
+
+
+# Since version 1.4.6, An OSX-only work-around was added to jZebra that allows printing through CUPS command line (`lp -o raw`), Issue 87.
+   {{{
+      // Alternate OSX raw printing via CUPS
+      document.jzebra.useAlternatePrinting(true);
+   }}}
 
 
 === End of Tutorial ===
