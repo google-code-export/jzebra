@@ -193,14 +193,14 @@ The steps below walk through adding an applet to your web page, and explain how 
    See [TutorialWebApplet#Printing_Images]
 
 === Printing Special Characters ===
-  #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation
+  #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation.  Note, the "NUL" character, or "\x00" is not supported in JavaScript, so double-forward slash is needed: "\\x00".  If this doesn't work, use appendFile() or append64() instead.
    {{{
       function print() {
          // Appends CHR(27) + CHR(29) using `"fromCharCode"` function
          document.jzebra.append(String.fromCharCode(27) + String.fromCharCode(29));
 
          // Appends hexadecimal data using "\x" notation
-         document.jzebra.append("\x00\x01\x02\xFF");
+         document.jzebra.append("\\x00\x01\x02\xFF");
 
          // Send characters/raw commands to printer
          document.jzebra.print();
