@@ -402,7 +402,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    || || *Linux HTML Printing:*  Please note, there is a bug preventing margins from working properly on Linux: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691 ||
 
 
-# Since version 1.4.6, An OSX-only work-around was added to jZebra that allows printing through CUPS command line (`lp -o raw`), Issue 87.
+   # Since version 1.4.6, An OSX-only work-around was added to jZebra that allows printing through CUPS command line (`lp -o raw`), Issue 87.
    {{{
       // Alternate OSX raw printing via CUPS
       document.jzebra.useAlternatePrinting(true);
