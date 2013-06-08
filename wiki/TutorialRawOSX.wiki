@@ -18,8 +18,8 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # If you see your USB raw printer in the listing *DO NOT* select it.
   # Click *AppSocket/HP JetDirect*, Continue.
   # You will be prompted for a port
-   # For USB printers type: (Example)<br>*{{{usb://Zebra/LP2844?location=1a200000}}}*<br>Get this port by issuing the command `lpinfo -v |grep usb:` from the Terminal.
-   # For network printers type: (Example)<br>*{{{socket://192.168.254.254:9100}}}*<br>The IP address may be configured to use a different address, which is outside of the scope of this tutorial.
+   * For USB printers type: (Example)<br>*{{{usb://Zebra/LP2844}}}*<br>Get this port by issuing the command `lpinfo -v |grep usb:` from the Terminal.  You don't need the "?location=1a200000" information.
+   * For network printers type: (Example)<br>*{{{socket://192.168.254.254:9100}}}*<br>The IP address may be configured to use a different address, which is outside of the scope of this tutorial.
 
 [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s1600/Picture+2.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]<br><br>
   # Be patient as the CUPS server responds to the new printer request<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s1600/Picture+3.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s400/Picture+3.png]<br><br>
