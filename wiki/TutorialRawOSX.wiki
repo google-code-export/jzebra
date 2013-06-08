@@ -13,7 +13,7 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # Visit [http://java.com/verify/] to confirm Java is installed and running properly
   # Optional:  Enable the Java console in System Preferences, Java, Advanced, Java Console, Show Console (Highly recommended for web developers)
   # Open a Terminal window: ⌘+space, type `terminal`, enter
-  # Enable CUPS web interface by entering this into the Terminal {{{sudo cupsctl WebInterface=yes}}}
+  # Enable CUPS web interface by entering this into the Terminal <br>{{{sudo cupsctl WebInterface=yes}}}
   # Load Safari to http://localhost:631  and click The "Administration" tab, then "Add Printer"<br>
 
 [http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s1600/Picture+1.png http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s400/Picture+1.png]<br><br>
