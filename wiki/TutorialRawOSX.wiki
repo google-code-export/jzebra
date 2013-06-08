@@ -14,7 +14,7 @@ The sample.html provided with jZebra is intended to run from the local file syst
    * Optional:  Enable the Java console in System Preferences, Java, Advanced, Java Console, Show Console (Highly recommended for web developers)
   # Open a Terminal window: *⌘+space, `terminal`, enter*
   # Enable CUPS web interface by entering this into the Terminal <br>*{{{sudo cupsctl WebInterface=yes}}}*
-  # Load Safari to *[http://localhost:631]*  and click The "Administration" tab, then "Add Printer"<br>
+  # Load Safari to the CUPS web interface *[http://localhost:631]*  and click The "Administration" tab, then "Add Printer"<br>
   # If you see your USB raw printer in the listing *DO NOT* select it.
   # Click *AppSocket/HP JetDirect*, Continue.
   # You will be prompted for a port
