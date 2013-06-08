@@ -24,6 +24,7 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # *Do not share printer*, Continue.
   # Make: *Raw*, Continue
   # A summary will display.  Click *Add Printer*
+  # Starting Banner: *none*, Ending Baner: *none*.  Click *Set Default Options*
 [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s1600/Picture+2.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]<br><br>
   # Be patient as the CUPS server responds to the new printer request<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s1600/Picture+3.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s400/Picture+3.png]<br><br>
   # For device, leave default "AppSocket/HP JetDirect" and click "Continue"<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s1600/Picture+4.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s400/Picture+4.png]<br><br>
