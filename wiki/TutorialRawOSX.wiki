@@ -5,11 +5,13 @@ If you are unsure if you need raw printing, please read here first:  [WhatIsRawP
 
 = Background =
 
-These steps will allow a USB or Network attached printer to receive raw commands through a Safari web browser.  This will also work for any 64-bit capable browser, such as Firefox.  At the time of writing this, Chrome for OSX is 32-bit only and will not work with Oracle Java 1.7 64-bit runtime.
+These steps will allow a USB or Network attached printer to receive raw commands through a Safari web browser on OSX.  This will also work for any 64-bit capable browser, such as Firefox that can run Java applets.  At the time of writing this, Chrome for OSX is 32-bit only and will not work with Oracle Java 1.7 64-bit runtime.
 
-The sample.html provided with jZebra is intended to run from the local file system, however Oracle Java will not run the applet unless it is hosted from a web server.  [http://www.mamp.info MAMP] is recommended for this, but is outside the scope of this tutorial.
+The sample.html provided with jZebra is intended to run from the local file system, however Oracle Java will not run the applet unless it is hosted from a web server.  [http://www.mamp.info MAMP] is recommended for this, which will run a portable web server on your Mac Desktop.  Installing and configuring MAMP is outside the scope of this tutorial.
 
 = Steps =
+  # Visit [http://java.com/verify/] to confirm Java is installed and running properly
+  # Optional:  Enable the Java console in System Preferences, Java, Advanced, Java Console, Show Console (Highly recommended for web developers)
   # Open a Terminal window: ⌘+space, type `terminal`, enter
   # Enable CUPS web interface by entering this into the Terminal *`sudo cupsctl WebInterface=yes`*
   # Load Safari to http://localhost:631  and click The "Administration" tab, then "Add Printer"<br>
