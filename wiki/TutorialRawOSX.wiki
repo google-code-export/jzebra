@@ -20,17 +20,17 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # You will be prompted for a port
    * For USB printers type: (Example)<br>*{{{usb://Zebra/LP2844}}}*<br>_Get this port by issuing the command *`lpinfo -v |grep usb:`* from the Terminal.  You don't need the "?location=1a200000" information. [[http://i.imgur.com/s3mWBVh.png screenshot]]_
    * For network printers type: (Example)<br>*{{{socket://192.168.254.254:9100}}}*<br>The IP address may be configured to use a different address, which is outside of the scope of this tutorial.
-  # Enter an appropriate Name, Description and Location for your printer
+  # Enter an appropriate Name, Description and Location for your printer<br>http://i.imgur.com/FgyBYZ0.png
   # *Do not share printer*, Continue.
-  # Make: *Raw*, Continue
+  # Make: *Raw*, Continue [[http://i.imgur.com/9SVP96k.png screenshot]]
   # A summary will display.  Click *Add Printer*
   # Starting Banner: *none*, Ending Banner: *none*.  Click *Set Default Options*
   # You may now print to your printer.  Continue to the next section *Adding a Printer Class* to make the printer appear in System Preferences, Print & Scan
 
 = Adding a Printer Class =
-  # From the CUPS web interface, click *Administration*, *Add Class*
+  # From the CUPS web interface, click *Administration*, *Add Class* [[http://i.imgur.com/vu40UK7.png screenshot]]
   # Enter an appropriate Name, Description and Location for your class.  It must differ from the raw printer name chosen previously.
   # In *Members*, Select the *raw printer name* chosen previously, *Add Class*
-  # In *System Preferences*, *Print & Scan*, your new printer class will be listed.  You may use this to monitor print jobs.
+  # In *System Preferences*, *Print & Scan*, your new printer class will be listed.  You may use this to monitor print jobs. [[http://i.imgur.com/yHCHZwZ.png screenshot]]
    
 -Tres
