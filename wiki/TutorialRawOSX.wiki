@@ -9,7 +9,7 @@ These steps will allow a USB or Network attached printer to receive raw commands
 
 The sample.html provided with jZebra is intended to run from the local file system, however Oracle Java will not run the applet unless it is hosted from a web server.  [http://www.mamp.info MAMP] is recommended for this, which will run a portable web server on your Mac Desktop.  Installing and configuring MAMP is outside the scope of this tutorial.
 
-= Steps =
+= Adding a Raw Printer =
   # Visit *[http://java.com/verify/]* to confirm Java is installed and running properly
    * Optional:  Enable the Java console in System Preferences, Java, Advanced, Java Console, Show Console (Highly recommended for web developers)
   # Open a Terminal window: *⌘+space, `terminal`, enter*
@@ -24,7 +24,16 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # *Do not share printer*, Continue.
   # Make: *Raw*, Continue
   # A summary will display.  Click *Add Printer*
-  # Starting Banner: *none*, Ending Baner: *none*.  Click *Set Default Options*
+  # Starting Banner: *none*, Ending Banner: *none*.  Click *Set Default Options*
+  # You may now print to your printer.  Continue to the next section *Adding a Printer Class* to make the printer appear in System Preferences, Print & Scan
+
+= Adding a Printer Class =
+  # From the CUPS web interface, click *Administration*, *Add Class*
+  # Enter an appropriate Name, Description and Location for your class.  It must differ from the printer name chosen previously.
+  # In *Members*, Select the *raw printer name* chosen previously, *Add Class*
+  
+   
+
 [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s1600/Picture+2.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]<br><br>
   # Be patient as the CUPS server responds to the new printer request<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s1600/Picture+3.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s400/Picture+3.png]<br><br>
   # For device, leave default "AppSocket/HP JetDirect" and click "Continue"<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s1600/Picture+4.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s400/Picture+4.png]<br><br>
