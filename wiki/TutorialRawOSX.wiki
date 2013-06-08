@@ -1,22 +1,20 @@
-#summary Installing a raw printer driver on OS X using CUPS
+#summary Setting up raw printing on OSX 10.8
 #labels Featured,Phase-Deploy,Phase-Support
 
-See also:  [http://code.google.com/p/jzebra/downloads/list?q=zebra_cups Zebra CUPS Documentation] [[http://www.zebra.com/content/dam/zebra/drivers/en/third-party/ZSN108111-v2.pdf mirror]]
+If you are unsure if you need raw printing, please read here first:  [WhatIsRawPrinting]
 
+= Background =
 
-= Introduction =
+These steps will allow a USB or Network attached printer to receive raw commands through a Safari web browser.  This will also work for any 64-bit capable browser, such as Firefox.  At the time of writing this, Chrome for OSX is 32-bit only and will not work with Oracle Java 1.7 64-bit runtime.
 
-Here are step-by-step instructions for setting up [WhatIsRawPrinting raw printing] through OS X.  These steps proved successful in getting the [http://code.google.com/p/jzebra/wiki/TutorialWebApplet jZebra Applet] to print to a raw printer queue from a web page loaded on OS X in Firefox.  _Last tested 11/06/2009, OS X 10.5, CUPS 1.3.8._ ([http://fatbuttlarry.blogspot.com/2009/11/raw-printing-from-os-x-zebra-printer.html mirror])
-
-|| *Note:*  If you are attempting to print to a [WhatIsPostScriptPrinting LaserJet/DeskJet (PostScript)] style printer, these steps are not needed. ||
-
-
-This may resolve issues on OS X described as "Print Error: pstopdffilter/pstocupsraster failed with err number -31000" (thanks to Jean Huliciar).
+The sample.html provided with jZebra is intended to run from the local file system, however Oracle Java will not run the applet unless it is hosted from a web server.  [http://www.mamp.info MAMP] is recommended for this, but is outside the scope of this tutorial.
 
 = Steps =
-`Mac OS X 10.5` (In newer versions of OSX, you first may have to type *`sudo cupsctl WebInterface=yes`* in a terminal window)
+  # Open a Terminal window: ⌘+space, type `terminal`, enter
+  # Enable CUPS web interface by entering this into the Terminal *`sudo cupsctl WebInterface=yes`*
+  # Load Safari to http://localhost:631  and click The "Administration" tab, then "Add Printer"<br>
 
-  # Load Safari or Firefox to http://localhost:631  and click The "Administration" tab, then "Add Printer"<br>[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s1600/Picture+1.png http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s400/Picture+1.png]<br><br>
+[http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s1600/Picture+1.png http://2.bp.blogspot.com/_9hmP3Ho0t14/SvSGzEMze1I/AAAAAAAAAPI/KWKjSKHxhmY/s400/Picture+1.png]<br><br>
   # Type the name of your printer and click "Continue"<br>[http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s1600/Picture+2.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]<br><br>
   # Be patient as the CUPS server responds to the new printer request<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s1600/Picture+3.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzoGMQHI/AAAAAAAAAPY/Ey5aHQaxQAs/s400/Picture+3.png]<br><br>
   # For device, leave default "AppSocket/HP JetDirect" and click "Continue"<br>[http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s1600/Picture+4.png http://1.bp.blogspot.com/_9hmP3Ho0t14/SvSGzuGogNI/AAAAAAAAAPg/gpeH0vf8bq8/s400/Picture+4.png]<br><br>
