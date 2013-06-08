@@ -14,11 +14,11 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # Optional:  Enable the Java console in System Preferences, Java, Advanced, Java Console, Show Console (Highly recommended for web developers)
   # Open a Terminal window: *⌘+space, `terminal`, enter*
   # Enable CUPS web interface by entering this into the Terminal <br>*{{{sudo cupsctl WebInterface=yes}}}*
-  # Load Safari to *http://localhost:631*  and click The "Administration" tab, then "Add Printer"<br>
+  # Load Safari to *[http://localhost:631]*  and click The "Administration" tab, then "Add Printer"<br>
   # If you see your USB raw printer in the listing *DO NOT* select it.
   # Click *AppSocket/HP JetDirect*, Continue.
   # You will be prompted for a port
-   * For USB printers type: (Example)<br>*{{{usb://Zebra/LP2844}}}*<br>Get this port by issuing the command `lpinfo -v |grep usb:` from the Terminal.  You don't need the "?location=1a200000" information.
+   * For USB printers type: (Example)<br>*{{{usb://Zebra/LP2844}}}*<br>Get this port by issuing the command *`lpinfo -v |grep usb:`* from the Terminal.  You don't need the "?location=1a200000" information.
    * For network printers type: (Example)<br>*{{{socket://192.168.254.254:9100}}}*<br>The IP address may be configured to use a different address, which is outside of the scope of this tutorial.
 
 [http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s1600/Picture+2.png http://3.bp.blogspot.com/_9hmP3Ho0t14/SvSGzZf7RdI/AAAAAAAAAPQ/wVsOful7too/s400/Picture+2.png]<br><br>
