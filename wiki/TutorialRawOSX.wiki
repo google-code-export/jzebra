@@ -7,7 +7,7 @@ For raw printers only.  If unsure please see [WhatIsRawPrinting]
 
 These steps will allow a USB or Network attached printer to receive raw commands through a Safari web browser on OSX.  This will also work for any 64-bit capable browser, such as Firefox that can run Java applets.  At the time of writing this, Chrome for OSX is 32-bit only and will not work with Oracle Java 1.7 64-bit runtime.
 
-The sample.html provided with jZebra is intended to run from the local file system, however Safari will not run the applet unless it is hosted from a web server.  [http://www.mamp.info MAMP] is recommended for this, which will run a portable web server on your Mac Desktop.  Installing and configuring MAMP is outside the scope of this tutorial.
+The sample.html provided with jZebra is intended to run from the local file system, however Safari will not run the applet unless it is hosted from a web server.  [http://www.mamp.info MAMP] is recommended for this, which will run a portable web server on your Mac Desktop.  Installing and configuring MAMP is outside the scope of this tutorial.  Alternately, you can use Firefox and MAMP will not be needed.
 
 = Adding a Raw Printer =
   # Visit *[http://java.com/verify/]* to confirm Java is installed and running properly
