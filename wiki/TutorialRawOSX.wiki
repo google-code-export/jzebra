@@ -32,5 +32,7 @@ The sample.html provided with jZebra is intended to run from the local file syst
   # Enter an appropriate Name, Description and Location for your class.  It must differ from the raw printer name chosen previously.
   # In *Members*, Select the *raw printer name* chosen previously, *Add Class*
   # In *System Preferences*, *Print & Scan*, your new printer class will be listed.  You may use this to monitor print jobs. [[http://i.imgur.com/yHCHZwZ.png screenshot]]
+
+Continue to [TutorialWebApplet] for printing a test page from Safari
    
 -Tres
