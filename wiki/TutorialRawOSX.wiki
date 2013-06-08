@@ -1,7 +1,7 @@
 #summary Setting up raw printing on OSX 10.8
 #labels Featured,Phase-Deploy,Phase-Support
 
-If you are unsure if you need raw printing, please read here first:  [WhatIsRawPrinting]
+For raw printers only.  If unsure please see [WhatIsRawPrinting]
 
 = Background =
 
