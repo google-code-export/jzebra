@@ -230,7 +230,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    || See also Issue 61, which also prevents append("\x00") from working. The only known workaround for "\x00" (null) is to use Base64 encoded print commands ||
 
 === Advanced Print Spooling ===
-  #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  This feature allows to print in batches of 5, 10, etc.  This has advantages due to buffer limitation on certain printer models where submitting 100+ labels randomly stop in the middle of printing.  Some have had success with using it for easing the paint of reprints.
+  #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  This feature allows to print in batches of 5, 10, etc.  This has advantages due to buffer limitation on certain printer models where submitting 100+ labels randomly stop in the middle of printing.  In addition, some programmers have had success with using it for easier reprints.
    {{{
       function print() {
 
