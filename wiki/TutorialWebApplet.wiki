@@ -324,21 +324,27 @@ The steps below walk through adding an applet to your web page, and explain how 
       // *Note 3:  Newline/Carriage Return must be appended manually
       // *Note 4:  Images should be strictly black and white
 
+      // Zebra (EPL):
+      document.jzebra.appendImage("image.png", "EPL");
+      while (!document.jzebra.isDoneAppending()) {} // wait
+      document.jzebra.append("\r\n");          
+
       // Zebra (ZPLII):
       document.jzebra.appendImage("image.png", "ZPLII");
+      while (!document.jzebra.isDoneAppending()) {} // wait
       document.jzebra.append("\r\n");  
 
       // Zebra (CPCL):
       document.jzebra.appendImage("image.png", "CPCL");
+      while (!document.jzebra.isDoneAppending()) {} // wait
       document.jzebra.append("\r\n");    
 
-      // Zebra (EPL):
-      document.jzebra.appendImage("image.png", "EPL");
-      document.jzebra.append("\r\n");    
+      
 
 
       // Epson (ESCP):
       document.jzebra.appendImage("image.png", "ESCP");
+      while (!document.jzebra.isDoneAppending()) {} // wait
       document.jzebra.append("\r\n");
 
       // Base64
