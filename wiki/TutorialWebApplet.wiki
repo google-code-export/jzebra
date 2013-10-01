@@ -332,6 +332,11 @@ The steps below walk through adding an applet to your web page, and explain how 
       document.jzebra.appendImage("image.png", "CPCL");
       document.jzebra.append("\r\n");    
 
+      // Zebra (EPL):
+      document.jzebra.appendImage("image.png", "EPL");
+      document.jzebra.append("\r\n");    
+
+
       // Epson (ESCP):
       document.jzebra.appendImage("image.png", "ESCP");
       document.jzebra.append("\r\n");
