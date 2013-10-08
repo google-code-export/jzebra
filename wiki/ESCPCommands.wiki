@@ -49,6 +49,8 @@ applet.append("\x1B\x40"); // 5
 The most annoying problem here is, you need to know how much bold characters you can fill in one line. This is why the header has less characters than the information lines.
 ESC ! command can be easily found in ESC/P documentations.
 
+== Clean String ==
+
 From PHP to Javascript, sending the hex commands with json_encode() was ruining the codes and somehow jZebra cannot understand those. Therefore we decided to send them like this.
 
 {{{
