@@ -193,14 +193,14 @@ The steps below walk through adding an applet to your web page, and explain how 
    See [TutorialWebApplet#Printing_Images]
 
 === Printing Special Characters ===
-  #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation.  Note, the "NUL" character, or "\x00" is not supported in JavaScript, so double-forward slash is needed: "\\x00".  If this doesn't work, use appendFile() or append64() instead.
+  #  If special ascii, chr, hex or escape characters need to be printed, use the char code, or the "\x" notation.  Note, the "NUL" character, or "\x00" is not supported in JavaScript, so appendHex() is needed.
    {{{
       function print() {
          // Appends CHR(27) + CHR(29) using `"fromCharCode"` function
          document.jzebra.append(String.fromCharCode(27) + String.fromCharCode(29));
 
-         // Appends hexadecimal data using "\x" notation
-         document.jzebra.append("\\x00\x01\x02\xFF");
+         // Appends hexadecimal data
+         document.jzebra.appendHex("x00x01x02xFF");
 
          // Send characters/raw commands to printer
          document.jzebra.print();
@@ -223,11 +223,11 @@ The steps below walk through adding an applet to your web page, and explain how 
        // Submitted via Simon on mailing list jzebra-users@googlegroups.com
        // Print GBP '£' sign using ESC/P
        // First change code page to UK
-       document.jzebra.append("\x1B\x52\x03");
+       document.jzebra.appendHex("x1Bx52x03");
        // Then just use '#' where you want your E
        document.jzebra.append("#5.00");
    }}}
-   || See also Issue 61, which also prevents append("\x00") from working. The only known workaround for "\x00" (null) is to use Base64 encoded print commands ||
+   || See also Issue 61, which also prevents append("\x00") from working. (Using appendHex() fixes this or many choose to use use Base64 encoded print commands ||
 
 === Advanced Print Spooling ===
   #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  This feature allows to print in batches of 5, 10, etc.  This has advantages due to buffer limitation on certain printer models where submitting 100+ labels randomly stop in the middle of printing.  In addition, some programmers have had success with using it for easier reprints.
