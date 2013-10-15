@@ -3,6 +3,8 @@
 
 = Introduction =
 
+<font color=red>Note:  Commands such as append("\x1B"); have limitations due to the way JavaScript converts certain characters (especially the \x00 NUL character).  This tutorial has not been updated to reflect the appendHex() function.  It's syntax is appendHex("x1B"); For ESC/P, it's recommended to use this method over append() when possible. -Tres</font>
+
 I would like to share my experiences on how to use ESC/P commands with jZebra, especially sending the commands to applet with your server-side scripts as I can see there is not much information neither on the mailing list nor in the web.
 
 The problems we dealt with is mostly the following:
