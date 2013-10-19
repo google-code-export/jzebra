@@ -1,4 +1,4 @@
-#summary Using jZebra as a Web Applet component
+#summary Using qz-print as a Web Applet component
 #labels Featured,Phase-Deploy,Phase-Support
 
 *Tip:* Hit <CTRL + F> and search this page for keywords!!
@@ -8,7 +8,7 @@ This is a tutorial for web developers to add a web applet to your page capable o
 
 This is possible by using JavaScript to talk to Java through the "Applet" interface that is provided by all major web browsers.
 
-Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 featured version].  There's a bunch of files, but we'll primarily be using *"sample.html"*.  Also make sure *"jzebra.jar"* resides in the same folder/location.
+Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 featured version].  There's a bunch of files, but we'll primarily be using *"sample.html"*.  Also make sure *"qz-print.jar"* resides in the same folder/location.
 
 http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/jzebra_files.png
 
@@ -19,7 +19,7 @@ There are separate buttons for each type of printing, so study them closely.  Be
 
 http://4.bp.blogspot.com/-I28oYL9JCBI/TutwTwdTrBI/AAAAAAAAAn0/jutIHvObGHU/s1600/jzebra_preview1.png
 
-  || *Note:* jZebra requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
+  || *Note:* qz-print requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
 
 The steps below walk through adding an applet to your web page, and explain how to interact with it through JavaScript.
 
@@ -33,10 +33,10 @@ The steps below walk through adding an applet to your web page, and explain how 
    * The following applet code creates the applet.
     {{{
     <html><body>
-       <applet name="jZebra" code="jzebra.RawPrintApplet.class" archive="./jzebra.jar" width="100" height="100"></applet><br><br>
+       <applet id="qz" name="QZ Print Plugin" code="qz.PrintApplet.class" archive="./qz-print.jar" width="100" height="100"></applet><br><br>
     </html></body>
     }}}
-   * The html file should reside in the same folder as `jzebra.jar`.  Alternately, you can move the JAR to a different location so long as you change `archive="./jzebra.jar"` to match your new location.
+   * The html file should reside in the same folder as `qz-print.jar`.  Alternately, you can move the JAR to a different location so long as you change `archive="./qz-print.jar"` to match your new location.
    || *Note:* Java 7 + Apache users:  Change apache config to use "SSLStrictSNIVHostCheck on" and restart apache.  read more here https://bitbucket.org/StrangeWill/redmine-inline-attach-screenshot/issue/17/java-17-unrecognized_name-due-sni-support ||
    || *Note:* Chrome users may receive a message "The Java plug-in requires your permission to run". Click "Always run on this site"<br><br> http://jzebra.googlecode.com/files/permission.jpg||
    || *Note:* IE7 may receive an ActiveX warning. Click "Allow Blocked Content"<br><br> http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgmMqgJQAI/AAAAAAAAAW4/WBkVhYcg4no/s400/blocked_content.png ||
@@ -50,7 +50,7 @@ The steps below walk through adding an applet to your web page, and explain how 
      [http://lh3.ggpht.com/_9hmP3Ho0t14/TSPsD0Os6UI/AAAAAAAAAe0/mjfCFn4asEI/s400/1.0.8%20screenshot.png]
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
    || *Note:* The Java Console is critical for calibrating jZebra for your printer. ||
-  #  You should see the version of jZebra `"INFO: jZebra 1.x.x"` followed by `"===== JAVASCRIPT LISTENER THREAD STARTED ====="` in the log.  Sample:*
+  #  You should see the version of qz-print `"INFO: qz-print 1.x.x"` followed by `"===== JAVASCRIPT LISTENER THREAD STARTED ====="` in the log.  Sample:*
    {{{
        Java Plug-in 1.6.0_17
        Using JRE version 1.6.0_17-b04 Java HotSpot(TM) Client VM
@@ -73,26 +73,26 @@ The steps below walk through adding an applet to your web page, and explain how 
        0-5: set trace level to <n>
        ----------------------------------------------------
        
-       Dec 3, 2009 5:03:33 PM jzebra.LogIt log
-       INFO: jZebra 1.0.4
-       Dec 3, 2009 5:03:33 PM jzebra.LogIt log
+       Dec 3, 2009 5:03:33 PM qz.LogIt log
+       INFO: qz-print 1.6.6
+       Dec 3, 2009 5:03:33 PM qz.LogIt log
        INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
    }}}
 *
    || At this point, your applet has now been loaded into the web browser.  See Printing section for printer discovery and for sending print commands directly to your printer. ||
 
 == Printing ==
-  # jZebra's parameters are set through JavaScript commands.
+  # qz-print's parameters are set through JavaScript commands.
   # First, insert (or modify) the JavaScript code to search for a printer named "zebra".  The printer name can be anything you wish, i.e: `"Epson"`, `"Citizen"`, `"Generic"`, `"BOCA"`, etc.
    {{{
       <script>
       function findPrinter() {
          // Searches for locally installed printer with "zebra" in the name
-         document.jzebra.findPrinter("zebra");
+         qz.findPrinter("zebra");
 
          // *Note, to get the default printer, call:
-         // document.jzebra.findPrinter(); // or
-         // document.jzebra.findPrinter(null);
+         // qz.findPrinter(); // or
+         // qz.findPrinter(null);
       }
       </script>
   }}}
@@ -112,10 +112,10 @@ The steps below walk through adding an applet to your web page, and explain how 
       function print() {
          // Send characters/raw commands to applet using "append"
          // Hint:  Carriage Return = \r, New Line = \n, Escape Double Quotes= \"
-         document.jzebra.append("A37,503,0,1,2,3,N,JZEBRA TEST PRINT\n");
+         qz.append("A37,503,0,1,2,3,N,QZ-PRINT TEST PRINT\n");
 
          // Send characters/raw commands to printer
-         document.jzebra.print();
+         qz.print();
       }
    }}}
       || See also `sample.html`, section "print()". ||
@@ -136,12 +136,12 @@ The steps below walk through adding an applet to your web page, and explain how 
   #  If you would rather use php, replace `print()` function with this code:
    {{{
       function print() {
-         // Uses the php `"echo"` function in conjunction with jZebra `"append"` function
+         // Uses the php `"echo"` function in conjunction with qz-print `"append"` function
          // This assumes you have already assigned a value to `"$commands"` with php
-         document.jzebra.append(<?php echo $commands; ?>);
+         qz.append(<?php echo $commands; ?>);
 
          // Send characters/raw commands to printer
-         document.jzebra.print();
+         qz.print();
       }
    }}}
 
@@ -149,14 +149,14 @@ The steps below walk through adding an applet to your web page, and explain how 
   #  Note:  For Base64 image printing, see [TutorialWebApplet#Printing_Images]
   #  If print data is base64 encoded, replace `print()` function with this code: (Note:  Versions 1.4.1 & 1.4.2 have a bug, see Issue 73.)
    {{{
-      // Use jZebra's `"append64"` function. This will automatically convert provided
+      // Use qz-print's `"append64"` function. This will automatically convert provided
       // base64 encoded text into ascii/bytes, etc.
       function print() {
-         document.jzebra.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
-         document.jzebra.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
+         qz.append64("SEVMTE8hICBZT1UgQVJFIFJFQURJTkcgQSBERUNPREVE");
+         qz.append64("IEJBU0U2NCBNRVNTQUdFIFNFTlQgRlJPTSBKWkVCUkEu");
 
          // Send characters/raw commands to printer
-         document.jzebra.print();
+         qz.print();
       }
    }}}
    || See also `sample.html`, section "print()". ||
@@ -172,21 +172,21 @@ The steps below walk through adding an applet to your web page, and explain how 
   # Open cash drawer (usually connected to printer via cable)
    {{{
         function openCashDrawer() {
-              document.jzebra.append(chr(27) + "\x70" + "\x30" + chr(25) + chr(25) + "\r");
-              document.jzebra.print();
+              qz.append(chr(27) + "\x70" + "\x30" + chr(25) + chr(25) + "\r");
+              qz.print();
         }
    }}}
   # Cut paper
    {{{
         function cutPaper() {
-              document.jzebra.append(chr(27) + chr(105));       // cut paper
+              qz.append(chr(27) + chr(105));       // cut paper
         }
    }}}
   # Basic font styling
    {{{
         function boldAndCenter() {
-             document.jzebra.append(chr(27) + chr(69) + "\r");  // bold on
-             document.jzebra.append(chr(27) + "\x61" + "\x31"); // center justify
+             qz.append(chr(27) + chr(69) + "\r");  // bold on
+             qz.append(chr(27) + "\x61" + "\x31"); // center justify
         }
    }}}
   # Print Image (Still experimental, needs testing)
@@ -197,56 +197,56 @@ The steps below walk through adding an applet to your web page, and explain how 
    {{{
       function print() {
          // Appends CHR(27) + CHR(29) using `"fromCharCode"` function
-         document.jzebra.append(String.fromCharCode(27) + String.fromCharCode(29));
+         qz.append(String.fromCharCode(27) + String.fromCharCode(29));
 
          // Appends hexadecimal data
-         document.jzebra.appendHex("x00x01x02xFF");
+         qz.appendHex("x00x01x02xFF");
 
          // Send characters/raw commands to printer
-         document.jzebra.print();
+         qz.print();
       }
    }}}
    || See also `sample.html`, section "print()". ||
    {{{
        // Force special DOS/Win characters on UNIX/Linux
-       document.jzebra.setEncoding("cp866");       // or
-       document.jzebra.setEncoding("cp1252");
+       qz.setEncoding("cp866");       // or
+       qz.setEncoding("cp1252");
 
        // Force UTF8 characters on Windows
-       document.jzebra.setEncoding("UTF-8");
+       qz.setEncoding("UTF-8");
 
        // Force MS/DOS Western Europe  (i.e. "Maçã")
-       document.jzebra.setEncoding("850");
+       qz.setEncoding("850");
    }}}
    || See also Issue 28 ||
    {{{ 
        // Submitted via Simon on mailing list jzebra-users@googlegroups.com
        // Print GBP '£' sign using ESC/P
        // First change code page to UK
-       document.jzebra.appendHex("x1Bx52x03");
+       qz.appendHex("x1Bx52x03");
        // Then just use '#' where you want your E
-       document.jzebra.append("#5.00");
+       qz.append("#5.00");
    }}}
    || See also Issue 61, which also prevents append("\x00") from working. (Using appendHex() fixes this or many choose to use use Base64 encoded print commands ||
 
 === Advanced Print Spooling ===
-  #  Since version 1.0.6, jZebra has the ability to control spooling to the printer.  This feature allows to print in batches of 5, 10, etc.  This has advantages due to buffer limitation on certain printer models where submitting 100+ labels randomly stop in the middle of printing.  In addition, some programmers have had success with using it for easier reprints.
+  #  Since version 1.0.6, qz-print has the ability to control spooling to the printer.  This feature allows to print in batches of 5, 10, etc.  This has advantages due to buffer limitation on certain printer models where submitting 100+ labels randomly stop in the middle of printing.  In addition, some programmers have had success with using it for easier reprints.
    {{{
       function print() {
 
          // Mark the end of a label, in this case  P1 plus a newline character
-         // jZebra knows to look for this and treat this as the end of a "page"
+         // qz-printknows to look for this and treat this as the end of a "page"
          // for better control of larger spooled jobs (i.e. 50+ labels)
-         document.jZebra.setEndOfDocument("P1\n");
+         qz.setEndOfDocument("P1\n");
            
          // The amount of labels to spool to the printer at a time. When
-         // jZebra counts this many `EndOfDocument`'s, a new print job will 
+         // qz-print counts this many `EndOfDocument`'s, a new print job will 
          // automatically be spooled to the printer and counting will start
          // over.
-         document.jzebra.setDocumentsPerSpool("10");      
+         qz.setDocumentsPerSpool("10");      
 
          // Send characters/raw commands to printer
-         document.jzebra.print();
+         qz.print();
       }
    }}}
 
@@ -256,20 +256,20 @@ The steps below walk through adding an applet to your web page, and explain how 
   #  This feature allows a raw file to be spooled directly to the printer
    {{{
     function printFile() {
-      	    if (document.jZebra != null) {
+      	    if (qz != null) {
 	       // Using jZebra's "appendFile()" function, a file containg your raw EPL/ZPL
 	       // can be sent directly to the printer
 	       // Example: 
-	       //     document.jzebra.appendFile("http://yoursite/zpllabel.txt"); // ...etc
-	       document.jzebra.appendFile(window.location.href + "/../zpl.txt");
-	       document.jzebra.print();
+	       //     qz.appendFile("http://yoursite/zpllabel.txt"); // ...etc
+	       qz.appendFile(window.location.href + "/../zpl.txt");
+	       qz.print();
 	    }
       }
    }}} 
 
 === XML Printing ===
 
-  #  Since version 1.0.8, jZebra has the ability to read the contents of an XML file containing Base64 encoded commands and send these commands to the printer. The function requires two parameters, the URL of the XML file and the tagname containing the Base64 encoded text.
+  #  Since version 1.0.8, qz-print has the ability to read the contents of an XML file containing Base64 encoded commands and send these commands to the printer. The function requires two parameters, the URL of the XML file and the tagname containing the Base64 encoded text.
    {{{
       function printXML() {
          // Appends the contents of an XML file from a SOAP response, etc.
@@ -277,11 +277,11 @@ The steps below walk through adding an applet to your web page, and explain how 
          // file.  The second parameter must be a valid XML tag/node containing
          // base64 encoded data, i.e. <node_1>aGVsbG8gd29ybGQ=</node_1>
          // Example:
-         //     document.jzebra.appendXML("http://yoursite.com/zpl.xml", "node_1");
-         document.jzebra.appendXML("C:\\zpl.xml", "v7:Image");
+         //     qz.appendXML("http://yoursite.com/zpl.xml", "node_1");
+         qz.appendXML("C:\\zpl.xml", "v7:Image");
 
          // Send characters/raw commands to printer
-         document.jzebra.print();
+         qz.print();
       }
 
    }}}
@@ -289,28 +289,28 @@ The steps below walk through adding an applet to your web page, and explain how 
    || See also `sample.html`, section "printXML()". ||
 
 === Print to File ===
-  # Since version 1.1.9, jZebra allows printing to a physical file.  This is useful for bypassing printer drivers completely and sending raw data to a remote Windows Print Server queue, i.e. \\server\printer. (Thanks André T)
+  # Since version 1.1.9, qz-print allows printing to a physical file.  This is useful for bypassing printer drivers completely and sending raw data to a remote Windows Print Server queue, i.e. \\server\printer. (Thanks André T)
    {{{
       function printToFile() {
          // Append some data
-         document.jzebra.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
+         qz.append("A37,503,0,1,2,3,N,ABC WIDGET CO\n");
 
          // Note, the doubly escaped forward slashes!
-         document.jzebra.printToFile("\\\\server\\printer")
+         qz.printToFile("\\\\server\\printer")
       }
 
    }}}
 
 === PDF Printing ===
-  # Since version 1.1.9, jZebra allows printing PDF files directly to a printer.  This functionality is experimental and uses a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!* 
+  # Since version 1.1.9, qz-print allows printing PDF files directly to a printer.  This functionality is experimental and uses a 3rd party renderer "PDF-RENDERER".  *This feature will not work with many raw printing devices, such as Zebra, Epson, Citizen printers.  The data is sent in PostScript format, which is more common for LaserJet printers. USE WITH CAUTION!* 
    {{{
       function printPDF() {
          // Make sure pdf-renderer.jar is in the "./lib" folder
          // Append the PDF
-         document.jzebra.appendPDF(window.location.href + "/../sample.pdf");
+         qz.appendPDF(window.location.href + "/../sample.pdf");
 
          // Very important for PDFs, use "printPS()" instead of "print()"
-         document.jzebra.printPS();
+         qz.printPS();
       }
    }}}
    || *Note:* If printing dynamically generated PDF from php, make sure to add header `'Content-Type: application/pdf'` as well as `'Content-Disposition:inline;filename=example.pdf'` or else PDF-RENDERER plugin will throw an error: "Exception occurred: This may not be a PDF File".  See Issue 48 for more details ||
@@ -325,44 +325,44 @@ The steps below walk through adding an applet to your web page, and explain how 
       // *Note 4:  Images should be strictly black and white
 
       // Zebra (EPL):
-      document.jzebra.appendImage("image.png", "EPL");
-      while (!document.jzebra.isDoneAppending()) {} // wait
-      document.jzebra.append("\r\n");          
+      qz.appendImage("image.png", "EPL");
+      while (!qz.isDoneAppending()) {} // wait
+      qz.append("\r\n");          
 
       // Zebra (ZPLII):
-      document.jzebra.appendImage("image.png", "ZPLII");
-      while (!document.jzebra.isDoneAppending()) {} // wait
-      document.jzebra.append("\r\n");  
+      qz.appendImage("image.png", "ZPLII");
+      while (!qz.isDoneAppending()) {} // wait
+      qz.append("\r\n");  
 
       // Zebra (CPCL):
-      document.jzebra.appendImage("image.png", "CPCL");
-      while (!document.jzebra.isDoneAppending()) {} // wait
-      document.jzebra.append("\r\n");    
+      qz.appendImage("image.png", "CPCL");
+      while (!qz.isDoneAppending()) {} // wait
+      qz.append("\r\n");    
 
       
 
 
       // Epson (ESCP):
-      document.jzebra.appendImage("image.png", "ESCP");
-      while (!document.jzebra.isDoneAppending()) {} // wait
-      document.jzebra.append("\r\n");
+      qz.appendImage("image.png", "ESCP");
+      while (!qz.isDoneAppending()) {} // wait
+      qz.append("\r\n");
 
       // Base64
-      document.jzebra.appendImage("data:image/png;base64,AAAAAAAAA...", "ZPLII");
-      document.jzebra.append("\n");
+      qz.appendImage("data:image/png;base64,AAAAAAAAA...", "ZPLII");
+      qz.append("\n");
 
       // DeskJet/LaserJet, etc (don't mix with raw devices)
       // Paper size/orientation since version 1.4.5
-      document.jzebra.setPaperSize("210mm", "297mm");  // A4
-      // document.jzebra.setPaperSize("8.5in", "11.0in");  // US Letter
-      document.jzebra.setAutoSize(true);               // Preserve proportions
-      document.jzebra.setOrientation("landscape");     // Default is "portrait"
-      document.jzebra.appendImage("image.png");        // Append our image.  Note: Wait for this to finish, or implement "jzebraDoneAppending()"
-      document.jzebra.print();
+      qz.setPaperSize("210mm", "297mm");  // A4
+      // qz.setPaperSize("8.5in", "11.0in");  // US Letter
+      qz.setAutoSize(true);               // Preserve proportions
+      qz.setOrientation("landscape");     // Default is "portrait"
+      qz.appendImage("image.png");        // Append our image.  Note: Wait for this to finish, or implement "jzebraDoneAppending()"
+      qz.print();
    }}}
 
 === HTML Printing ===
-  # Since version 1.4.5, jZebra can print advanced HTML components by rendering an HTML component to an image using the html2canvas jQuery plugin (bundled in the /dist/js folder).
+  # Since version 1.4.5, qz-print can print advanced HTML components by rendering an HTML component to an image using the html2canvas jQuery plugin (bundled in the /dist/js folder).
    {{{
        // HTML
        <body id="content" bgcolor="#FFF380"> ... 
@@ -372,51 +372,51 @@ The steps below walk through adding an applet to your web page, and explain how 
        $("#content").html2canvas({ 
                 canvas: hidden_screenshot,
                 onrendered: function() {
-                   document.jzebra.append64($("canvas")[0].toDataURL('image/png'));
-                   document.jzebra.printPS();
+                   qz.append64($("canvas")[0].toDataURL('image/png'));
+                   qz.printPS();
                 }
            });
    }}}
 
    || *Note:* HTML id `#content` can be virtually any HTML component.  HTML id `hidden_screenshot` is a temporary place to draw the content and should be set `display=none` to prevent the render from becoming visiable. ||
 
-  # Since version 1.3.2, jZebra has the ability to print basic HTML components to a PostScript style printer directly from the browser.  (PostScript printers include all major LaserJet, DeskJet, PSC, Home Printers, etc).  Mileage may vary across different operating systems.  Please file a bug report using ISSUES link above if you encounter issues.
+  # Since version 1.3.2, qz-print has the ability to print basic HTML components to a PostScript style printer directly from the browser.  (PostScript printers include all major LaserJet, DeskJet, PSC, Home Printers, etc).  Mileage may vary across different operating systems.  Please file a bug report using ISSUES link above if you encounter issues.
    {{{
       // Basic HTML Printing
-      document.jzebra.appendHTML("<html><h1><font color=Red>Hello world!</font></h1>jZebra HTML Printing Demo</html>");
-      document.jzebra.printHTML();
+      qz.appendHTML("<html><h1><font color=Red>Hello world!</font></h1>qz-print HTML Printing Demo</html>");
+      qz.printHTML();
 
 
 
 
       // Printing using extra spaces, fixed font, dashes
-      var text = "*no-line-break*       Hello from ’jZebra’       *no-line-break*";
+      var text = "*no-line-break*       Hello from ’qz-print’       *no-line-break*";
 
       // Fix whitespace and special character behavior
       text = text.replace(/ /g, "&nbsp;").replace(/’/g, "'").replace(/-/g,"&#8209;");      
 
-      document.jzebra.appendHTML('<html><table border=1 style="font-size:10pt; font-face:\'Courier New\';"><tr><td>' + text + '</td></tr></table></html>');
+      qz.appendHTML('<html><table border=1 style="font-size:10pt; font-face:\'Courier New\';"><tr><td>' + text + '</td></tr></table></html>');
 
-      document.jzebra.printHTML();
+      qz.printHTML();
 
 
 
 
       // Printing an existing HTML file
-      document.jzebra.appendHTMLFile("../form.html");
+      qz.appendHTMLFile("../form.html");
 
       // Wait for append to finish
-      while (!document.jzebra.isDoneAppending()) { // wait }
+      while (!qz.isDoneAppending()) { // wait }
 
-      document.jzebra.printHTML();
+      qz.printHTML();
    }}}
    || || *Linux HTML Printing:*  Please note, there is a bug preventing margins from working properly on Linux: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6726691 ||
 
 === Experimental / Work Arounds ===
-   # Since version 1.4.6, An OSX-only work-around was added to jZebra that allows printing through CUPS command line (`lp -o raw`), Issue 87.
+   # Since version 1.4.6, An OSX-only work-around was added to qz-print that allows printing through CUPS command line (`lp -o raw`), Issue 87.
    {{{
       // Alternate OSX raw printing via CUPS
-      document.jzebra.useAlternatePrinting(true);
+      qz.useAlternatePrinting(true);
    }}}
 
 
@@ -425,5 +425,5 @@ The steps below walk through adding an applet to your web page, and explain how 
 == Conclusion ==
   This tutorial needs work.  Please help by submitting changes.  Email questions or suggestions to [mailto:tres.finocchiaro@gmail.com the author].
 
-Alternatively, For questions, feedback and updates, subscribe to the *jZebra Mailing List* on Google Groups:
+Alternatively, For questions, feedback and updates, subscribe to the *qz-print Mailing List* on Google Groups:
   [http://groups.google.com/group/jzebra-users http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif]
