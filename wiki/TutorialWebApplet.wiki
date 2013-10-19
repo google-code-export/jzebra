@@ -17,7 +17,7 @@ The sample runs client-side.  No uploading to a web server is needed for this tu
 
 There are separate buttons for each type of printing, so study them closely.  Behind each button is a small snippet of JavaScript code for interacting with the qz-print applet.
 
-http://4.bp.blogspot.com/-I28oYL9JCBI/TutwTwdTrBI/AAAAAAAAAn0/jutIHvObGHU/s1600/jzebra_preview1.png
+https://jzebra.googlecode.com/files/sample-html.PNG
 
   || *Note:* qz-print requires Java 5 or higher to run.  For help installing Java on your platform, see the [http://img132.imageshack.us/img132/3416/cup1ad7.png][TutorialJavaInstall Java tutorial]. ||
 
