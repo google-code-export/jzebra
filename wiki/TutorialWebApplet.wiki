@@ -48,7 +48,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    [http://1.bp.blogspot.com/_9hmP3Ho0t14/Sxg0XxeTomI/AAAAAAAAAXI/rStKpFiZuU8/s400/digital_signature.PNG]
   #  The applet should be loaded.  At this point it will look like a plain html page with a few sample buttons.
      https://jzebra.googlecode.com/files/sample-html.PNG
-  #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
+  #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux Oracle Java users run: `jcontrol` --> Advanced --> Java Console --> Show Console.  Linux OpenJDK users, run the web browser from a command line.
    || *Note:* The Java Console is critical for calibrating qz-print for your printer. ||
   #  You should see the version of qz-print `"INFO: qz-print 1.x.x"` followed by `"===== JAVASCRIPT LISTENER THREAD STARTED ====="` in the log.  Sample:*
    {{{
