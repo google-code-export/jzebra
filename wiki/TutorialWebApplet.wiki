@@ -10,7 +10,7 @@ This is possible by using JavaScript to talk to Java through the "Applet" interf
 
 Download and extract a [http://code.google.com/p/jzebra/downloads/list?can=3 featured version].  There's a bunch of files, but we'll primarily be using *"sample.html"*.  Also make sure *"qz-print.jar"* resides in the same folder/location.
 
-http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/jzebra_files.png
+https://jzebra.googlecode.com/files/unzip-screenshot.PNG
 
 
 The sample runs client-side.  No uploading to a web server is needed for this tutorial. 
