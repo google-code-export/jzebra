@@ -45,17 +45,16 @@ The steps below walk through adding an applet to your web page, and explain how 
    || *Note:* Chrome users on Linux with outdated plugins, launch chrome with "`google-chrome --always-authorize-plugins --allow-outdated-plugins`".  This will allow Java to load in Chrome without warnings of outdated plugins! ||
      [http://2.bp.blogspot.com/_9hmP3Ho0t14/SxgoGt3lmKI/AAAAAAAAAXA/jsqVvrlRl4k/s400/applet_loading.PNG]
   #  Next, Java security dialog prompt is shown.  Click "Run".
-   [http://1.bp.blogspot.com/_9hmP3Ho0t14/Sxg0XxeTomI/AAAAAAAAAXI/rStKpFiZuU8/s400/digital_signature.PNG]
+   https://jzebra.googlecode.com/files/trusted-warning.PNG
   #  The applet should be loaded.  At this point it will look like a plain html page with a few sample buttons.
      https://jzebra.googlecode.com/files/sample-html.PNG
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux Oracle Java users run: `jcontrol` --> Advanced --> Java Console --> Show Console.  Linux OpenJDK users, run the web browser from a command line.
    || *Note:* The Java Console is critical for calibrating qz-print for your printer. ||
   #  You should see the version of qz-print `"INFO: qz-print 1.x.x"` followed by `"===== JAVASCRIPT LISTENER THREAD STARTED ====="` in the log.  Sample:*
    {{{
-       Java Plug-in 1.6.0_17
-       Using JRE version 1.6.0_17-b04 Java HotSpot(TM) Client VM
-       User home directory = C:\Documents and Settings\tfino
-       
+       Java Plug-in 10.45.2.18
+       Using JRE version 1.7.0_45-b18 Java HotSpot(TM) Client VM
+       User home directory = C:\Users\MediaCenter
        ----------------------------------------------------
        c:   clear console window
        f:   finalize objects on finalization queue
@@ -72,11 +71,26 @@ The steps below walk through adding an applet to your web page, and explain how 
        x:   clear classloader cache
        0-5: set trace level to <n>
        ----------------------------------------------------
-       
-       Dec 3, 2009 5:03:33 PM qz.LogIt log
-       INFO: qz-print 1.6.6
-       Dec 3, 2009 5:03:33 PM qz.LogIt log
+       Oct 19, 2013 1:40:05 AM qz.LogIt log
+       INFO: QZ-PRINT 1.6.8
+       Oct 19, 2013 1:40:05 AM qz.LogIt log
        INFO: ===== JAVASCRIPT LISTENER THREAD STARTED =====
+       Oct 19, 2013 1:40:09 AM qz.LogIt log
+       INFO: ===== SEARCHING FOR PRINTER =====
+       Oct 19, 2013 1:40:10 AM qz.LogIt log
+       INFO: Found 4 attached printers.
+       Oct 19, 2013 1:40:10 AM qz.LogIt log
+       INFO: Printer specified: \QZebra\E
+       Oct 19, 2013 1:40:10 AM qz.LogIt log
+       INFO: Printer name match: \\lenovo\Zebra LP2844
+       Oct 19, 2013 1:40:10 AM qz.LogIt log
+       INFO: Using best match: \\lenovo\Zebra LP2844
+       Oct 19, 2013 1:40:10 AM qz.LogIt log
+       WARNING: Tried calling JavaScript function "jzebraDoneFindingPrinters" through web browser but it has not been implemented (No such method "jzebraDoneFindingPrinters" on JavaScript object)
+       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/qz-run.jnlp]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=599
+       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/qz-print.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=105639
+       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/lib/jssc_qz.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=158623
+       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/lib/pdf-renderer_qz.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=1639200
    }}}
 *
    || At this point, your applet has now been loaded into the web browser.  See Printing section for printer discovery and for sending print commands directly to your printer. ||
