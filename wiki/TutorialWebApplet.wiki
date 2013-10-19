@@ -15,7 +15,7 @@ http://3.bp.blogspot.com/-E5lvqkX7AMQ/TutvoF4B6yI/AAAAAAAAAns/UvqJRM_fWQU/s1600/
 
 The sample runs client-side.  No uploading to a web server is needed for this tutorial. 
 
-There are separate buttons for each type of printing, so study them closely.  Behind each button is a small snippet of JavaScript code for interacting with the jZebra applet.
+There are separate buttons for each type of printing, so study them closely.  Behind each button is a small snippet of JavaScript code for interacting with the qz-print applet.
 
 http://4.bp.blogspot.com/-I28oYL9JCBI/TutwTwdTrBI/AAAAAAAAAn0/jutIHvObGHU/s1600/jzebra_preview1.png
 
@@ -49,7 +49,7 @@ The steps below walk through adding an applet to your web page, and explain how 
   #  The applet should be loaded.  At this point it will look like a plain html page with a few sample buttons.
      [http://lh3.ggpht.com/_9hmP3Ho0t14/TSPsD0Os6UI/AAAAAAAAAe0/mjfCFn4asEI/s400/1.0.8%20screenshot.png]
   #  Right click the Java system tray icon (Windows) and clicking "[http://img74.imageshack.us/img74/2423/jzebrajava1tx5.png Open Java Console]".  Linux users run: `jcontrol` --> Advanced --> Java Console --> Show Console.
-   || *Note:* The Java Console is critical for calibrating jZebra for your printer. ||
+   || *Note:* The Java Console is critical for calibrating qz-print for your printer. ||
   #  You should see the version of qz-print `"INFO: qz-print 1.x.x"` followed by `"===== JAVASCRIPT LISTENER THREAD STARTED ====="` in the log.  Sample:*
    {{{
        Java Plug-in 1.6.0_17
@@ -257,7 +257,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    {{{
     function printFile() {
       	    if (qz != null) {
-	       // Using jZebra's "appendFile()" function, a file containg your raw EPL/ZPL
+	       // Using qz-print's "appendFile()" function, a file containg your raw EPL/ZPL
 	       // can be sent directly to the printer
 	       // Example: 
 	       //     qz.appendFile("http://yoursite/zpllabel.txt"); // ...etc
