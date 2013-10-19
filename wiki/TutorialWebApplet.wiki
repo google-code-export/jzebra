@@ -54,7 +54,7 @@ The steps below walk through adding an applet to your web page, and explain how 
    {{{
        Java Plug-in 10.45.2.18
        Using JRE version 1.7.0_45-b18 Java HotSpot(TM) Client VM
-       User home directory = C:\Users\MediaCenter
+       User home directory = %USERPROFILE%
        ----------------------------------------------------
        c:   clear console window
        f:   finalize objects on finalization queue
@@ -82,15 +82,15 @@ The steps below walk through adding an applet to your web page, and explain how 
        Oct 19, 2013 1:40:10 AM qz.LogIt log
        INFO: Printer specified: \QZebra\E
        Oct 19, 2013 1:40:10 AM qz.LogIt log
-       INFO: Printer name match: \\lenovo\Zebra LP2844
+       INFO: Printer name match: \\myserver\Zebra LP2844
        Oct 19, 2013 1:40:10 AM qz.LogIt log
-       INFO: Using best match: \\lenovo\Zebra LP2844
+       INFO: Using best match: \\myserver\Zebra LP2844
        Oct 19, 2013 1:40:10 AM qz.LogIt log
        WARNING: Tried calling JavaScript function "jzebraDoneFindingPrinters" through web browser but it has not been implemented (No such method "jzebraDoneFindingPrinters" on JavaScript object)
-       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/qz-run.jnlp]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=599
-       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/qz-print.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=105639
-       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/lib/jssc_qz.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=158623
-       CacheEntry[file:/C:/Users/MediaCenter/Desktop/dist/lib/pdf-renderer_qz.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=1639200
+       CacheEntry[file:/C:/Users/Owner/Desktop/dist/qz-run.jnlp]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=599
+       CacheEntry[file:/C:/Users/Owner/Desktop/dist/qz-print.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=105639
+       CacheEntry[file:/C:/Users/Owner/Desktop/dist/lib/jssc_qz.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=158623
+       CacheEntry[file:/C:/Users/Owner/Desktop/dist/lib/pdf-renderer_qz.jar]: updateAvailable=false,lastModified=Sat Oct 19 01:27:44 EDT 2013,length=1639200
    }}}
 *
    || At this point, your applet has now been loaded into the web browser.  See Printing section for printer discovery and for sending print commands directly to your printer. ||
