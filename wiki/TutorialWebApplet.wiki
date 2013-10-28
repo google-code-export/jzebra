@@ -433,6 +433,55 @@ The steps below walk through adding an applet to your web page, and explain how 
       qz.useAlternatePrinting(true);
    }}}
 
+== Serial Communication ==
+   # Since version 1.6.0, You can send and receive data using the jSSC plugin (requires /dist/lib/jssc_qz.jar).
+   {{{
+      // List serial ports
+      qz.findPorts();
+
+      function jzebraDoneFindingPorts() {
+         var ports = qz.getPorts().split(",");
+	 for (p in ports) {
+	    alert(ports[p]);
+	 }
+      }
+
+ 
+      // Open a serial port
+      qz.openPort("COM1"); //Can be dev/ttyS0, /dev/ttyUSB0, depending on platform
+      
+      function jzebraDoneOpeningPort(portName) {
+         alert("Port [" + portName +  "] is open!");
+      }
+
+
+      // Send serial data
+      // Beggining and ending patterns that signify port has responded
+      // chr(2) and chr(13) surround data on a Mettler Toledo Scale
+      qz.setSerialBegin(chr(2));
+      qz.setSerialEnd(chr(13));
+      // Baud rate, data bits, stop bits, parity, flow control
+      // "9600", "7", "1", "even", "none" = Default for Mettler Toledo Scale
+      qz.setSerialProperties("9600", "7", "1", "even", "none");
+      // Send raw commands to the specified port.
+      // W = weight on Mettler Toledo Scale
+      qz.send(document.getElementById("port_name").value, "\nW\n");
+      
+      
+      // Retrieve serial response (automatically called)
+      function jzebraSerialReturned(portName, data) {
+         alert("Port [" + portName + "] returned data:\n\t" + data);
+      }
+      
+       
+      // Close a serial port
+      qz.closePort("COM1"); //Can be dev/ttyS0, /dev/ttyUSB0, depending on platform
+      
+      function jzebraDoneClosingPort(portName) {
+         alert("Port [" + portName +  "] is open!");
+      }
+      
+   }}}
 
 === End of Tutorial ===
 
