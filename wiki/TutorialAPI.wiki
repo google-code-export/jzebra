@@ -5,7 +5,7 @@ Introduction
 This is Java code [http://en.wikipedia.org/wiki/Snippet_(programming) snippet] that will allow you to use jZebra directly in your Java Application.
 
 = Steps =
-  # Make sure [http://code.google.com/p/jzebra/downloads/list JZebra.jar] is in your java class path.
+  # Make sure [http://code.google.com/p/jzebra/downloads/list jzebra.jar] is in your java class path.
   # Make sure your printer is set up on your workstation with the name "`zebra`".  For step-by-step instructions:  [TutorialRawXP Windows], [TutorialRawOSX OS X], [TutorialRawUbuntu Ubuntu]
   # Adapt the following code to work in your Java project.
   {{{
