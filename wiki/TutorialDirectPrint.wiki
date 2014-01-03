@@ -12,7 +12,7 @@ Attach jQuery and directPrint in your html file (assuming that directPrint.js is
 
 For example, to print a box of 10 character spaces with a center-aligned string "test" : 
 {{{
-<div class="dPrint topLeft drawLine[repeat[10]] topRight newLine">
+<div class="dPrint topLeft drawLine[repeat[10]] topRight newLine"></div>
 <div class="dPrint vLine"></div>
 <div class="dPrint format[center[10]]">test</div>
 <div class="dPrint vLine newLine"></div>
