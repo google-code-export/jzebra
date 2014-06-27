@@ -1,6 +1,7 @@
 #labels Featured,Phase-Deploy
 f#summary Change security prompt to verified or change the digital signature publisher name
 
+= <font color="red">Please see updated tutorial here: [https://github.com/qzindustries/qz-print/wiki/Compile-qz-print]</font> =
 = Objective =
 
 Fix "digital signature cannot be verified" message that appears when running jZebra signed applet.  This is done by recompiling jZebra with NetBeans, and replacing the digital certificate with your company's certificate.
